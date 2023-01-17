@@ -40,6 +40,9 @@ Now I looking for an internship to applying and sharping my skills which I learn
 <p align="left">
 
 <p align="left">
+
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=colddsam)](https://github.com/Sam00036/github-readme-stats)
+
 <img src="https://github-readme-stats.vercel.app/api/top-langs?username=sam00036&show_icons=true&locale=en&layout=compact" alt="sam00036" /><br>
 
 <img src="https://github-readme-stats.vercel.app/api?username=sam00036&show_icons=true&locale=en" alt="sam00036" /><br>
@@ -116,4 +119,3 @@ Now I looking for an internship to applying and sharping my skills which I learn
 </p>
 
 ![Samrat stats](https://github-readme-stats.vercel.app/api?username=Sam00036&show_icons=true)
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=colddsam)](https://github.com/Sam00036/github-readme-stats)
