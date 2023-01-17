@@ -35,6 +35,36 @@ Now I looking for an internship to applying and sharping my skills which I learn
 - ⚡ Fun fact: **I am 99 % funny, 1% moody 😎**
 </p>
 
+<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
+<p align="left">
+
+<p align="left">
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=sam00036&show_icons=true&locale=en&layout=compact" alt="sam00036" /><br>
+
+<img src="https://github-readme-stats.vercel.app/api?username=sam00036&show_icons=true&locale=en" alt="sam00036" /><br>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=sam00036&" alt="sam00036" />
+</p>
+<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/4413/4413543.png" alt="programming" width="18" height="18" /> Hard Skills:</h3>
+<p>
+
+- Web Design
+- ML model building
+- Video Editing
+- Graphic Design
+- PR Management
+
+</p>
+<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/9192/9192463.png" alt="programming" width="18" height="18" /> Soft Skills:</h3>
+<p>
+
+- Communication Skill
+- Leadership skill
+- Quick Learning ability
+- Problem solving
+- Critical Thinking
+
+</p>
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/9423/9423116.png" alt="social medias" width="18" height="18" /> My social media handles:</h3>
 <p align="left">
 <a href="https://twitter.com/samratkumardas9" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/3670/3670127.png" alt="twitter" height="30" /></a>
@@ -72,36 +102,6 @@ Now I looking for an internship to applying and sharping my skills which I learn
 <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="python" height="30"/> </a> 
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://www.webrexstudio.com/wp-content/uploads/2019/05/react-js-image.png" alt="react" height="30"/> </a> 
 <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.png" alt="tensorflow" height="30"/> </a> 
-</p>
-<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
-<p align="left">
-
-<p align="left">
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=sam00036&show_icons=true&locale=en&layout=compact" alt="sam00036" /><br>
-
-<img src="https://github-readme-stats.vercel.app/api?username=sam00036&show_icons=true&locale=en" alt="sam00036" /><br>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=sam00036&" alt="sam00036" />
-</p>
-<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/4413/4413543.png" alt="programming" width="18" height="18" /> Hard Skills:</h3>
-<p>
-
-- Web Design
-- ML model building
-- Video Editing
-- Graphic Design
-- PR Management
-
-</p>
-<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/9192/9192463.png" alt="programming" width="18" height="18" /> Soft Skills:</h3>
-<p>
-
-- Communication Skill
-- Leadership skill
-- Quick Learning ability
-- Problem solving
-- Critical Thinking
-
 </p>
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/3087/3087061.png" alt="programming" width="18" height="18" /> Achivements:</h3>
 <p>
