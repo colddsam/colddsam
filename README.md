@@ -67,9 +67,9 @@
 <p align="left">
 
 <p align="left">
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=sam00036&show_icons=true&locale=en&layout=compact" alt="sam00036" /><br><br>
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=sam00036&show_icons=true&locale=en&layout=compact" alt="sam00036" /><br>
 
-<img src="https://github-readme-stats.vercel.app/api?username=sam00036&show_icons=true&locale=en" alt="sam00036" /><br><br>
+<img src="https://github-readme-stats.vercel.app/api?username=sam00036&show_icons=true&locale=en" alt="sam00036" /><br>
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=sam00036&" alt="sam00036" />
 </p>
