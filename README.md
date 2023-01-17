@@ -121,3 +121,5 @@ Now I looking for an internship to applying and sharping my skills which I learn
 <img alt="coding" height="250" src="https://i.pinimg.com/originals/88/40/b8/8840b8d2c07bf805cdab22c0e4b54f59.gif">
 
 </p>
+
+[![Spotify](https://novatorem-zeta-seven.vercel.app/api/spotify)](https://open.spotify.com/user/4uyys269cpo9e8ddgcc3kcxov)
