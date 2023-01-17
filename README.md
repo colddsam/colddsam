@@ -41,13 +41,14 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 <p align="left">
 
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=colddsam)](https://github.com/Sam00036/github-readme-stats)
-
 <img src="https://github-readme-stats.vercel.app/api/top-langs?username=sam00036&show_icons=true&locale=en&layout=compact" alt="sam00036" /><br>
 
 <img src="https://github-readme-stats.vercel.app/api?username=sam00036&show_icons=true&locale=en" alt="sam00036" /><br>
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=sam00036&" alt="sam00036" />
+
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=colddsam)](https://github.com/Sam00036/github-readme-stats)
+
 </p>
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/4413/4413543.png" alt="programming" width="18" height="18" /> Hard Skills:</h3>
 <p>
@@ -117,5 +118,3 @@ Now I looking for an internship to applying and sharping my skills which I learn
 <img alt="coding" height="250" src="https://i.pinimg.com/originals/88/40/b8/8840b8d2c07bf805cdab22c0e4b54f59.gif">
 
 </p>
-
-![Samrat stats](https://github-readme-stats.vercel.app/api?username=Sam00036&show_icons=true)
