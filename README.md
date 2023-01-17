@@ -3,17 +3,9 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sam00036&label=Profile%20views&color=0e75b6&style=flat" alt="sam00036" /> </p>
 
-<p><img align="left" alt="welcome" height="250" src="https://cdn.dribbble.com/users/5246919/screenshots/11915912/media/f7b14b34de780768f18b37cce2431b0b.gif"></p>
+<img align="left" alt="welcome" height="250" src="https://cdn.dribbble.com/users/5246919/screenshots/11915912/media/f7b14b34de780768f18b37cce2431b0b.gif">
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/9387/9387669.png" alt="about" width="18" height="18" /> About:</h3>
-<p align="left">
-<a href="https://twitter.com/samratkumardas9" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/3670/3670127.png" alt="twitter" height="30" /></a>
-<a href="https://www.linkedin.com/in/samrat-kumar-das-176731171/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/2504/2504923.png" alt="linkedin" height="30" /></a>
-<a href="https://www.instagram.com/colddsam/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/3670/3670125.png" alt="instagram" height="30" /></a>
-<a href="https://www.facebook.com/bimalkumar.das.5876/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/2504/2504903.png" alt="facebook" height="30" /></a>
-<a href="https://in.pinterest.com/colddsam/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/2504/2504932.png" alt="pinterest" height="30" /></a>
-<a href="https://linktr.ee/colddsam?utm_source=linktree_profile_share&ltsid=ca51522f-66e1-4539-ba3b-4cd81c03b5b9" target="blank"><img align="center" src="https://cdn.dribbble.com/userupload/3007782/file/original-8f257cba713a7493c7fb30c5cbcb9e45.png?resize=1600x1200" alt="linktree" height="30" /></a>
-</p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sam00036" alt="sam00036" /></a> </p>
 
