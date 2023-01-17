@@ -98,7 +98,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 <a href="https://leetcode.com/colddsam/" target="blank"><img align="center" src="https://leetcode.com/static/images/LeetCode_Sharing.png" alt="leetcode" height="30" /></a>
 </p>
 
-<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/6062/6062646.png" alt="programming" width="18" height="18" /> Programming Languages:</h3>
+<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/6062/6062646.png" alt="programming" width="18" height="18" /> Programming Languages/Frameworks:</h3>
 <p align="left"> 
 <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://cdn-icons-png.flaticon.com/512/2504/2504881.png" alt="android" height="30"/> </a> 
 <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/04/the-seo-guide-to-angular.png" alt="angular" height="30"/> </a> 
