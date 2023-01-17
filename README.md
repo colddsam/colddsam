@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sam00036&label=Profile%20views&color=0e75b6&style=flat" alt="sam00036" /> </p>
 
-<img align="left" alt="welcome" height="300" src="https://2.bp.blogspot.com/-g17S0I3zoLQ/Xf__TUfSvtI/AAAAAAAWb2Q/LE0SK6jXvAc_WTdrKEZ84Cn0NqNWukNewCLcBGAsYHQ/s1600/AW4119098_00.gif">
+<img align="left" alt="welcome" height="300" src="https://cdn.dribbble.com/users/5246919/screenshots/11915912/media/f7b14b34de780768f18b37cce2431b0b.gif">
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sam00036" alt="sam00036" /></a> </p>
 
