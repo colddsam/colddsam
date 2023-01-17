@@ -6,10 +6,10 @@
 <img alt="welcome" height="250" src="https://cdn.dribbble.com/users/5246919/screenshots/11915912/media/f7b14b34de780768f18b37cce2431b0b.gif"><br>
 
 <h3><img src="https://cdn-icons-png.flaticon.com/512/9387/9387669.png" alt="about" width="18" height="18" /> About:</h3>
-Hi, I'm Samrat Kumar Das from Kolkata, West Bengal. 
-I'm in 2nd year of my BTech degree in Electronics and Communication Engineering which I pursuing from Narula Institute of Technology.
-I belive nothing is impossible if you think it possible.
-Currently I'm enhancing my skills in Machine Learning and Front End Development with which I want to proceed further. I love to work as a team and collaborate in open sources.
+Hi, I'm Samrat Kumar Das from Kolkata, West Bengal.<br>
+I'm in 2nd year of my BTech degree in Electronics and Communication Engineering which I pursuing from Narula Institute of Technology.<br>
+I belive nothing is impossible if you think it possible.<br>
+Currently I'm enhancing my skills in Machine Learning and Front End Development with which I want to proceed further. I love to work as a team and collaborate in open sources.<br>
 Now I looking for an internship to applying and sharping my skills which I learning from my college and from my personal works.
 </p>
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sam00036" alt="sam00036" /></a> </p>
