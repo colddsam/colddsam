@@ -1,4 +1,5 @@
-![logo](https://cdn-icons-png.flaticon.com/512/2949/2949142.png)
+![coverpic](https://user-images.githubusercontent.com/90477654/212963522-ee056043-d49a-473c-9071-89d1704a80e5.png)
+
 <h1 align="center">Hi friends<img src="https://cdn-icons-png.flaticon.com/512/2508/2508673.png" alt="social medias" width="30" height="30"/>, I'm Samrat Kumar Das</h1>
 <h3 align="center">A passionate ML engineer looking for a opportunity to grab an internship.</h3>
 
