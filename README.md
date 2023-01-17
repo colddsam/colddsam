@@ -2,10 +2,10 @@
 <h3 align="center">A passionate ML engineer looking for a opportunity to grab an internship.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sam00036&label=Profile%20views&color=0e75b6&style=flat" alt="sam00036" /> </p>
-<p>
-<img align="left" alt="welcome" height="250" src="https://cdn.dribbble.com/users/5246919/screenshots/11915912/media/f7b14b34de780768f18b37cce2431b0b.gif"><br>
+<p align="left">
+<img alt="welcome" height="250" src="https://cdn.dribbble.com/users/5246919/screenshots/11915912/media/f7b14b34de780768f18b37cce2431b0b.gif"><br>
 
-<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/9387/9387669.png" alt="about" width="18" height="18" /> About:</h3>
+<h3><img src="https://cdn-icons-png.flaticon.com/512/9387/9387669.png" alt="about" width="18" height="18" /> About:</h3>
 </p>
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sam00036" alt="sam00036" /></a> </p>
 
