@@ -1,13 +1,13 @@
 <h1 align="center">Hi friends👋, I'm Samrat Kumar Das</h1>
 <h3 align="center">A passionate ML engineer looking for a opportunity to grab a internship.</h3>
 
-<img align="right" alt="coding" width="400" src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
-
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sam00036&label=Profile%20views&color=0e75b6&style=flat" alt="sam00036" /> </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sam00036" alt="sam00036" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/sam00036" target="blank"><img src="https://img.shields.io/twitter/follow/sam00036?logo=twitter&style=for-the-badge" alt="sam00036" /></a> </p>
+<p align="left"> <a href="https://twitter.com/samratkumardas9" target="blank"><img src="https://img.shields.io/twitter/follow/sam00036?logo=twitter&style=for-the-badge" alt="sam00036" /></a> </p>
+
+<img align="right" alt="coding" width="400" src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
 
 - 🔭 I’m currently working on [Making a virtual assistant](https://github.com/Sam00036/virtual-assistant.git)
 
@@ -17,7 +17,7 @@
 
 - 💬 Ask me about 👉 **AI/ML, Front End Development, DATA STRUCTURE**
 
-- 📫 To reach me just email a 👉 **dassamratkumar772@gmail.com**
+- 📫 To reach me just email at 👉 **dassamratkumar772@gmail.com**
 
 - ⚡ Fun fact 👉 **I am 99 % funny, 1% moody 😎**
 
