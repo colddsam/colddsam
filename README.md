@@ -17,13 +17,13 @@ Currently I'm enhancing my skills in Machine Learning and Front End Development 
 Now I looking for an internship to applying and sharping my skills which I learning from my college and from my personal works.
 </p>
 
-<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2949/2949142.png" alt="Spotify" width="18" height="18" /> Currently Listening:</h3>
-
-[![Spotify](https://novatorem-zeta-seven.vercel.app/api/spotify)](https://open.spotify.com/user/4uyys269cpo9e8ddgcc3kcxov)
-
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sam00036" alt="sam00036" /></a>
 
 <a href="https://twitter.com/samratkumardas9" target="blank"><img src="https://img.shields.io/twitter/follow/samratkumardas9?logo=twitter&style=for-the-badge" alt="sam00036" /></a> 
+
+<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2949/2949142.png" alt="Spotify" width="18" height="18" /> Currently Listening:</h3>
+
+[![Spotify](https://novatorem-zeta-seven.vercel.app/api/spotify)](https://open.spotify.com/user/4uyys269cpo9e8ddgcc3kcxov)
 
 <h3><img src="https://cdn-icons-png.flaticon.com/512/4108/4108210.png" alt="social medias" width="20" height="20"/> Facts: </h3>
 
@@ -118,10 +118,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/3087/3087061.png" alt="programming" width="18" height="18" /> Achivements:</h3>
 <p>
 
+<img alt="coding" height="250" src="https://i.pinimg.com/originals/88/40/b8/8840b8d2c07bf805cdab22c0e4b54f59.gif">
+
 - Appointed as Campus Ambassador of IIT Madras : [Link](https://www.linkedin.com/posts/samrat-kumar-das-176731171_iitmadras-ecell-campusambassador-activity-7005795807807303681-A0zo?utm_source=share&utm_medium=member_desktop)
 
 - Finished at 2nd position in Entreprenuership Awarness Camp
-
-<img alt="coding" height="250" src="https://i.pinimg.com/originals/88/40/b8/8840b8d2c07bf805cdab22c0e4b54f59.gif">
 
 </p>
