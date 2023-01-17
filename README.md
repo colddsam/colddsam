@@ -116,4 +116,4 @@ Now I looking for an internship to applying and sharping my skills which I learn
 </p>
 
 ![Samrat stats](https://github-readme-stats.vercel.app/api?username=Sam00036&show_icons=true)
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=Sam00036)](https://github.com/Sam00036/github-readme-stats)
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=colddsam)](https://github.com/Sam00036/github-readme-stats)
