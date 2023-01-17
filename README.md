@@ -1,7 +1,7 @@
 <h1 align="center">Hi friends<img src="https://cdn-icons-png.flaticon.com/512/2508/2508673.png" alt="social medias" width="30" height="30"/>, I'm Samrat Kumar Das</h1>
 <h3 align="center">A passionate ML engineer looking for a opportunity to grab an internship.</h3>
 
-<img align="right" alt="coding" height="250" src="https://2.bp.blogspot.com/-g17S0I3zoLQ/Xf__TUfSvtI/AAAAAAAWb2Q/LE0SK6jXvAc_WTdrKEZ84Cn0NqNWukNewCLcBGAsYHQ/s1600/AW4119098_00.gif">
+<img align="left" alt="welcome" height="250" src="https://2.bp.blogspot.com/-g17S0I3zoLQ/Xf__TUfSvtI/AAAAAAAWb2Q/LE0SK6jXvAc_WTdrKEZ84Cn0NqNWukNewCLcBGAsYHQ/s1600/AW4119098_00.gif">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sam00036&label=Profile%20views&color=0e75b6&style=flat" alt="sam00036" /> </p>
 
