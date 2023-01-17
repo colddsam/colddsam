@@ -21,17 +21,15 @@
 
 - ⚡ Fun fact 👉 **I am 99 % funny, 1% moody 😎**
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">My social media handles:</h3>
 <p align="left">
 <a href="https://twitter.com/samratkumardas9" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/3670/3670127.png" alt="twitter" height="40" width="40" /></a>
 <a href="https://www.linkedin.com/in/samrat-kumar-das-176731171/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/2504/2504923.png" alt="linkedin" height="40" width="40" /></a>
 <a href="https://www.instagram.com/colddsam/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/3670/3670125.png" alt="instagram" height="40" width="40" /></a>
 <a href="https://www.kaggle.com/samratkumardas" target="blank"><img align="center" src="https://miro.medium.com/max/650/1*DmQ_eaZK0ZVwuthX4MQyBQ.png" alt="kaggle" height="40" /></a>
-<a href="https://fb.com/samrat das" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="samrat das" height="30" width="40" /></a>
-<a href="https://instagram.com/colddsam" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="colddsam" height="30" width="40" /></a>
-<a href="https://www.codechef.com/users/samrat036" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" alt="samrat036" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/dassamratkumar71" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="dassamratkumar71" height="30" width="40" /></a>
-<a href="https://discord.gg/colddsam#5009" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="colddsam#5009" height="30" width="40" /></a>
+<a href="https://www.facebook.com/bimalkumar.das.5876/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/2504/2504903.png" alt="facebook" height="40" /></a>
+<a href="https://in.pinterest.com/colddsam/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/2504/2504932.png" alt="pinterest" height="40" /></a>
+<a href="https://linktr.ee/colddsam?utm_source=linktree_profile_share&ltsid=ca51522f-66e1-4539-ba3b-4cd81c03b5b9" target="blank"><img align="center" src="https://1000logos.net/wp-content/uploads/2022/03/Linktree-Logo-2016.png" alt="linktree" height="40" /></a>
 </p>
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/6062/6062646.png" alt="programming" width="20" height="20" /> Programming Languages:</h3>
