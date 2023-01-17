@@ -19,7 +19,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 <h3><img src="https://cdn-icons-png.flaticon.com/512/4108/4108210.png" alt="social medias" width="20" height="20"/> Facts: </h3>
 
 </p>
-
+<p align="left">
 <img align="right" alt="coding" height="250" src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
 
 - 🔭 I’m currently working on [Making a virtual assistant](https://github.com/Sam00036/virtual-assistant.git)
@@ -33,6 +33,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 - 📫 To reach me just email at: **dassamratkumar772@gmail.com**
 
 - ⚡ Fun fact: **I am 99 % funny, 1% moody 😎**
+</p>
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/9423/9423116.png" alt="social medias" width="18" height="18" /> My social media handles:</h3>
 <p align="left">
