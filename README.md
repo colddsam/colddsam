@@ -59,6 +59,8 @@
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://www.webrexstudio.com/wp-content/uploads/2019/05/react-js-image.png" alt="react" height="30"/> </a> 
 <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.png" alt="tensorflow" height="30"/> </a> 
 </p>
+<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
+<p align="left">
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=sam00036&show_icons=true&locale=en&layout=compact" alt="sam00036" /></p>
 
