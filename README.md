@@ -20,6 +20,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 <a href="https://twitter.com/samratkumardas9" target="blank"><img src="https://img.shields.io/twitter/follow/samratkumardas9?logo=twitter&style=for-the-badge" alt="sam00036" /></a> 
 
+<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/4795/4795867.png" alt="Spotify" width="18" height="18" /> Currently Listening:</h3>
+
+[![Spotify](https://novatorem-zeta-seven.vercel.app/api/spotify)](https://open.spotify.com/user/4uyys269cpo9e8ddgcc3kcxov)
+
 <h3><img src="https://cdn-icons-png.flaticon.com/512/4108/4108210.png" alt="social medias" width="20" height="20"/> Facts: </h3>
 
 </p>
@@ -40,7 +44,6 @@ Now I looking for an internship to applying and sharping my skills which I learn
 </p>
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
-<p align="left">
 
 <p align="left">
 
@@ -121,5 +124,3 @@ Now I looking for an internship to applying and sharping my skills which I learn
 <img alt="coding" height="250" src="https://i.pinimg.com/originals/88/40/b8/8840b8d2c07bf805cdab22c0e4b54f59.gif">
 
 </p>
-
-[![Spotify](https://novatorem-zeta-seven.vercel.app/api/spotify)](https://open.spotify.com/user/4uyys269cpo9e8ddgcc3kcxov)
