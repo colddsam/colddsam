@@ -5,6 +5,9 @@
 
 <p><img align="left" alt="welcome" height="250" src="https://cdn.dribbble.com/users/5246919/screenshots/11915912/media/f7b14b34de780768f18b37cce2431b0b.gif"></p>
 
+<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/9387/9387669.png" alt="about" width="18" height="18" /> About:</h3>
+<p align="left">
+
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sam00036" alt="sam00036" /></a> </p>
 
 <p align="left"> <a href="https://twitter.com/samratkumardas9" target="blank"><img src="https://img.shields.io/twitter/follow/samratkumardas9?logo=twitter&style=for-the-badge" alt="sam00036" /></a> </p>
