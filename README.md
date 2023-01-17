@@ -1,3 +1,4 @@
+![logo](https://github.com/Sam00036/Sam00036/blob/main/Blue%20Modern%20Seo%20Marketer%20Profile%20Linkedin%20Banner.png)
 <h1 align="center">Hi friends<img src="https://cdn-icons-png.flaticon.com/512/2508/2508673.png" alt="social medias" width="30" height="30"/>, I'm Samrat Kumar Das</h1>
 <h3 align="center">A passionate ML engineer looking for a opportunity to grab an internship.</h3>
 
