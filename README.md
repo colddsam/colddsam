@@ -16,7 +16,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 <a href="https://twitter.com/samratkumardas9" target="blank"><img src="https://img.shields.io/twitter/follow/samratkumardas9?logo=twitter&style=for-the-badge" alt="sam00036" /></a> 
 
-<h3><img src="https://cdn-icons-png.flaticon.com/512/5439/5439363.png" alt="social medias" width="18" height="18" /> Facts: </h3>
+<h3><img src="https://cdn-icons-png.flaticon.com/512/5439/5439363.png" alt="social medias" width="20" height="20" /> Facts: </h3>
 
 </p>
 
