@@ -1,4 +1,4 @@
-![logo](https://www.canva.com/design/DAFX64cMvks/ROSweP3AGmSWd9yad0TGzA/view?utm_content=DAFX64cMvks&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+![logo](https://www.canva.com/design/DAFX64cMvks/1nQYCUUrIHMMTiSZz_GX8A/edit?utm_content=DAFX64cMvks&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 <h1 align="center">Hi friends<img src="https://cdn-icons-png.flaticon.com/512/2508/2508673.png" alt="social medias" width="30" height="30"/>, I'm Samrat Kumar Das</h1>
 <h3 align="center">A passionate ML engineer looking for a opportunity to grab an internship.</h3>
 
