@@ -29,7 +29,7 @@
 <a href="https://www.kaggle.com/samratkumardas" target="blank"><img align="center" src="https://miro.medium.com/max/650/1*DmQ_eaZK0ZVwuthX4MQyBQ.png" alt="kaggle" height="40" /></a>
 <a href="https://www.facebook.com/bimalkumar.das.5876/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/2504/2504903.png" alt="facebook" height="40" /></a>
 <a href="https://in.pinterest.com/colddsam/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/2504/2504932.png" alt="pinterest" height="40" /></a>
-<a href="https://linktr.ee/colddsam?utm_source=linktree_profile_share&ltsid=ca51522f-66e1-4539-ba3b-4cd81c03b5b9" target="blank"><img align="center" src="https://1000logos.net/wp-content/uploads/2022/03/Linktree-Logo-2016.png" alt="linktree" height="40" /></a>
+<a href="https://linktr.ee/colddsam?utm_source=linktree_profile_share&ltsid=ca51522f-66e1-4539-ba3b-4cd81c03b5b9" target="blank"><img align="center" src="https://cdn.dribbble.com/userupload/3007782/file/original-8f257cba713a7493c7fb30c5cbcb9e45.png?resize=1600x1200" alt="linktree" height="40" /></a>
 </p>
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/6062/6062646.png" alt="programming" width="20" height="20" /> Programming Languages:</h3>
