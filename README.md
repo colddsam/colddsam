@@ -7,7 +7,7 @@
 
 <p align="left"> <a href="https://twitter.com/samratkumardas9" target="blank"><img src="https://img.shields.io/twitter/follow/samratkumardas9?logo=twitter&style=for-the-badge" alt="sam00036" /></a> </p>
 
-<img align="right" alt="coding" width="400" border="0px" border-radius="20px" src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
+<img align="right" alt="coding" width="400" src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
 
 - 🔭 I’m currently working on [Making a virtual assistant](https://github.com/Sam00036/virtual-assistant.git)
 
@@ -62,6 +62,6 @@
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=sam00036&show_icons=true&locale=en&layout=compact" alt="sam00036" /></p>
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=sam00036&show_icons=true&locale=en" alt="sam00036" /></p>
+<p><img align="right" src="https://github-readme-stats.vercel.app/api?username=sam00036&show_icons=true&locale=en" alt="sam00036" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=sam00036&" alt="sam00036" /></p>
+<p><img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=sam00036&" alt="sam00036" /></p>
