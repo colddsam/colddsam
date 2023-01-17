@@ -66,8 +66,8 @@
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
 <p align="left">
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=sam00036&show_icons=true&locale=en&layout=compact" alt="sam00036" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=sam00036&show_icons=true&locale=en&layout=compact" alt="sam00036" /><br>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api?username=sam00036&show_icons=true&locale=en" alt="sam00036" /></p>
+<img align="left" src="https://github-readme-stats.vercel.app/api?username=sam00036&show_icons=true&locale=en" alt="sam00036" /><br>
 
-<p><img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=sam00036&" alt="sam00036" /></p>
+<img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=sam00036&" alt="sam00036" /></p>
