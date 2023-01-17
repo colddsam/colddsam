@@ -60,8 +60,8 @@
 <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.png" alt="tensorflow" height="30"/> </a> 
 </p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=sam00036&show_icons=true&locale=en&layout=compact" alt="sam00036" /></p><br>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=sam00036&show_icons=true&locale=en&layout=compact" alt="sam00036" /></p><br><br><br>
 
-<p><img align="right" src="https://github-readme-stats.vercel.app/api?username=sam00036&show_icons=true&locale=en" alt="sam00036" /></p><br>
+<p><img align="right" src="https://github-readme-stats.vercel.app/api?username=sam00036&show_icons=true&locale=en" alt="sam00036" /></p><br><br><br>
 
-<p><img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=sam00036&" alt="sam00036" /></p><br>
+<p><img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=sam00036&" alt="sam00036" /></p><br><br><br>
