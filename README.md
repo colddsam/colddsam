@@ -114,5 +114,6 @@ Now I looking for an internship to applying and sharping my skills which I learn
 <img alt="coding" height="250" src="https://i.pinimg.com/originals/88/40/b8/8840b8d2c07bf805cdab22c0e4b54f59.gif">
 
 </p>
+
 ![Samrat stats](https://github-readme-stats.vercel.app/api?username=Sam00036&show_icons=true)
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=Sam00036)](https://github.com/Sam00036/github-readme-stats)
