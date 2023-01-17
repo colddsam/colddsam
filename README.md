@@ -21,7 +21,7 @@
 
 - ⚡ Fun fact 👉 **I am 99 % funny, 1% moody 😎**
 
-<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/9423/9423116.png" alt="social medias" width="20" height="20" />My social media handles:</h3>
+<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/9423/9423116.png" alt="social medias" width="20" height="20" /> My social media handles:</h3>
 <p align="left">
 <a href="https://twitter.com/samratkumardas9" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/3670/3670127.png" alt="twitter" height="40" width="40" /></a>
 <a href="https://www.linkedin.com/in/samrat-kumar-das-176731171/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/2504/2504923.png" alt="linkedin" height="40" width="40" /></a>
