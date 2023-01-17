@@ -15,11 +15,11 @@
 
 - 👨‍💻 All of my projects are available at [https://linktr.ee/colddsam?utm_source=linktree_profile_share&ltsid=2cda3886-be78-4ccf-a16a-3ef6943e4525](https://linktr.ee/colddsam?utm_source=linktree_profile_share&ltsid=2cda3886-be78-4ccf-a16a-3ef6943e4525)
 
-- 💬 Ask me about **AI/ML, Front End Development, DATA STRUCTURE**
+- 💬 Ask me about 👉 **AI/ML, Front End Development, DATA STRUCTURE**
 
-- 📫 How to reach me **dassamratkumar772@gmail.com**
+- 📫 To reach me just email a 👉 **dassamratkumar772@gmail.com**
 
-- ⚡ Fun fact **99 % funny, 1% moody 😎**
+- ⚡ Fun fact 👉 **I am 99 % funny, 1% moody 😎**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
