@@ -1,6 +1,6 @@
 ![coverpic](https://user-images.githubusercontent.com/90477654/212960368-a1a43f46-4bbf-4a50-a5a7-9691992fe773.png)
 
-<h1 align="center">Hi friends<img src="https://cdn-icons-png.flaticon.com/512/2508/2508673.png" alt="social medias" width="30" height="30"/>, I'm Samrat Kumar Das</h1>
+<h1 align="center">Hi Developers<img src="https://cdn-icons-png.flaticon.com/512/2508/2508673.png" alt="social medias" width="30" height="30"/>, I'm Samrat</h1>
 <h3 align="center">A passionate ML engineer looking for a opportunity to grab an internship.</h3>
 
 <p align="left">
