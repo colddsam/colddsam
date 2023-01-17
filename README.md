@@ -1,7 +1,5 @@
-![coverpic](https://user-images.githubusercontent.com/90477654/212960368-a1a43f46-4bbf-4a50-a5a7-9691992fe773.png)
-
-<h1 align="center">Hi Developers<img src="https://cdn-icons-png.flaticon.com/512/2508/2508673.png" alt="social medias" width="30" height="30"/></h1>
-<h1 align="center">I'm Samrat</h1>
+![logo](https://cdn-icons-png.flaticon.com/512/2949/2949142.png)
+<h1 align="center">Hi friends<img src="https://cdn-icons-png.flaticon.com/512/2508/2508673.png" alt="social medias" width="30" height="30"/>, I'm Samrat Kumar Das</h1>
 <h3 align="center">A passionate ML engineer looking for a opportunity to grab an internship.</h3>
 
 <p align="left">
@@ -124,6 +122,8 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 - Appointed as Campus Ambassador of IIT Madras : [Link](https://www.linkedin.com/posts/samrat-kumar-das-176731171_iitmadras-ecell-campusambassador-activity-7005795807807303681-A0zo?utm_source=share&utm_medium=member_desktop)
 
-- Finished at 2nd position in Entreprenuership Awarness Camp
+- Finished at 2nd position in Entrepreneurship Awareness Camp
+
+- Successfully completed Career Essentials in Software Development by Microsoft and LinkedIn from Microsoft : [Link](https://www.linkedin.com/posts/samrat-kumar-das-176731171_linkedinlearning-linkedin-microsoft-activity-7017184809009491969-BWMk?utm_source=share&utm_medium=member_desktop)
 
 </p>
