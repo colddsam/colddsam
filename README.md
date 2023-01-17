@@ -83,3 +83,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=sam00036&" alt="sam00036" />
 </p>
+<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/3087/3087061.png" alt="programming" width="18" height="18" /> Achivements:</h3>
+<p>
+- Appointed as Campus Ambassador of IIT Madras : [Link](https://www.linkedin.com/posts/samrat-kumar-das-176731171_iitmadras-ecell-campusambassador-activity-7005795807807303681-A0zo?utm_source=share&utm_medium=member_desktop)
+</p>
