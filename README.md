@@ -1,5 +1,4 @@
-![coverpic](https://user-images.githubusercontent.com/90477654/212963522-ee056043-d49a-473c-9071-89d1704a80e5.png)
-
+![Blue Modern Seo Marketer Profile Linkedin Banner](https://user-images.githubusercontent.com/90477654/213078928-5252e234-fd8c-4863-a98f-78d33339bcfc.png)
 <h1 align="center">Hi friends<img src="https://cdn-icons-png.flaticon.com/512/2508/2508673.png" alt="social medias" width="30" height="30"/>, I'm Samrat Kumar Das</h1>
 <h3 align="center">A passionate ML engineer looking for a opportunity to grab an internship.</h3>
 
@@ -31,18 +30,20 @@ Now I looking for an internship to applying and sharping my skills which I learn
 </p>
 <p align="left">
 <img align="right" alt="coding" height="250" src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
+  
+- 📃 My resume available at this [Link](https://github.com/Sam00036/Sam00036/files/10441972/Professional.Modern.CV.Resume.pdf)
 
 - 🔭 I’m currently working on [Making a virtual assistant](https://github.com/Sam00036/virtual-assistant.git)
 
-- 🌱 I’m currently learning **AI/ML, Front End**
+- 🌱 My present interest of learnings are **AI/ML, Front End**
 
-- 👨‍💻 All of my projects are available at [HERE](https://linktr.ee/colddsam?utm_source=linktree_profile_share&ltsid=2cda3886-be78-4ccf-a16a-3ef6943e4525)
+- 👨‍💻 All of my projects are available at [Here](https://linktr.ee/colddsam?utm_source=linktree_profile_share&ltsid=2cda3886-be78-4ccf-a16a-3ef6943e4525)
 
-- 💬 Ask me about: **AI/ML, Front End Development, DATA STRUCTURE**
+- 💬 Ask me about: **AI/ML, Front End Development, Data Structure**
 
 - 📫 To reach me just email at: **dassamratkumar772@gmail.com**
 
-- ⚡ Fun fact: **I am 99 % funny, 1% moody 😎**
+- ⚡ Self fact: **I believe the more we spread knowlege, the more we grow knowledge**
 </p>
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
