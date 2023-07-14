@@ -52,18 +52,6 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=colddsam)](https://github.com/Sam00036/github-readme-stats)
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=colddsam&theme=radical&no-frame=false&no-bg=false&margin-w=4)
-
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=colddsam&limit=5&theme=radical&combine_all_yearly_contributions=true)
-
----
-
-
 </p>
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/4413/4413543.png" alt="programming" width="18" height="18" /> Hard Skills:</h3>
 <p>
