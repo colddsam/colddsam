@@ -98,6 +98,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 - I participated in House of Hackers Hackathon organized by IIIT Ranchi: [Link](https://www.linkedin.com/posts/colddsam_connections-houseofhackers-iiitranchi-activity-7064083462122594305-LUdj?utm_source=share&utm_medium=member_desktop)
 </p>
+
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=colddsam&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/9423/9423116.png" alt="social medias" width="18" height="18" /> My social media handles:</h3>
 <p align="left">
 <a href="https://twitter.com/samratkumardas9" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/3670/3670127.png" alt="twitter" height="30"/></a>
