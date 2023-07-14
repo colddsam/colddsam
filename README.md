@@ -26,7 +26,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
   
 - 📃 My resume available at this [Link](https://github.com/Sam00036/Sam00036/files/10441972/Professional.Modern.CV.Resume.pdf)
 
-- 🔭 I’m currently working on [Making a virtual assistant](https://github.com/Sam00036/virtual-assistant.git)
+- 🔭 I’m currently working on [Making a flutter based application](https://github.com/Sam00036/virtual-assistant.git)
 
 - 🌱 My present interest of learnings are **AI/ML, Front End**
 
@@ -34,9 +34,9 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 - 💬 Ask me about: **AI/ML, Front End Development, Data Structure**
 
-- 📫 To reach me just email at: **dassamratkumar772@gmail.com**
+- 📫 To reach me just email at: **colddsam@gmail.com**
 
-- ⚡ Self fact: **I believe the more we spread knowlege, the more we grow knowledge**
+- ⚡ Self fact: **I believe the more we spread knowledge, the more we grow knowledge**
 </p>
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
@@ -50,16 +50,14 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=colddsam&theme=radical&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=colddsam)](https://github.com/Sam00036/github-readme-stats)
-
 </p>
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/4413/4413543.png" alt="programming" width="18" height="18" /> Hard Skills:</h3>
 <p>
 
-- Web Design
+- Web Designing
 - ML model building
 - Video Editing
-- Graphic Design
+- Graphic Designing
 - PR Management
 
 </p>
@@ -75,10 +73,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 </p>
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/9423/9423116.png" alt="social medias" width="18" height="18" /> My social media handles:</h3>
 <p align="left">
-<a href="https://twitter.com/samratkumardas9" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/3670/3670127.png" alt="twitter" height="30" /></a>
-<a href="https://www.linkedin.com/in/samrat-kumar-das-176731171/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/2504/2504923.png" alt="linkedin" height="30" /></a>
+<a href="https://twitter.com/samratkumardas9" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/3670/3670127.png" alt="twitter" height="30"/></a>
+<a href="https://www.linkedin.com/in/colddsam/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/2504/2504923.png" alt="linkedin" height="30" /></a>
 <a href="https://www.instagram.com/colddsam/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/3670/3670125.png" alt="instagram" height="30" /></a>
-<a href="https://www.facebook.com/bimalkumar.das.5876/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/2504/2504903.png" alt="facebook" height="30" /></a>
+<a href="https://www.facebook.com/colddsam/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/2504/2504903.png" alt="facebook" height="30" /></a>
 <a href="https://in.pinterest.com/colddsam/" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/2504/2504932.png" alt="pinterest" height="30" /></a>
 <a href="https://linktr.ee/colddsam?utm_source=linktree_profile_share&ltsid=ca51522f-66e1-4539-ba3b-4cd81c03b5b9" target="blank"><img align="center" src="https://cdn.dribbble.com/userupload/3007782/file/original-8f257cba713a7493c7fb30c5cbcb9e45.png?resize=1600x1200" alt="linktree" height="30" /></a>
 </p>
@@ -95,8 +93,6 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/6062/6062646.png" alt="programming" width="18" height="18" /> Programming Languages/Frameworks:</h3>
 <p align="left"> 
-<a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://cdn-icons-png.flaticon.com/512/2504/2504881.png" alt="android" height="30"/> </a> 
-<a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/04/the-seo-guide-to-angular.png" alt="angular" height="30"/> </a> 
 <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://content.arduino.cc/assets/arduino_logo_1200x630-01.png" alt="arduino" height="30"/> </a> 
 <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://cdn-icons-png.flaticon.com/512/3665/3665923.png" alt="c" height="30"/> </a> 
 <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="cplusplus" height="30"/> </a> 
@@ -122,6 +118,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 - Successfully completed Career Essentials in Software Development by Microsoft and LinkedIn from Microsoft : [Link](https://www.linkedin.com/posts/samrat-kumar-das-176731171_linkedinlearning-linkedin-microsoft-activity-7017184809009491969-BWMk?utm_source=share&utm_medium=member_desktop)
 
+- I participated in House of Hackers Hackathon organized by IIIT Ranchi: [Link](https://www.linkedin.com/posts/colddsam_connections-houseofhackers-iiitranchi-activity-7064083462122594305-LUdj?utm_source=share&utm_medium=member_desktop)
 </p>
 
   ## 💰 You can help me by Donating
