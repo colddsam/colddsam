@@ -2,9 +2,14 @@
 <h1 align="center">Hi friends<img src="https://cdn-icons-png.flaticon.com/512/2508/2508673.png" alt="social medias" width="30" height="30"/>, I'm Samrat Kumar Das</h1>
 <h3 align="center">A passionate ML engineer looking for a opportunity to grab an internship.</h3>
 
+---
+<br>
+
 [![](https://visitcount.itsvg.in/api?id=colddsam&icon=6&color=0)](https://visitcount.itsvg.in)
 
 <h3><img src="https://cdn-icons-png.flaticon.com/512/9387/9387669.png" alt="about" width="18" height="18" /> About:</h3>
+
+---
 Hi, I'm Samrat Kumar Das from Kolkata, West Bengal.<br>
 I'm in 3rd year of my BTech degree in Electronics and Communication Engineering which I pursuing from Narula Institute of Technology.<br>
 I belive nothing is impossible if you think it possible.<br>
@@ -15,6 +20,8 @@ Now I looking for an internship to applying and sharping my skills which I learn
 <a href="https://twitter.com/samratkumardas9" target="blank"><img src="https://img.shields.io/twitter/follow/samratkumardas9?logo=twitter&style=for-the-badge" alt="sam00036" /></a> 
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2949/2949142.png" alt="Spotify" width="18" height="18" /> Currently Listening:</h3>
+
+---
 
 [![Spotify](https://novatorem-zeta-seven.vercel.app/api/spotify)](https://open.spotify.com/user/4uyys269cpo9e8ddgcc3kcxov)
 
@@ -120,6 +127,17 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 - I participated in House of Hackers Hackathon organized by IIIT Ranchi: [Link](https://www.linkedin.com/posts/colddsam_connections-houseofhackers-iiitranchi-activity-7064083462122594305-LUdj?utm_source=share&utm_medium=member_desktop)
 </p>
+
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+
+### 🔝 Top Contributed Repo
+
+---
+
+![](https://github-contributor-stats.vercel.app/api?username=colddsam&limit=5&theme=radical&combine_all_yearly_contributions=true)
+
+
 
   ## 💰 You can help me by Donating
   [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/buymeacoffee.com/colddsam) 
