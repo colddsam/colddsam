@@ -27,6 +27,8 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 <h3><img src="https://cdn-icons-png.flaticon.com/512/4108/4108210.png" alt="social medias" width="20" height="20"/> Facts: </h3>
 
+---
+
 </p>
 <p align="left">
 <img align="right" alt="coding" height="250" src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
@@ -47,6 +49,8 @@ Now I looking for an internship to applying and sharping my skills which I learn
 </p>
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
+
+---
 
 <p align="left">
 
@@ -77,6 +81,22 @@ Now I looking for an internship to applying and sharping my skills which I learn
 - Problem solving
 - Critical Thinking
 
+</p>
+
+<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/3087/3087061.png" alt="programming" width="18" height="18" /> Achivements:</h3>
+<p>
+
+---
+
+<img alt="coding" height="250" src="https://i.pinimg.com/originals/88/40/b8/8840b8d2c07bf805cdab22c0e4b54f59.gif">
+
+- Appointed as Campus Ambassador of IIT Madras : [Link](https://www.linkedin.com/posts/samrat-kumar-das-176731171_iitmadras-ecell-campusambassador-activity-7005795807807303681-A0zo?utm_source=share&utm_medium=member_desktop)
+
+- Finished at 2nd position in Entrepreneurship Awareness Camp
+
+- Successfully completed Career Essentials in Software Development by Microsoft and LinkedIn from Microsoft : [Link](https://www.linkedin.com/posts/samrat-kumar-das-176731171_linkedinlearning-linkedin-microsoft-activity-7017184809009491969-BWMk?utm_source=share&utm_medium=member_desktop)
+
+- I participated in House of Hackers Hackathon organized by IIIT Ranchi: [Link](https://www.linkedin.com/posts/colddsam_connections-houseofhackers-iiitranchi-activity-7064083462122594305-LUdj?utm_source=share&utm_medium=member_desktop)
 </p>
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/9423/9423116.png" alt="social medias" width="18" height="18" /> My social media handles:</h3>
 <p align="left">
@@ -113,19 +133,6 @@ Now I looking for an internship to applying and sharping my skills which I learn
 <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="python" height="30"/> </a> 
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://www.webrexstudio.com/wp-content/uploads/2019/05/react-js-image.png" alt="react" height="30"/> </a> 
 <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.png" alt="tensorflow" height="30"/> </a> 
-</p>
-<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/3087/3087061.png" alt="programming" width="18" height="18" /> Achivements:</h3>
-<p>
-
-<img alt="coding" height="250" src="https://i.pinimg.com/originals/88/40/b8/8840b8d2c07bf805cdab22c0e4b54f59.gif">
-
-- Appointed as Campus Ambassador of IIT Madras : [Link](https://www.linkedin.com/posts/samrat-kumar-das-176731171_iitmadras-ecell-campusambassador-activity-7005795807807303681-A0zo?utm_source=share&utm_medium=member_desktop)
-
-- Finished at 2nd position in Entrepreneurship Awareness Camp
-
-- Successfully completed Career Essentials in Software Development by Microsoft and LinkedIn from Microsoft : [Link](https://www.linkedin.com/posts/samrat-kumar-das-176731171_linkedinlearning-linkedin-microsoft-activity-7017184809009491969-BWMk?utm_source=share&utm_medium=member_desktop)
-
-- I participated in House of Hackers Hackathon organized by IIIT Ranchi: [Link](https://www.linkedin.com/posts/colddsam_connections-houseofhackers-iiitranchi-activity-7064083462122594305-LUdj?utm_source=share&utm_medium=member_desktop)
 </p>
 
 ### ✍️ Random Dev Quote
