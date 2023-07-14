@@ -1,11 +1,10 @@
 ![Blue Modern Seo Marketer Profile Linkedin Banner](https://user-images.githubusercontent.com/90477654/213078928-5252e234-fd8c-4863-a98f-78d33339bcfc.png)
 
 ---
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Roboto&weight=900&size=30&pause=1000&vCenter=true&width=435&lines=Hi+Friends+%F0%9F%A4%99;I+am+Samrat+Kumar+Das+%F0%9F%A4%98)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Roboto&weight=900&size=30&pause=1000&vCenter=true&width=435&lines=Hi+Developers+%F0%9F%A4%99;I+am+Samrat+Kumar+Das+%F0%9F%A4%98)](https://git.io/typing-svg)
  <h3 align="left">A passionate ML engineer looking for a opportunity to grab an internship.</h3>
 
-[![](https://visitcount.itsvg.in/api?id=colddsam&icon=6&color=0)](https://visitcount.itsvg.in)
-<a href="https://twitter.com/samratkumardas9" target="blank"><img src="https://img.shields.io/twitter/follow/samratkumardas9?logo=twitter&style=for-the-badge" alt="sam00036" /></a> 
+[![](https://visitcount.itsvg.in/api?id=colddsam&icon=6&color=0)](https://visitcount.itsvg.in)<p align="left"> <a href="https://twitter.com/samratkumardas9" target="blank"><img src="https://img.shields.io/twitter/follow/samratkumardas9?logo=twitter&style=for-the-badge" alt="samratkumardas9" /></a> </p>
 
 <h3><img src="https://cdn-icons-png.flaticon.com/512/9387/9387669.png" alt="about" width="18" height="18" /> About:</h3>
 
