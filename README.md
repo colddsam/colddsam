@@ -2,22 +2,15 @@
 <h1 align="center">Hi friends<img src="https://cdn-icons-png.flaticon.com/512/2508/2508673.png" alt="social medias" width="30" height="30"/>, I'm Samrat Kumar Das</h1>
 <h3 align="center">A passionate ML engineer looking for a opportunity to grab an internship.</h3>
 
-<p align="left">
-<img src="https://komarev.com/ghpvc/?username=sam00036&label=Profile%20views&color=0e75b6&style=social" alt="sam00036" />
-<img alt="GitHub followers" src="https://img.shields.io/github/followers/Sam00036?style=social">
-</p>
-<p align="left">
-<img alt="welcome" height="250" src="https://cdn.dribbble.com/users/5246919/screenshots/11915912/media/f7b14b34de780768f18b37cce2431b0b.gif"><br>
+[![](https://visitcount.itsvg.in/api?id=colddsam&icon=6&color=0)](https://visitcount.itsvg.in)
 
 <h3><img src="https://cdn-icons-png.flaticon.com/512/9387/9387669.png" alt="about" width="18" height="18" /> About:</h3>
 Hi, I'm Samrat Kumar Das from Kolkata, West Bengal.<br>
-I'm in 2nd year of my BTech degree in Electronics and Communication Engineering which I pursuing from Narula Institute of Technology.<br>
+I'm in 3rd year of my BTech degree in Electronics and Communication Engineering which I pursuing from Narula Institute of Technology.<br>
 I belive nothing is impossible if you think it possible.<br>
 Currently I'm enhancing my skills in Machine Learning and Front End Development with which I want to proceed further. I love to work as a team and collaborate in open sources.<br>
 Now I looking for an internship to applying and sharping my skills which I learning from my college and from my personal works.
 </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sam00036" alt="sam00036" /></a>
 
 <a href="https://twitter.com/samratkumardas9" target="blank"><img src="https://img.shields.io/twitter/follow/samratkumardas9?logo=twitter&style=for-the-badge" alt="sam00036" /></a> 
 
@@ -50,13 +43,26 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 <p align="left">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=sam00036&show_icons=true&locale=en&layout=compact" alt="sam00036" /><br>
+![](https://github-readme-stats.vercel.app/api?username=colddsam&theme=radical&hide_border=false&include_all_commits=false&count_private=false)<br/>
 
-<img src="https://github-readme-stats.vercel.app/api?username=sam00036&show_icons=true&locale=en" alt="sam00036" /><br>
+![](https://github-readme-streak-stats.herokuapp.com/?user=colddsam&theme=radical&hide_border=false)<br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=sam00036&" alt="sam00036" />
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=colddsam&theme=radical&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+
 
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=colddsam)](https://github.com/Sam00036/github-readme-stats)
+
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=colddsam&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=colddsam&limit=5&theme=radical&combine_all_yearly_contributions=true)
+
+---
+
 
 </p>
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/4413/4413543.png" alt="programming" width="18" height="18" /> Hard Skills:</h3>
@@ -129,3 +135,6 @@ Now I looking for an internship to applying and sharping my skills which I learn
 - Successfully completed Career Essentials in Software Development by Microsoft and LinkedIn from Microsoft : [Link](https://www.linkedin.com/posts/samrat-kumar-das-176731171_linkedinlearning-linkedin-microsoft-activity-7017184809009491969-BWMk?utm_source=share&utm_medium=member_desktop)
 
 </p>
+
+  ## 💰 You can help me by Donating
+  [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/buymeacoffee.com/colddsam) 
