@@ -30,7 +30,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 <p align="left">
 <img align="right" alt="coding" height="250" src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
   
-- 📃 My resume available at this [Link](https://github.com/Sam00036/Sam00036/files/10441972/Professional.Modern.CV.Resume.pdf)
+- 📃 My resume available at this [Link](https://drive.google.com/file/d/1PdT7z_OTmuz3gs02nRsrAx9_efc6rstA/view?usp=sharing)
 
 - 🔭 I’m currently working on [Making a flutter based application](https://github.com/Sam00036/virtual-assistant.git)
 
