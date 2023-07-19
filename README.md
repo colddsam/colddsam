@@ -144,8 +144,6 @@ Now I looking for an internship to applying and sharping my skills which I learn
 <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.png" alt="tensorflow" height="30"/> </a> 
 </p>
 
-![snake gif](https://github.com/colddsam/colddsam/blob/output/github-contribution-grid-snake.gif)
-
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
@@ -155,7 +153,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 ![](https://github-contributor-stats.vercel.app/api?username=colddsam&limit=5&theme=radical&combine_all_yearly_contributions=true)
 
-
+![snake gif](https://github.com/colddsam/colddsam/blob/output/github-contribution-grid-snake.svg)
 
   ## 💰 You can help me by Donating
   [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/buymeacoffee.com/colddsam) 
