@@ -47,6 +47,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 ### Blogs posts
 <!-- Latest-blog-post:START -->
+- [Understanding the ResNet Architecture: Revolutionizing Deep Learning](https://medium.com/@colddsam/understanding-the-resnet-architecture-revolutionizing-deep-learning-9c832fbdf855?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
