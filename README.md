@@ -146,8 +146,6 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 <img src="https://raw.githubusercontent.com/colddsam/colddsam/output/snake.svg" alt="Snake animation" />
 
-###
-
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
