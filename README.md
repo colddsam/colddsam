@@ -45,6 +45,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 - ⚡ Self fact: **I believe the more we spread knowledge, the more we grow knowledge**
 </p>
 
+### Blogs posts
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
+
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
 
 ---
