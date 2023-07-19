@@ -144,7 +144,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.png" alt="tensorflow" height="30"/> </a> 
 </p>
 
-<img src="https://raw.githubusercontent.com/colddsam/colddsam/output/snake.svg" alt="Snake animation" />
+![snake gif](https://github.com/colddsam/colddsam/blob/output/github-contribution-grid-snake.gif)
 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
