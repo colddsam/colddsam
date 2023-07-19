@@ -46,8 +46,8 @@ Now I looking for an internship to applying and sharping my skills which I learn
 </p>
 
 ### Blogs posts
-<!-- Latest blog posts:START -->
-<!-- Latest blog posts:END -->
+<!-- Latest-blog-post:START -->
+<!-- Latest-blog-post:END -->
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
 
