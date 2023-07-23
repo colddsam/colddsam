@@ -50,10 +50,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ---
 
 <!-- Latest-blog-post:START -->
+- [Exploring the World of Arduino Programming in Visual Studio Code](https://colddsam.medium.com/exploring-the-world-of-arduino-programming-in-visual-studio-code-bbcb4af982e7?source=rss-1f3fff14ffdd------2)
 - [Harnessing the Quantum Potential: A Journey into Quantum Computing with Python](https://colddsam.medium.com/harnessing-the-quantum-potential-a-journey-into-quantum-computing-with-python-8343fb574c6e?source=rss-1f3fff14ffdd------2)
 - [C — Mother of All Programming Languages](https://colddsam.medium.com/c-mother-of-all-programming-languages-d4e107becf68?source=rss-1f3fff14ffdd------2)
 - [Python vs R: Choosing the Right Tool for Data Science and Analytics](https://colddsam.medium.com/python-vs-r-choosing-the-right-tool-for-data-science-and-analytics-27c4d72e9753?source=rss-1f3fff14ffdd------2)
-- [Understanding the ResNet Architecture: Revolutionizing Deep Learning](https://colddsam.medium.com/understanding-the-resnet-architecture-revolutionizing-deep-learning-9c832fbdf855?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
