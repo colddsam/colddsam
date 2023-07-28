@@ -50,10 +50,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ---
 
 <!-- Latest-blog-post:START -->
+- [Enhancing Genetic Engineering through Machine Learning: Unleashing the Power of AI](https://colddsam.medium.com/enhancing-genetic-engineering-through-machine-learning-unleashing-the-power-of-ai-d0745b41b367?source=rss-1f3fff14ffdd------2)
 - [Building an Effective Stock Prediction Model Using Machine Learning](https://colddsam.medium.com/building-an-effective-stock-prediction-model-using-machine-learning-3380c7925fb0?source=rss-1f3fff14ffdd------2)
 - [Enhancing Democracy: The Transformative Role of Machine Learning in Public Voting](https://colddsam.medium.com/enhancing-democracy-the-transformative-role-of-machine-learning-in-public-voting-7f20d3501891?source=rss-1f3fff14ffdd------2)
 - [My Journey with C: Writing My First Program](https://colddsam.medium.com/my-journey-with-c-writing-my-first-program-7571335f1270?source=rss-1f3fff14ffdd------2)
-- [Pioneering Space Exploration with Machine Learning: Enhancing the Future of the Space Industry](https://colddsam.medium.com/pioneering-space-exploration-with-machine-learning-enhancing-the-future-of-the-space-industry-e159ae7d6e32?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
