@@ -50,10 +50,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ---
 
 <!-- Latest-blog-post:START -->
+- [A Step-by-Step Guide to Creating Generative AI: Unleashing Creativity through Technology](https://colddsam.medium.com/a-step-by-step-guide-to-creating-generative-ai-unleashing-creativity-through-technology-6c5ed05cfbd4?source=rss-1f3fff14ffdd------2)
 - [Google I/O 2023: A Look into the Future of Technology](https://colddsam.medium.com/google-i-o-2023-a-look-into-the-future-of-technology-65b7fc99e771?source=rss-1f3fff14ffdd------2)
 - [Unleashing the Power of Python: A Comprehensive Journey into the World of Programming](https://colddsam.medium.com/unleashing-the-power-of-python-a-comprehensive-journey-into-the-world-of-programming-29d8bb255386?source=rss-1f3fff14ffdd------2)
 - [Enhancing Genetic Engineering through Machine Learning: Unleashing the Power of AI](https://colddsam.medium.com/enhancing-genetic-engineering-through-machine-learning-unleashing-the-power-of-ai-d0745b41b367?source=rss-1f3fff14ffdd------2)
-- [Building an Effective Stock Prediction Model Using Machine Learning](https://colddsam.medium.com/building-an-effective-stock-prediction-model-using-machine-learning-3380c7925fb0?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
