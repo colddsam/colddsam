@@ -50,10 +50,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ---
 
 <!-- Latest-blog-post:START -->
+- [The Memory-Hungry Beast: Chrome’s Memory Consumption on PCs](https://colddsam.medium.com/the-memory-hungry-beast-chromes-memory-consumption-on-pcs-2f2535b94697?source=rss-1f3fff14ffdd------2)
 - [Exploring the Power and Versatility of the Java Language](https://colddsam.medium.com/exploring-the-power-and-versatility-of-the-java-language-acc4c9ecdfd3?source=rss-1f3fff14ffdd------2)
 - [The Surprising and Practical Uses of Competitive Programming in Daily Life](https://colddsam.medium.com/the-surprising-and-practical-uses-of-competitive-programming-in-daily-life-1393743a5362?source=rss-1f3fff14ffdd------2)
 - [How AI Revolutionizes Travel: Making Your Journey Smart and Seamless](https://colddsam.medium.com/how-ai-revolutionizes-travel-making-your-journey-smart-and-seamless-a9115cf4f71f?source=rss-1f3fff14ffdd------2)
-- [Decoding the Art of Cricket Score Prediction: Unraveling the Game’s Unpredictable Nature](https://colddsam.medium.com/decoding-the-art-of-cricket-score-prediction-unraveling-the-games-unpredictable-nature-8fa976ee06ab?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
