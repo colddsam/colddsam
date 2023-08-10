@@ -50,10 +50,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ---
 
 <!-- Latest-blog-post:START -->
+- [Decoding Google’s Market Strategy: A Blueprint for Success](https://colddsam.medium.com/decoding-googles-market-strategy-a-blueprint-for-success-c4e9094b5631?source=rss-1f3fff14ffdd------2)
 - [Exploring the Harmonies: Audio Synthesis Using Machine Learning](https://colddsam.medium.com/exploring-the-harmonies-audio-synthesis-using-machine-learning-8f72c13a0e2b?source=rss-1f3fff14ffdd------2)
 - [Revolutionizing Industries: How AI is Transforming Production Rates](https://colddsam.medium.com/revolutionizing-industries-how-ai-is-transforming-production-rates-ccf9092aa01d?source=rss-1f3fff14ffdd------2)
 - [Harnessing the Power of Ensemble Learning: A Guide to Effective Implementation](https://colddsam.medium.com/harnessing-the-power-of-ensemble-learning-a-guide-to-effective-implementation-c598caeb5f48?source=rss-1f3fff14ffdd------2)
-- [The Memory-Hungry Beast: Chrome’s Memory Consumption on PCs](https://colddsam.medium.com/the-memory-hungry-beast-chromes-memory-consumption-on-pcs-2f2535b94697?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
