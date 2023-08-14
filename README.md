@@ -50,10 +50,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ---
 
 <!-- Latest-blog-post:START -->
+- [Revolutionizing the Entertainment Industry: How AI is Transforming OTT Platforms](https://colddsam.medium.com/revolutionizing-the-entertainment-industry-how-ai-is-transforming-ott-platforms-1c1b101b8d24?source=rss-1f3fff14ffdd------2)
 - [Predicting Football Match Outcomes with Machine Learning: A Deep Dive](https://colddsam.medium.com/predicting-football-match-outcomes-with-machine-learning-a-deep-dive-c7534c863968?source=rss-1f3fff14ffdd------2)
 - [Getting Started with TensorFlow.js in JavaScript](https://colddsam.medium.com/getting-started-with-tensorflow-js-in-javascript-a76713179a1d?source=rss-1f3fff14ffdd------2)
 - [Harnessing AI for Efficient Ventilation Control](https://colddsam.medium.com/harnessing-ai-for-efficient-ventilation-control-12e6d6642c2e?source=rss-1f3fff14ffdd------2)
-- [Decoding Google’s Market Strategy: A Blueprint for Success](https://colddsam.medium.com/decoding-googles-market-strategy-a-blueprint-for-success-c4e9094b5631?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
