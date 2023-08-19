@@ -50,10 +50,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ---
 
 <!-- Latest-blog-post:START -->
+- [Revolutionizing River Water Control through AI: A Sustainable Approach](https://colddsam.medium.com/revolutionizing-river-water-control-through-ai-a-sustainable-approach-58e0c7481b9f?source=rss-1f3fff14ffdd------2)
 - [Accessing Excel Files in Python: A Comprehensive Guide](https://colddsam.medium.com/accessing-excel-files-in-python-a-comprehensive-guide-d26403a7d00e?source=rss-1f3fff14ffdd------2)
 - [Harnessing the Power of AI to Drive Startup Success](https://colddsam.medium.com/harnessing-the-power-of-ai-to-drive-startup-success-86afb3ba34?source=rss-1f3fff14ffdd------2)
 - [Unveiling Tomorrow: AI’s Role in Future Predictions](https://colddsam.medium.com/unveiling-tomorrow-ais-role-in-future-predictions-1e1c9c8982b6?source=rss-1f3fff14ffdd------2)
-- [Revolutionizing Semiconductor Production through Chemical Engineering](https://colddsam.medium.com/revolutionizing-semiconductor-production-through-chemical-engineering-d4014e581219?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
