@@ -50,10 +50,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ---
 
 <!-- Latest-blog-post:START -->
+- [Turning Waste into Power: Producing Electricity from Wasted Food](https://colddsam.medium.com/turning-waste-into-power-producing-electricity-from-wasted-food-422066906280?source=rss-1f3fff14ffdd------2)
 - [Illuminating Justice: The Transformative Power of Computer Vision in the Judiciary System](https://colddsam.medium.com/illuminating-justice-the-transformative-power-of-computer-vision-in-the-judiciary-system-3254ced5e4c8?source=rss-1f3fff14ffdd------2)
 - [Exploring the Convenience and Security of the “Find My Device” System](https://colddsam.medium.com/exploring-the-convenience-and-security-of-the-find-my-device-system-181b9415461d?source=rss-1f3fff14ffdd------2)
 - [Exploring the Power of Reinforcement Learning: From Theory to Real-World Impact](https://colddsam.medium.com/exploring-the-power-of-reinforcement-learning-from-theory-to-real-world-impact-43a0c49efc5?source=rss-1f3fff14ffdd------2)
-- [ASUR: Exploring the Parallels Between a Hindi Web Series and the Evolution of AI](https://colddsam.medium.com/asur-exploring-the-parallels-between-a-hindi-web-series-and-the-evolution-of-ai-7b5a81f9f349?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
