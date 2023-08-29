@@ -50,10 +50,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ---
 
 <!-- Latest-blog-post:START -->
+- [Trending Project Ideas for College Students in 2023](https://colddsam.medium.com/trending-project-ideas-for-college-students-in-2023-ebfb0267d8e9?source=rss-1f3fff14ffdd------2)
 - [Navigating Democratic Relations Between Countries: A Retrospective from 2000](https://colddsam.medium.com/navigating-democratic-relations-between-countries-a-retrospective-from-2000-7e2beaa18597?source=rss-1f3fff14ffdd------2)
 - [Mastering Soccer with Reinforcement Learning: A Winning Strategy](https://colddsam.medium.com/mastering-soccer-with-reinforcement-learning-a-winning-strategy-9dfd2bcc0e46?source=rss-1f3fff14ffdd------2)
 - [The Essential Need for YAML Files in Modern Software Development](https://colddsam.medium.com/the-essential-need-for-yaml-files-in-modern-software-development-de8ad6a7c520?source=rss-1f3fff14ffdd------2)
-- [Navigating the IT Industry: Essential Ingredients for Success](https://colddsam.medium.com/navigating-the-it-industry-essential-ingredients-for-success-4507e11c02b4?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
