@@ -53,15 +53,11 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 ## 📊 My GitHub Stats :
 
-<p align="left">
-
 ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=colddsam&theme=radical)<br/>
 
-![](https://github-readme-streak-stats.herokuapp.com/?user=colddsam&theme=radical&hide_border=false)<br/>
+![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=colddsam&theme=radical)<br/>
 
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=colddsam&theme=radical&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-
-</p>
 
 ## 🏆 Achievements :
 
