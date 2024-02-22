@@ -101,7 +101,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 ## 3D Graph : 
 
-![](./profile-3d-contrib/profile-green-animate.svg)
+![](./profile-3d-contrib/profile-night-green.svg)
 
 ## 🏆 GitHub Trophies
 
