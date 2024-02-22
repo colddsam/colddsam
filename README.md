@@ -1,14 +1,16 @@
 ![Blue Modern Seo Marketer Profile Linkedin Banner](https://user-images.githubusercontent.com/90477654/213078928-5252e234-fd8c-4863-a98f-78d33339bcfc.png)
 
 ---
+
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Roboto&weight=900&size=30&pause=1000&vCenter=true&width=435&lines=Hi+Developers+%F0%9F%A4%99;I+am+Samrat+Kumar+Das+%F0%9F%A4%98)](https://git.io/typing-svg)
+
  <h3 align="left">A passionate ML engineer looking for a opportunity to grab an internship.</h3>
 
-[![](https://visitcount.itsvg.in/api?id=colddsam&icon=6&color=0)](https://visitcount.itsvg.in)<p align="left"> <a href="https://twitter.com/samratkumardas9" target="blank"><img src="https://img.shields.io/twitter/follow/samratkumardas9?logo=twitter&style=for-the-badge" alt="samratkumardas9" /></a> </p>
+[![](https://visitcount.itsvg.in/api?id=colddsam&icon=6&color=0)](https://visitcount.itsvg.in)<p align="left"> <a href="https://twitter.com/colddsam" target="blank"><img src="https://img.shields.io/twitter/follow/colddsam?logo=twitter&style=for-the-badge" alt="samratkumardas9" /></a> </p>
 
-<h3><img src="https://cdn-icons-png.flaticon.com/512/9387/9387669.png" alt="about" width="18" height="18" /> About:</h3>
+## 🤓 About :
 
----
+<p>
 Hi, I'm Samrat Kumar Das from Kolkata, West Bengal.<br>
 I'm in 3rd year of my BTech degree in Electronics and Communication Engineering which I pursuing from Narula Institute of Technology.<br>
 I belive nothing is impossible if you think it possible.<br>
@@ -16,23 +18,17 @@ Currently I'm enhancing my skills in Machine Learning and Front End Development 
 Now I looking for an internship to applying and sharping my skills which I learning from my college and from my personal works.
 </p>
 
-<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2949/2949142.png" alt="Spotify" width="18" height="18" /> Currently Listening:</h3>
+<img align="center" alt="coding" width="100%" height="10%"  src="./gihub push/fact.gif">
 
----
+## Tech Stacks :
 
-[![Spotify](https://novatorem-zeta-seven.vercel.app/api/spotify)](https://open.spotify.com/user/4uyys269cpo9e8ddgcc3kcxov)
+## 👽 Facts :
 
-<h3><img src="https://cdn-icons-png.flaticon.com/512/4108/4108210.png" alt="social medias" width="20" height="20"/> Facts: </h3>
-
----
-
-</p>
 <p align="left">
-<img align="right" alt="coding" height="250" src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
-  
+
 - 📃 My resume available at this [Link](https://drive.google.com/file/d/1PdT7z_OTmuz3gs02nRsrAx9_efc6rstA/view?usp=sharing)
 
-- 🔭 I’m currently working on [Making a flutter based application](https://github.com/Sam00036/virtual-assistant.git)
+- 🔭 I’m currently working on [Making a flutter based application](https://github.com/colddsam/virtual-assistant.git)
 
 - 🌱 My present interest of learnings are **AI/ML, Front End**
 
@@ -45,58 +41,33 @@ Now I looking for an internship to applying and sharping my skills which I learn
 - ⚡ Self fact: **I believe the more we spread knowledge, the more we grow knowledge**
 </p>
 
-<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/128/6114/6114045.png" alt="social medias" width="18" height="18" /> My Blogs:</h3>
-
----
+## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+
 - [Building a Sign Language Detection System with MediaPipe: Bridging Python and JavaScript](https://colddsam.medium.com/building-a-sign-language-detection-system-with-mediapipe-bridging-python-and-javascript-8a5f50818dbb?source=rss-1f3fff14ffdd------2)
 - [FastAPI vs Flask: Choosing the Right Python Framework for Web Services](https://colddsam.medium.com/fastapi-vs-flask-choosing-the-right-python-framework-for-web-services-dd9a030cd59d?source=rss-1f3fff14ffdd------2)
 - [Trending Project Ideas for College Students in 2023](https://colddsam.medium.com/trending-project-ideas-for-college-students-in-2023-ebfb0267d8e9?source=rss-1f3fff14ffdd------2)
 - [Navigating Democratic Relations Between Countries: A Retrospective from 2000](https://colddsam.medium.com/navigating-democratic-relations-between-countries-a-retrospective-from-2000-7e2beaa18597?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
-<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2041/2041643.png" alt="social medias" width="18" height="18" /> My GitHub Stats:</h3>
-
----
+## 📊 My GitHub Stats :
 
 <p align="left">
 
-![](https://github-readme-stats.vercel.app/api?username=colddsam&theme=radical&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=colddsam&theme=radical)<br/>
 
 ![](https://github-readme-streak-stats.herokuapp.com/?user=colddsam&theme=radical&hide_border=false)<br/>
 
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=colddsam&theme=radical&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
-
-</p>
-<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/4413/4413543.png" alt="programming" width="18" height="18" /> Hard Skills:</h3>
-<p>
-
-- Web Designing
-- ML model building
-- Video Editing
-- Graphic Designing
-- PR Management
-
-</p>
-<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/9192/9192463.png" alt="programming" width="18" height="18" /> Soft Skills:</h3>
-<p>
-
-- Communication Skill
-- Leadership skill
-- Quick Learning ability
-- Problem solving
-- Critical Thinking
-
 </p>
 
-<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/3087/3087061.png" alt="programming" width="18" height="18" /> Achivements:</h3>
+## 🏆 Achievements :
+
 <p>
 
----
-
-<img alt="coding" height="250" src="https://i.pinimg.com/originals/88/40/b8/8840b8d2c07bf805cdab22c0e4b54f59.gif">
+<img alt="coding" width="100%" src="https://i.pinimg.com/originals/88/40/b8/8840b8d2c07bf805cdab22c0e4b54f59.gif">
 
 - Appointed as Campus Ambassador of IIT Madras : [Link](https://www.linkedin.com/posts/samrat-kumar-das-176731171_iitmadras-ecell-campusambassador-activity-7005795807807303681-A0zo?utm_source=share&utm_medium=member_desktop)
 
@@ -107,7 +78,20 @@ Now I looking for an internship to applying and sharping my skills which I learn
 - I participated in House of Hackers Hackathon organized by IIIT Ranchi: [Link](https://www.linkedin.com/posts/colddsam_connections-houseofhackers-iiitranchi-activity-7064083462122594305-LUdj?utm_source=share&utm_medium=member_desktop)
 </p>
 
+<h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2949/2949142.png" alt="Spotify" width="18" height="18" /> Currently Listening:</h3>
+
+---
+
+[![Spotify](https://novatorem-zeta-seven.vercel.app/api/spotify)](https://open.spotify.com/user/4uyys269cpo9e8ddgcc3kcxov)
+
+## 😁 Random Dev Jokes :
+
+<!-- Markdown -->
+
+![Jokes Card](https://readme-jokes.vercel.app/api?theme=radical)
+
 ## 🏆 GitHub Trophies
+
 ![](https://github-profile-trophy.vercel.app/?username=colddsam&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/9423/9423116.png" alt="social medias" width="18" height="18" /> My social media handles:</h3>
@@ -148,6 +132,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 </p>
 
 ### ✍️ Random Dev Quote
+
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 ### 🔝 Top Contributed Repo
@@ -158,5 +143,6 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 ![snake gif](https://github.com/colddsam/colddsam/blob/output/github-contribution-grid-snake.svg)
 
-  ## 💰 You can help me by Donating
-  [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/buymeacoffee.com/colddsam) 
+## 💰 You can help me by Donating
+
+[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/buymeacoffee.com/colddsam)
