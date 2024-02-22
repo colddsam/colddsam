@@ -54,7 +54,6 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 <!--START_SECTION:activity-->
 
-<!--END_SECTION:activity-->
 
 ## 📊 My GitHub Stats :
 
