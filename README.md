@@ -53,6 +53,9 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ### 🗣 My activity:
 
 <!--START_SECTION:activity-->
+1. 🎉 Merged PR [#2](https://github.com/colddsam/I-hate-coding/pull/2) in [colddsam/I-hate-coding](https://github.com/colddsam/I-hate-coding)
+2. 🎉 Merged PR [#1](https://github.com/colddsam/I-hate-coding/pull/1) in [colddsam/I-hate-coding](https://github.com/colddsam/I-hate-coding)
+<!--END_SECTION:activity-->
 
 
 ## 📊 My GitHub Stats :
