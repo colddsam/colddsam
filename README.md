@@ -52,14 +52,9 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 ### 🗣 My activity:
 
-<!--GITHUB_ACTIVITY:{"rows": 5}-->
+<!--START_SECTION:activity-->
 
----
-
-<p align="center">
-  Last refresh: 
-  <b><!--TIMESTAMP--></b>
-</p>
+<!--END_SECTION:activity-->
 
 ## 📊 My GitHub Stats :
 
