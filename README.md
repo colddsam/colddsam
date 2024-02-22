@@ -51,6 +51,17 @@ Now I looking for an internship to applying and sharping my skills which I learn
 - [Navigating Democratic Relations Between Countries: A Retrospective from 2000](https://colddsam.medium.com/navigating-democratic-relations-between-countries-a-retrospective-from-2000-7e2beaa18597?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
+### 🗣 My activity:
+
+<!--GITHUB_ACTIVITY:{"rows": 5}-->
+
+---
+
+<p align="center">
+  Last refresh: 
+  <b><!--TIMESTAMP--></b>
+</p>
+
 ## 📊 My GitHub Stats :
 
 ![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=colddsam&theme=radical)<br/>
@@ -152,7 +163,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 ![](https://github-contributor-stats.vercel.app/api?username=colddsam&limit=5&theme=radical&combine_all_yearly_contributions=true)
 
-## 🐍 Let's Play With Snake : 
+## 🐍 Let's Play With Snake :
 
 ![snake gif](https://github.com/colddsam/colddsam/blob/output/github-contribution-grid-snake.svg)
 
