@@ -53,21 +53,15 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 ## 📊 My GitHub Stats :
 
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-    <div>
-        <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=colddsam&theme=radical" alt="GitHub Profile Details">
-    </div>
-    <div>
-        <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=colddsam&theme=radical" alt="GitHub Stats">
-    </div>
-    <div>
-        <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=colddsam&theme=radical" alt="Repos per Language">
-    </div>
-    <div>
-        <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=colddsam&theme=radical" alt="Most Commit Language">
-    </div>
-</div>
+![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=colddsam&theme=radical)<br/>
 
+![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=colddsam&theme=radical)<br/>
+
+![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=colddsam&theme=radical)
+
+![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=colddsam&theme=radical)
+
+![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=colddsam&theme=radical&utcOffset=330)
 
 ## 🏆 Achievements :
 
