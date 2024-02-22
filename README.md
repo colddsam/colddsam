@@ -53,21 +53,23 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 ## 📊 My GitHub Stats :
 
-![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=colddsam&theme=radical)<br/>
 
 ![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=colddsam&theme=radical)<br/>
 
-![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=colddsam&theme=radical)
 
-![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=colddsam&theme=radical)
+![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=colddsam&theme=radical)<br/>
 
-![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=colddsam&theme=radical&utcOffset=330)
+![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=colddsam&theme=radical)<br/>
+
+![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=colddsam&theme=radical&utcOffset=5.30)<br/>
+
+![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=colddsam&theme=radical)<br/>
 
 ## 🏆 Achievements :
 
 <p>
 
-<img alt="coding" width="100%" src="https://i.pinimg.com/originals/88/40/b8/8840b8d2c07bf805cdab22c0e4b54f59.gif">
+<img alt="coding" width="100%" src="https://i.pinimg.com/originals/88/40/b8/8840b8d2c07bf805cdab22c0e4b54f59.gif"><br/>
 
 - Appointed as Campus Ambassador of IIT Madras : [Link](https://www.linkedin.com/posts/samrat-kumar-das-176731171_iitmadras-ecell-campusambassador-activity-7005795807807303681-A0zo?utm_source=share&utm_medium=member_desktop)
 
@@ -76,6 +78,14 @@ Now I looking for an internship to applying and sharping my skills which I learn
 - Successfully completed Career Essentials in Software Development by Microsoft and LinkedIn from Microsoft : [Link](https://www.linkedin.com/posts/samrat-kumar-das-176731171_linkedinlearning-linkedin-microsoft-activity-7017184809009491969-BWMk?utm_source=share&utm_medium=member_desktop)
 
 - I participated in House of Hackers Hackathon organized by IIIT Ranchi: [Link](https://www.linkedin.com/posts/colddsam_connections-houseofhackers-iiitranchi-activity-7064083462122594305-LUdj?utm_source=share&utm_medium=member_desktop)
+
+- In 2023 I Participated in Hack4Bengal 2.0 which is one of the biggest private running hackathon
+
+- I joined GDG Durgapur as a Grphics Designer for the core team
+
+- I started 2024 by joining as a core graphics designer for Hack4Bengal 3.0
+
+
 </p>
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2949/2949142.png" alt="Spotify" width="18" height="18" /> Currently Listening:</h3>
@@ -89,6 +99,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 <!-- Markdown -->
 
 ![Jokes Card](https://readme-jokes.vercel.app/api?theme=radical)
+
+## 3D Graph : 
+
+![](./profile-3d-contrib/profile-green-animate.svg)
 
 ## 🏆 GitHub Trophies
 
