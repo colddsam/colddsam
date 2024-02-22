@@ -44,6 +44,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+
 - [Building a Sign Language Detection System with MediaPipe: Bridging Python and JavaScript](https://colddsam.medium.com/building-a-sign-language-detection-system-with-mediapipe-bridging-python-and-javascript-8a5f50818dbb?source=rss-1f3fff14ffdd------2)
 - [FastAPI vs Flask: Choosing the Right Python Framework for Web Services](https://colddsam.medium.com/fastapi-vs-flask-choosing-the-right-python-framework-for-web-services-dd9a030cd59d?source=rss-1f3fff14ffdd------2)
 - [Trending Project Ideas for College Students in 2023](https://colddsam.medium.com/trending-project-ideas-for-college-students-in-2023-ebfb0267d8e9?source=rss-1f3fff14ffdd------2)
@@ -52,9 +53,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 ## 📊 My GitHub Stats :
 
-
 ![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=colddsam&theme=radical)<br/>
-
 
 ![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=colddsam&theme=radical)<br/>
 
@@ -84,7 +83,6 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 - I started 2024 by joining as a core graphics designer for Hack4Bengal 3.0
 
-
 </p>
 
 <h3 align="left"><img src="https://cdn-icons-png.flaticon.com/512/2949/2949142.png" alt="Spotify" width="18" height="18" /> Currently Listening:</h3>
@@ -99,7 +97,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 ![Jokes Card](https://readme-jokes.vercel.app/api?theme=radical)
 
-## 3D Graph : 
+## 3D Graph :
 
 ![](./profile-3d-contrib/profile-night-rainbow.svg)
 
@@ -153,6 +151,8 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ---
 
 ![](https://github-contributor-stats.vercel.app/api?username=colddsam&limit=5&theme=radical&combine_all_yearly_contributions=true)
+
+## 🐍 Let's Play With Snake : 
 
 ![snake gif](https://github.com/colddsam/colddsam/blob/output/github-contribution-grid-snake.svg)
 
