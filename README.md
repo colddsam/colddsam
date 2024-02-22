@@ -57,7 +57,9 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 ![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=colddsam&theme=radical)<br/>
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=colddsam&theme=radical&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=colddsam&theme=radical)
+
+![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=colddsam&theme=radical)
 
 ## 🏆 Achievements :
 
