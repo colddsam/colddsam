@@ -57,13 +57,13 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 <p align="left">
 <a href="https://www.linkedin.com/in/colddsam/" target="blank">
-<img height="40" src="./gihub push/linkedin.png" alt="colddsam" />&nbsp;
+<img height="40" src="./gihub push/linkedin.png" alt="colddsam" /><span>&nbsp;</span>
 <a href="https://www.instagram.com/colddsam/" target="blank">
-<img height="40" src="./gihub push/instagram.png" alt="colddsam" />&nbsp;
+<img height="40" src="./gihub push/instagram.png" alt="colddsam" /><span>&nbsp;</span>
 <a href="https://github.com/colddsam" target="blank">
-<img height="40" src="./gihub push/github.png" alt="colddsam" />&nbsp;
+<img height="40" src="./gihub push/github.png" alt="colddsam" /><span>&nbsp;</span>
 <a href="https://twitter.com/colddsam" target="blank">
-<img height="40" src="./gihub push/x.png" alt="colddsam" />&nbsp;
+<img height="40" src="./gihub push/x.png" alt="colddsam" /><span>&nbsp;</span>
 </a> </p>
 
 ## 📤 My Recent Activities:
