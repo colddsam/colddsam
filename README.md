@@ -130,4 +130,4 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 ## 🐍 Let's Play With Snake :
 
-![snake gif](https://github.com/colddsam/colddsam/blob/output/github-contribution-grid-snake.svg)
+![snake gif](https://github.com/colddsam/colddsam/blob/output/github-contribution-grid-snake.gif)
