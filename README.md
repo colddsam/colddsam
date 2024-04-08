@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [Embark on a Data Science Odyssey: Unraveling Hidden Truths in a Sea of Numbers](https://colddsam.medium.com/embark-on-a-data-science-odyssey-unraveling-hidden-truths-in-a-sea-of-numbers-f9282746dbe2?source=rss-1f3fff14ffdd------2)
+- [Unlocking the Power of AI in Healthcare: A Comprehensive Guide to Transformative Technologies](https://colddsam.medium.com/unlocking-the-power-of-ai-in-healthcare-a-comprehensive-guide-to-transformative-technologies-7199d29b01ad?source=rss-1f3fff14ffdd------2)
+- [The Hitchhiker’s Guide to Quantum Computing: Galaxies of Possibilities Explored](https://colddsam.medium.com/the-hitchhikers-guide-to-quantum-computing-galaxies-of-possibilities-explored-3751154f384e?source=rss-1f3fff14ffdd------2)
 - [Harnessing the Power of Edge Computing: A Guide to Unlocking its Potential](https://colddsam.medium.com/harnessing-the-power-of-edge-computing-a-guide-to-unlocking-its-potential-2757cdf935e8?source=rss-1f3fff14ffdd------2)
-- [Building a Sign Language Detection System with MediaPipe: Bridging Python and JavaScript](https://colddsam.medium.com/building-a-sign-language-detection-system-with-mediapipe-bridging-python-and-javascript-8a5f50818dbb?source=rss-1f3fff14ffdd------2)
-- [FastAPI vs Flask: Choosing the Right Python Framework for Web Services](https://colddsam.medium.com/fastapi-vs-flask-choosing-the-right-python-framework-for-web-services-dd9a030cd59d?source=rss-1f3fff14ffdd------2)
-- [Trending Project Ideas for College Students in 2023](https://colddsam.medium.com/trending-project-ideas-for-college-students-in-2023-ebfb0267d8e9?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
