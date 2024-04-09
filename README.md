@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
-- [The Future of Software Development: Low-Code, No-Code, and Beyond](https://colddsam.medium.com/the-future-of-software-development-low-code-no-code-and-beyond-58bfc25382b5?source=rss-1f3fff14ffdd------2)
-- [Unleashing the Power of AI-Driven Code Optimization](https://colddsam.medium.com/unleashing-the-power-of-ai-driven-code-optimization-6a602e189495?source=rss-1f3fff14ffdd------2)
-- [Dive into the Realm of Quantum Computing: Unraveling the Mysteries of Qubits](https://colddsam.medium.com/dive-into-the-realm-of-quantum-computing-unraveling-the-mysteries-of-qubits-a17ec8b8d88e?source=rss-1f3fff14ffdd------2)
-- [Embark on a Data Science Odyssey: Unraveling Hidden Truths in a Sea of Numbers](https://colddsam.medium.com/embark-on-a-data-science-odyssey-unraveling-hidden-truths-in-a-sea-of-numbers-f9282746dbe2?source=rss-1f3fff14ffdd------2)
+- [Unleash the Power of JavaScript: A Journey into Dynamic Web Development](https://colddsam.medium.com/unleash-the-power-of-javascript-a-journey-into-dynamic-web-development-bfc73e1ad785?source=rss-1f3fff14ffdd------2)
+- [Unleash the Power of Projects in the Tech Realm](https://colddsam.medium.com/unleash-the-power-of-projects-in-the-tech-realm-17608f840996?source=rss-1f3fff14ffdd------2)
+- [Unlock the Secrets of Seamless Data Interchange with AWS Lambda](https://colddsam.medium.com/unlock-the-secrets-of-seamless-data-interchange-with-aws-lambda-dcad1e5c99e7?source=rss-1f3fff14ffdd------2)
+- [Unlocking the Secrets of AI-Powered Data Analytics: A Comprehensive Guide for Technical…](https://colddsam.medium.com/unlocking-the-secrets-of-ai-powered-data-analytics-a-comprehensive-guide-for-technical-9f28f5de86d3?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
