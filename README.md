@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
-- [Unleash the Power of JavaScript: A Journey into Dynamic Web Development](https://colddsam.medium.com/unleash-the-power-of-javascript-a-journey-into-dynamic-web-development-bfc73e1ad785?source=rss-1f3fff14ffdd------2)
-- [Unleash the Power of Projects in the Tech Realm](https://colddsam.medium.com/unleash-the-power-of-projects-in-the-tech-realm-17608f840996?source=rss-1f3fff14ffdd------2)
-- [Unlock the Secrets of Seamless Data Interchange with AWS Lambda](https://colddsam.medium.com/unlock-the-secrets-of-seamless-data-interchange-with-aws-lambda-dcad1e5c99e7?source=rss-1f3fff14ffdd------2)
-- [Unlocking the Secrets of AI-Powered Data Analytics: A Comprehensive Guide for Technical…](https://colddsam.medium.com/unlocking-the-secrets-of-ai-powered-data-analytics-a-comprehensive-guide-for-technical-9f28f5de86d3?source=rss-1f3fff14ffdd------2)
+- [The Ultimate Guide to JavaScript for Beginners](https://colddsam.medium.com/the-ultimate-guide-to-javascript-for-beginners-b473e1a66d0a?source=rss-1f3fff14ffdd------2)
+- [Unlocking the Secrets of Python Projects: A Journey into the World of Programming](https://colddsam.medium.com/unlocking-the-secrets-of-python-projects-a-journey-into-the-world-of-programming-e52f4403da67?source=rss-1f3fff14ffdd------2)
+- [Unleashing the Power of Node.js:](https://colddsam.medium.com/unleashing-the-power-of-node-js-48e2ea456d1f?source=rss-1f3fff14ffdd------2)
+- [A Revolutionary Insight into the Realm of Software Development Projects](https://colddsam.medium.com/a-revolutionary-insight-into-the-realm-of-software-development-projects-1e163248614c?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
