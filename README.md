@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
-- [The Ultimate Guide to JavaScript for Beginners](https://colddsam.medium.com/the-ultimate-guide-to-javascript-for-beginners-b473e1a66d0a?source=rss-1f3fff14ffdd------2)
-- [Unlocking the Secrets of Python Projects: A Journey into the World of Programming](https://colddsam.medium.com/unlocking-the-secrets-of-python-projects-a-journey-into-the-world-of-programming-e52f4403da67?source=rss-1f3fff14ffdd------2)
-- [Unleashing the Power of Node.js:](https://colddsam.medium.com/unleashing-the-power-of-node-js-48e2ea456d1f?source=rss-1f3fff14ffdd------2)
-- [A Revolutionary Insight into the Realm of Software Development Projects](https://colddsam.medium.com/a-revolutionary-insight-into-the-realm-of-software-development-projects-1e163248614c?source=rss-1f3fff14ffdd------2)
+- [Building a Sign Language Detection System with MediaPipe: Bridging Python and JavaScript](https://colddsam.medium.com/building-a-sign-language-detection-system-with-mediapipe-bridging-python-and-javascript-8a5f50818dbb?source=rss-1f3fff14ffdd------2)
+- [FastAPI vs Flask: Choosing the Right Python Framework for Web Services](https://colddsam.medium.com/fastapi-vs-flask-choosing-the-right-python-framework-for-web-services-dd9a030cd59d?source=rss-1f3fff14ffdd------2)
+- [Trending Project Ideas for College Students in 2023](https://colddsam.medium.com/trending-project-ideas-for-college-students-in-2023-ebfb0267d8e9?source=rss-1f3fff14ffdd------2)
+- [Navigating Democratic Relations Between Countries: A Retrospective from 2000](https://colddsam.medium.com/navigating-democratic-relations-between-countries-a-retrospective-from-2000-7e2beaa18597?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
