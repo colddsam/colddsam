@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [Unlocking the Secrets of Serverless with AWS Lambda](https://colddsam.medium.com/unlocking-the-secrets-of-serverless-with-aws-lambda-6f34ee244da8?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Secrets of Quantum Computing: A Gateway to Unprecedented Possibilities](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-gateway-to-unprecedented-possibilities-37350a256494?source=rss-1f3fff14ffdd------2)
 - [5G Networks: The Future of Wireless Connectivity](https://colddsam.medium.com/5g-networks-the-future-of-wireless-connectivity-2da87c00eea0?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Secrets of Quantum Computing: A Journey into the Enigmatic World of Qubits](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-journey-into-the-enigmatic-world-of-qubits-c0d5a098a82b?source=rss-1f3fff14ffdd------2)
-- [Building a Sign Language Detection System with MediaPipe: Bridging Python and JavaScript](https://colddsam.medium.com/building-a-sign-language-detection-system-with-mediapipe-bridging-python-and-javascript-8a5f50818dbb?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
