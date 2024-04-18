@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [Unleashing the Power of Cloud-Native Architecture: A Paradigm Shift in Modern Software Development](https://colddsam.medium.com/unleashing-the-power-of-cloud-native-architecture-a-paradigm-shift-in-modern-software-development-946e7519a5e4?source=rss-1f3fff14ffdd------2)
 - [The Matrix: A Revolutionary Approach to Data Analysis](https://colddsam.medium.com/the-matrix-a-revolutionary-approach-to-data-analysis-7dfc9dc8c463?source=rss-1f3fff14ffdd------2)
 - [Unlocking the Secrets of Serverless with AWS Lambda](https://colddsam.medium.com/unlocking-the-secrets-of-serverless-with-aws-lambda-6f34ee244da8?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Secrets of Quantum Computing: A Gateway to Unprecedented Possibilities](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-gateway-to-unprecedented-possibilities-37350a256494?source=rss-1f3fff14ffdd------2)
-- [5G Networks: The Future of Wireless Connectivity](https://colddsam.medium.com/5g-networks-the-future-of-wireless-connectivity-2da87c00eea0?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
