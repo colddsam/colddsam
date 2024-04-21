@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [Unveiling the Secrets of Quantum Computing: A Journey into the Quantum Realm](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-journey-into-the-quantum-realm-8104bc087b02?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Secrets of Quantum Computing: A Journey into the Uncharted Realm](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-journey-into-the-uncharted-realm-fb236eabc3f3?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Power of GPT-4: A Revolutionary AI Language Model](https://colddsam.medium.com/unveiling-the-power-of-gpt-4-a-revolutionary-ai-language-model-abf506900497?source=rss-1f3fff14ffdd------2)
 - [Unleashing the Power of Cloud-Native Architecture: A Paradigm Shift in Modern Software Development](https://colddsam.medium.com/unleashing-the-power-of-cloud-native-architecture-a-paradigm-shift-in-modern-software-development-946e7519a5e4?source=rss-1f3fff14ffdd------2)
-- [The Matrix: A Revolutionary Approach to Data Analysis](https://colddsam.medium.com/the-matrix-a-revolutionary-approach-to-data-analysis-7dfc9dc8c463?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
