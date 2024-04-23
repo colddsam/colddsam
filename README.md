@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [Decoding the Enigma of Quantum Computing: Unveiling the Potential of Qubits](https://colddsam.medium.com/decoding-the-enigma-of-quantum-computing-unveiling-the-potential-of-qubits-7439e4ecdeee?source=rss-1f3fff14ffdd------2)
 - [Master the Art of Object-Oriented Programming with Rust](https://colddsam.medium.com/master-the-art-of-object-oriented-programming-with-rust-89c47e0fab39?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Secrets of Quantum Computing: A Journey into the Quantum Realm](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-journey-into-the-quantum-realm-8104bc087b02?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Secrets of Quantum Computing: A Journey into the Uncharted Realm](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-journey-into-the-uncharted-realm-fb236eabc3f3?source=rss-1f3fff14ffdd------2)
-- [Unveiling the Power of GPT-4: A Revolutionary AI Language Model](https://colddsam.medium.com/unveiling-the-power-of-gpt-4-a-revolutionary-ai-language-model-abf506900497?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
