@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [Delve into the Realm of Artificial Intelligence: Unraveling ChatGPT’s Capabilities](https://colddsam.medium.com/delve-into-the-realm-of-artificial-intelligence-unraveling-chatgpts-capabilities-5fb8edbef056?source=rss-1f3fff14ffdd------2)
 - [Quantum Supremacy: Your Guide to the Next Technological Revolution](https://colddsam.medium.com/quantum-supremacy-your-guide-to-the-next-technological-revolution-cc80f02915f2?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Mysteries of Quantum Computing: A Journey into the Uncharted](https://colddsam.medium.com/unveiling-the-mysteries-of-quantum-computing-a-journey-into-the-uncharted-509494a88784?source=rss-1f3fff14ffdd------2)
 - [Unlocking the Power of Artificial Intelligence for Cyber Security](https://colddsam.medium.com/unlocking-the-power-of-artificial-intelligence-for-cyber-security-e3eb26c8982c?source=rss-1f3fff14ffdd------2)
-- [Decoding the Matrix: The Cryptographic Odyssey of NFTs](https://colddsam.medium.com/decoding-the-matrix-the-cryptographic-odyssey-of-nfts-b3d5a33f20ef?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
