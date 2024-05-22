@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [Unveiling the Secrets of Neuralink: A Journey into the Frontier of Brain-Computer Interfaces](https://colddsam.medium.com/unveiling-the-secrets-of-neuralink-a-journey-into-the-frontier-of-brain-computer-interfaces-324e5d94648d?source=rss-1f3fff14ffdd------2)
 - [Demystifying the Enigma of Quantum Computing: A Journey into the Realm of Qubits](https://colddsam.medium.com/demystifying-the-enigma-of-quantum-computing-a-journey-into-the-realm-of-qubits-9b7a88d9abee?source=rss-1f3fff14ffdd------2)
 - [The Future of Programming: Quantum Computing Explained](https://colddsam.medium.com/the-future-of-programming-quantum-computing-explained-5420df6f67bd?source=rss-1f3fff14ffdd------2)
 - [Unlocking the Potential of Serverless Architectures: A Comprehensive Guide](https://colddsam.medium.com/unlocking-the-potential-of-serverless-architectures-a-comprehensive-guide-dff3d0de802c?source=rss-1f3fff14ffdd------2)
-- [Unveiling the Secrets of Quantum Computing: A Beginner’s Guide to the Next Frontier](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-beginners-guide-to-the-next-frontier-768fcf362fcf?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
