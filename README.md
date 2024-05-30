@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [Unleashing the Power of Artificial Intelligence in the Modern Age](https://colddsam.medium.com/unleashing-the-power-of-artificial-intelligence-in-the-modern-age-be1c5cf097e8?source=rss-1f3fff14ffdd------2)
 - [Unlocking the Potential of Quantum Computing: A Comprehensive Guide](https://colddsam.medium.com/unlocking-the-potential-of-quantum-computing-a-comprehensive-guide-b95bddbc5543?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Enigma: Exploring the Depths of Serverless Computing](https://colddsam.medium.com/unveiling-the-enigma-exploring-the-depths-of-serverless-computing-1275f175e6b8?source=rss-1f3fff14ffdd------2)
 - [Unlocking the Secrets of Quantum Computing: A Guide for Everyday Humans](https://colddsam.medium.com/unlocking-the-secrets-of-quantum-computing-a-guide-for-everyday-humans-2b43a0627d67?source=rss-1f3fff14ffdd------2)
-- [The Secret Sauce to Unlock Your Software Development Potential](https://colddsam.medium.com/the-secret-sauce-to-unlock-your-software-development-potential-101e27dcab4c?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
