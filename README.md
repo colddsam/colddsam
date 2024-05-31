@@ -70,7 +70,7 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 <!--START_SECTION:activity-->
 
-1. 🎉 Merged PR [#1](https://github.com/Algo-Stars/Python/pull/1) in [Algo-Stars/Python](https://github.com/Algo-Stars/Python)
+1. 🎉 Merged PR [#1](https://github.com/colddsam/Device-Fault-detection/pull/1) in [colddsam/Device-Fault-detection](https://github.com/colddsam/Device-Fault-detection)
 2. 🎉 Merged PR [#2](https://github.com/colddsam/I-hate-coding/pull/2) in [colddsam/I-hate-coding](https://github.com/colddsam/I-hate-coding)
 <!--END_SECTION:activity-->
 
