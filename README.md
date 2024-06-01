@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [Unveiling the Enigma of Quantum Cryptography: A Journey into the Future](https://colddsam.medium.com/unveiling-the-enigma-of-quantum-cryptography-a-journey-into-the-future-8c63aa221053?source=rss-1f3fff14ffdd------2)
 - [The Ultimate Guide to Quantum Computing: Unlocking the Power of Qubits](https://colddsam.medium.com/the-ultimate-guide-to-quantum-computing-unlocking-the-power-of-qubits-1af762d85c9c?source=rss-1f3fff14ffdd------2)
 - [Unleashing the Power of Artificial Intelligence in the Modern Age](https://colddsam.medium.com/unleashing-the-power-of-artificial-intelligence-in-the-modern-age-be1c5cf097e8?source=rss-1f3fff14ffdd------2)
 - [Unlocking the Potential of Quantum Computing: A Comprehensive Guide](https://colddsam.medium.com/unlocking-the-potential-of-quantum-computing-a-comprehensive-guide-b95bddbc5543?source=rss-1f3fff14ffdd------2)
-- [Unveiling the Enigma: Exploring the Depths of Serverless Computing](https://colddsam.medium.com/unveiling-the-enigma-exploring-the-depths-of-serverless-computing-1275f175e6b8?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
