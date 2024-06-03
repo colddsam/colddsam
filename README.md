@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [Harnessing the Power of Artificial Intelligence for Medical Diagnosis](https://colddsam.medium.com/harnessing-the-power-of-artificial-intelligence-for-medical-diagnosis-16ef99e07077?source=rss-1f3fff14ffdd------2)
 - [The Ultimate Guide to Unlocking the Secrets of Quantum Computing](https://colddsam.medium.com/the-ultimate-guide-to-unlocking-the-secrets-of-quantum-computing-d5b36a1c9937?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Enigma of Quantum Cryptography: A Journey into the Future](https://colddsam.medium.com/unveiling-the-enigma-of-quantum-cryptography-a-journey-into-the-future-8c63aa221053?source=rss-1f3fff14ffdd------2)
 - [The Ultimate Guide to Quantum Computing: Unlocking the Power of Qubits](https://colddsam.medium.com/the-ultimate-guide-to-quantum-computing-unlocking-the-power-of-qubits-1af762d85c9c?source=rss-1f3fff14ffdd------2)
-- [Unleashing the Power of Artificial Intelligence in the Modern Age](https://colddsam.medium.com/unleashing-the-power-of-artificial-intelligence-in-the-modern-age-be1c5cf097e8?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
