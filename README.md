@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [DevOps for Dummies: A Guide to Collaboration, Automation, and Continuous Delivery](https://colddsam.medium.com/devops-for-dummies-a-guide-to-collaboration-automation-and-continuous-delivery-d2fe0259d722?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Enigma: Unraveling the Secrets of Quantum Entanglement](https://colddsam.medium.com/unveiling-the-enigma-unraveling-the-secrets-of-quantum-entanglement-49de2d60bb31?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Secrets: AI-Driven Cyber Security for the Modern Era](https://colddsam.medium.com/unveiling-the-secrets-ai-driven-cyber-security-for-the-modern-era-4cc1a7472a8b?source=rss-1f3fff14ffdd------2)
 - [Engineering Revolution: The Rise of Machine Learning in Software Development](https://colddsam.medium.com/engineering-revolution-the-rise-of-machine-learning-in-software-development-1cfd995562bd?source=rss-1f3fff14ffdd------2)
-- [Harnessing the Power of Artificial Intelligence for Medical Diagnosis](https://colddsam.medium.com/harnessing-the-power-of-artificial-intelligence-for-medical-diagnosis-16ef99e07077?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
