@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
-- [Unveiling the Secrets of Quantum Computing: A Journey into the Uncharted Realm](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-journey-into-the-uncharted-realm-5e7cba24e076?source=rss-1f3fff14ffdd------2)
-- [DevOps for Dummies: A Guide to Collaboration, Automation, and Continuous Delivery](https://colddsam.medium.com/devops-for-dummies-a-guide-to-collaboration-automation-and-continuous-delivery-d2fe0259d722?source=rss-1f3fff14ffdd------2)
-- [Unveiling the Enigma: Unraveling the Secrets of Quantum Entanglement](https://colddsam.medium.com/unveiling-the-enigma-unraveling-the-secrets-of-quantum-entanglement-49de2d60bb31?source=rss-1f3fff14ffdd------2)
-- [Unveiling the Secrets: AI-Driven Cyber Security for the Modern Era](https://colddsam.medium.com/unveiling-the-secrets-ai-driven-cyber-security-for-the-modern-era-4cc1a7472a8b?source=rss-1f3fff14ffdd------2)
+- [Unleash the Power of AI for Software Development](https://colddsam.medium.com/unleash-the-power-of-ai-for-software-development-37ec0afc261a?source=rss-1f3fff14ffdd------2)
+- [Demystifying the Black Box of Machine Learning: A Comprehensive Guide](https://colddsam.medium.com/demystifying-the-black-box-of-machine-learning-a-comprehensive-guide-7de074015e35?source=rss-1f3fff14ffdd------2)
+- [The Future of Web Development: Embracing the Power of Automation](https://colddsam.medium.com/the-future-of-web-development-embracing-the-power-of-automation-9c96bcd94ca1?source=rss-1f3fff14ffdd------2)
+- [Unveiling the Secrets of Quantum Computing: Unveiling the Secrets of Quantum Computing](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-unveiling-the-secrets-of-quantum-computing-77176297b67b?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
