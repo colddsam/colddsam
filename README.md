@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
-- [Unveiling the Secrets of Quantum Computing: A Deep Dive into its Potential](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-deep-dive-into-its-potential-82d4cc47f4d3?source=rss-1f3fff14ffdd------2)
-- [Unveiling the Secrets of Quantum Computing: A Journey into the Unseen](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-journey-into-the-unseen-e48fafda184b?source=rss-1f3fff14ffdd------2)
-- [Unveiling the Secrets of Quantum Computing: A Journey into the Uncharted Realm](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-journey-into-the-uncharted-realm-070c1dbddd52?source=rss-1f3fff14ffdd------2)
-- [Unveiling the Secrets of Quantum Computing: A Dive into its Concepts and Applications](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-dive-into-its-concepts-and-applications-5dec93eb015f?source=rss-1f3fff14ffdd------2)
+- [Unveiling the Secrets of Quantum Computing: A Journey into the Uncharted Realm](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-journey-into-the-uncharted-realm-5e7cba24e076?source=rss-1f3fff14ffdd------2)
+- [DevOps for Dummies: A Guide to Collaboration, Automation, and Continuous Delivery](https://colddsam.medium.com/devops-for-dummies-a-guide-to-collaboration-automation-and-continuous-delivery-d2fe0259d722?source=rss-1f3fff14ffdd------2)
+- [Unveiling the Enigma: Unraveling the Secrets of Quantum Entanglement](https://colddsam.medium.com/unveiling-the-enigma-unraveling-the-secrets-of-quantum-entanglement-49de2d60bb31?source=rss-1f3fff14ffdd------2)
+- [Unveiling the Secrets: AI-Driven Cyber Security for the Modern Era](https://colddsam.medium.com/unveiling-the-secrets-ai-driven-cyber-security-for-the-modern-era-4cc1a7472a8b?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
