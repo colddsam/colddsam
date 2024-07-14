@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [Decoding the Enigma of Quantum Computing: Unveiling its Revolutionary Potential](https://colddsam.medium.com/decoding-the-enigma-of-quantum-computing-unveiling-its-revolutionary-potential-3aedc6842b21?source=rss-1f3fff14ffdd------2)
 - [Demystifying the Enigma of Quantum Computing](https://colddsam.medium.com/demystifying-the-enigma-of-quantum-computing-7bf80b4d4710?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Secrets of Quantum Computing: A Beginner’s Guide](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-beginners-guide-8de801efad4c?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Enigma of Multi-Cloud Management: A Practical Guide](https://colddsam.medium.com/unveiling-the-enigma-of-multi-cloud-management-a-practical-guide-09fc762b1f1e?source=rss-1f3fff14ffdd------2)
-- [Unveiling the Enigma: How Quantum Computing Reshapes the Technological Landscape](https://colddsam.medium.com/unveiling-the-enigma-how-quantum-computing-reshapes-the-technological-landscape-c1b60916e75c?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
