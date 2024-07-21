@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [The Future of Programming: Quantum Computing](https://colddsam.medium.com/the-future-of-programming-quantum-computing-9f7b55280666?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Future of Digital Transformation: Exploring Edge Computing and Its Impact](https://colddsam.medium.com/unveiling-the-future-of-digital-transformation-exploring-edge-computing-and-its-impact-7bd297fe0713?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Secrets of Zero Trust: A Paradigm Shift in Cybersecurity](https://colddsam.medium.com/unveiling-the-secrets-of-zero-trust-a-paradigm-shift-in-cybersecurity-4a4dc3aef6bc?source=rss-1f3fff14ffdd------2)
 - [The Matrix: Unraveling the Mysteries of AI and Quantum Computing](https://colddsam.medium.com/the-matrix-unraveling-the-mysteries-of-ai-and-quantum-computing-c3d2a9cc599a?source=rss-1f3fff14ffdd------2)
-- [Decoding the Enigma of Quantum Computing: Unveiling its Revolutionary Potential](https://colddsam.medium.com/decoding-the-enigma-of-quantum-computing-unveiling-its-revolutionary-potential-3aedc6842b21?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
