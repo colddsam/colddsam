@@ -70,8 +70,8 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 <!--START_SECTION:activity-->
 
-1. 🎉 Merged PR [#1](https://github.com/colddsam/Device-Fault-detection/pull/1) in [colddsam/Device-Fault-detection](https://github.com/colddsam/Device-Fault-detection)
-2. 🎉 Merged PR [#2](https://github.com/colddsam/I-hate-coding/pull/2) in [colddsam/I-hate-coding](https://github.com/colddsam/I-hate-coding)
+1. 🗣 Commented on [#1](https://github.com/colddsam/IIIT-RANCHI-HACKATHON-2023/pull/1#issuecomment-2241988435) in [colddsam/IIIT-RANCHI-HACKATHON-2023](https://github.com/colddsam/IIIT-RANCHI-HACKATHON-2023)
+2. 🎉 Merged PR [#1](https://github.com/colddsam/IIIT-RANCHI-HACKATHON-2023/pull/1) in [colddsam/IIIT-RANCHI-HACKATHON-2023](https://github.com/colddsam/IIIT-RANCHI-HACKATHON-2023)
 <!--END_SECTION:activity-->
 
 ## 📊 My GitHub Stats :
