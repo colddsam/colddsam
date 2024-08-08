@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [The Art of Technical Magic: Unlocking the Secrets of Augmented Reality](https://colddsam.medium.com/the-art-of-technical-magic-unlocking-the-secrets-of-augmented-reality-36797120a51f?source=rss-1f3fff14ffdd------2)
 - [The Rise of Quantum Computing: A Paradigm Shift in Technology](https://colddsam.medium.com/the-rise-of-quantum-computing-a-paradigm-shift-in-technology-a7fd9c1de85a?source=rss-1f3fff14ffdd------2)
 - [Decoding the Enigma of Quantum Computing: A Journey into the Subatomic Realm](https://colddsam.medium.com/decoding-the-enigma-of-quantum-computing-a-journey-into-the-subatomic-realm-ced1b791e884?source=rss-1f3fff14ffdd------2)
 - [The Future of Programming: Quantum Computing Unveiled](https://colddsam.medium.com/the-future-of-programming-quantum-computing-unveiled-d77633d3a716?source=rss-1f3fff14ffdd------2)
-- [Unlocking the Secrets of Algorithmic Trading: A Comprehensive Guide](https://colddsam.medium.com/unlocking-the-secrets-of-algorithmic-trading-a-comprehensive-guide-c2c79ee50a5a?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
