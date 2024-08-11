@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [Unleash the Power of Serverless Computing: A Revolutionary Shift in Cloud Architecture](https://colddsam.medium.com/unleash-the-power-of-serverless-computing-a-revolutionary-shift-in-cloud-architecture-5ac9b6bb951c?source=rss-1f3fff14ffdd------2)
 - [The Art of Data Visualization: Making Sense of Complex Information](https://colddsam.medium.com/the-art-of-data-visualization-making-sense-of-complex-information-76b84a927b07?source=rss-1f3fff14ffdd------2)
 - [The Art of Debugging: A Crash Course for Coders](https://colddsam.medium.com/the-art-of-debugging-a-crash-course-for-coders-ed768f606af7?source=rss-1f3fff14ffdd------2)
 - [The Art of Technical Magic: Unlocking the Secrets of Augmented Reality](https://colddsam.medium.com/the-art-of-technical-magic-unlocking-the-secrets-of-augmented-reality-36797120a51f?source=rss-1f3fff14ffdd------2)
-- [The Rise of Quantum Computing: A Paradigm Shift in Technology](https://colddsam.medium.com/the-rise-of-quantum-computing-a-paradigm-shift-in-technology-a7fd9c1de85a?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
