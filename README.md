@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [Unleash the Power of AI: Embracing the Future of Innovation](https://colddsam.medium.com/unleash-the-power-of-ai-embracing-the-future-of-innovation-b21be0526c63?source=rss-1f3fff14ffdd------2)
 - [Unleashing the Power of AI: A Journey into the Future of Computing](https://colddsam.medium.com/unleashing-the-power-of-ai-a-journey-into-the-future-of-computing-b637736a1b1f?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Secrets of Quantum Computing: A Journey into the Uncharted Realm](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-journey-into-the-uncharted-realm-d83f0609c293?source=rss-1f3fff14ffdd------2)
 - [Unveiling the Enigma: A Step-by-Step Guide to Unraveling the Secrets of Quantum Computing](https://colddsam.medium.com/unveiling-the-enigma-a-step-by-step-guide-to-unraveling-the-secrets-of-quantum-computing-4c22f50b99a4?source=rss-1f3fff14ffdd------2)
-- [Unveiling the Quantum Realm: A Comprehensive Guide to Quantum Computing](https://colddsam.medium.com/unveiling-the-quantum-realm-a-comprehensive-guide-to-quantum-computing-b5e1ed2c8f17?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
