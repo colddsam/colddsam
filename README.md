@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
+- [Unleashing the Power of Machine Learning for Predictive Analytics](https://colddsam.medium.com/unleashing-the-power-of-machine-learning-for-predictive-analytics-8a71bf92f405?source=rss-1f3fff14ffdd------2)
 - [AI-Powered Chatbots: Revolutionizing Customer Service](https://colddsam.medium.com/ai-powered-chatbots-revolutionizing-customer-service-c3f57b457de6?source=rss-1f3fff14ffdd------2)
 - [Unleash the Power of AI: Embracing the Future of Innovation](https://colddsam.medium.com/unleash-the-power-of-ai-embracing-the-future-of-innovation-b21be0526c63?source=rss-1f3fff14ffdd------2)
 - [Unleashing the Power of AI: A Journey into the Future of Computing](https://colddsam.medium.com/unleashing-the-power-of-ai-a-journey-into-the-future-of-computing-b637736a1b1f?source=rss-1f3fff14ffdd------2)
-- [Unveiling the Secrets of Quantum Computing: A Journey into the Uncharted Realm](https://colddsam.medium.com/unveiling-the-secrets-of-quantum-computing-a-journey-into-the-uncharted-realm-d83f0609c293?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
