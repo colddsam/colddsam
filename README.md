@@ -70,8 +70,8 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 <!--START_SECTION:activity-->
 
-1. 🗣 Commented on [#1](https://github.com/colddsam/IIIT-RANCHI-HACKATHON-2023/pull/1#issuecomment-2241988435) in [colddsam/IIIT-RANCHI-HACKATHON-2023](https://github.com/colddsam/IIIT-RANCHI-HACKATHON-2023)
-2. 🎉 Merged PR [#1](https://github.com/colddsam/IIIT-RANCHI-HACKATHON-2023/pull/1) in [colddsam/IIIT-RANCHI-HACKATHON-2023](https://github.com/colddsam/IIIT-RANCHI-HACKATHON-2023)
+1. 💪 Opened PR [#2](https://github.com/Sahelisen-git/Healthcare-System/pull/2) in [Sahelisen-git/Healthcare-System](https://github.com/Sahelisen-git/Healthcare-System)
+2. 💪 Opened PR [#1](https://github.com/Sahelisen-git/Healthcare-System/pull/1) in [Sahelisen-git/Healthcare-System](https://github.com/Sahelisen-git/Healthcare-System)
 <!--END_SECTION:activity-->
 
 ## 📊 My GitHub Stats :
