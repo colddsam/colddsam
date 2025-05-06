@@ -13,7 +13,7 @@
 
 <p>
 Hi, I'm Samrat Kumar Das from Kolkata, West Bengal.<br>
-I'm in 3rd year of my BTech degree in Electronics and Communication Engineering which I pursuing from Narula Institute of Technology.<br>
+I'm in 4th year of my BTech degree in Electronics and Communication Engineering which I pursuing from Narula Institute of Technology.<br>
 I belive nothing is impossible if you think it possible.<br>
 Currently I'm enhancing my skills in Machine Learning and Front End Development with which I want to proceed further. I love to work as a team and collaborate in open sources.<br>
 Now I looking for an internship to applying and sharping my skills which I learning from my college and from my personal works.
