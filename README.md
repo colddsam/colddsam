@@ -1,4 +1,4 @@
-![Blue Modern Seo Marketer Profile Linkedin Banner](https://user-images.githubusercontent.com/90477654/213078928-5252e234-fd8c-4863-a98f-78d33339bcfc.png)
+![Blue Modern Seo Marketer Profile Linkedin Banner](assets/banner.png)
 
 ---
 
@@ -47,10 +47,10 @@ Now I looking for an internship to applying and sharping my skills which I learn
 ## 📖 Blogs :
 
 <!-- Latest-blog-post:START -->
-- [Building a Sign Language Detection System with MediaPipe: Bridging Python and JavaScript](https://colddsam.medium.com/building-a-sign-language-detection-system-with-mediapipe-bridging-python-and-javascript-8a5f50818dbb?source=rss-1f3fff14ffdd------2)
-- [FastAPI vs Flask: Choosing the Right Python Framework for Web Services](https://colddsam.medium.com/fastapi-vs-flask-choosing-the-right-python-framework-for-web-services-dd9a030cd59d?source=rss-1f3fff14ffdd------2)
-- [Trending Project Ideas for College Students in 2023](https://colddsam.medium.com/trending-project-ideas-for-college-students-in-2023-ebfb0267d8e9?source=rss-1f3fff14ffdd------2)
-- [Navigating Democratic Relations Between Countries: A Retrospective from 2000](https://colddsam.medium.com/navigating-democratic-relations-between-countries-a-retrospective-from-2000-7e2beaa18597?source=rss-1f3fff14ffdd------2)
+- [The Future of Quantum Computing: What’s Next for Qubits?](https://colddsam.medium.com/the-future-of-quantum-computing-whats-next-for-qubits-3ea3efef587c?source=rss-1f3fff14ffdd------2)
+- [Unveiling the Secrets of Machine Learning: A Comprehensive Guide](https://colddsam.medium.com/unveiling-the-secrets-of-machine-learning-a-comprehensive-guide-baee1ee2e439?source=rss-1f3fff14ffdd------2)
+- [Unveiling the Secrets of Neural Networks: A Comprehensive Guide for Beginners](https://colddsam.medium.com/unveiling-the-secrets-of-neural-networks-a-comprehensive-guide-for-beginners-911cc970780d?source=rss-1f3fff14ffdd------2)
+- [Unlock the Power of Quantum Computing: 5 Practical Applications to Supercharge Your Business](https://colddsam.medium.com/unlock-the-power-of-quantum-computing-5-practical-applications-to-supercharge-your-business-3ee57db73773?source=rss-1f3fff14ffdd------2)
 <!-- Latest-blog-post:END -->
 
 ## #️⃣ Socials :
@@ -70,8 +70,8 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 <!--START_SECTION:activity-->
 
-1. 🎉 Merged PR [#1](https://github.com/Algo-Stars/Python/pull/1) in [Algo-Stars/Python](https://github.com/Algo-Stars/Python)
-2. 🎉 Merged PR [#2](https://github.com/colddsam/I-hate-coding/pull/2) in [colddsam/I-hate-coding](https://github.com/colddsam/I-hate-coding)
+1. 💪 Opened PR [#2](https://github.com/Sahelisen-git/Healthcare-System/pull/2) in [Sahelisen-git/Healthcare-System](https://github.com/Sahelisen-git/Healthcare-System)
+2. 💪 Opened PR [#1](https://github.com/Sahelisen-git/Healthcare-System/pull/1) in [Sahelisen-git/Healthcare-System](https://github.com/Sahelisen-git/Healthcare-System)
 <!--END_SECTION:activity-->
 
 ## 📊 My GitHub Stats :
@@ -110,15 +110,13 @@ Now I looking for an internship to applying and sharping my skills which I learn
 
 ## 🎶 Currently Listening :
 
-[![Spotify](https://novatorem-zeta-seven.vercel.app/api/spotify)](https://open.spotify.com/user/4uyys269cpo9e8ddgcc3kcxov)
+<!-- To make this Spotify widget work, visit https://spotify-github-profile.kittinanx.com/ to login and authorize access. -->
+[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=4uyys269cpo9e8ddgcc3kcxov&cover_image=true&theme=spotify-embed&show_offline=true&background_color=121212&interchange=true&profanity=true&mode=dark&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.kittinanx.com/api/view?uid=4uyys269cpo9e8ddgcc3kcxov&redirect=true)
 
 ## 😉 Graph Needed ?
 
 ![](./profile-3d-contrib/profile-night-rainbow.svg)
 
-## 😂 Random Dev Meme :
-
-<img src='https://randommeme-five.vercel.app/' style="height: 400px;"/>
 
 ## ✍️ Random Dev Quote :
 
