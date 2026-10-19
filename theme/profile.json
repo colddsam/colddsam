@@ -1,0 +1,185 @@
+{
+  "$comment": "ALL README CONTENT LIVES HERE. Edit this file, then run: node theme/build.js  (add --offline to skip network fetches). Colours, fonts and greyscale rules live in theme/tokens.json.",
+
+  "output": "TEST.md",
+  "user": "colddsam",
+
+  "header": {
+    "name": "Samrat Kumar Das",
+    "kicker": "PROFILE — INDEX Nº 001",
+    "location": "KOLKATA, IN — 22.57° N",
+    "tagline": "ML Engineer & Front-End Developer — Kolkata, India.",
+    "focus": "machine learning · front-end development · open source",
+    "status": "a passionate ML engineer looking for an opportunity to grab an internship.",
+    "strip": ["AI / ML", "FRONT END", "DATA STRUCTURES"],
+    "stripRight": "B.TECH ECE — NARULA INSTITUTE OF TECHNOLOGY"
+  },
+
+  "typing": {
+    "link": "https://git.io/typing-svg",
+    "lines": ["Hi Developers", "I am Samrat Kumar Das"]
+  },
+
+  "links": [
+    { "label": "PORTFOLIO", "url": "https://colddsam.dev" },
+    { "label": "RESUME", "url": "https://drive.google.com/file/d/1PdT7z_OTmuz3gs02nRsrAx9_efc6rstA/view?usp=sharing" },
+    { "label": "LINKEDIN", "url": "https://www.linkedin.com/in/colddsam/" },
+    { "label": "INSTAGRAM", "url": "https://www.instagram.com/colddsam/" },
+    { "label": "GITHUB", "url": "https://github.com/colddsam" },
+    { "label": "X", "url": "https://twitter.com/colddsam" },
+    { "label": "EMAIL", "url": "mailto:colddsam@gmail.com" },
+    { "label": "MEDIUM", "url": "https://colddsam.medium.com" },
+    { "label": "LINKTREE", "url": "https://linktr.ee/colddsam?utm_source=linktree_profile_share&ltsid=2cda3886-be78-4ccf-a16a-3ef6943e4525" }
+  ],
+
+  "sections": [
+    {
+      "type": "card",
+      "title": "WHOAMI",
+      "alt": "About Samrat Kumar Das",
+      "bio": [
+        "Hi, I'm Samrat Kumar Das from Kolkata, West Bengal.",
+        "I'm in the 4th year of my B.Tech in Electronics and Communication Engineering, which I'm pursuing at Narula Institute of Technology.",
+        "I believe nothing is impossible if you think it is possible.",
+        "Currently I'm enhancing my skills in Machine Learning and Front-End Development, which I want to pursue further. I love to work as a team and collaborate on open source.",
+        "Now I'm looking for an internship to apply and sharpen the skills I'm learning from my college and from my personal work."
+      ],
+      "rows": [
+        ["BASED", "Kolkata, West Bengal, India"],
+        ["STUDY", "B.Tech ECE · Narula Institute of Technology · 4th year"],
+        ["FOCUS", "Machine Learning · Front-End Development"],
+        ["STATUS", "looking for an internship · team work · open-source collaboration"]
+      ]
+    },
+    {
+      "type": "card",
+      "title": "STACK",
+      "alt": "Technical stack",
+      "rule": true,
+      "rows": [
+        ["LANGUAGES", "C · C++ · Python · JavaScript · Dart"],
+        ["WEB", "HTML · CSS · Sass · React"],
+        ["BACKEND", "Node.js · Express · Flask · FastAPI · MongoDB"],
+        ["ML / CV", "TensorFlow · OpenCV"],
+        ["MOBILE", "Flutter"],
+        ["TOOLING", "Git"]
+      ]
+    },
+    {
+      "type": "card",
+      "title": "FACTS",
+      "alt": "Facts about Samrat",
+      "rows": [
+        ["RESUME", "available on Google Drive — link below"],
+        ["BUILDING", "a Flutter-based application — virtual-assistant"],
+        ["LEARNING", "AI / ML · Front End"],
+        ["PROJECTS", "all of my projects are available on Linktree"],
+        ["ASK ME", "AI / ML · Front-End Development · Data Structures"],
+        ["REACH ME", "colddsam@gmail.com"],
+        ["SELF FACT", "I believe the more we spread knowledge, the more we grow knowledge"]
+      ],
+      "links": [
+        { "label": "RESUME ↗", "url": "https://drive.google.com/file/d/1PdT7z_OTmuz3gs02nRsrAx9_efc6rstA/view?usp=sharing" },
+        { "label": "VIRTUAL ASSISTANT ↗", "url": "https://github.com/colddsam/virtual-assistant.git" },
+        { "label": "ALL PROJECTS ↗", "url": "https://linktr.ee/colddsam?utm_source=linktree_profile_share&ltsid=2cda3886-be78-4ccf-a16a-3ef6943e4525" },
+        { "label": "EMAIL ↗", "url": "mailto:colddsam@gmail.com" }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "WRITING",
+      "alt": "Latest blog posts",
+      "kicker": "LATEST FROM MEDIUM",
+      "feed": "https://medium.com/feed/@colddsam",
+      "max": 4,
+      "badgePrefix": "READ",
+      "links": [
+        { "label": "ALL POSTS ↗", "url": "https://colddsam.medium.com" }
+      ]
+    },
+    {
+      "type": "activity",
+      "title": "ACTIVITY",
+      "alt": "Recent GitHub activity",
+      "kicker": "RECENT ACTIVITY",
+      "max": 10,
+      "badgePrefix": "OPEN",
+      "events": ["PullRequestEvent", "IssuesEvent", "IssueCommentEvent", "PullRequestReviewEvent", "CreateEvent", "ReleaseEvent", "ForkEvent", "PushEvent"],
+      "excludeRepos": ["colddsam/colddsam"]
+    },
+    {
+      "type": "telemetry",
+      "title": "TELEMETRY",
+      "alt": "GitHub statistics",
+      "excludeRepos": ["colddsam/colddsam"],
+      "topRepos": 5,
+      "cards": [
+        { "name": "stats", "alt": "GitHub stats", "width": "49%", "preset": "summary-cards", "light": "profile-summary-card-output/github/3-stats.svg", "dark": "profile-summary-card-output/github_dark/3-stats.svg" },
+        { "name": "repos-per-language", "alt": "Repos per language", "width": "49%", "preset": "summary-cards", "light": "profile-summary-card-output/github/1-repos-per-language.svg", "dark": "profile-summary-card-output/github_dark/1-repos-per-language.svg" },
+        { "name": "most-commit-language", "alt": "Most commit language", "width": "49%", "preset": "summary-cards", "light": "profile-summary-card-output/github/2-most-commit-language.svg", "dark": "profile-summary-card-output/github_dark/2-most-commit-language.svg" },
+        { "name": "productive-time", "alt": "Productive time", "width": "49%", "preset": "summary-cards", "light": "profile-summary-card-output/github/4-productive-time.svg", "dark": "profile-summary-card-output/github_dark/4-productive-time.svg" },
+        { "name": "profile-details", "alt": "Profile details", "width": "99%", "preset": "summary-cards", "light": "profile-summary-card-output/github/0-profile-details.svg", "dark": "profile-summary-card-output/github_dark/0-profile-details.svg" }
+      ],
+      "graph3d": { "name": "contrib-3d", "alt": "3D contribution graph", "width": "100%", "preset": "contrib-3d", "light": "profile-3d-contrib/profile-green.svg", "dark": "profile-3d-contrib/profile-night-view.svg" },
+      "links": [
+        { "label": "ALL REPOSITORIES ↗", "url": "https://github.com/colddsam?tab=repositories" }
+      ]
+    },
+    {
+      "type": "route",
+      "title": "THE ROUTE",
+      "alt": "Achievements",
+      "kicker": "ACHIEVEMENTS SO FAR",
+      "items": [
+        { "text": "Appointed as Campus Ambassador of IIT Madras", "link": { "label": "Nº 01 — IIT MADRAS ↗", "url": "https://www.linkedin.com/posts/samrat-kumar-das-176731171_iitmadras-ecell-campusambassador-activity-7005795807807303681-A0zo?utm_source=share&utm_medium=member_desktop" } },
+        { "text": "Finished at 2nd position in the Entrepreneurship Awareness Camp" },
+        { "text": "Successfully completed Career Essentials in Software Development by Microsoft and LinkedIn", "link": { "label": "Nº 03 — MICROSOFT ↗", "url": "https://www.linkedin.com/posts/samrat-kumar-das-176731171_linkedinlearning-linkedin-microsoft-activity-7017184809009491969-BWMk?utm_source=share&utm_medium=member_desktop" } },
+        { "text": "Participated in the House of Hackers Hackathon organized by IIIT Ranchi", "link": { "label": "Nº 04 — HOUSE OF HACKERS ↗", "url": "https://www.linkedin.com/posts/colddsam_connections-houseofhackers-iiitranchi-activity-7064083462122594305-LUdj?utm_source=share&utm_medium=member_desktop" } },
+        { "text": "In 2023, participated in Hack4Bengal 2.0 — one of the biggest privately run hackathons" },
+        { "text": "Joined GDG Durgapur as a Graphics Designer for the core team" },
+        { "text": "Started 2024 by joining Hack4Bengal 3.0 as a core Graphics Designer" }
+      ]
+    },
+    {
+      "type": "spotify",
+      "title": "NOW PLAYING",
+      "alt": "Currently listening on Spotify",
+      "$comment": "Widget login: https://spotify-github-profile.kittinanx.com/",
+      "uid": "4uyys269cpo9e8ddgcc3kcxov",
+      "params": "cover_image=false&theme=default&show_offline=true&interchange=true&profanity=true&bar_color_cover=false"
+    },
+    {
+      "type": "quote",
+      "title": "DEV QUOTE",
+      "alt": "Developer quote",
+      "kicker": "RANDOM DEV QUOTE",
+      "quotes": [
+        ["Talk is cheap. Show me the code.", "Linus Torvalds"],
+        ["Programs must be written for people to read, and only incidentally for machines to execute.", "Harold Abelson"],
+        ["Any fool can write code that a computer can understand. Good programmers write code that humans can understand.", "Martin Fowler"],
+        ["First, solve the problem. Then, write the code.", "John Johnson"],
+        ["Simplicity is prerequisite for reliability.", "Edsger W. Dijkstra"],
+        ["Premature optimization is the root of all evil.", "Donald Knuth"],
+        ["Make it work, make it right, make it fast.", "Kent Beck"],
+        ["The best way to predict the future is to invent it.", "Alan Kay"],
+        ["Code is like humor. When you have to explain it, it's bad.", "Cory House"],
+        ["Experience is the name everyone gives to their mistakes.", "Oscar Wilde"],
+        ["Testing shows the presence, not the absence of bugs.", "Edsger W. Dijkstra"],
+        ["Deleted code is debugged code.", "Jeff Sickel"]
+      ]
+    },
+    {
+      "type": "snake",
+      "title": "PLAYGROUND",
+      "alt": "GitHub contribution grid snake animation",
+      "light": "https://raw.githubusercontent.com/colddsam/colddsam/output/github-contribution-grid-snake-mono.svg",
+      "dark": "https://raw.githubusercontent.com/colddsam/colddsam/output/github-contribution-grid-snake-mono-dark.svg"
+    }
+  ],
+
+  "footer": {
+    "status": "STATUS — LOOKING FOR AN INTERNSHIP",
+    "note": "the more we spread knowledge, the more we grow knowledge",
+    "right": "colddsam.dev  ·  Kolkata, IN  ·  © {year}"
+  }
+}

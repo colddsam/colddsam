@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 426" width="1000" height="426" fill="none" role="img" aria-label="About Samrat Kumar Das">
+  <style>
+    .m{font-family:ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace}
+    text{fill:#000000}
+    .ln{stroke:#000000;stroke-width:1;fill:none}
+    .ink{fill:#000000}
+    .stroke{stroke:#000000;fill:none}
+    .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.6,0,.2,1) forwards}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    .rise{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+    @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+    .fade{opacity:0;animation:fade .7s ease forwards}
+    @keyframes fade{to{opacity:1}}
+    .pulse{animation:pulse 2.4s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+    .ring{transform-box:fill-box;transform-origin:center;animation:ring 2.4s ease-out infinite}
+    @keyframes ring{0%{transform:scale(.4);opacity:.8}80%,100%{transform:scale(2.6);opacity:0}}
+    .grow{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation:grow 1.1s cubic-bezier(.2,.7,.2,1) forwards}
+    @keyframes grow{to{transform:scaleX(1)}}
+    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow{animation:none}.draw{stroke-dashoffset:0}.rise,.fade{opacity:1}.grow{transform:none}.ring{opacity:0}}
+  </style>
+  <g class="rise" style="animation-delay:0.1s"><text class="m" x="48" y="32" font-size="16">Hi, I'm Samrat Kumar Das from Kolkata, West Bengal.</text></g>
+  <g class="rise" style="animation-delay:0.18s"><text class="m" x="48" y="64" font-size="15">I'm in the 4th year of my B.Tech in Electronics and Communication Engineering, which I'm pursuing at</text></g>
+  <g class="rise" style="animation-delay:0.18s"><text class="m" x="48" y="90" font-size="15">Narula Institute of Technology.</text></g>
+  <g class="rise" style="animation-delay:0.26s"><text class="m" x="48" y="122" font-size="15">I believe nothing is impossible if you think it is possible.</text></g>
+  <g class="rise" style="animation-delay:0.34s"><text class="m" x="48" y="154" font-size="15">Currently I'm enhancing my skills in Machine Learning and Front-End Development, which I want to</text></g>
+  <g class="rise" style="animation-delay:0.34s"><text class="m" x="48" y="180" font-size="15">pursue further. I love to work as a team and collaborate on open source.</text></g>
+  <g class="rise" style="animation-delay:0.42000000000000004s"><text class="m" x="48" y="212" font-size="15">Now I'm looking for an internship to apply and sharpen the skills I'm learning from my college and</text></g>
+  <g class="rise" style="animation-delay:0.42000000000000004s"><text class="m" x="48" y="238" font-size="15">from my personal work.</text></g>
+  <line class="ln draw" x1="48" y1="266" x2="952" y2="266" pathLength="1" opacity="0.5" style="animation-delay:0.5s"/>
+  <g class="rise" style="animation-delay:0.5s"><text class="m" x="48" y="302" font-size="11" letter-spacing="2.5">BASED</text><text class="m" x="154" y="302" font-size="15">Kolkata, West Bengal, India</text></g>
+  <g class="rise" style="animation-delay:0.58s"><text class="m" x="48" y="336" font-size="11" letter-spacing="2.5">STUDY</text><text class="m" x="154" y="336" font-size="15">B.Tech ECE · Narula Institute of Technology · 4th year</text></g>
+  <g class="rise" style="animation-delay:0.6599999999999999s"><text class="m" x="48" y="370" font-size="11" letter-spacing="2.5">FOCUS</text><text class="m" x="154" y="370" font-size="15">Machine Learning · Front-End Development</text></g>
+  <g class="rise" style="animation-delay:0.7399999999999999s"><text class="m" x="48" y="404" font-size="11" letter-spacing="2.5">STATUS</text><text class="m" x="154" y="404" font-size="15">looking for an internship · team work · open-source collaboration</text></g>
+</svg>
