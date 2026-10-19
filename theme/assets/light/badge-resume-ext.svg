@@ -6,6 +6,9 @@
     .ink{fill:#000000}
     .stroke{stroke:#000000;fill:none}
     .outline{stroke:#000000}
+    text.paper{fill:#FFFFFF}
+    .pop{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .5s cubic-bezier(.2,1.4,.4,1) forwards}
+    @keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
     .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.6,0,.2,1) forwards}
     @keyframes draw{to{stroke-dashoffset:0}}
     .rise{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
@@ -28,7 +31,7 @@
     @keyframes caret{50%{fill-opacity:0}}
     .nudge{animation:nudge 1.6s ease-in-out infinite}
     @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
-    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim{animation:none}.draw{stroke-dashoffset:0}.rise,.fade{opacity:1}.grow{transform:none}.ring{opacity:0}}
+    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim,.pop{animation:none}.draw{stroke-dashoffset:0}.rise,.fade,.pop{opacity:1}.grow{transform:none}.ring{opacity:0}}
   </style>
   <rect class="stroke" x=".5" y=".5" width="88" height="27"/><text class="m" x="45.5" y="18.5" font-size="11" letter-spacing="2" text-anchor="middle">RESUME ↗</text>
 </svg>

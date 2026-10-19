@@ -6,6 +6,9 @@
     .ink{fill:#000000}
     .stroke{stroke:#000000;fill:none}
     .outline{stroke:#000000}
+    text.paper{fill:#FFFFFF}
+    .pop{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .5s cubic-bezier(.2,1.4,.4,1) forwards}
+    @keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
     .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.6,0,.2,1) forwards}
     @keyframes draw{to{stroke-dashoffset:0}}
     .rise{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
@@ -30,7 +33,7 @@
     @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
     .mer{transform-box:fill-box;transform-origin:center;animation:mer 9s linear infinite}
     @keyframes mer{0.00%{transform:scaleX(1.000)}6.25%{transform:scaleX(0.924)}12.50%{transform:scaleX(0.707)}18.75%{transform:scaleX(0.383)}25.00%{transform:scaleX(0.000)}31.25%{transform:scaleX(-0.383)}37.50%{transform:scaleX(-0.707)}43.75%{transform:scaleX(-0.924)}50.00%{transform:scaleX(-1.000)}56.25%{transform:scaleX(-0.924)}62.50%{transform:scaleX(-0.707)}68.75%{transform:scaleX(-0.383)}75.00%{transform:scaleX(-0.000)}81.25%{transform:scaleX(0.383)}87.50%{transform:scaleX(0.707)}93.75%{transform:scaleX(0.924)}100.00%{transform:scaleX(1.000)}}
-    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim{animation:none}.draw{stroke-dashoffset:0}.rise,.fade{opacity:1}.grow{transform:none}.ring{opacity:0}}
+    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim,.pop{animation:none}.draw{stroke-dashoffset:0}.rise,.fade,.pop{opacity:1}.grow{transform:none}.ring{opacity:0}}
   </style>
   <line class="ln draw" x1="48" y1="58" x2="952" y2="58" pathLength="1" opacity="1" style="animation-delay:0.2s"/>
   <g class="fade" style="animation-delay:0.2s"><text class="m" x="48" y="44" font-size="11" letter-spacing="3.5">PROFILE — INDEX Nº 001</text><text class="m" x="952" y="44" font-size="11" letter-spacing="3.5" text-anchor="end">KOLKATA, IN — 22.57° N</text></g>

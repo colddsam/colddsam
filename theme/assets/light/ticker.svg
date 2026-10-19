@@ -6,6 +6,9 @@
     .ink{fill:#000000}
     .stroke{stroke:#000000;fill:none}
     .outline{stroke:#000000}
+    text.paper{fill:#FFFFFF}
+    .pop{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .5s cubic-bezier(.2,1.4,.4,1) forwards}
+    @keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
     .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.6,0,.2,1) forwards}
     @keyframes draw{to{stroke-dashoffset:0}}
     .rise{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
@@ -30,7 +33,7 @@
     @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
     .marquee{animation:marquee 44s linear infinite}
     @keyframes marquee{to{transform:translateX(-1970.6px)}}
-    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim{animation:none}.draw{stroke-dashoffset:0}.rise,.fade{opacity:1}.grow{transform:none}.ring{opacity:0}}
+    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim,.pop{animation:none}.draw{stroke-dashoffset:0}.rise,.fade,.pop{opacity:1}.grow{transform:none}.ring{opacity:0}}
   </style>
   <defs><linearGradient id="edge"><stop offset="0" stop-color="#000"/><stop offset=".08" stop-color="#fff"/><stop offset=".92" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient><mask id="fade"><rect width="1000" height="52" fill="url(#edge)"/></mask></defs>
   <line class="ln draw" x1="0" y1="0.5" x2="1000" y2="0.5" pathLength="1" opacity="0.5"/>

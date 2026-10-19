@@ -6,6 +6,9 @@
     .ink{fill:#FFFFFF}
     .stroke{stroke:#FFFFFF;fill:none}
     .outline{stroke:#FFFFFF}
+    text.paper{fill:#0D1117}
+    .pop{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .5s cubic-bezier(.2,1.4,.4,1) forwards}
+    @keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
     .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.6,0,.2,1) forwards}
     @keyframes draw{to{stroke-dashoffset:0}}
     .rise{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
@@ -32,7 +35,7 @@
     @keyframes sig{to{stroke-dashoffset:0}}
     @keyframes sigfill{to{fill-opacity:1}}
     @media (prefers-reduced-motion:reduce){.sig{animation:none;stroke-dashoffset:0;fill-opacity:1}}
-    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim{animation:none}.draw{stroke-dashoffset:0}.rise,.fade{opacity:1}.grow{transform:none}.ring{opacity:0}}
+    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim,.pop{animation:none}.draw{stroke-dashoffset:0}.rise,.fade,.pop{opacity:1}.grow{transform:none}.ring{opacity:0}}
   </style>
   <text class="m outline sig" x="500" y="128" font-size="112" letter-spacing="-4" text-anchor="middle">colddsam</text>
   <line class="ln draw" x1="48" y1="154" x2="952" y2="154" pathLength="1" opacity="0.5" style="animation-delay:2.4s"/>

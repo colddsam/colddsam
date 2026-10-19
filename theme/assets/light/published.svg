@@ -6,6 +6,9 @@
     .ink{fill:#000000}
     .stroke{stroke:#000000;fill:none}
     .outline{stroke:#000000}
+    text.paper{fill:#FFFFFF}
+    .pop{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .5s cubic-bezier(.2,1.4,.4,1) forwards}
+    @keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
     .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.6,0,.2,1) forwards}
     @keyframes draw{to{stroke-dashoffset:0}}
     .rise{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
@@ -28,7 +31,7 @@
     @keyframes caret{50%{fill-opacity:0}}
     .nudge{animation:nudge 1.6s ease-in-out infinite}
     @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
-    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim{animation:none}.draw{stroke-dashoffset:0}.rise,.fade{opacity:1}.grow{transform:none}.ring{opacity:0}}
+    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim,.pop{animation:none}.draw{stroke-dashoffset:0}.rise,.fade,.pop{opacity:1}.grow{transform:none}.ring{opacity:0}}
   </style>
   <g class="fade" style="animation-delay:0.1s"><text class="m" x="48" y="28" font-size="11" letter-spacing="3.5">PACKAGES — 66 DOWNLOADS / 30 DAYS</text><text class="m" x="952" y="28" font-size="11" letter-spacing="3.5" text-anchor="end">FIG. 05.1</text></g><line class="ln draw" x1="48" y1="40" x2="952" y2="40" pathLength="1" opacity="1" style="animation-delay:0.1s"/>
   <g class="rise" style="animation-delay:0.2s"><text class="m" x="48" y="82" font-size="11" letter-spacing="2.5">Nº 01</text><rect class="stroke" x="118.5" y="67.5" width="56" height="20"/><text class="m" x="147" y="82" font-size="10" letter-spacing="2" text-anchor="middle">PYPI</text><text class="m" x="196" y="82" font-size="16">modeyolo</text><text class="m" x="286.8" y="82" font-size="10" letter-spacing="2" opacity="0.6">v0.2.5</text><text class="m" x="196" y="104" font-size="12" opacity="0.7">Colour-space transforms and dataset modification for deep learning.</text><text class="m" x="952" y="82" font-size="18" text-anchor="end">36</text><rect class="ink" opacity="0.15" x="832" y="96" width="120" height="4"/><rect class="ink grow" style="animation-delay:0.4s" x="832" y="96" width="120" height="4"/></g>

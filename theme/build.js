@@ -85,7 +85,7 @@ const line = (x1, y1, x2, y2, o = {}) =>
 const group = (cls, d, inner) => `<g class="${cls}" ${attrs({ style: delay(d) })}>${inner}</g>`;
 
 function svgDoc(card, mode) {
-  const { ink } = tokens.modes[mode];
+  const { ink, paper } = tokens.modes[mode];
   const css = [
     `.m{font-family:${tokens.font}}`,
     `text{fill:${ink}}`,
@@ -93,6 +93,9 @@ function svgDoc(card, mode) {
     `.ink{fill:${ink}}`,
     `.stroke{stroke:${ink};fill:none}`,
     `.outline{stroke:${ink}}`,
+    `text.paper{fill:${paper}}`,
+    '.pop{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .5s cubic-bezier(.2,1.4,.4,1) forwards}',
+    '@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}',
     '.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.6,0,.2,1) forwards}',
     '@keyframes draw{to{stroke-dashoffset:0}}',
     '.rise{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}',
@@ -116,7 +119,7 @@ function svgDoc(card, mode) {
     '.nudge{animation:nudge 1.6s ease-in-out infinite}',
     '@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}',
     ...(card.css || []),
-    '@media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim{animation:none}.draw{stroke-dashoffset:0}.rise,.fade{opacity:1}.grow{transform:none}.ring{opacity:0}}',
+    '@media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim,.pop{animation:none}.draw{stroke-dashoffset:0}.rise,.fade,.pop{opacity:1}.grow{transform:none}.ring{opacity:0}}',
   ].join('\n    ');
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${card.w} ${card.h}" width="${card.w}" height="${card.h}" fill="none" role="img" aria-label="${esc(card.label)}">
   <style>
@@ -408,6 +411,89 @@ function packagesCard(s, fig, pkgs) {
     }
   });
   return { w: W, h: Math.round(y - 12), label: `${s.alt} — ${total} downloads in the last 30 days`, body: parts.join('\n  ') };
+}
+
+// Tech stack as chip rows: core tools are solid ink with paper text, the rest outlined. Chips pop in one by one.
+// row = { label, core: [...], more: [...] }
+function stackCard(s, fig) {
+  const parts = [kicker(s.kicker, fig)];
+  const legend = group('fade', 0.3,
+    `<rect class="ink" x="${R - 250}" y="57" width="10" height="10"/>` + text(R - 234, 66, 'CORE', { size: 10, ls: 2 })
+    + `<rect class="stroke" x="${R - 160.5}" y="57.5" width="9" height="9"/>` + text(R - 144, 66, 'ALSO USE', { size: 10, ls: 2 }));
+  parts.push(legend);
+  const cx0 = 214; // chips start here; the label column sits left of it
+  const H = 30;
+  const gap = 10;
+  let y = 96;
+  let k = 0;
+  s.rows.forEach((row, i) => {
+    const chips = [...(row.core || []).map((t) => [t, true]), ...(row.more || []).map((t) => [t, false])];
+    let x = cx0;
+    let top = y;
+    const inner = [text(L, top + 20, pad2(i + 1), { size: 11, ls: 2.5, op: 0.6 }), text(L + 34, top + 20, row.label, { size: 11, ls: 3 }),
+      text(L + 34, top + 38, `${chips.length} TOOL${chips.length === 1 ? '' : 'S'}`, { size: 9, ls: 2, op: 0.5 })];
+    chips.forEach(([t, core]) => {
+      const w = Math.round(width(t, 13, 0.5) + 26);
+      if (x + w > R) {
+        x = cx0;
+        top += H + gap;
+      }
+      const d = (0.25 + k++ * 0.035).toFixed(3);
+      const box = core ? `<rect class="ink" x="${x}" y="${top}" width="${w}" height="${H}"/>` : `<rect class="stroke" x="${x + 0.5}" y="${top + 0.5}" width="${w - 1}" height="${H - 1}"/>`;
+      inner.push(`<g class="pop" style="animation-delay:${d}s">${box}${text(x + w / 2, top + 20, t, { size: 13, ls: 0.5, anchor: 'middle', cls: core ? 'paper' : '' })}</g>`);
+      x += w + gap;
+    });
+    parts.push(group('fade', 0.15 + i * 0.06, inner.join('')));
+    y = top + H + 26;
+    if (i < s.rows.length - 1) parts.push(line(L, y - 13, R, y - 13, { op: tokens.tones.softRule * 0.4 }));
+  });
+  const all = s.rows.flatMap((r) => [...(r.core || []), ...(r.more || [])]);
+  return { w: W, h: y - 14, label: `${s.alt}: ${all.join(', ')}`, body: parts.join('\n  ') };
+}
+
+// Facts as a terminal session: each line types itself out (a stepped clip reveal), dotted leaders join key and value.
+function terminalCard(s, fig) {
+  const parts = [];
+  const top = 12;
+  const bar = 36;
+  const LH = 34;
+  const keyW = Math.max(...s.rows.map(([k]) => width(k, 11, 3)));
+  const vx = Math.max(266, Math.round(L + 46 + keyW + 60));
+  const lines = [];
+  lines.push({ prompt: true, body: text(L + 40, 0, s.command, { size: 14 }) });
+  s.rows.forEach(([k, v]) => lines.push({
+    chars: k.length + v.length,
+    body: text(L + 40, 0, k, { size: 11, ls: 3 })
+      + `<line class="ln" x1="${L + 48 + keyW}" y1="-4" x2="${vx - 14}" y2="-4" stroke-dasharray="1 5" opacity="${tokens.tones.softRule}"/>`
+      + text(vx, 0, truncate(v, 15, 0, R - 24 - vx), { size: 15 }),
+  }));
+  const css = [
+    '.type{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation-name:type;animation-fill-mode:forwards}',
+    '@keyframes type{to{transform:scaleX(1)}}',
+    '@media (prefers-reduced-motion:reduce){.type{animation:none;transform:none}}',
+  ];
+  let y = top + bar + 38;
+  let t = 0.5;
+  lines.forEach((ln, i) => {
+    const dur = ln.prompt ? 0.9 : 0.55;
+    const steps = ln.prompt ? s.command.length : Math.min(28, ln.chars);
+    parts.push(`<clipPath id="ty${i}"><rect class="type" x="${L + 4}" y="${y - 22}" width="${R - L - 8}" height="${LH}" style="animation-duration:${dur}s;animation-timing-function:steps(${steps});animation-delay:${t.toFixed(2)}s"/></clipPath>`);
+    const prompt = ln.prompt ? text(L + 20, y, '$', { size: 14, op: 0.6 }) : '';
+    parts.push(`<g clip-path="url(#ty${i})"><g transform="translate(0 ${y})">${ln.body}</g>${prompt}</g>`);
+    t += dur + (ln.prompt ? 0.3 : 0.12);
+    y += i === 0 ? LH + 10 : LH;
+  });
+  // closing prompt with a blinking caret
+  parts.push(group('fade', t, text(L + 20, y, '$', { size: 14, op: 0.6 }) + `<rect class="ink blink" x="${L + 40}" y="${y - 13}" width="8" height="15"/>`));
+  const h = y + 30;
+  const frame = [
+    `<rect class="stroke" x="${L + 0.5}" y="${top + 0.5}" width="${R - L - 1}" height="${h - top - 12}"/>`,
+    line(L, top + bar, R, top + bar, { op: tokens.tones.softRule }),
+    ...[0, 1, 2].map((j) => `<circle class="${j ? 'stroke' : 'ink'}" cx="${L + 20 + j * 18}" cy="${top + bar / 2}" r="5"/>`),
+    text(W / 2, top + bar / 2 + 4, s.title, { size: 11, ls: 2, anchor: 'middle', op: 0.7 }),
+    text(R - 16, top + bar / 2 + 4, fig, { size: 10, ls: 2, anchor: 'end', op: 0.6 }),
+  ];
+  return { w: W, h, css, label: `${s.alt}: ${s.rows.map(([k, v]) => `${k} — ${v}`).join('; ')}`, body: [...frame, ...parts].join('\n  ') };
 }
 
 // Endless keyword marquee under the header; edges fade out through a luminance mask.
@@ -1038,6 +1124,12 @@ async function renderSection(s, num) {
       out.push(pic(emit(name, glanceCard(s, fig(), items)), s.alt));
       break;
     }
+    case 'stack':
+      out.push(pic(emit(name, stackCard(s, fig())), s.alt));
+      break;
+    case 'terminal':
+      out.push(pic(emit(name, terminalCard(s, fig())), s.alt));
+      break;
     case 'contact':
       out.push(`<a href="mailto:${esc(s.email)}">${pic(emit(name, contactCard(s, fig())), s.alt)}</a>`);
       break;

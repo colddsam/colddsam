@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 258" width="1000" height="258" fill="none" role="img" aria-label="Facts about Samrat">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 432" width="1000" height="432" fill="none" role="img" aria-label="Facts about Samrat: RESUME — on Google Drive — link below; PROJECTS — every one of them is on Linktree; SHIPPED — 3 open-source packages on PyPI &amp; npm; HACKATHONS — Hack4Bengal 2.0 &amp; 3.0 · House of Hackers; ASK ME — AI / ML · Front-End · Data Structures; REACH ME — colddsam@gmail.com; TIMEZONE — IST · UTC+5:30; SELF FACT — the more we spread knowledge, the more we grow">
   <style>
     .m{font-family:ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace}
     text{fill:#000000}
@@ -6,6 +6,9 @@
     .ink{fill:#000000}
     .stroke{stroke:#000000;fill:none}
     .outline{stroke:#000000}
+    text.paper{fill:#FFFFFF}
+    .pop{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .5s cubic-bezier(.2,1.4,.4,1) forwards}
+    @keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
     .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.6,0,.2,1) forwards}
     @keyframes draw{to{stroke-dashoffset:0}}
     .rise{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
@@ -28,13 +31,35 @@
     @keyframes caret{50%{fill-opacity:0}}
     .nudge{animation:nudge 1.6s ease-in-out infinite}
     @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
-    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim{animation:none}.draw{stroke-dashoffset:0}.rise,.fade{opacity:1}.grow{transform:none}.ring{opacity:0}}
+    .type{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation-name:type;animation-fill-mode:forwards}
+    @keyframes type{to{transform:scaleX(1)}}
+    @media (prefers-reduced-motion:reduce){.type{animation:none;transform:none}}
+    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim,.pop{animation:none}.draw{stroke-dashoffset:0}.rise,.fade,.pop{opacity:1}.grow{transform:none}.ring{opacity:0}}
   </style>
-  <g class="rise" style="animation-delay:0.1s"><text class="m" x="48" y="32" font-size="11" letter-spacing="2.5">RESUME</text><text class="m" x="164" y="32" font-size="15">available on Google Drive — link below</text></g>
-  <g class="rise" style="animation-delay:0.18s"><text class="m" x="48" y="66" font-size="11" letter-spacing="2.5">BUILDING</text><text class="m" x="164" y="66" font-size="15">a Flutter-based application — virtual-assistant</text></g>
-  <g class="rise" style="animation-delay:0.26s"><text class="m" x="48" y="100" font-size="11" letter-spacing="2.5">LEARNING</text><text class="m" x="164" y="100" font-size="15">AI / ML · Front End</text></g>
-  <g class="rise" style="animation-delay:0.34s"><text class="m" x="48" y="134" font-size="11" letter-spacing="2.5">PROJECTS</text><text class="m" x="164" y="134" font-size="15">all of my projects are available on Linktree</text></g>
-  <g class="rise" style="animation-delay:0.42000000000000004s"><text class="m" x="48" y="168" font-size="11" letter-spacing="2.5">ASK ME</text><text class="m" x="164" y="168" font-size="15">AI / ML · Front-End Development · Data Structures</text></g>
-  <g class="rise" style="animation-delay:0.5s"><text class="m" x="48" y="202" font-size="11" letter-spacing="2.5">REACH ME</text><text class="m" x="164" y="202" font-size="15">colddsam@gmail.com</text></g>
-  <g class="rise" style="animation-delay:0.58s"><text class="m" x="48" y="236" font-size="11" letter-spacing="2.5">SELF FACT</text><text class="m" x="164" y="236" font-size="15">I believe the more we spread knowledge, the more we grow knowledge</text></g>
+  <rect class="stroke" x="48.5" y="12.5" width="903" height="408"/>
+  <line class="ln" x1="48" y1="48" x2="952" y2="48" opacity="0.5"/>
+  <circle class="ink" cx="68" cy="30" r="5"/>
+  <circle class="stroke" cx="86" cy="30" r="5"/>
+  <circle class="stroke" cx="104" cy="30" r="5"/>
+  <text class="m" x="500" y="34" font-size="11" letter-spacing="2" text-anchor="middle" opacity="0.7">FACTS</text>
+  <text class="m" x="936" y="34" font-size="10" letter-spacing="2" text-anchor="end" opacity="0.6">FIG. 07.1</text>
+  <clipPath id="ty0"><rect class="type" x="52" y="64" width="896" height="34" style="animation-duration:0.9s;animation-timing-function:steps(14);animation-delay:0.50s"/></clipPath>
+  <g clip-path="url(#ty0)"><g transform="translate(0 86)"><text class="m" x="88" y="0" font-size="14">cat ~/facts.md</text></g><text class="m" x="68" y="86" font-size="14" opacity="0.6">$</text></g>
+  <clipPath id="ty1"><rect class="type" x="52" y="108" width="896" height="34" style="animation-duration:0.55s;animation-timing-function:steps(28);animation-delay:1.70s"/></clipPath>
+  <g clip-path="url(#ty1)"><g transform="translate(0 130)"><text class="m" x="88" y="0" font-size="11" letter-spacing="3">RESUME</text><line class="ln" x1="192" y1="-4" x2="252" y2="-4" stroke-dasharray="1 5" opacity="0.5"/><text class="m" x="266" y="0" font-size="15">on Google Drive — link below</text></g></g>
+  <clipPath id="ty2"><rect class="type" x="52" y="142" width="896" height="34" style="animation-duration:0.55s;animation-timing-function:steps(28);animation-delay:2.37s"/></clipPath>
+  <g clip-path="url(#ty2)"><g transform="translate(0 164)"><text class="m" x="88" y="0" font-size="11" letter-spacing="3">PROJECTS</text><line class="ln" x1="192" y1="-4" x2="252" y2="-4" stroke-dasharray="1 5" opacity="0.5"/><text class="m" x="266" y="0" font-size="15">every one of them is on Linktree</text></g></g>
+  <clipPath id="ty3"><rect class="type" x="52" y="176" width="896" height="34" style="animation-duration:0.55s;animation-timing-function:steps(28);animation-delay:3.04s"/></clipPath>
+  <g clip-path="url(#ty3)"><g transform="translate(0 198)"><text class="m" x="88" y="0" font-size="11" letter-spacing="3">SHIPPED</text><line class="ln" x1="192" y1="-4" x2="252" y2="-4" stroke-dasharray="1 5" opacity="0.5"/><text class="m" x="266" y="0" font-size="15">3 open-source packages on PyPI &amp; npm</text></g></g>
+  <clipPath id="ty4"><rect class="type" x="52" y="210" width="896" height="34" style="animation-duration:0.55s;animation-timing-function:steps(28);animation-delay:3.71s"/></clipPath>
+  <g clip-path="url(#ty4)"><g transform="translate(0 232)"><text class="m" x="88" y="0" font-size="11" letter-spacing="3">HACKATHONS</text><line class="ln" x1="192" y1="-4" x2="252" y2="-4" stroke-dasharray="1 5" opacity="0.5"/><text class="m" x="266" y="0" font-size="15">Hack4Bengal 2.0 &amp; 3.0 · House of Hackers</text></g></g>
+  <clipPath id="ty5"><rect class="type" x="52" y="244" width="896" height="34" style="animation-duration:0.55s;animation-timing-function:steps(28);animation-delay:4.38s"/></clipPath>
+  <g clip-path="url(#ty5)"><g transform="translate(0 266)"><text class="m" x="88" y="0" font-size="11" letter-spacing="3">ASK ME</text><line class="ln" x1="192" y1="-4" x2="252" y2="-4" stroke-dasharray="1 5" opacity="0.5"/><text class="m" x="266" y="0" font-size="15">AI / ML · Front-End · Data Structures</text></g></g>
+  <clipPath id="ty6"><rect class="type" x="52" y="278" width="896" height="34" style="animation-duration:0.55s;animation-timing-function:steps(26);animation-delay:5.05s"/></clipPath>
+  <g clip-path="url(#ty6)"><g transform="translate(0 300)"><text class="m" x="88" y="0" font-size="11" letter-spacing="3">REACH ME</text><line class="ln" x1="192" y1="-4" x2="252" y2="-4" stroke-dasharray="1 5" opacity="0.5"/><text class="m" x="266" y="0" font-size="15">colddsam@gmail.com</text></g></g>
+  <clipPath id="ty7"><rect class="type" x="52" y="312" width="896" height="34" style="animation-duration:0.55s;animation-timing-function:steps(22);animation-delay:5.72s"/></clipPath>
+  <g clip-path="url(#ty7)"><g transform="translate(0 334)"><text class="m" x="88" y="0" font-size="11" letter-spacing="3">TIMEZONE</text><line class="ln" x1="192" y1="-4" x2="252" y2="-4" stroke-dasharray="1 5" opacity="0.5"/><text class="m" x="266" y="0" font-size="15">IST · UTC+5:30</text></g></g>
+  <clipPath id="ty8"><rect class="type" x="52" y="346" width="896" height="34" style="animation-duration:0.55s;animation-timing-function:steps(28);animation-delay:6.39s"/></clipPath>
+  <g clip-path="url(#ty8)"><g transform="translate(0 368)"><text class="m" x="88" y="0" font-size="11" letter-spacing="3">SELF FACT</text><line class="ln" x1="192" y1="-4" x2="252" y2="-4" stroke-dasharray="1 5" opacity="0.5"/><text class="m" x="266" y="0" font-size="15">the more we spread knowledge, the more we grow</text></g></g>
+  <g class="fade" style="animation-delay:7.06s"><text class="m" x="68" y="402" font-size="14" opacity="0.6">$</text><rect class="ink blink" x="88" y="389" width="8" height="15"/></g>
 </svg>

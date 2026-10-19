@@ -112,35 +112,38 @@
       ]
     },
     {
-      "type": "card",
+      "type": "stack",
       "title": "STACK",
       "alt": "Technical stack",
-      "rule": true,
+      "$comment": "One row per category. core = tools you use daily (solid chips); more = tools you also use (outlined chips). Chips wrap automatically.",
+      "kicker": "TOOLS OF THE TRADE",
       "rows": [
-        ["LANGUAGES", "C · C++ · Python · JavaScript · Dart"],
-        ["WEB", "HTML · CSS · Sass · React"],
-        ["BACKEND", "Node.js · Express · Flask · FastAPI · MongoDB"],
-        ["ML / CV", "TensorFlow · OpenCV"],
-        ["MOBILE", "Flutter"],
-        ["TOOLING", "Git"]
+        { "label": "LANGUAGES", "core": ["Python", "TypeScript", "JavaScript"], "more": ["C++", "C", "Dart"] },
+        { "label": "FRONT END", "core": ["React", "Next.js", "Tailwind CSS"], "more": ["Framer Motion", "HTML", "CSS", "Sass"] },
+        { "label": "BACK END", "core": ["FastAPI", "Node.js"], "more": ["Express", "Flask", "Streamlit"] },
+        { "label": "DATA", "core": ["PostgreSQL"], "more": ["MongoDB", "Redis", "Supabase"] },
+        { "label": "AI / ML", "core": ["TensorFlow", "OpenCV"], "more": ["Gemini API", "Llama 3 · Groq", "NLP"] },
+        { "label": "SHIP", "core": ["Git", "Docker"], "more": ["Vercel", "Render", "Playwright", "Flutter"] }
       ]
     },
     {
-      "type": "card",
+      "type": "terminal",
       "title": "FACTS",
       "alt": "Facts about Samrat",
+      "$comment": "Shown as a terminal session that types itself out. rows = [key, value]; keep values to one line.",
+      "command": "cat ~/facts.md",
       "rows": [
-        ["RESUME", "available on Google Drive — link below"],
-        ["BUILDING", "a Flutter-based application — virtual-assistant"],
-        ["LEARNING", "AI / ML · Front End"],
-        ["PROJECTS", "all of my projects are available on Linktree"],
-        ["ASK ME", "AI / ML · Front-End Development · Data Structures"],
+        ["RESUME", "on Google Drive — link below"],
+        ["PROJECTS", "every one of them is on Linktree"],
+        ["SHIPPED", "3 open-source packages on PyPI & npm"],
+        ["HACKATHONS", "Hack4Bengal 2.0 & 3.0 · House of Hackers"],
+        ["ASK ME", "AI / ML · Front-End · Data Structures"],
         ["REACH ME", "colddsam@gmail.com"],
-        ["SELF FACT", "I believe the more we spread knowledge, the more we grow knowledge"]
+        ["TIMEZONE", "IST · UTC+5:30"],
+        ["SELF FACT", "the more we spread knowledge, the more we grow"]
       ],
       "links": [
         { "label": "RESUME ↗", "url": "https://drive.google.com/file/d/1PdT7z_OTmuz3gs02nRsrAx9_efc6rstA/view?usp=sharing" },
-        { "label": "VIRTUAL ASSISTANT ↗", "url": "https://github.com/colddsam/virtual-assistant.git" },
         { "label": "ALL PROJECTS ↗", "url": "https://linktr.ee/colddsam?utm_source=linktree_profile_share&ltsid=2cda3886-be78-4ccf-a16a-3ef6943e4525" },
         { "label": "EMAIL ↗", "url": "mailto:colddsam@gmail.com" }
       ]
