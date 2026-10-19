@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 444" width="400" height="444" fill="none" role="img" aria-label="Latest blog posts">
+  <style>
+    .m{font-family:ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace}
+    text{fill:#FFFFFF}
+    .ln{stroke:#FFFFFF;stroke-width:1;fill:none}
+    .ink{fill:#FFFFFF}
+    .stroke{stroke:#FFFFFF;fill:none}
+    .outline{stroke:#FFFFFF}
+    text.paper{fill:#0D1117}
+    .pop{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .5s cubic-bezier(.2,1.4,.4,1) forwards}
+    @keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+    .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.6,0,.2,1) forwards}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    .rise{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+    @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+    .fade{opacity:0;animation:fade .7s ease forwards}
+    @keyframes fade{to{opacity:1}}
+    .pulse{animation:pulse 2.4s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+    .ring{transform-box:fill-box;transform-origin:center;animation:ring 2.4s ease-out infinite}
+    @keyframes ring{0%{transform:scale(.4);opacity:.8}80%,100%{transform:scale(2.6);opacity:0}}
+    .grow{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation:grow 1.1s cubic-bezier(.2,.7,.2,1) forwards}
+    @keyframes grow{to{transform:scaleX(1)}}
+    .eq{transform-box:fill-box;transform-origin:bottom;animation:eq .9s ease-in-out infinite alternate}
+    @keyframes eq{from{transform:scaleY(.2)}to{transform:scaleY(1)}}
+    .spin{transform-box:fill-box;transform-origin:center;animation:spin 3.2s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .blink{animation:blink 1.1s steps(1) infinite}
+    @keyframes blink{50%{opacity:0}}
+    .caret{animation:caret 1.1s steps(1) infinite}
+    @keyframes caret{50%{fill-opacity:0}}
+    .nudge{animation:nudge 1.6s ease-in-out infinite}
+    @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
+    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim,.pop{animation:none}.draw{stroke-dashoffset:0}.rise,.fade,.pop{opacity:1}.grow{transform:none}.ring{opacity:0}}
+  </style>
+  <g class="fade" style="animation-delay:0.1s"><text class="m" x="16" y="28" font-size="11" letter-spacing="1.75">LATEST FROM MEDIUM</text><text class="m" x="384" y="28" font-size="11" letter-spacing="1.75" text-anchor="end">FIG. 08.1</text></g><line class="ln draw" x1="16" y1="40" x2="384" y2="40" pathLength="1" opacity="1" style="animation-delay:0.1s"/>
+  <g class="rise" style="animation-delay:0.2s"><text class="m" x="16" y="78" font-size="11" letter-spacing="1.25">Nº 01</text><text class="m" x="16" y="100" font-size="15">The Future of Quantum Computing: What’s</text><text class="m" x="16" y="122" font-size="15">Next for Qubits?</text><text class="m" x="384" y="78" font-size="11" letter-spacing="1" text-anchor="end">07 SEP 2024</text></g>
+  <line class="ln" x1="16" y1="138" x2="384" y2="138" opacity="0.25"/>
+  <g class="rise" style="animation-delay:0.28s"><text class="m" x="16" y="162" font-size="11" letter-spacing="1.25">Nº 02</text><text class="m" x="16" y="184" font-size="15">Unveiling the Secrets of Machine</text><text class="m" x="16" y="206" font-size="15">Learning: A Comprehensive Guide</text><text class="m" x="384" y="162" font-size="11" letter-spacing="1" text-anchor="end">06 SEP 2024</text></g>
+  <line class="ln" x1="16" y1="222" x2="384" y2="222" opacity="0.25"/>
+  <g class="rise" style="animation-delay:0.36s"><text class="m" x="16" y="246" font-size="11" letter-spacing="1.25">Nº 03</text><text class="m" x="16" y="268" font-size="15">Unveiling the Secrets of Neural</text><text class="m" x="16" y="290" font-size="15">Networks: A Comprehensive Guide for</text><text class="m" x="16" y="312" font-size="15">Beginners</text><text class="m" x="384" y="246" font-size="11" letter-spacing="1" text-anchor="end">05 SEP 2024</text></g>
+  <line class="ln" x1="16" y1="328" x2="384" y2="328" opacity="0.25"/>
+  <g class="rise" style="animation-delay:0.44s"><text class="m" x="16" y="352" font-size="11" letter-spacing="1.25">Nº 04</text><text class="m" x="16" y="374" font-size="15">Unlock the Power of Quantum Computing: 5</text><text class="m" x="16" y="396" font-size="15">Practical Applications to Supercharge</text><text class="m" x="16" y="418" font-size="15">Your Business</text><text class="m" x="384" y="352" font-size="11" letter-spacing="1" text-anchor="end">04 SEP 2024</text></g>
+</svg>

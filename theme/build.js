@@ -26,9 +26,19 @@ const MODES = Object.keys(tokens.modes);
 const OUTPUT = path.join(ROOT, profile.output);
 
 const warnings = [];
-const W = 1000; // card width, as in the reference theme
-const L = 48; // left margin
-const R = 952; // right margin
+// Every card is drawn twice: the wide layout, and a narrow one that pic() swaps in on phones — a 1000-wide card
+// shrunk to a phone screen leaves its small text unreadable. W / L / R (card width, left and right margins) and
+// COL follow whichever layout is being drawn; NARROW also halves letter-spacing so labels fit the narrow card.
+const LAYOUTS = { wide: { W: 1000, L: 48, R: 952 }, narrow: { W: 400, L: 16, R: 384 } };
+const PHONE = '(max-width: 640px)';
+let W, L, R, COL, NARROW;
+function layout(name) {
+  ({ W, L, R } = LAYOUTS[name]);
+  NARROW = name === 'narrow';
+  COL = NARROW ? R - L : (R - L - GAP) / 2;
+}
+const lsk = (ls) => (ls && NARROW ? ls / 2 : ls);
+const warn = (m) => warnings.push(NARROW ? `narrow ${m}` : m);
 const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 
 // ─── text ────────────────────────────────────────────────────────────────────
@@ -36,7 +46,7 @@ const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', '
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const pad2 = (n) => String(n).padStart(2, '0');
 const slugify = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const width = (s, size, ls = 0) => [...String(s)].length * (size * tokens.charWidth + ls);
+const width = (s, size, ls = 0) => [...String(s)].length * (size * tokens.charWidth + lsk(ls));
 
 function wrap(s, size, ls, max) {
   const lines = [];
@@ -60,7 +70,7 @@ function truncate(s, size, ls, max) {
 }
 
 function checkFit(where, s, size, ls, max) {
-  if (width(s, size, ls) > max) warnings.push(`${where}: "${s}" may overflow (${Math.round(width(s, size, ls))}px > ${max}px)`);
+  if (width(s, size, ls) > max) warn(`${where}: "${s}" may overflow (${Math.round(width(s, size, ls))}px > ${max}px)`);
 }
 
 // ─── svg primitives (colour-free; ink is applied per mode in svgDoc) ──────────
@@ -74,7 +84,7 @@ const delay = (d) => (d == null ? undefined : `animation-delay:${d}s`);
 
 const text = (x, y, s, o = {}) =>
   `<text class="${['m', o.cls].filter(Boolean).join(' ')}" ${attrs({
-    x, y, 'font-size': o.size || 14, 'letter-spacing': o.ls, 'text-anchor': o.anchor, 'font-weight': o.weight, opacity: o.op, style: delay(o.delay),
+    x, y, 'font-size': o.size || 14, 'letter-spacing': lsk(o.ls), 'text-anchor': o.anchor, 'font-weight': o.weight, opacity: o.op, style: delay(o.delay),
   })}>${esc(s)}</text>`;
 
 const line = (x1, y1, x2, y2, o = {}) =>
@@ -133,8 +143,19 @@ function svgDoc(card, mode) {
 // ─── output ──────────────────────────────────────────────────────────────────
 
 const emitted = new Set();
+const narrowed = new Set(); // cards that also have a phone layout, written as <name>.narrow.svg
+// card = a card object (drawn once, e.g. badges, which are small enough as they are),
+// or a function that draws the card for the current layout (drawn once per layout).
 function emit(name, card) {
-  for (const mode of MODES) fs.writeFileSync(path.join(ASSETS, mode, `${name}.svg`), svgDoc(card, mode));
+  const layouts = typeof card === 'function' ? Object.keys(LAYOUTS) : ['wide'];
+  for (const l of layouts) {
+    layout(l);
+    const c = typeof card === 'function' ? card() : card;
+    const file = l === 'wide' ? name : `${name}.${l}`;
+    for (const mode of MODES) fs.writeFileSync(path.join(ASSETS, mode, `${file}.svg`), svgDoc(c, mode));
+  }
+  layout('wide');
+  if (layouts.length > 1) narrowed.add(name);
   emitted.add(name);
   return name;
 }
@@ -145,9 +166,12 @@ function emitRaw(name, mode, svg) {
 
 const rel = (p) => path.relative(path.dirname(OUTPUT), p).split(path.sep).join('/');
 const assetPath = (mode, name) => rel(path.join(ASSETS, mode, `${name}.svg`));
-const picture = (light, dark, alt, w) =>
-  `<picture><source media="(prefers-color-scheme: dark)" srcset="${esc(dark)}"/><img src="${esc(light)}" alt="${esc(alt)}"${w ? ` width="${w}"` : ''}/></picture>`;
-const pic = (name, alt, w) => picture(assetPath('light', name), assetPath('dark', name), alt, w);
+// phone = { light, dark } sources for narrow screens; the first <source> whose media matches wins.
+const picture = (light, dark, alt, w, phone) =>
+  `<picture>${phone ? `<source media="${PHONE} and (prefers-color-scheme: dark)" srcset="${esc(phone.dark)}"/><source media="${PHONE}" srcset="${esc(phone.light)}"/>` : ''}`
+  + `<source media="(prefers-color-scheme: dark)" srcset="${esc(dark)}"/><img src="${esc(light)}" alt="${esc(alt)}"${w ? ` width="${w}"` : ''}/></picture>`;
+const pic = (name, alt, w) => picture(assetPath('light', name), assetPath('dark', name), alt, w,
+  narrowed.has(name) ? { light: assetPath('light', `${name}.narrow`), dark: assetPath('dark', `${name}.narrow`) } : null);
 const center = (inner) => `<div align="center">\n\n${inner}\n\n</div>`;
 
 // ─── components ──────────────────────────────────────────────────────────────
@@ -167,12 +191,15 @@ function badge(label, url) {
 const badgeRow = (links = []) => (links.length ? center(links.map((l) => badge(l.label, l.url)).join(' ')) : '');
 
 function kicker(left, right) {
+  // the right-hand figure label is decoration: on the narrow card it gives way when the two would collide
+  if (NARROW && width(`${left}${right}`, 11, 3.5) > R - L - 40) right = '';
   checkFit('kicker', `${left}${right}`, 11, 3.5, R - L - 40);
   return group('fade', 0.1, text(L, 28, left, { size: 11, ls: 3.5 }) + text(R, 28, right, { size: 11, ls: 3.5, anchor: 'end' }))
     + line(L, 40, R, 40, { draw: true, delay: 0.1 });
 }
 
 function header(h) {
+  if (NARROW) return narrowHeader(h);
   const parts = [];
   parts.push(line(L, 58, R, 58, { draw: true, delay: 0.2 }));
   parts.push(group('fade', 0.2, text(L, 44, h.kicker, { size: 11, ls: 3.5 }) + text(R, 44, h.location, { size: 11, ls: 3.5, anchor: 'end' })));
@@ -203,6 +230,44 @@ function header(h) {
   parts.push(group('fade', 1.7, strip.join('')));
   if (h.globe) parts.push(globe(h.globe));
   return { w: W, h: 400, label: `${h.name} — ${h.tagline}`, css: GLOBE_CSS, body: parts.join('\n  ') };
+}
+
+// Phone header: the same parts stacked and wrapped, without the globe.
+function narrowHeader(h) {
+  const parts = [];
+  const place = h.location.split(' — ')[0];
+  parts.push(group('fade', 0.2, text(L, 44, h.kicker, { size: 11, ls: 3.5 }) + text(R, 44, place, { size: 11, ls: 3.5, anchor: 'end' })));
+  parts.push(line(L, 58, R, 58, { draw: true, delay: 0.2 }));
+  let y = 116;
+  wrap(h.name, 44, -1.5, R - L).forEach((ln, i) => {
+    parts.push(group('rise', 0.5 + i * 0.1, text(L - 1, y, ln, { size: 44, ls: -1.5 })));
+    y += 50;
+  });
+  y -= 10;
+  for (const ln of wrap(h.tagline, 17, 0, R - L)) {
+    parts.push(group('fade', 0.9, text(L, y, ln, { size: 17 })));
+    y += 26;
+  }
+  y += 18;
+  for (const ln of wrap(`focus  ▸  ${h.focus}`, 13, 1, R - L)) {
+    parts.push(group('fade', 1.2, text(L, y, ln, { size: 13, ls: 1 })));
+    y += 22;
+  }
+  y += 6;
+  const status = wrap(h.status, 13, 1, R - L - 16);
+  status.forEach((ln, i) => {
+    const t = text(L, y, ln, { size: 13, ls: 1 });
+    parts.push(group('fade', 1.4, i === status.length - 1 ? t.replace('</text>', ' <tspan class="caret">█</tspan></text>') : t));
+    y += 22;
+  });
+  y += 12;
+  parts.push(line(L, y, R, y, { draw: true, delay: 1.4 }));
+  y += 30;
+  for (const ln of [...wrap(h.strip.join('  ·  '), 11.5, 3, R - L), ...wrap(h.stripRight, 11.5, 3, R - L)]) {
+    parts.push(group('fade', 1.7, text(L, y, ln, { size: 11.5, ls: 3 })));
+    y += 22;
+  }
+  return { w: W, h: y, label: `${h.name} — ${h.tagline}`, body: parts.join('\n  ') };
 }
 
 // Wireframe globe in the header: meridians sweep round (scaleX 1 → -1 → 1, staggered) over fixed parallels,
@@ -239,10 +304,12 @@ function globe(g) {
 
 function divider(num, title) {
   const n = pad2(num);
-  const p = `~/${n}-${slugify(title)}`;
-  const x1 = 128 + width(title, 14, 6) + 24;
-  const x2 = R - 14 - width(p, 11, 2) - 24;
-  if (x2 - x1 < 40) warnings.push(`divider ${n}: title "${title}" is too long`);
+  // the narrow divider drops the ~/path and sets the number smaller
+  const p = NARROW ? '' : `~/${n}-${slugify(title)}`;
+  const tx = NARROW ? L + 54 : 128;
+  const x1 = tx + width(title, 14, 6) + 24;
+  const x2 = NARROW ? R - 24 : R - 14 - width(p, 11, 2) - 24;
+  if (x2 - x1 < 40) warn(`divider ${n}: title "${title}" is too long`);
   // a node rides the leading edge of the rule as it draws, and comes to rest at its end
   const run = (x2 - x1).toFixed(1);
   return {
@@ -251,7 +318,7 @@ function divider(num, title) {
       '.spark{animation:spark 1.4s cubic-bezier(.6,0,.2,1) .2s both}',
       `@keyframes spark{from{transform:translateX(-${run}px)}to{transform:translateX(0)}}`,
     ],
-    body: group('fade', 0.1, text(L, 68, n, { size: 52 }) + text(128, 58, title, { size: 14, ls: 6 }) + text(R - 14, 58, p, { size: 11, ls: 2, anchor: 'end' }) + `<rect class="ink blink" x="${R - 7}" y="48" width="7" height="12"/>`)
+    body: group('fade', 0.1, text(L, 68, n, { size: NARROW ? 38 : 52 }) + text(tx, 58, title, { size: 14, ls: 6 }) + (p ? text(R - 14, 58, p, { size: 11, ls: 2, anchor: 'end' }) : '') + `<rect class="ink blink" x="${R - 7}" y="48" width="7" height="12"/>`)
       + line(x1, 53, x2, 53, { draw: true, delay: 0.2 })
       + `<circle class="stroke" cx="${x1}" cy="53" r="3"/><rect class="ink spark anim" x="${x2 - 3}" y="50" width="6" height="6"/>`,
   };
@@ -276,7 +343,18 @@ function rowsCard(s) {
     parts.push(line(L, y - 4, R, y - 4, { op: tokens.tones.softRule, draw: true, delay: d }));
     y += 32;
   }
-  if (rows.length) {
+  if (rows.length && NARROW) {
+    // label above its value
+    for (const [k, v] of rows) {
+      const lines = wrap(v, 15, 0, R - L);
+      let inner = text(L, y, k, { size: 11, ls: 2.5, op: 0.7 });
+      lines.forEach((ln, j) => (inner += text(L, y + 22 + j * 22, ln, { size: 15 })));
+      parts.push(group('rise', d, inner));
+      y += 22 + lines.length * 22 + 16;
+      d += 0.08;
+    }
+    y -= 38;
+  } else if (rows.length) {
     const labelW = Math.max(...rows.map(([k]) => width(k, 11, 2.5)));
     const vx = Math.max(154, Math.round(L + labelW + 34));
     if (s.rule) parts.push(line(vx - 16, y - 24, vx - 16, y + rows.length * 34 - 22, { op: tokens.tones.softRule * 0.8 }));
@@ -302,15 +380,17 @@ function listCard(kick, fig, items, alt) {
     y += 10;
   }
   const metaW = Math.max(0, ...items.map((it) => width(it.meta || '', 11, 2)));
-  const tx = 130;
-  const maxW = R - tx - (metaW ? metaW + 28 : 0);
+  // narrow: number and meta share a line, the title runs full width under them
+  const tx = NARROW ? L : 130;
+  const dy = NARROW ? 22 : 0;
+  const maxW = NARROW ? R - L : R - tx - (metaW ? metaW + 28 : 0);
   items.forEach((it, i) => {
     const lines = wrap(it.title, 15, 0, maxW);
     let inner = text(L, y, `Nº ${pad2(i + 1)}`, { size: 11, ls: 2.5 });
-    lines.forEach((ln, j) => (inner += text(tx, y + j * 22, ln, { size: 15 })));
+    lines.forEach((ln, j) => (inner += text(tx, y + dy + j * 22, ln, { size: 15 })));
     if (it.meta) inner += text(R, y, it.meta, { size: 11, ls: 2, anchor: 'end' });
     parts.push(group('rise', 0.2 + i * 0.08, inner));
-    y += lines.length * 22;
+    y += dy + lines.length * 22;
     if (i < items.length - 1) {
       parts.push(line(L, y - 6, R, y - 6, { op: tokens.tones.softRule * 0.5 }));
       y += 18;
@@ -320,16 +400,17 @@ function listCard(kick, fig, items, alt) {
 }
 
 const monthYear = (iso) => `${MONTHS[+iso.slice(5, 7) - 1]} ${iso.slice(0, 4)}`;
-const GAP = 48; // gutter between the two columns of a grid card
-const COL = (R - L - GAP) / 2;
+const GAP = 48; // gutter between the two columns of a grid card (one column when NARROW)
+layout('wide');
 const colX = (c) => L + c * (COL + GAP);
 
 // Two-column grid of labelled notes (CURRENTLY). item = { label, text, note?, live? } — live adds the pulse dot.
 function currentlyCard(s, fig) {
   const parts = [kicker(s.kicker, s.updated ? `${fig} · UPDATED ${s.updated}` : fig)];
   let y = 84;
-  for (let r = 0; r < s.items.length; r += 2) {
-    const row = s.items.slice(r, r + 2).map((it) => ({ ...it, lines: wrap(it.text, 15, 0, COL) }));
+  const per = NARROW ? 1 : 2;
+  for (let r = 0; r < s.items.length; r += per) {
+    const row = s.items.slice(r, r + per).map((it) => ({ ...it, lines: wrap(it.text, 15, 0, COL) }));
     const n = Math.max(...row.map((it) => it.lines.length));
     if (r) parts.push(line(L, y - 26, R, y - 26, { op: tokens.tones.softRule * 0.5 }));
     row.forEach((it, c) => {
@@ -353,8 +434,9 @@ function currentlyCard(s, fig) {
 function projectsCard(s, fig, projects) {
   const parts = [kicker(s.kicker, fig)];
   let y = 70;
-  for (let r = 0; r < projects.length; r += 2) {
-    const row = projects.slice(r, r + 2).map((p) => {
+  const per = NARROW ? 1 : 2;
+  for (let r = 0; r < projects.length; r += per) {
+    const row = projects.slice(r, r + per).map((p) => {
       const all = wrap(p.note, 14, 0, COL);
       const lines = all.slice(0, 3);
       if (all.length > 3) lines[2] = truncate(`${lines[2]}…`, 14, 0, COL);
@@ -388,17 +470,19 @@ function packagesCard(s, fig, pkgs) {
   const parts = [kicker(`${s.kicker} — ${total} DOWNLOADS / 30 DAYS`, fig)];
   const max = Math.max(1, ...pkgs.map((p) => p.downloads || 0));
   const tagW = 56;
-  const nx = 118 + tagW + 22;
-  const bw = 120;
+  // narrow: no row number, the registry tag starts the row
+  const tagX = NARROW ? L : 118;
+  const nx = tagX + tagW + (NARROW ? 14 : 22);
+  const bw = NARROW ? 72 : 120;
   const bx = R - bw;
   let y = 82;
   pkgs.forEach((p, i) => {
     const tag = p.registry.toUpperCase();
-    let inner = text(L, y, `Nº ${pad2(i + 1)}`, { size: 11, ls: 2.5 });
-    inner += `<rect class="stroke" x="118.5" y="${y - 14.5}" width="${tagW}" height="20"/>` + text(118 + tagW / 2 + 1, y, tag, { size: 10, ls: 2, anchor: 'middle' });
+    let inner = NARROW ? '' : text(L, y, `Nº ${pad2(i + 1)}`, { size: 11, ls: 2.5 });
+    inner += `<rect class="stroke" x="${tagX + 0.5}" y="${y - 14.5}" width="${tagW}" height="20"/>` + text(tagX + tagW / 2 + 1, y, tag, { size: 10, ls: 2, anchor: 'middle' });
     inner += text(nx, y, p.name, { size: 16 });
     inner += text(nx + width(p.name, 16) + 14, y, p.version ? `v${p.version}` : '', { size: 10, ls: 2, op: 0.6 });
-    inner += text(nx, y + 22, truncate(p.note, 12, 0, bx - nx - 32), { size: 12, op: 0.7 });
+    inner += text(nx, y + 22, truncate(p.note, 12, 0, bx - nx - (NARROW ? 16 : 32)), { size: 12, op: 0.7 });
     const fw = Math.max(2, Math.round(((p.downloads || 0) / max) * bw));
     inner += text(R, y, p.downloads == null ? '—' : String(p.downloads), { size: 18, anchor: 'end' });
     inner += `<rect class="ink" opacity="${tokens.tones.track}" x="${bx}" y="${y + 14}" width="${bw}" height="4"/>`
@@ -421,7 +505,8 @@ function stackCard(s, fig) {
     `<rect class="ink" x="${R - 250}" y="57" width="10" height="10"/>` + text(R - 234, 66, 'CORE', { size: 10, ls: 2 })
     + `<rect class="stroke" x="${R - 160.5}" y="57.5" width="9" height="9"/>` + text(R - 144, 66, 'ALSO USE', { size: 10, ls: 2 }));
   parts.push(legend);
-  const cx0 = 214; // chips start here; the label column sits left of it
+  // chips start at cx0; the label column sits left of it (narrow: the label sits on its own line above)
+  const cx0 = NARROW ? L : 214;
   const H = 30;
   const gap = 10;
   let y = 96;
@@ -429,9 +514,10 @@ function stackCard(s, fig) {
   s.rows.forEach((row, i) => {
     const chips = [...(row.core || []).map((t) => [t, true]), ...(row.more || []).map((t) => [t, false])];
     let x = cx0;
-    let top = y;
-    const inner = [text(L, top + 20, pad2(i + 1), { size: 11, ls: 2.5, op: 0.6 }), text(L + 34, top + 20, row.label, { size: 11, ls: 3 }),
-      text(L + 34, top + 38, `${chips.length} TOOL${chips.length === 1 ? '' : 'S'}`, { size: 9, ls: 2, op: 0.5 })];
+    let top = NARROW ? y + 34 : y;
+    const count = `${chips.length} TOOL${chips.length === 1 ? '' : 'S'}`;
+    const inner = [text(L, y + 20, pad2(i + 1), { size: 11, ls: 2.5, op: 0.6 }), text(L + 34, y + 20, row.label, { size: 11, ls: 3 }),
+      NARROW ? text(R, y + 20, count, { size: 10, ls: 2, op: 0.5, anchor: 'end' }) : text(L + 34, y + 38, count, { size: 9, ls: 2, op: 0.5 })];
     chips.forEach(([t, core]) => {
       const w = Math.round(width(t, 13, 0.5) + 26);
       if (x + w > R) {
@@ -456,17 +542,24 @@ function terminalCard(s, fig) {
   const parts = [];
   const top = 12;
   const bar = 36;
-  const LH = 34;
+  // narrow: each value goes on the line under its key, without the dotted leader
+  const LH = NARROW ? 54 : 34;
   const keyW = Math.max(...s.rows.map(([k]) => width(k, 11, 3)));
-  const vx = Math.max(266, Math.round(L + 46 + keyW + 60));
+  const vx = NARROW ? L + 40 : Math.max(266, Math.round(L + 46 + keyW + 60));
   const lines = [];
   lines.push({ prompt: true, body: text(L + 40, 0, s.command, { size: 14 }) });
-  s.rows.forEach(([k, v]) => lines.push({
-    chars: k.length + v.length,
-    body: text(L + 40, 0, k, { size: 11, ls: 3 })
-      + `<line class="ln" x1="${L + 48 + keyW}" y1="-4" x2="${vx - 14}" y2="-4" stroke-dasharray="1 5" opacity="${tokens.tones.softRule}"/>`
-      + text(vx, 0, truncate(v, 15, 0, R - 24 - vx), { size: 15 }),
-  }));
+  s.rows.forEach(([k, v]) => {
+    // narrow values wrap onto a second line rather than being cut short
+    const vs = NARROW ? wrap(v, 15, 0, R - 24 - vx).slice(0, 2) : [truncate(v, 15, 0, R - 24 - vx)];
+    if (NARROW && wrap(v, 15, 0, R - 24 - vx).length > 2) vs[1] = truncate(`${vs[1]}…`, 15, 0, R - 24 - vx);
+    lines.push({
+      chars: k.length + v.length,
+      h: LH + (vs.length - 1) * 22,
+      body: text(L + 40, 0, k, { size: 11, ls: 3, op: NARROW ? 0.7 : undefined })
+        + (NARROW ? '' : `<line class="ln" x1="${L + 48 + keyW}" y1="-4" x2="${vx - 14}" y2="-4" stroke-dasharray="1 5" opacity="${tokens.tones.softRule}"/>`)
+        + vs.map((ln, j) => text(vx, (NARROW ? 21 : 0) + j * 22, ln, { size: 15 })).join(''),
+    });
+  });
   const css = [
     '.type{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation-name:type;animation-fill-mode:forwards}',
     '@keyframes type{to{transform:scaleX(1)}}',
@@ -477,11 +570,11 @@ function terminalCard(s, fig) {
   lines.forEach((ln, i) => {
     const dur = ln.prompt ? 0.9 : 0.55;
     const steps = ln.prompt ? s.command.length : Math.min(28, ln.chars);
-    parts.push(`<clipPath id="ty${i}"><rect class="type" x="${L + 4}" y="${y - 22}" width="${R - L - 8}" height="${LH}" style="animation-duration:${dur}s;animation-timing-function:steps(${steps});animation-delay:${t.toFixed(2)}s"/></clipPath>`);
+    parts.push(`<clipPath id="ty${i}"><rect class="type" x="${L + 4}" y="${y - 22}" width="${R - L - 8}" height="${ln.h || LH}" style="animation-duration:${dur}s;animation-timing-function:steps(${steps});animation-delay:${t.toFixed(2)}s"/></clipPath>`);
     const prompt = ln.prompt ? text(L + 20, y, '$', { size: 14, op: 0.6 }) : '';
     parts.push(`<g clip-path="url(#ty${i})"><g transform="translate(0 ${y})">${ln.body}</g>${prompt}</g>`);
     t += dur + (ln.prompt ? 0.3 : 0.12);
-    y += i === 0 ? LH + 10 : LH;
+    y += i === 0 ? 44 : ln.h;
   });
   // closing prompt with a blinking caret
   parts.push(group('fade', t, text(L + 20, y, '$', { size: 14, op: 0.6 }) + `<rect class="ink blink" x="${L + 40}" y="${y - 13}" width="8" height="15"/>`));
@@ -523,36 +616,43 @@ function glanceCard(s, fig, items) {
   const LH = 56; // spacing of the stacked digits
   const size = 40;
   const base = 132;
-  const colW = (R - L) / items.length;
+  const cols = NARROW ? 2 : items.length; // narrow: a two-column grid, ROW apart
+  const ROW = 116;
+  const colW = (R - L) / cols;
   for (let d = 1; d <= 9; d++) css.push(`.odo${d}{animation-name:odo${d}}`, `@keyframes odo${d}{from{transform:translateY(${d * LH}px)}to{transform:translateY(0)}}`);
   items.forEach((it, i) => {
-    const x = L + i * colW;
-    const pad = i ? 20 : 0;
-    let inner = text(x + pad, 78, truncate(it.label, 11, 2.5, colW - pad - 12), { size: 11, ls: 2.5 });
-    parts.push(`<clipPath id="odo-${i}"><rect x="${x + pad - 2}" y="${base - size}" width="${colW - pad}" height="${size + 14}"/></clipPath>`);
+    const c = i % cols;
+    const top = Math.floor(i / cols) * ROW;
+    const b = base + top;
+    const x = L + c * colW;
+    const pad = c ? 20 : 0;
+    let inner = text(x + pad, 78 + top, truncate(it.label, 11, 2.5, colW - pad - 12), { size: 11, ls: 2.5 });
+    parts.push(`<clipPath id="odo-${i}"><rect x="${x + pad - 2}" y="${b - size}" width="${colW - pad}" height="${size + 14}"/></clipPath>`);
     let digits = '';
     [...String(it.value)].forEach((ch, k) => {
       const cx = x + pad + k * size * tokens.charWidth;
-      if (!/\d/.test(ch)) return void (digits += text(cx, base, ch, { size }));
+      if (!/\d/.test(ch)) return void (digits += text(cx, b, ch, { size }));
       const dd = +ch;
-      const col = Array.from({ length: 10 }, (_, n) => text(cx, base + (n - dd) * LH, String(n), { size })).join('');
+      const col = Array.from({ length: 10 }, (_, n) => text(cx, b + (n - dd) * LH, String(n), { size })).join('');
       digits += `<g class="anim odo odo${dd}" style="animation-delay:${(0.3 + i * 0.12 + k * 0.08).toFixed(2)}s">${col}</g>`;
     });
     inner += `<g clip-path="url(#odo-${i})">${digits}</g>`;
-    if (it.caption) inner += text(x + pad, base + 30, truncate(it.caption, 10, 2, colW - pad - 12), { size: 10, ls: 2, op: 0.6 });
+    if (it.caption) inner += text(x + pad, b + 30, truncate(it.caption, 10, 2, colW - pad - 12), { size: 10, ls: 2, op: 0.6 });
     parts.push(group('fade', 0.2 + i * 0.08, inner));
-    if (i) parts.push(line(x, 62, x, base + 36, { op: tokens.tones.softRule * 0.5, draw: true, delay: 0.3 + i * 0.1 }));
+    if (c) parts.push(line(x, 62 + top, x, b + 36, { op: tokens.tones.softRule * 0.5, draw: true, delay: 0.3 + i * 0.1 }));
+    else if (top) parts.push(line(L, top + 52, R, top + 52, { op: tokens.tones.softRule * 0.5 }));
   });
-  return { w: W, h: base + 50, label: `${s.alt}: ${items.map((it) => `${it.value} ${it.label.toLowerCase()}`).join(', ')}`, css, body: parts.join('\n  ') };
+  return { w: W, h: base + 50 + (Math.ceil(items.length / cols) - 1) * ROW, label: `${s.alt}: ${items.map((it) => `${it.value} ${it.label.toLowerCase()}`).join(', ')}`, css, body: parts.join('\n  ') };
 }
 
 // Closing call to action: headline, a line of copy, availability and the e-mail with a nudging arrow.
 function contactCard(s, fig) {
   const parts = [kicker(s.kicker, fig)];
-  let y = 104;
-  wrap(s.headline, 44, -1.5, R - L).forEach((ln, i) => {
-    parts.push(group('rise', 0.2 + i * 0.1, text(L - 2, y, ln, { size: 44, ls: -1.5 })));
-    y += 52;
+  const hs = NARROW ? 32 : 44; // headline size
+  let y = NARROW ? 96 : 104;
+  wrap(s.headline, hs, -1.5, R - L).forEach((ln, i) => {
+    parts.push(group('rise', 0.2 + i * 0.1, text(L - 2, y, ln, { size: hs, ls: -1.5 })));
+    y += hs + 8;
   });
   for (const ln of wrap(s.text, 16, 0, R - L)) {
     parts.push(group('fade', 0.5, text(L, y, ln, { size: 16 })));
@@ -562,6 +662,7 @@ function contactCard(s, fig) {
   parts.push(line(L, y - 22, R, y - 22, { op: tokens.tones.softRule, draw: true, delay: 0.6 }));
   y += 14;
   parts.push(group('fade', 0.8, `<circle class="stroke ring" cx="${L + 5}" cy="${y - 4}" r="5"/><circle class="ink pulse" cx="${L + 5}" cy="${y - 4}" r="4"/>` + text(L + 24, y, s.status, { size: 11, ls: 3 })));
+  if (NARROW) y += 36; // the e-mail drops under the status line
   parts.push(group('fade', 0.9, text(R - 34, y + 1, s.email, { size: 18, anchor: 'end' })
     + `<g class="nudge"><path class="ln" stroke-width="1.5" d="M${R - 24} ${y - 5} H${R - 2} M${R - 9} ${y - 12} L${R - 2} ${y - 5} L${R - 9} ${y + 2}"/></g>`));
   return { w: W, h: y + 26, label: `${s.headline} ${s.text} ${s.email}`, body: parts.join('\n  ') };
@@ -569,24 +670,28 @@ function contactCard(s, fig) {
 
 function routeCard(s, fig) {
   const parts = [kicker(s.kicker, fig)];
-  const tx = 150;
+  // narrow: the text runs under its number instead of beside it
+  const dx = NARROW ? L + 6 : 60; // the route line
+  const nx = NARROW ? L + 26 : 84;
+  const tx = NARROW ? nx : 150;
+  const dy = NARROW ? 22 : 0;
   let y = 80;
   const dots = [];
   s.items.forEach((it, i) => {
     const marker = it.link ? 'LINK ↗' : '';
-    const lines = wrap(it.text, 15, 0, R - tx - (marker ? width(marker, 10, 2) + 28 : 0));
+    const lines = wrap(it.text, 15, 0, R - tx - (marker && !NARROW ? width(marker, 10, 2) + 28 : 0));
     const last = i === s.items.length - 1;
     dots.push(y - 5);
     let inner = last
-      ? `<circle class="stroke ring" cx="60" cy="${y - 5}" r="5"/><circle class="ink pulse" cx="60" cy="${y - 5}" r="4"/>`
-      : `<circle class="ink" cx="60" cy="${y - 5}" r="4"/>`;
-    inner += text(84, y, `Nº ${pad2(i + 1)}`, { size: 11, ls: 2.5 });
-    lines.forEach((ln, j) => (inner += text(tx, y + j * 22, ln, { size: 15 })));
+      ? `<circle class="stroke ring" cx="${dx}" cy="${y - 5}" r="5"/><circle class="ink pulse" cx="${dx}" cy="${y - 5}" r="4"/>`
+      : `<circle class="ink" cx="${dx}" cy="${y - 5}" r="4"/>`;
+    inner += text(nx, y, `Nº ${pad2(i + 1)}`, { size: 11, ls: 2.5 });
+    lines.forEach((ln, j) => (inner += text(tx, y + dy + j * 22, ln, { size: 15 })));
     if (marker) inner += text(R, y, marker, { size: 10, ls: 2, anchor: 'end' });
     parts.push(group('rise', 0.2 + i * 0.1, inner));
-    y += lines.length * 22 + 20;
+    y += dy + lines.length * 22 + 20;
   });
-  parts.splice(1, 0, line(60, dots[0], 60, dots[dots.length - 1], { op: tokens.tones.softRule, draw: true, delay: 0.2 }));
+  parts.splice(1, 0, line(dx, dots[0], dx, dots[dots.length - 1], { op: tokens.tones.softRule, draw: true, delay: 0.2 }));
   return { w: W, h: Math.round(y - 14), label: s.alt, body: parts.join('\n  ') };
 }
 
@@ -618,18 +723,21 @@ function telemetryCard(days, fig) {
     ['LONGEST STREAK', `${longest}d`],
     ['BEST DAY', best.count ? `${best.count} · ${fmt(best.date)}` : '—'],
   ];
-  const colW = (R - L) / stats.length;
+  const cols = NARROW ? 2 : stats.length; // narrow: 2 × 2, the chart moves down by the extra row
+  const colW = (R - L) / cols;
+  const extra = (Math.ceil(stats.length / cols) - 1) * 66;
   stats.forEach(([k, v], j) => {
-    const x = L + j * colW;
-    parts.push(group('rise', 0.2 + j * 0.08, text(x, 76, k, { size: 11, ls: 2.5 }) + text(x, 108, v, { size: j === 3 ? 18 : 26 })));
+    const x = L + (j % cols) * colW;
+    const dy = Math.floor(j / cols) * 66;
+    parts.push(group('rise', 0.2 + j * 0.08, text(x, 76 + dy, k, { size: 11, ls: 2.5 }) + text(x, 108 + dy, v, { size: j === 3 ? 18 : 26 })));
   });
 
   const weeks = [];
   for (let k = 0; k < days.length; k += 7) weeks.push(days.slice(k, k + 7));
   const sums = weeks.map((w) => w.reduce((a, d) => a + d.count, 0));
   const max = Math.max(1, ...sums);
-  const top = 150;
-  const base = 290;
+  const top = 150 + extra;
+  const base = top + (NARROW ? 120 : 140);
   const step = (R - L) / Math.max(1, sums.length - 1);
   const pts = sums.map((v, k) => [L + k * step, base - (v / max) * (base - top)]);
   const pathD = pts.map(([x, y], k) => `${k ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`).join(' ');
@@ -656,20 +764,24 @@ function topReposCard(repos, fig, user) {
   const parts = [kicker('TOP REPOSITORIES — BY COMMITS', fig)];
   if (!repos.length) parts.push(text(L, 80, '— repository data unavailable —', { size: 15 }));
   const max = Math.max(1, ...repos.map((r) => r.commits));
-  const bx = 440;
-  const bw = 420;
+  // narrow: the bar runs under the name instead of beside it
+  const nx = NARROW ? L + 44 : 118;
+  const bx = NARROW ? nx : 440;
+  const bw = NARROW ? R - nx : 420;
+  const step = NARROW ? 48 : 36;
+  const by = NARROW ? 10 : -10; // bar top, from the text baseline
   repos.forEach((r, i) => {
-    const y = 80 + i * 36;
+    const y = 80 + i * step;
     const name = r.name.startsWith(`${user}/`) ? r.name.slice(user.length + 1) : r.name;
     const fw = Math.max(2, Math.round((r.commits / max) * bw));
     parts.push(group('rise', 0.2 + i * 0.08,
       text(L, y, `Nº ${pad2(i + 1)}`, { size: 11, ls: 2.5 })
-      + text(118, y, truncate(name, 14, 0, bx - 118 - 20), { size: 14 })
-      + `<rect class="ink" opacity="${tokens.tones.track}" x="${bx}" y="${y - 10}" width="${bw}" height="10"/>`
-      + `<rect class="ink grow" style="animation-delay:${0.4 + i * 0.1}s" x="${bx}" y="${y - 10}" width="${fw}" height="10"/>`
+      + text(nx, y, truncate(name, 14, 0, NARROW ? R - nx - 48 : bx - nx - 20), { size: 14 })
+      + `<rect class="ink" opacity="${tokens.tones.track}" x="${bx}" y="${y + by}" width="${bw}" height="${NARROW ? 6 : 10}"/>`
+      + `<rect class="ink grow" style="animation-delay:${0.4 + i * 0.1}s" x="${bx}" y="${y + by}" width="${fw}" height="${NARROW ? 6 : 10}"/>`
       + text(R, y, String(r.commits), { size: 14, anchor: 'end' })));
   });
-  const h = 80 + Math.max(1, repos.length) * 36 - 14;
+  const h = 80 + Math.max(1, repos.length) * step - (NARROW ? 18 : 14);
   return { w: W, h, label: 'Top repositories by commits', body: parts.join('\n  ') };
 }
 
@@ -691,14 +803,15 @@ const clock = (ms) => `${Math.floor(ms / 60000)}:${pad2(Math.floor((ms % 60000) 
 function nowPlayingCard(s, fig, t, cover) {
   const parts = [kicker('NOW PLAYING — SPOTIFY', fig)];
   if (!t) {
-    parts.push('<circle class="stroke ring" cx="60" cy="79" r="5"/><circle class="ink pulse" cx="60" cy="79" r="4"/>');
-    parts.push(group('rise', 0.3, text(82, 84, 'Offline — nothing played yet', { size: 16 })));
-    parts.push(group('fade', 0.6, text(82, 106, 'THE NEXT TRACK SHOWS UP HERE AUTOMATICALLY', { size: 10, ls: 2, op: 0.6 })));
+    const [dx, tx] = NARROW ? [L + 6, L + 26] : [60, 82];
+    parts.push(`<circle class="stroke ring" cx="${dx}" cy="79" r="5"/><circle class="ink pulse" cx="${dx}" cy="79" r="4"/>`);
+    parts.push(group('rise', 0.3, text(tx, 84, 'Offline — nothing played yet', { size: 16 })));
+    parts.push(group('fade', 0.6, text(tx, 106, truncate('THE NEXT TRACK SHOWS UP HERE AUTOMATICALLY', 10, 2, R - tx), { size: 10, ls: 2, op: 0.6 })));
     return { w: W, h: 130, label: s.alt, body: parts.join('\n  ') };
   }
-  const A = 136; // cover size
+  const A = NARROW ? 100 : 136; // cover size
   const top = 64;
-  const x0 = L + A + 32;
+  const x0 = L + A + (NARROW ? 20 : 32);
   const max = R - x0;
   if (cover) {
     parts.push(`<filter id="mono"><feColorMatrix type="saturate" values="0"/></filter>`);
@@ -707,8 +820,11 @@ function nowPlayingCard(s, fig, t, cover) {
   } else {
     const [cx, cy] = [L + A / 2, top + A / 2];
     const grooves = [60, 50, 40].map((r) => `<circle class="stroke" cx="${cx}" cy="${cy}" r="${r}" opacity="${r === 60 ? 1 : tokens.tones.softRule * 0.6}"/>`).join('');
-    parts.push(group('fade', 0.2, `<g class="${t.playing ? 'spin' : ''}">${grooves}<circle class="ink" cx="${cx}" cy="${cy}" r="20"/>`
-      + `<path class="ln" d="M${cx + 26} ${cy - 30} A40 40 0 0 1 ${cx + 38} ${cy - 12}" stroke-width="2"/><circle class="stroke" cx="${cx}" cy="${cy}" r="3"/></g>`));
+    // the disc is drawn for the wide cover and scaled down to the narrow one
+    const k = A / 136;
+    const fit = k === 1 ? '' : ` transform="translate(${cx} ${cy}) scale(${k.toFixed(3)}) translate(${-cx} ${-cy})"`;
+    parts.push(group('fade', 0.2, `<g${fit}><g class="${t.playing ? 'spin' : ''}">${grooves}<circle class="ink" cx="${cx}" cy="${cy}" r="20"/>`
+      + `<path class="ln" d="M${cx + 26} ${cy - 30} A40 40 0 0 1 ${cx + 38} ${cy - 12}" stroke-width="2"/><circle class="stroke" cx="${cx}" cy="${cy}" r="3"/></g></g>`));
   }
 
   let status;
@@ -717,11 +833,13 @@ function nowPlayingCard(s, fig, t, cover) {
     status = bars + text(x0 + 40, 82, 'PLAYING NOW', { size: 11, ls: 3 });
   } else if (t.playedAt) {
     const d = new Date(Date.parse(t.playedAt) + (s.utcOffset || 0) * 3600000);
-    const when = `${pad2(d.getUTCDate())} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()} · ${pad2(d.getUTCHours())}:${pad2(d.getUTCMinutes())}${s.tz ? ` ${s.tz}` : ''}`;
-    status = text(x0, 82, `LAST PLAYED · ${when}`, { size: 11, ls: 3 });
+    const hm = `${pad2(d.getUTCHours())}:${pad2(d.getUTCMinutes())}`;
+    const when = NARROW ? `${pad2(d.getUTCDate())} ${MONTHS[d.getUTCMonth()]} · ${hm}` : `${pad2(d.getUTCDate())} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()} · ${hm}${s.tz ? ` ${s.tz}` : ''}`;
+    status = text(x0, 82, `${NARROW ? 'PLAYED' : 'LAST PLAYED'} · ${when}`, { size: 11, ls: 3 });
   } else status = text(x0, 82, 'PAUSED', { size: 11, ls: 3 });
   parts.push(group('fade', 0.3, status));
-  parts.push(group('rise', 0.4, text(x0, 122, truncate(t.title, 28, -0.5, max), { size: 28, ls: -0.5 })));
+  const ts = NARROW ? 22 : 28; // title size
+  parts.push(group('rise', 0.4, text(x0, 122, truncate(t.title, ts, -0.5, max), { size: ts, ls: -0.5 })));
   parts.push(group('rise', 0.5, text(x0, 150, truncate(t.artist, 15, 0, max), { size: 15 })));
   parts.push(group('fade', 0.6, text(x0, 174, truncate(t.album.toUpperCase(), 11, 2.5, max), { size: 11, ls: 2.5, op: 0.6 })));
 
@@ -741,11 +859,11 @@ function nowPlayingCard(s, fig, t, cover) {
 
 // Sign-off: the handle is traced in outline, then fills with ink.
 function signatureCard(sg) {
-  const size = 112;
-  const y = 128;
+  const size = NARROW ? 64 : 112;
+  const y = NARROW ? 88 : 128;
   const dash = Math.round(width(sg.text, size, -4) * 3); // longer than any glyph outline
   return {
-    w: W, h: 196, label: `${sg.text} — ${sg.caption}`,
+    w: W, h: y + 68, label: `${sg.text} — ${sg.caption}`,
     css: [
       `.sig{stroke-width:1.2;fill-opacity:0;stroke-dasharray:${dash};stroke-dashoffset:${dash};animation:sig 3.2s cubic-bezier(.5,0,.2,1) .3s forwards,sigfill 1.2s ease 2.8s forwards}`,
       '@keyframes sig{to{stroke-dashoffset:0}}',
@@ -762,6 +880,20 @@ function signatureCard(sg) {
 
 function footer(f) {
   const right = f.right.replace('{year}', new Date().getFullYear());
+  if (NARROW) {
+    // status, note and the right-hand text stacked
+    const tx = L + 26;
+    const parts = [line(L, 24, R, 24, { draw: true }),
+      `<circle class="stroke ring" cx="${L + 6}" cy="64" r="5"/><circle class="ink pulse" cx="${L + 6}" cy="64" r="4"/>`,
+      text(tx, 68, f.status, { size: 12, ls: 3 })];
+    let y = 92;
+    for (const ln of wrap(f.note, 11, 2, R - tx)) {
+      parts.push(text(tx, y, ln, { size: 11, ls: 2 }));
+      y += 18;
+    }
+    parts.push(text(tx, y + 12, right, { size: 13 }));
+    return { w: W, h: y + 40, label: `${f.status}. ${right}`, body: parts.join('\n  ') };
+  }
   const leftEnd = 82 + Math.max(width(f.status, 12, 3), width(f.note, 11, 2));
   if (leftEnd > R - width(right, 15, 0) - 24) warnings.push('footer: left and right text collide');
   return {
@@ -1064,26 +1196,29 @@ async function fetchActivity(user, s) {
 // ─── sections ────────────────────────────────────────────────────────────────
 
 async function renderSection(s, num) {
-  const out = [pic(emit(`s${pad2(num)}`, divider(num, s.title)), `${pad2(num)} — ${s.title}`)];
+  const out = [pic(emit(`s${pad2(num)}`, () => divider(num, s.title)), `${pad2(num)} — ${s.title}`)];
   let k = 0;
   const fig = () => `FIG. ${pad2(num)}.${++k}`;
+  let f; // the figure label of the card being emitted (taken once, then drawn in both layouts)
   const name = slugify(s.title);
   const user = profile.user;
 
   switch (s.type) {
     case 'card':
-      out.push(pic(emit(name, rowsCard(s)), s.alt));
+      out.push(pic(emit(name, () => rowsCard(s)), s.alt));
       break;
     case 'writing': {
       const posts = (await live('posts', () => fetchPosts(s.feed, s.max))) || [];
       const fmt = (iso) => `${iso.slice(8, 10)} ${MONTHS[+iso.slice(5, 7) - 1]} ${iso.slice(0, 4)}`;
-      out.push(pic(emit(name, listCard(s.kicker, fig(), posts.map((p) => ({ title: p.title, meta: fmt(p.date) })), s.alt)), s.alt));
+      f = fig();
+      out.push(pic(emit(name, () => listCard(s.kicker, f, posts.map((p) => ({ title: p.title, meta: fmt(p.date) })), s.alt)), s.alt));
       s.links = [...posts.map((p, i) => ({ label: `${s.badgePrefix} Nº ${pad2(i + 1)} ↗`, url: p.url })), ...(s.links || [])];
       break;
     }
     case 'activity': {
       const items = (await live('activity', () => fetchActivity(user, s))) || [];
-      out.push(pic(emit(name, listCard(s.kicker, fig(), items.map((a) => ({ title: a.text, meta: a.kind })), s.alt)), s.alt));
+      f = fig();
+      out.push(pic(emit(name, () => listCard(s.kicker, f, items.map((a) => ({ title: a.text, meta: a.kind })), s.alt)), s.alt));
       const repos = [...new Set(items.map((a) => a.repo).filter(Boolean))];
       s.links = [
         ...items.map((a, i) => ({ label: `${s.badgePrefix} Nº ${pad2(i + 1)} ↗`, url: a.url })),
@@ -1094,14 +1229,16 @@ async function renderSection(s, num) {
     }
     case 'telemetry': {
       const days = (await live('calendar', () => fetchCalendar(user))) || [];
-      out.push(pic(emit('telemetry', telemetryCard(days, fig())), 'Contribution telemetry'));
+      f = fig();
+      out.push(pic(emit('telemetry', () => telemetryCard(days, f)), 'Contribution telemetry'));
       const cards = s.cards.map(monoAsset).filter(Boolean);
       const rows = [];
       for (let i = 0; i < cards.length; i += 2) rows.push(center(cards.slice(i, i + 2).join(' ')));
       // a <details> fold is the one real click interaction GitHub allows in a README
       out.push(s.collapse ? `<details>\n<summary>${badge(s.collapse)}</summary>\n\n${rows.join('\n\n')}\n\n</details>` : rows.join('\n\n'));
       const repos = (await live('topRepos', () => fetchTopRepos(user, s.excludeRepos || [], s.topRepos))) || [];
-      out.push(pic(emit('top-repos', topReposCard(repos, fig(), user)), 'Top repositories by commits'));
+      f = fig();
+      out.push(pic(emit('top-repos', () => topReposCard(repos, f, user)), 'Top repositories by commits'));
       if (s.graph3d) {
         const g = monoAsset(s.graph3d);
         if (g) out.push(g);
@@ -1121,20 +1258,25 @@ async function renderSection(s, num) {
         years: since ? new Date().getUTCFullYear() - +since : undefined,
       };
       const items = s.items.map((it) => ({ label: it.label, caption: (it.caption || '').replace('{since}', since), value: it.value ?? stat[it.stat] ?? '—' }));
-      out.push(pic(emit(name, glanceCard(s, fig(), items)), s.alt));
+      f = fig();
+      out.push(pic(emit(name, () => glanceCard(s, f, items)), s.alt));
       break;
     }
     case 'stack':
-      out.push(pic(emit(name, stackCard(s, fig())), s.alt));
+      f = fig();
+      out.push(pic(emit(name, () => stackCard(s, f)), s.alt));
       break;
     case 'terminal':
-      out.push(pic(emit(name, terminalCard(s, fig())), s.alt));
+      f = fig();
+      out.push(pic(emit(name, () => terminalCard(s, f)), s.alt));
       break;
     case 'contact':
-      out.push(`<a href="mailto:${esc(s.email)}">${pic(emit(name, contactCard(s, fig())), s.alt)}</a>`);
+      f = fig();
+      out.push(`<a href="mailto:${esc(s.email)}">${pic(emit(name, () => contactCard(s, f)), s.alt)}</a>`);
       break;
     case 'currently':
-      out.push(pic(emit(name, currentlyCard(s, fig())), s.alt));
+      f = fig();
+      out.push(pic(emit(name, () => currentlyCard(s, f)), s.alt));
       break;
     case 'projects': {
       const live_ = (await live('projects', () => fetchProjects(user, s.items))) || [];
@@ -1146,7 +1288,8 @@ async function renderSection(s, num) {
           url: `https://github.com/${r.repo || `${user}/${it.repo}`}`,
         };
       });
-      out.push(pic(emit(name, projectsCard(s, fig(), projects)), s.alt));
+      f = fig();
+      out.push(pic(emit(name, () => projectsCard(s, f, projects)), s.alt));
       s.links = [
         ...projects.flatMap((p) => [
           { label: `${p.name.toUpperCase()} ↗`, url: p.url },
@@ -1162,25 +1305,28 @@ async function renderSection(s, num) {
         const r = live_.find((x) => x.name.toLowerCase() === it.name.toLowerCase()) || {};
         return { registry: it.registry, name: it.name, note: it.note || r.summary || '', version: r.version, downloads: r.downloads };
       });
-      out.push(pic(emit(name, packagesCard(s, fig(), pkgs)), s.alt));
+      f = fig();
+      out.push(pic(emit(name, () => packagesCard(s, f, pkgs)), s.alt));
       s.links = [...pkgs.map((p) => ({ label: `${p.name.toUpperCase()} ↗`, url: PACKAGE_URL[p.registry](p.name) })), ...(s.links || [])];
       break;
     }
     case 'route':
-      out.push(pic(emit(name, routeCard(s, fig())), s.alt));
+      f = fig();
+      out.push(pic(emit(name, () => routeCard(s, f)), s.alt));
       s.links = [...s.items.filter((it) => it.link).map((it) => it.link), ...(s.links || [])];
       break;
     case 'spotify': {
       const t = await live('spotify', fetchSpotify);
       const cover = await coverData(t?.cover);
-      out.push(`<a href="${esc(s.profile)}">${pic(emit(name, nowPlayingCard(s, fig(), t, cover)), s.alt)}</a>`);
+      f = fig();
+      out.push(`<a href="${esc(s.profile)}">${pic(emit(name, () => nowPlayingCard(s, f, t, cover)), s.alt)}</a>`);
       break;
     }
     case 'quote': {
       const day = Math.floor(Date.now() / 86400000);
       const i = day % s.quotes.length;
       const [q, a] = s.quotes[i];
-      out.push(pic(emit(name, quoteCard(s, `Nº ${pad2(i + 1)} / ${pad2(s.quotes.length)} — DAILY`, q, a)), s.alt));
+      out.push(pic(emit(name, () => quoteCard(s, `Nº ${pad2(i + 1)} / ${pad2(s.quotes.length)} — DAILY`, q, a)), s.alt));
       break;
     }
     case 'snake':
@@ -1232,15 +1378,15 @@ async function main() {
     '-->',
     '',
     center([
-      pic(emit('header', header(profile.header)), `${profile.header.name} — ${profile.header.tagline}`),
+      pic(emit('header', () => header(profile.header)), `${profile.header.name} — ${profile.header.tagline}`),
       profile.links.map((l) => badge(l.label, l.url)).join(' '),
       `<a href="${esc(profile.typing.link)}">${picture(typingSvg('light'), typingSvg('dark'), profile.typing.lines.join(' — '))}</a>`,
-      ...(profile.ticker ? [pic(emit('ticker', tickerCard(profile.ticker)), profile.ticker.items.join(' · '))] : []),
+      ...(profile.ticker ? [pic(emit('ticker', () => tickerCard(profile.ticker)), profile.ticker.items.join(' · '))] : []),
     ].join('\n\n')),
   ];
   for (const [i, s] of profile.sections.entries()) md.push(await renderSection(s, i + 1));
-  if (profile.signature) md.push(pic(emit('signature', signatureCard(profile.signature)), profile.signature.text));
-  md.push(pic(emit('footer', footer(profile.footer)), profile.footer.status));
+  if (profile.signature) md.push(pic(emit('signature', () => signatureCard(profile.signature)), profile.signature.text));
+  md.push(pic(emit('footer', () => footer(profile.footer)), profile.footer.status));
 
   fs.writeFileSync(OUTPUT, md.join('\n\n') + '\n');
   saveCache();

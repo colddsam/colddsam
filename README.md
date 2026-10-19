@@ -12,31 +12,31 @@
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/header.svg"/><img src="theme/assets/light/header.svg" alt="Samrat Kumar Das — ML Engineer &amp; Front-End Developer — Kolkata, India."/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/header.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/header.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/header.svg"/><img src="theme/assets/light/header.svg" alt="Samrat Kumar Das — ML Engineer &amp; Front-End Developer — Kolkata, India."/></picture>
 
 <a href="https://colddsam.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-portfolio.svg"/><img src="theme/assets/light/badge-portfolio.svg" alt="PORTFOLIO"/></picture></a> <a href="https://drive.google.com/file/d/1PdT7z_OTmuz3gs02nRsrAx9_efc6rstA/view?usp=sharing"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-resume.svg"/><img src="theme/assets/light/badge-resume.svg" alt="RESUME"/></picture></a> <a href="https://www.linkedin.com/in/colddsam/"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-linkedin.svg"/><img src="theme/assets/light/badge-linkedin.svg" alt="LINKEDIN"/></picture></a> <a href="https://www.instagram.com/colddsam/"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-instagram.svg"/><img src="theme/assets/light/badge-instagram.svg" alt="INSTAGRAM"/></picture></a> <a href="https://github.com/colddsam"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-github.svg"/><img src="theme/assets/light/badge-github.svg" alt="GITHUB"/></picture></a> <a href="https://twitter.com/colddsam"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-x.svg"/><img src="theme/assets/light/badge-x.svg" alt="X"/></picture></a> <a href="mailto:colddsam@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-email.svg"/><img src="theme/assets/light/badge-email.svg" alt="EMAIL"/></picture></a> <a href="https://colddsam.medium.com"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-medium.svg"/><img src="theme/assets/light/badge-medium.svg" alt="MEDIUM"/></picture></a> <a href="https://linktr.ee/colddsam?utm_source=linktree_profile_share&amp;ltsid=2cda3886-be78-4ccf-a16a-3ef6943e4525"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-linktree.svg"/><img src="theme/assets/light/badge-linktree.svg" alt="LINKTREE"/></picture></a>
 
 <a href="https://git.io/typing-svg"><picture><source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=700&amp;size=26&amp;pause=1000&amp;color=FFFFFF&amp;center=true&amp;vCenter=true&amp;width=600&amp;lines=Hi+Developers%3BI+am+Samrat+Kumar+Das"/><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=700&amp;size=26&amp;pause=1000&amp;color=000000&amp;center=true&amp;vCenter=true&amp;width=600&amp;lines=Hi+Developers%3BI+am+Samrat+Kumar+Das" alt="Hi Developers — I am Samrat Kumar Das"/></picture></a>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/ticker.svg"/><img src="theme/assets/light/ticker.svg" alt="Machine Learning · Front-End · Python · TypeScript · Next.js · FastAPI · LLM Agents · Open Source · Hackathons · Kolkata, IN"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/ticker.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/ticker.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/ticker.svg"/><img src="theme/assets/light/ticker.svg" alt="Machine Learning · Front-End · Python · TypeScript · Next.js · FastAPI · LLM Agents · Open Source · Hackathons · Kolkata, IN"/></picture>
 
 </div>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s01.svg"/><img src="theme/assets/light/s01.svg" alt="01 — WHOAMI"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/s01.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/s01.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s01.svg"/><img src="theme/assets/light/s01.svg" alt="01 — WHOAMI"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/whoami.svg"/><img src="theme/assets/light/whoami.svg" alt="About Samrat Kumar Das"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/whoami.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/whoami.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/whoami.svg"/><img src="theme/assets/light/whoami.svg" alt="About Samrat Kumar Das"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s02.svg"/><img src="theme/assets/light/s02.svg" alt="02 — AT A GLANCE"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/s02.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/s02.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s02.svg"/><img src="theme/assets/light/s02.svg" alt="02 — AT A GLANCE"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/at-a-glance.svg"/><img src="theme/assets/light/at-a-glance.svg" alt="Samrat at a glance"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/at-a-glance.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/at-a-glance.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/at-a-glance.svg"/><img src="theme/assets/light/at-a-glance.svg" alt="Samrat at a glance"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s03.svg"/><img src="theme/assets/light/s03.svg" alt="03 — CURRENTLY"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/s03.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/s03.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s03.svg"/><img src="theme/assets/light/s03.svg" alt="03 — CURRENTLY"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/currently.svg"/><img src="theme/assets/light/currently.svg" alt="What Samrat is building, learning and open to right now"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/currently.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/currently.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/currently.svg"/><img src="theme/assets/light/currently.svg" alt="What Samrat is building, learning and open to right now"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s04.svg"/><img src="theme/assets/light/s04.svg" alt="04 — SELECTED WORK"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/s04.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/s04.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s04.svg"/><img src="theme/assets/light/s04.svg" alt="04 — SELECTED WORK"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/selected-work.svg"/><img src="theme/assets/light/selected-work.svg" alt="Featured projects"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/selected-work.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/selected-work.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/selected-work.svg"/><img src="theme/assets/light/selected-work.svg" alt="Featured projects"/></picture>
 
 <div align="center">
 
@@ -44,9 +44,9 @@
 
 </div>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s05.svg"/><img src="theme/assets/light/s05.svg" alt="05 — PUBLISHED"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/s05.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/s05.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s05.svg"/><img src="theme/assets/light/s05.svg" alt="05 — PUBLISHED"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/published.svg"/><img src="theme/assets/light/published.svg" alt="Published open-source packages"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/published.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/published.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/published.svg"/><img src="theme/assets/light/published.svg" alt="Published open-source packages"/></picture>
 
 <div align="center">
 
@@ -54,13 +54,13 @@
 
 </div>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s06.svg"/><img src="theme/assets/light/s06.svg" alt="06 — STACK"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/s06.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/s06.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s06.svg"/><img src="theme/assets/light/s06.svg" alt="06 — STACK"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/stack.svg"/><img src="theme/assets/light/stack.svg" alt="Technical stack"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/stack.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/stack.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/stack.svg"/><img src="theme/assets/light/stack.svg" alt="Technical stack"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s07.svg"/><img src="theme/assets/light/s07.svg" alt="07 — FACTS"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/s07.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/s07.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s07.svg"/><img src="theme/assets/light/s07.svg" alt="07 — FACTS"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/facts.svg"/><img src="theme/assets/light/facts.svg" alt="Facts about Samrat"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/facts.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/facts.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/facts.svg"/><img src="theme/assets/light/facts.svg" alt="Facts about Samrat"/></picture>
 
 <div align="center">
 
@@ -68,9 +68,9 @@
 
 </div>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s08.svg"/><img src="theme/assets/light/s08.svg" alt="08 — WRITING"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/s08.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/s08.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s08.svg"/><img src="theme/assets/light/s08.svg" alt="08 — WRITING"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/writing.svg"/><img src="theme/assets/light/writing.svg" alt="Latest blog posts"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/writing.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/writing.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/writing.svg"/><img src="theme/assets/light/writing.svg" alt="Latest blog posts"/></picture>
 
 <div align="center">
 
@@ -78,9 +78,9 @@
 
 </div>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s09.svg"/><img src="theme/assets/light/s09.svg" alt="09 — ACTIVITY"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/s09.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/s09.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s09.svg"/><img src="theme/assets/light/s09.svg" alt="09 — ACTIVITY"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/activity.svg"/><img src="theme/assets/light/activity.svg" alt="Recent GitHub activity"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/activity.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/activity.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/activity.svg"/><img src="theme/assets/light/activity.svg" alt="Recent GitHub activity"/></picture>
 
 <div align="center">
 
@@ -88,9 +88,9 @@
 
 </div>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s10.svg"/><img src="theme/assets/light/s10.svg" alt="10 — TELEMETRY"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/s10.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/s10.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s10.svg"/><img src="theme/assets/light/s10.svg" alt="10 — TELEMETRY"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/telemetry.svg"/><img src="theme/assets/light/telemetry.svg" alt="Contribution telemetry"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/telemetry.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/telemetry.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/telemetry.svg"/><img src="theme/assets/light/telemetry.svg" alt="Contribution telemetry"/></picture>
 
 <details>
 <summary><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-more-telemetry-more.svg"/><img src="theme/assets/light/badge-more-telemetry-more.svg" alt="MORE TELEMETRY ↓"/></picture></summary>
@@ -115,7 +115,7 @@
 
 </details>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/top-repos.svg"/><img src="theme/assets/light/top-repos.svg" alt="Top repositories by commits"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/top-repos.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/top-repos.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/top-repos.svg"/><img src="theme/assets/light/top-repos.svg" alt="Top repositories by commits"/></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/contrib-3d.svg"/><img src="theme/assets/light/contrib-3d.svg" alt="3D contribution graph" width="100%"/></picture>
 
@@ -125,9 +125,9 @@
 
 </div>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s11.svg"/><img src="theme/assets/light/s11.svg" alt="11 — THE ROUTE"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/s11.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/s11.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s11.svg"/><img src="theme/assets/light/s11.svg" alt="11 — THE ROUTE"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/the-route.svg"/><img src="theme/assets/light/the-route.svg" alt="Achievements"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/the-route.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/the-route.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/the-route.svg"/><img src="theme/assets/light/the-route.svg" alt="Achievements"/></picture>
 
 <div align="center">
 
@@ -135,21 +135,21 @@
 
 </div>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s12.svg"/><img src="theme/assets/light/s12.svg" alt="12 — NOW PLAYING"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/s12.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/s12.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s12.svg"/><img src="theme/assets/light/s12.svg" alt="12 — NOW PLAYING"/></picture>
 
-<a href="https://open.spotify.com/user/4uyys269cpo9e8ddgcc3kcxov"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/now-playing.svg"/><img src="theme/assets/light/now-playing.svg" alt="Currently listening on Spotify"/></picture></a>
+<a href="https://open.spotify.com/user/4uyys269cpo9e8ddgcc3kcxov"><picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/now-playing.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/now-playing.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/now-playing.svg"/><img src="theme/assets/light/now-playing.svg" alt="Currently listening on Spotify"/></picture></a>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s13.svg"/><img src="theme/assets/light/s13.svg" alt="13 — DEV QUOTE"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/s13.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/s13.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s13.svg"/><img src="theme/assets/light/s13.svg" alt="13 — DEV QUOTE"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/dev-quote.svg"/><img src="theme/assets/light/dev-quote.svg" alt="Developer quote"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/dev-quote.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/dev-quote.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/dev-quote.svg"/><img src="theme/assets/light/dev-quote.svg" alt="Developer quote"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s14.svg"/><img src="theme/assets/light/s14.svg" alt="14 — PLAYGROUND"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/s14.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/s14.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s14.svg"/><img src="theme/assets/light/s14.svg" alt="14 — PLAYGROUND"/></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/colddsam/colddsam/output/github-contribution-grid-snake-mono-dark.svg"/><img src="https://raw.githubusercontent.com/colddsam/colddsam/output/github-contribution-grid-snake-mono.svg" alt="GitHub contribution grid snake animation" width="100%"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s15.svg"/><img src="theme/assets/light/s15.svg" alt="15 — SAY HELLO"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/s15.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/s15.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s15.svg"/><img src="theme/assets/light/s15.svg" alt="15 — SAY HELLO"/></picture>
 
-<a href="mailto:colddsam@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/say-hello.svg"/><img src="theme/assets/light/say-hello.svg" alt="Contact Samrat — colddsam@gmail.com"/></picture></a>
+<a href="mailto:colddsam@gmail.com"><picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/say-hello.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/say-hello.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/say-hello.svg"/><img src="theme/assets/light/say-hello.svg" alt="Contact Samrat — colddsam@gmail.com"/></picture></a>
 
 <div align="center">
 
@@ -157,6 +157,6 @@
 
 </div>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/signature.svg"/><img src="theme/assets/light/signature.svg" alt="colddsam"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/signature.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/signature.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/signature.svg"/><img src="theme/assets/light/signature.svg" alt="colddsam"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/footer.svg"/><img src="theme/assets/light/footer.svg" alt="STATUS — LOOKING FOR AN INTERNSHIP"/></picture>
+<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="theme/assets/dark/footer.narrow.svg"/><source media="(max-width: 640px)" srcset="theme/assets/light/footer.narrow.svg"/><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/footer.svg"/><img src="theme/assets/light/footer.svg" alt="STATUS — LOOKING FOR AN INTERNSHIP"/></picture>
