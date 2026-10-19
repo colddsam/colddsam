@@ -1,135 +1,115 @@
-![Blue Modern Seo Marketer Profile Linkedin Banner](assets/banner.png)
+<!--
 
----
+  GENERATED FILE — do not edit by hand.
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Roboto&weight=900&size=30&pause=1000&vCenter=true&width=435&lines=Hi+Developers+%F0%9F%A4%99;I+am+Samrat+Kumar+Das+%F0%9F%A4%98)](https://git.io/typing-svg)
+  Content: theme/profile.json · Design tokens: theme/tokens.json
 
- <h3 align="left">A passionate ML engineer looking for a opportunity to grab an internship.</h3>
+  Rebuild: node theme/build.js   (add --offline to skip network fetches)
 
-<h3 style="color: #0393d1;"><a href="https://colddsam.dev">portfolio website ↗️</a></h3>
-
-
-## 🤓 About :
-
-<p>
-Hi, I'm Samrat Kumar Das from Kolkata, West Bengal.<br>
-I'm in 4th year of my BTech degree in Electronics and Communication Engineering which I pursuing from Narula Institute of Technology.<br>
-I belive nothing is impossible if you think it possible.<br>
-Currently I'm enhancing my skills in Machine Learning and Front End Development with which I want to proceed further. I love to work as a team and collaborate in open sources.<br>
-Now I looking for an internship to applying and sharping my skills which I learning from my college and from my personal works.
-</p>
-
-<img align="center" alt="coding" width="100%" height="10%"  src="./gihub push/fact.gif">
-
-## 🔎 Tech Stacks :
-
-[![My Skills](https://skillicons.dev/icons?i=c,cpp,python,html,css,js,sass,react,nodejs,mongo,express,flask,opencv,fastapi,git,flutter,dart,tensorflow)](https://skillicons.dev)
-
-## 👽 Facts :
-
-<p align="left">
-
-- 📃 My resume available at this [Link](https://drive.google.com/file/d/1PdT7z_OTmuz3gs02nRsrAx9_efc6rstA/view?usp=sharing)
-
-- 🔭 I’m currently working on [Making a flutter based application](https://github.com/colddsam/virtual-assistant.git)
-
-- 🌱 My present interest of learnings are **AI/ML, Front End**
-
-- 👨‍💻 All of my projects are available at [Here](https://linktr.ee/colddsam?utm_source=linktree_profile_share&ltsid=2cda3886-be78-4ccf-a16a-3ef6943e4525)
-
-- 💬 Ask me about: **AI/ML, Front End Development, Data Structure**
-
-- 📫 To reach me just email at: **colddsam@gmail.com**
-
-- ⚡ Self fact: **I believe the more we spread knowledge, the more we grow knowledge**
-</p>
-
-## 📖 Blogs :
-
-<!-- Latest-blog-post:START -->
-- [The Future of Quantum Computing: What’s Next for Qubits?](https://colddsam.medium.com/the-future-of-quantum-computing-whats-next-for-qubits-3ea3efef587c?source=rss-1f3fff14ffdd------2)
-- [Unveiling the Secrets of Machine Learning: A Comprehensive Guide](https://colddsam.medium.com/unveiling-the-secrets-of-machine-learning-a-comprehensive-guide-baee1ee2e439?source=rss-1f3fff14ffdd------2)
-- [Unveiling the Secrets of Neural Networks: A Comprehensive Guide for Beginners](https://colddsam.medium.com/unveiling-the-secrets-of-neural-networks-a-comprehensive-guide-for-beginners-911cc970780d?source=rss-1f3fff14ffdd------2)
-- [Unlock the Power of Quantum Computing: 5 Practical Applications to Supercharge Your Business](https://colddsam.medium.com/unlock-the-power-of-quantum-computing-5-practical-applications-to-supercharge-your-business-3ee57db73773?source=rss-1f3fff14ffdd------2)
-<!-- Latest-blog-post:END -->
-
-## #️⃣ Socials :
-
-<p align="left">
-<a href="https://www.linkedin.com/in/colddsam/" target="blank">
-<img height="40" src="./gihub push/linkedin.png" alt="colddsam" /><span>&nbsp;</span>
-<a href="https://www.instagram.com/colddsam/" target="blank">
-<img height="40" src="./gihub push/instagram.png" alt="colddsam" /><span>&nbsp;</span>
-<a href="https://github.com/colddsam" target="blank">
-<img height="40" src="./gihub push/github.png" alt="colddsam" /><span>&nbsp;</span>
-<a href="https://twitter.com/colddsam" target="blank">
-<img height="40" src="./gihub push/x.png" alt="colddsam" /><span>&nbsp;</span>
-</a> </p>
-
-## 📤 My Recent Activities:
-
-<!--START_SECTION:activity-->
-
-1. 💪 Opened PR [#2](https://github.com/Sahelisen-git/Healthcare-System/pull/2) in [Sahelisen-git/Healthcare-System](https://github.com/Sahelisen-git/Healthcare-System)
-2. 💪 Opened PR [#1](https://github.com/Sahelisen-git/Healthcare-System/pull/1) in [Sahelisen-git/Healthcare-System](https://github.com/Sahelisen-git/Healthcare-System)
-<!--END_SECTION:activity-->
-
-## 📊 My GitHub Stats :
-
-![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=colddsam&theme=radical)<br/>
-
-![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=colddsam&theme=radical)<br/>
-
-![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=colddsam&theme=radical)<br/>
-
-![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=colddsam&theme=radical&utcOffset=5.30)<br/>
-
-![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=colddsam&theme=radical)<br/>
-
-## 🏆 Achievements :
-
-<p>
-
-<img alt="coding" width="100%" src="https://i.pinimg.com/originals/88/40/b8/8840b8d2c07bf805cdab22c0e4b54f59.gif"><br/>
-
-- Appointed as Campus Ambassador of IIT Madras : [Link](https://www.linkedin.com/posts/samrat-kumar-das-176731171_iitmadras-ecell-campusambassador-activity-7005795807807303681-A0zo?utm_source=share&utm_medium=member_desktop)
-
-- Finished at 2nd position in Entrepreneurship Awareness Camp
-
-- Successfully completed Career Essentials in Software Development by Microsoft and LinkedIn from Microsoft : [Link](https://www.linkedin.com/posts/samrat-kumar-das-176731171_linkedinlearning-linkedin-microsoft-activity-7017184809009491969-BWMk?utm_source=share&utm_medium=member_desktop)
-
-- I participated in House of Hackers Hackathon organized by IIIT Ranchi: [Link](https://www.linkedin.com/posts/colddsam_connections-houseofhackers-iiitranchi-activity-7064083462122594305-LUdj?utm_source=share&utm_medium=member_desktop)
-
-- In 2023 I Participated in Hack4Bengal 2.0 which is one of the biggest private running hackathon
-
-- I joined GDG Durgapur as a Grphics Designer for the core team
-
-- I started 2024 by joining as a core graphics designer for Hack4Bengal 3.0
-
-</p>
-
-## 🎶 Currently Listening :
-
-<!-- To make this Spotify widget work, visit https://spotify-github-profile.kittinanx.com/ to login and authorize access. -->
-[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=4uyys269cpo9e8ddgcc3kcxov&cover_image=true&theme=spotify-embed&show_offline=true&background_color=121212&interchange=true&profanity=true&mode=dark&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.kittinanx.com/api/view?uid=4uyys269cpo9e8ddgcc3kcxov&redirect=true)
-
-## 😉 Graph Needed ?
-
-![](./profile-3d-contrib/profile-night-rainbow.svg)
+-->
 
 
-## ✍️ Random Dev Quote :
 
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+<div align="center">
 
-## 🔝 Top Contributed Repo :
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/header.svg"/><img src="theme/assets/light/header.svg" alt="Samrat Kumar Das — ML Engineer &amp; Front-End Developer — Kolkata, India."/></picture>
 
-![](https://github-contributor-stats.vercel.app/api?username=colddsam&limit=5&theme=radical&combine_all_yearly_contributions=true)
+<a href="https://colddsam.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-portfolio.svg"/><img src="theme/assets/light/badge-portfolio.svg" alt="PORTFOLIO"/></picture></a> <a href="https://drive.google.com/file/d/1PdT7z_OTmuz3gs02nRsrAx9_efc6rstA/view?usp=sharing"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-resume.svg"/><img src="theme/assets/light/badge-resume.svg" alt="RESUME"/></picture></a> <a href="https://www.linkedin.com/in/colddsam/"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-linkedin.svg"/><img src="theme/assets/light/badge-linkedin.svg" alt="LINKEDIN"/></picture></a> <a href="https://www.instagram.com/colddsam/"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-instagram.svg"/><img src="theme/assets/light/badge-instagram.svg" alt="INSTAGRAM"/></picture></a> <a href="https://github.com/colddsam"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-github.svg"/><img src="theme/assets/light/badge-github.svg" alt="GITHUB"/></picture></a> <a href="https://twitter.com/colddsam"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-x.svg"/><img src="theme/assets/light/badge-x.svg" alt="X"/></picture></a> <a href="mailto:colddsam@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-email.svg"/><img src="theme/assets/light/badge-email.svg" alt="EMAIL"/></picture></a> <a href="https://colddsam.medium.com"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-medium.svg"/><img src="theme/assets/light/badge-medium.svg" alt="MEDIUM"/></picture></a> <a href="https://linktr.ee/colddsam?utm_source=linktree_profile_share&amp;ltsid=2cda3886-be78-4ccf-a16a-3ef6943e4525"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-linktree.svg"/><img src="theme/assets/light/badge-linktree.svg" alt="LINKTREE"/></picture></a>
 
-## 🐍 Let's Play With Snake :
+<a href="https://git.io/typing-svg"><picture><source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=700&amp;size=26&amp;pause=1000&amp;color=FFFFFF&amp;center=true&amp;vCenter=true&amp;width=600&amp;lines=Hi+Developers%3BI+am+Samrat+Kumar+Das"/><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=700&amp;size=26&amp;pause=1000&amp;color=000000&amp;center=true&amp;vCenter=true&amp;width=600&amp;lines=Hi+Developers%3BI+am+Samrat+Kumar+Das" alt="Hi Developers — I am Samrat Kumar Das"/></picture></a>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
-</picture>
+</div>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s01.svg"/><img src="theme/assets/light/s01.svg" alt="01 — WHOAMI"/></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/whoami.svg"/><img src="theme/assets/light/whoami.svg" alt="About Samrat Kumar Das"/></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s02.svg"/><img src="theme/assets/light/s02.svg" alt="02 — STACK"/></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/stack.svg"/><img src="theme/assets/light/stack.svg" alt="Technical stack"/></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s03.svg"/><img src="theme/assets/light/s03.svg" alt="03 — FACTS"/></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/facts.svg"/><img src="theme/assets/light/facts.svg" alt="Facts about Samrat"/></picture>
+
+<div align="center">
+
+<a href="https://drive.google.com/file/d/1PdT7z_OTmuz3gs02nRsrAx9_efc6rstA/view?usp=sharing"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-resume-ext.svg"/><img src="theme/assets/light/badge-resume-ext.svg" alt="RESUME ↗"/></picture></a> <a href="https://github.com/colddsam/virtual-assistant.git"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-virtual-assistant-ext.svg"/><img src="theme/assets/light/badge-virtual-assistant-ext.svg" alt="VIRTUAL ASSISTANT ↗"/></picture></a> <a href="https://linktr.ee/colddsam?utm_source=linktree_profile_share&amp;ltsid=2cda3886-be78-4ccf-a16a-3ef6943e4525"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-all-projects-ext.svg"/><img src="theme/assets/light/badge-all-projects-ext.svg" alt="ALL PROJECTS ↗"/></picture></a> <a href="mailto:colddsam@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-email-ext.svg"/><img src="theme/assets/light/badge-email-ext.svg" alt="EMAIL ↗"/></picture></a>
+
+</div>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s04.svg"/><img src="theme/assets/light/s04.svg" alt="04 — WRITING"/></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/writing.svg"/><img src="theme/assets/light/writing.svg" alt="Latest blog posts"/></picture>
+
+<div align="center">
+
+<a href="https://colddsam.medium.com/the-future-of-quantum-computing-whats-next-for-qubits-3ea3efef587c?source=rss-1f3fff14ffdd------2"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-read-n-01-ext.svg"/><img src="theme/assets/light/badge-read-n-01-ext.svg" alt="READ Nº 01 ↗"/></picture></a> <a href="https://colddsam.medium.com/unveiling-the-secrets-of-machine-learning-a-comprehensive-guide-baee1ee2e439?source=rss-1f3fff14ffdd------2"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-read-n-02-ext.svg"/><img src="theme/assets/light/badge-read-n-02-ext.svg" alt="READ Nº 02 ↗"/></picture></a> <a href="https://colddsam.medium.com/unveiling-the-secrets-of-neural-networks-a-comprehensive-guide-for-beginners-911cc970780d?source=rss-1f3fff14ffdd------2"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-read-n-03-ext.svg"/><img src="theme/assets/light/badge-read-n-03-ext.svg" alt="READ Nº 03 ↗"/></picture></a> <a href="https://colddsam.medium.com/unlock-the-power-of-quantum-computing-5-practical-applications-to-supercharge-your-business-3ee57db73773?source=rss-1f3fff14ffdd------2"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-read-n-04-ext.svg"/><img src="theme/assets/light/badge-read-n-04-ext.svg" alt="READ Nº 04 ↗"/></picture></a> <a href="https://colddsam.medium.com"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-all-posts-ext.svg"/><img src="theme/assets/light/badge-all-posts-ext.svg" alt="ALL POSTS ↗"/></picture></a>
+
+</div>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s05.svg"/><img src="theme/assets/light/s05.svg" alt="05 — ACTIVITY"/></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/activity.svg"/><img src="theme/assets/light/activity.svg" alt="Recent GitHub activity"/></picture>
+
+<div align="center">
+
+<a href="https://github.com/Sahelisen-git/Healthcare-System/pull/2"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-open-n-01-ext.svg"/><img src="theme/assets/light/badge-open-n-01-ext.svg" alt="OPEN Nº 01 ↗"/></picture></a> <a href="https://github.com/Sahelisen-git/Healthcare-System/pull/1"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-open-n-02-ext.svg"/><img src="theme/assets/light/badge-open-n-02-ext.svg" alt="OPEN Nº 02 ↗"/></picture></a> <a href="https://github.com/Sahelisen-git/Healthcare-System"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-healthcare-system-ext.svg"/><img src="theme/assets/light/badge-healthcare-system-ext.svg" alt="HEALTHCARE-SYSTEM ↗"/></picture></a>
+
+</div>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s06.svg"/><img src="theme/assets/light/s06.svg" alt="06 — TELEMETRY"/></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/telemetry.svg"/><img src="theme/assets/light/telemetry.svg" alt="Contribution telemetry"/></picture>
+
+<div align="center">
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/stats.svg"/><img src="theme/assets/light/stats.svg" alt="GitHub stats" width="49%"/></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/repos-per-language.svg"/><img src="theme/assets/light/repos-per-language.svg" alt="Repos per language" width="49%"/></picture>
+
+</div>
+
+<div align="center">
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/most-commit-language.svg"/><img src="theme/assets/light/most-commit-language.svg" alt="Most commit language" width="49%"/></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/productive-time.svg"/><img src="theme/assets/light/productive-time.svg" alt="Productive time" width="49%"/></picture>
+
+</div>
+
+<div align="center">
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/profile-details.svg"/><img src="theme/assets/light/profile-details.svg" alt="Profile details" width="99%"/></picture>
+
+</div>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/top-repos.svg"/><img src="theme/assets/light/top-repos.svg" alt="Top repositories by commits"/></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/contrib-3d.svg"/><img src="theme/assets/light/contrib-3d.svg" alt="3D contribution graph" width="100%"/></picture>
+
+<div align="center">
+
+<a href="https://github.com/colddsam?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-all-repositories-ext.svg"/><img src="theme/assets/light/badge-all-repositories-ext.svg" alt="ALL REPOSITORIES ↗"/></picture></a>
+
+</div>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s07.svg"/><img src="theme/assets/light/s07.svg" alt="07 — THE ROUTE"/></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/the-route.svg"/><img src="theme/assets/light/the-route.svg" alt="Achievements"/></picture>
+
+<div align="center">
+
+<a href="https://www.linkedin.com/posts/samrat-kumar-das-176731171_iitmadras-ecell-campusambassador-activity-7005795807807303681-A0zo?utm_source=share&amp;utm_medium=member_desktop"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-n-01-iit-madras-ext.svg"/><img src="theme/assets/light/badge-n-01-iit-madras-ext.svg" alt="Nº 01 — IIT MADRAS ↗"/></picture></a> <a href="https://www.linkedin.com/posts/samrat-kumar-das-176731171_linkedinlearning-linkedin-microsoft-activity-7017184809009491969-BWMk?utm_source=share&amp;utm_medium=member_desktop"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-n-03-microsoft-ext.svg"/><img src="theme/assets/light/badge-n-03-microsoft-ext.svg" alt="Nº 03 — MICROSOFT ↗"/></picture></a> <a href="https://www.linkedin.com/posts/colddsam_connections-houseofhackers-iiitranchi-activity-7064083462122594305-LUdj?utm_source=share&amp;utm_medium=member_desktop"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-n-04-house-of-hackers-ext.svg"/><img src="theme/assets/light/badge-n-04-house-of-hackers-ext.svg" alt="Nº 04 — HOUSE OF HACKERS ↗"/></picture></a>
+
+</div>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s08.svg"/><img src="theme/assets/light/s08.svg" alt="08 — NOW PLAYING"/></picture>
+
+<a href="https://open.spotify.com/user/4uyys269cpo9e8ddgcc3kcxov"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/now-playing.svg"/><img src="theme/assets/light/now-playing.svg" alt="Currently listening on Spotify"/></picture></a>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s09.svg"/><img src="theme/assets/light/s09.svg" alt="09 — DEV QUOTE"/></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/dev-quote.svg"/><img src="theme/assets/light/dev-quote.svg" alt="Developer quote"/></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/s10.svg"/><img src="theme/assets/light/s10.svg" alt="10 — PLAYGROUND"/></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/colddsam/colddsam/output/github-contribution-grid-snake-mono-dark.svg"/><img src="https://raw.githubusercontent.com/colddsam/colddsam/output/github-contribution-grid-snake-mono.svg" alt="GitHub contribution grid snake animation" width="100%"/></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/footer.svg"/><img src="theme/assets/light/footer.svg" alt="STATUS — LOOKING FOR AN INTERNSHIP"/></picture>
