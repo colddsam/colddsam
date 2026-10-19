@@ -403,7 +403,7 @@
     { "date": "2026-10-16", "count": 0 },
     { "date": "2026-10-17", "count": 0 },
     { "date": "2026-10-18", "count": 0 },
-    { "date": "2026-10-19", "count": 3 }
+    { "date": "2026-10-19", "count": 4 }
   ],
   "topRepos": [
     {
@@ -429,12 +429,12 @@
   ],
   "spotify": {
     "playing": false,
-    "progress": 9770,
-    "title": "Ishqa Ve",
-    "artist": "Zeeshan Ali, Yuvraj Tung, Sandeep Aulakh, Honey Dhillon",
-    "album": "Ishqa Ve",
-    "duration": 207102,
-    "cover": "https://i.scdn.co/image/ab67616d00001e020cfff15d92e2acb5a4b45ef5"
+    "playedAt": "2026-10-19T00:41:47.830Z",
+    "title": "Jhol",
+    "artist": "Maanu, Annural Khalid",
+    "album": "Jhol",
+    "duration": 265817,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02da7d1408f8e776063963572f"
   },
   "projects": [
     {
