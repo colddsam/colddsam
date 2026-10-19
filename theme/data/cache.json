@@ -403,7 +403,7 @@
     { "date": "2026-10-16", "count": 0 },
     { "date": "2026-10-17", "count": 0 },
     { "date": "2026-10-18", "count": 0 },
-    { "date": "2026-10-19", "count": 1 }
+    { "date": "2026-10-19", "count": 3 }
   ],
   "topRepos": [
     {
@@ -435,5 +435,70 @@
     "album": "Ishqa Ve",
     "duration": 207102,
     "cover": "https://i.scdn.co/image/ab67616d00001e020cfff15d92e2acb5a4b45ef5"
+  },
+  "projects": [
+    {
+      "repo": "colddsam/coldscout",
+      "stars": 3,
+      "forks": 0,
+      "pushed": "2026-08-09T08:01:25Z",
+      "language": "Python",
+      "description": "Cold Scout — Autonomous AI-powered B2B lead generation SaaS. Discovers local businesses via Google Places, qualifies them with Groq Llama 3, and sends hyper-personalized cold email campaigns. Built with FastAPI, React 19, PostgreSQL, Supabase Auth, and Razorpay billing",
+      "homepage": "https://coldscout.colddsam.com"
+    },
+    {
+      "repo": "colddsam/Truth-Guardian",
+      "stars": 2,
+      "forks": 2,
+      "pushed": "2026-05-06T04:44:37Z",
+      "language": "TypeScript",
+      "description": "An advanced AI-powered fake news detection system that verifies text, images, and social media posts using Gemini AI, FastAPI, and Next.js. Includes a modern web interface, a lightweight Streamlit app, and a Chrome extension for real-time fake content detection. Built to combat misinformation with explainable AI results and contextual source links.",
+      "homepage": "https://truthguardian.vercel.app"
+    },
+    {
+      "repo": "colddsam/ModeYOLO",
+      "stars": 0,
+      "forks": 0,
+      "pushed": "2024-03-29T19:10:15Z",
+      "language": "Python",
+      "description": "ModeYOLO: Elevate image processing with this Python package. Seamlessly perform color space transformations, simplify dataset modification for deep learning, and leverage OpenCV and NumPy. Ideal for YOLO projects, computer vision tasks, and efficient machine learning workflows.",
+      "homepage": "https://pypi.org/project/modeyolo/"
+    },
+    {
+      "repo": "colddsam/sketchbook-portfolio",
+      "stars": 0,
+      "forks": 0,
+      "pushed": "2026-04-10T20:40:38Z",
+      "language": "TypeScript",
+      "description": "Part digital sketchbook, part professional portfolio. Built with Next.js, Framer Motion, and probably too much coffee. ☕✨",
+      "homepage": "https://colddsam.com"
+    }
+  ],
+  "packages": [
+    {
+      "name": "modeyolo",
+      "version": "0.2.5",
+      "summary": "ModeYOLO is a versatile Python package designed for efficient color space transformations and simplified dataset modification for deep learning applications. Seamlessly integrating into your workflow, this package empowers users to effortlessly perform diverse color operations and streamline the creation of modified datasets, enhancing the flexibility and convenience of machine learning model training processes.",
+      "downloads": 36
+    },
+    {
+      "name": "localstore",
+      "version": "0.2.1",
+      "summary": "LocalStore is a Python library that provides various operations on a local database of products, which can be used to store and manage information about items in a local store inventory and it also give mobility to create an local API for the database. Besides this it can convert CSV file to json.",
+      "downloads": 12
+    },
+    {
+      "name": "trending-products",
+      "version": "1.0.3",
+      "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
+      "downloads": 18
+    }
+  ],
+  "glance": {
+    "created": "2021-09-10T19:28:11Z",
+    "followers": 5,
+    "repos": 57,
+    "stars": 10,
+    "forks": 12
   }
 }

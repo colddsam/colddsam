@@ -5,6 +5,7 @@
     .ln{stroke:#000000;stroke-width:1;fill:none}
     .ink{fill:#000000}
     .stroke{stroke:#000000;fill:none}
+    .outline{stroke:#000000}
     .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.6,0,.2,1) forwards}
     @keyframes draw{to{stroke-dashoffset:0}}
     .rise{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
@@ -21,9 +22,15 @@
     @keyframes eq{from{transform:scaleY(.2)}to{transform:scaleY(1)}}
     .spin{transform-box:fill-box;transform-origin:center;animation:spin 3.2s linear infinite}
     @keyframes spin{to{transform:rotate(360deg)}}
-    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin{animation:none}.draw{stroke-dashoffset:0}.rise,.fade{opacity:1}.grow{transform:none}.ring{opacity:0}}
+    .blink{animation:blink 1.1s steps(1) infinite}
+    @keyframes blink{50%{opacity:0}}
+    .caret{animation:caret 1.1s steps(1) infinite}
+    @keyframes caret{50%{fill-opacity:0}}
+    .nudge{animation:nudge 1.6s ease-in-out infinite}
+    @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
+    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim{animation:none}.draw{stroke-dashoffset:0}.rise,.fade{opacity:1}.grow{transform:none}.ring{opacity:0}}
   </style>
-  <g class="fade" style="animation-delay:0.1s"><text class="m" x="48" y="28" font-size="11" letter-spacing="3.5">LATEST FROM MEDIUM</text><text class="m" x="952" y="28" font-size="11" letter-spacing="3.5" text-anchor="end">FIG. 04.1</text></g><line class="ln draw" x1="48" y1="40" x2="952" y2="40" pathLength="1" opacity="1" style="animation-delay:0.1s"/>
+  <g class="fade" style="animation-delay:0.1s"><text class="m" x="48" y="28" font-size="11" letter-spacing="3.5">LATEST FROM MEDIUM</text><text class="m" x="952" y="28" font-size="11" letter-spacing="3.5" text-anchor="end">FIG. 08.1</text></g><line class="ln draw" x1="48" y1="40" x2="952" y2="40" pathLength="1" opacity="1" style="animation-delay:0.1s"/>
   <g class="rise" style="animation-delay:0.2s"><text class="m" x="48" y="78" font-size="11" letter-spacing="2.5">Nº 01</text><text class="m" x="130" y="78" font-size="15">The Future of Quantum Computing: What’s Next for Qubits?</text><text class="m" x="952" y="78" font-size="11" letter-spacing="2" text-anchor="end">07 SEP 2024</text></g>
   <line class="ln" x1="48" y1="94" x2="952" y2="94" opacity="0.25"/>
   <g class="rise" style="animation-delay:0.28s"><text class="m" x="48" y="118" font-size="11" letter-spacing="2.5">Nº 02</text><text class="m" x="130" y="118" font-size="15">Unveiling the Secrets of Machine Learning: A Comprehensive Guide</text><text class="m" x="952" y="118" font-size="11" letter-spacing="2" text-anchor="end">06 SEP 2024</text></g>

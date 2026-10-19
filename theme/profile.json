@@ -1,7 +1,7 @@
 {
   "$comment": "ALL README CONTENT LIVES HERE. Edit this file, then run: node theme/build.js  (add --offline to skip network fetches). Colours, fonts and greyscale rules live in theme/tokens.json.",
 
-  "output": "TEST.md",
+  "output": "README.md",
   "user": "colddsam",
 
   "header": {
@@ -12,7 +12,8 @@
     "focus": "machine learning · front-end development · open source",
     "status": "a passionate ML engineer looking for an opportunity to grab an internship.",
     "strip": ["AI / ML", "FRONT END", "DATA STRUCTURES"],
-    "stripRight": "B.TECH ECE — NARULA INSTITUTE OF TECHNOLOGY"
+    "stripRight": "B.TECH ECE — NARULA INSTITUTE OF TECHNOLOGY",
+    "globe": { "lat": 22.57, "lon": 88.36, "label": "BASED IN KOLKATA" }
   },
 
   "typing": {
@@ -32,6 +33,12 @@
     { "label": "LINKTREE", "url": "https://linktr.ee/colddsam?utm_source=linktree_profile_share&ltsid=2cda3886-be78-4ccf-a16a-3ef6943e4525" }
   ],
 
+  "ticker": {
+    "$comment": "Scrolling keyword strip under the header. speed = pixels per second.",
+    "speed": 45,
+    "items": ["Machine Learning", "Front-End", "Python", "TypeScript", "Next.js", "FastAPI", "LLM Agents", "Open Source", "Hackathons", "Kolkata, IN"]
+  },
+
   "sections": [
     {
       "type": "card",
@@ -49,6 +56,59 @@
         ["STUDY", "B.Tech ECE · Narula Institute of Technology · 4th year"],
         ["FOCUS", "Machine Learning · Front-End Development"],
         ["STATUS", "looking for an internship · team work · open-source collaboration"]
+      ]
+    },
+    {
+      "type": "glance",
+      "title": "AT A GLANCE",
+      "alt": "Samrat at a glance",
+      "$comment": "stat = contributions | repos | stars | forks | followers | downloads | years (all live), or give a fixed \"value\" instead. {since} in a caption = the year the GitHub account was created.",
+      "kicker": "BY THE NUMBERS — LIVE",
+      "items": [
+        { "stat": "contributions", "label": "CONTRIBUTIONS", "caption": "LAST 12 MONTHS" },
+        { "stat": "repos", "label": "PUBLIC REPOS", "caption": "ON GITHUB" },
+        { "stat": "downloads", "label": "DOWNLOADS", "caption": "PACKAGES · 30 DAYS" },
+        { "stat": "stars", "label": "STARS", "caption": "ACROSS MY REPOS" },
+        { "stat": "years", "label": "YEARS", "caption": "SINCE {since}" }
+      ]
+    },
+    {
+      "type": "currently",
+      "title": "CURRENTLY",
+      "alt": "What Samrat is building, learning and open to right now",
+      "$comment": "Edit freely; 'updated' is shown in the card header. Items fill a 2-column grid; 'live': true adds the pulsing dot, 'note' is an optional small caption.",
+      "kicker": "WHAT I'M DOING NOW",
+      "updated": "OCT 2026",
+      "items": [
+        { "label": "BUILDING", "text": "Cold Scout — an autonomous AI lead-generation SaaS that finds, qualifies and emails local businesses.", "note": "FastAPI · React 19 · Llama 3 · PostgreSQL" },
+        { "label": "LEARNING", "text": "LLM agents and retrieval pipelines, and shipping ML models to production.", "note": "Agents · RAG · MLOps" },
+        { "label": "EXPLORING", "text": "Explainable AI for misinformation — scoring and sourcing claims in Truth Guardian.", "note": "Gemini · Next.js · Chrome extension" },
+        { "label": "OPEN TO", "text": "ML / full-stack internships, open-source collaboration and hackathon teams.", "note": "Kolkata · remote", "live": true }
+      ]
+    },
+    {
+      "type": "projects",
+      "title": "SELECTED WORK",
+      "alt": "Featured projects",
+      "$comment": "repo = repository name (or owner/name). Stars, forks and last update are fetched live; name/note/tags override the repo's own text; demo defaults to the repo's website field.",
+      "kicker": "SELECTED WORK — LIVE FROM GITHUB",
+      "items": [
+        { "repo": "coldscout", "name": "Cold Scout", "note": "Autonomous B2B lead generation: finds businesses on Google Places, qualifies them with Llama 3 and runs personalised email campaigns.", "tags": ["FastAPI", "React 19", "PostgreSQL", "Redis", "Razorpay"] },
+        { "repo": "Truth-Guardian", "name": "Truth Guardian", "note": "AI fake-news detection for text, images and social posts with explainable results, a web app and a Chrome extension.", "tags": ["Gemini", "FastAPI", "Next.js", "Streamlit"] },
+        { "repo": "ModeYOLO", "name": "ModeYOLO", "demo": "", "note": "Python package for colour-space transforms and building modified datasets for deep-learning training.", "tags": ["Python", "OpenCV", "PyPI"] },
+        { "repo": "sketchbook-portfolio", "name": "Sketchbook", "note": "Part digital sketchbook, part professional portfolio — hand-drawn feel with smooth motion.", "tags": ["Next.js", "Framer Motion", "TypeScript"] }
+      ]
+    },
+    {
+      "type": "packages",
+      "title": "PUBLISHED",
+      "alt": "Published open-source packages",
+      "$comment": "registry = pypi | npm. Version and last-30-day downloads are fetched live; note overrides the registry summary.",
+      "kicker": "PACKAGES",
+      "items": [
+        { "registry": "pypi", "name": "modeyolo", "note": "Colour-space transforms and dataset modification for deep learning." },
+        { "registry": "pypi", "name": "localstore", "note": "Local product database with CSV → JSON and an instant local API." },
+        { "registry": "npm", "name": "trending-products", "note": "Fetch trending Amazon products and related Google Trends queries." }
       ]
     },
     {
@@ -113,6 +173,7 @@
       "alt": "GitHub statistics",
       "excludeRepos": ["colddsam/colddsam"],
       "topRepos": 5,
+      "collapse": "MORE TELEMETRY ↓",
       "cards": [
         { "name": "stats", "alt": "GitHub stats", "width": "49%", "preset": "summary-cards", "light": "profile-summary-card-output/github/3-stats.svg", "dark": "profile-summary-card-output/github_dark/3-stats.svg" },
         { "name": "repos-per-language", "alt": "Repos per language", "width": "49%", "preset": "summary-cards", "light": "profile-summary-card-output/github/1-repos-per-language.svg", "dark": "profile-summary-card-output/github_dark/1-repos-per-language.svg" },
@@ -175,8 +236,31 @@
       "alt": "GitHub contribution grid snake animation",
       "light": "https://raw.githubusercontent.com/colddsam/colddsam/output/github-contribution-grid-snake-mono.svg",
       "dark": "https://raw.githubusercontent.com/colddsam/colddsam/output/github-contribution-grid-snake-mono-dark.svg"
+    },
+    {
+      "type": "contact",
+      "title": "SAY HELLO",
+      "alt": "Contact Samrat — colddsam@gmail.com",
+      "$comment": "The whole card is a mailto: link to 'email'; links below become badges.",
+      "kicker": "OPEN INBOX",
+      "headline": "Let's build something worth shipping.",
+      "text": "Internships, open-source, hackathons or a wild ML idea — my inbox is open and I reply to every message.",
+      "status": "AVAILABLE NOW · REPLIES WITHIN 24H",
+      "email": "colddsam@gmail.com",
+      "links": [
+        { "label": "EMAIL ↗", "url": "mailto:colddsam@gmail.com" },
+        { "label": "LINKEDIN ↗", "url": "https://www.linkedin.com/in/colddsam/" },
+        { "label": "RESUME ↗", "url": "https://drive.google.com/file/d/1PdT7z_OTmuz3gs02nRsrAx9_efc6rstA/view?usp=sharing" },
+        { "label": "PORTFOLIO ↗", "url": "https://colddsam.dev" }
+      ]
     }
   ],
+
+  "signature": {
+    "$comment": "Big outlined sign-off above the footer, traced then filled. Remove this block to hide it.",
+    "text": "colddsam",
+    "caption": "THANKS FOR SCROLLING — SEE YOU IN THE COMMITS"
+  },
 
   "footer": {
     "status": "STATUS — LOOKING FOR AN INTERNSHIP",

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 182" width="1000" height="182" fill="none" role="img" aria-label="Samrat at a glance: 259 contributions, 57 public repos, 66 downloads, 10 stars, 5 years">
+  <style>
+    .m{font-family:ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace}
+    text{fill:#FFFFFF}
+    .ln{stroke:#FFFFFF;stroke-width:1;fill:none}
+    .ink{fill:#FFFFFF}
+    .stroke{stroke:#FFFFFF;fill:none}
+    .outline{stroke:#FFFFFF}
+    .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.6,0,.2,1) forwards}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    .rise{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+    @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+    .fade{opacity:0;animation:fade .7s ease forwards}
+    @keyframes fade{to{opacity:1}}
+    .pulse{animation:pulse 2.4s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+    .ring{transform-box:fill-box;transform-origin:center;animation:ring 2.4s ease-out infinite}
+    @keyframes ring{0%{transform:scale(.4);opacity:.8}80%,100%{transform:scale(2.6);opacity:0}}
+    .grow{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation:grow 1.1s cubic-bezier(.2,.7,.2,1) forwards}
+    @keyframes grow{to{transform:scaleX(1)}}
+    .eq{transform-box:fill-box;transform-origin:bottom;animation:eq .9s ease-in-out infinite alternate}
+    @keyframes eq{from{transform:scaleY(.2)}to{transform:scaleY(1)}}
+    .spin{transform-box:fill-box;transform-origin:center;animation:spin 3.2s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .blink{animation:blink 1.1s steps(1) infinite}
+    @keyframes blink{50%{opacity:0}}
+    .caret{animation:caret 1.1s steps(1) infinite}
+    @keyframes caret{50%{fill-opacity:0}}
+    .nudge{animation:nudge 1.6s ease-in-out infinite}
+    @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
+    .odo{animation-duration:1.8s;animation-timing-function:cubic-bezier(.2,.7,.1,1);animation-fill-mode:both}
+    .odo1{animation-name:odo1}
+    @keyframes odo1{from{transform:translateY(56px)}to{transform:translateY(0)}}
+    .odo2{animation-name:odo2}
+    @keyframes odo2{from{transform:translateY(112px)}to{transform:translateY(0)}}
+    .odo3{animation-name:odo3}
+    @keyframes odo3{from{transform:translateY(168px)}to{transform:translateY(0)}}
+    .odo4{animation-name:odo4}
+    @keyframes odo4{from{transform:translateY(224px)}to{transform:translateY(0)}}
+    .odo5{animation-name:odo5}
+    @keyframes odo5{from{transform:translateY(280px)}to{transform:translateY(0)}}
+    .odo6{animation-name:odo6}
+    @keyframes odo6{from{transform:translateY(336px)}to{transform:translateY(0)}}
+    .odo7{animation-name:odo7}
+    @keyframes odo7{from{transform:translateY(392px)}to{transform:translateY(0)}}
+    .odo8{animation-name:odo8}
+    @keyframes odo8{from{transform:translateY(448px)}to{transform:translateY(0)}}
+    .odo9{animation-name:odo9}
+    @keyframes odo9{from{transform:translateY(504px)}to{transform:translateY(0)}}
+    @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim{animation:none}.draw{stroke-dashoffset:0}.rise,.fade{opacity:1}.grow{transform:none}.ring{opacity:0}}
+  </style>
+  <g class="fade" style="animation-delay:0.1s"><text class="m" x="48" y="28" font-size="11" letter-spacing="3.5">BY THE NUMBERS — LIVE</text><text class="m" x="952" y="28" font-size="11" letter-spacing="3.5" text-anchor="end">FIG. 02.1</text></g><line class="ln draw" x1="48" y1="40" x2="952" y2="40" pathLength="1" opacity="1" style="animation-delay:0.1s"/>
+  <clipPath id="odo-0"><rect x="46" y="92" width="180.8" height="54"/></clipPath>
+  <g class="fade" style="animation-delay:0.2s"><text class="m" x="48" y="78" font-size="11" letter-spacing="2.5">CONTRIBUTIONS</text><g clip-path="url(#odo-0)"><g class="anim odo odo2" style="animation-delay:0.30s"><text class="m" x="48" y="20" font-size="40">0</text><text class="m" x="48" y="76" font-size="40">1</text><text class="m" x="48" y="132" font-size="40">2</text><text class="m" x="48" y="188" font-size="40">3</text><text class="m" x="48" y="244" font-size="40">4</text><text class="m" x="48" y="300" font-size="40">5</text><text class="m" x="48" y="356" font-size="40">6</text><text class="m" x="48" y="412" font-size="40">7</text><text class="m" x="48" y="468" font-size="40">8</text><text class="m" x="48" y="524" font-size="40">9</text></g><g class="anim odo odo5" style="animation-delay:0.38s"><text class="m" x="72" y="-148" font-size="40">0</text><text class="m" x="72" y="-92" font-size="40">1</text><text class="m" x="72" y="-36" font-size="40">2</text><text class="m" x="72" y="20" font-size="40">3</text><text class="m" x="72" y="76" font-size="40">4</text><text class="m" x="72" y="132" font-size="40">5</text><text class="m" x="72" y="188" font-size="40">6</text><text class="m" x="72" y="244" font-size="40">7</text><text class="m" x="72" y="300" font-size="40">8</text><text class="m" x="72" y="356" font-size="40">9</text></g><g class="anim odo odo9" style="animation-delay:0.46s"><text class="m" x="96" y="-372" font-size="40">0</text><text class="m" x="96" y="-316" font-size="40">1</text><text class="m" x="96" y="-260" font-size="40">2</text><text class="m" x="96" y="-204" font-size="40">3</text><text class="m" x="96" y="-148" font-size="40">4</text><text class="m" x="96" y="-92" font-size="40">5</text><text class="m" x="96" y="-36" font-size="40">6</text><text class="m" x="96" y="20" font-size="40">7</text><text class="m" x="96" y="76" font-size="40">8</text><text class="m" x="96" y="132" font-size="40">9</text></g></g><text class="m" x="48" y="162" font-size="10" letter-spacing="2" opacity="0.6">LAST 12 MONTHS</text></g>
+  <clipPath id="odo-1"><rect x="246.8" y="92" width="160.8" height="54"/></clipPath>
+  <g class="fade" style="animation-delay:0.28s"><text class="m" x="248.8" y="78" font-size="11" letter-spacing="2.5">PUBLIC REPOS</text><g clip-path="url(#odo-1)"><g class="anim odo odo5" style="animation-delay:0.42s"><text class="m" x="248.8" y="-148" font-size="40">0</text><text class="m" x="248.8" y="-92" font-size="40">1</text><text class="m" x="248.8" y="-36" font-size="40">2</text><text class="m" x="248.8" y="20" font-size="40">3</text><text class="m" x="248.8" y="76" font-size="40">4</text><text class="m" x="248.8" y="132" font-size="40">5</text><text class="m" x="248.8" y="188" font-size="40">6</text><text class="m" x="248.8" y="244" font-size="40">7</text><text class="m" x="248.8" y="300" font-size="40">8</text><text class="m" x="248.8" y="356" font-size="40">9</text></g><g class="anim odo odo7" style="animation-delay:0.50s"><text class="m" x="272.8" y="-260" font-size="40">0</text><text class="m" x="272.8" y="-204" font-size="40">1</text><text class="m" x="272.8" y="-148" font-size="40">2</text><text class="m" x="272.8" y="-92" font-size="40">3</text><text class="m" x="272.8" y="-36" font-size="40">4</text><text class="m" x="272.8" y="20" font-size="40">5</text><text class="m" x="272.8" y="76" font-size="40">6</text><text class="m" x="272.8" y="132" font-size="40">7</text><text class="m" x="272.8" y="188" font-size="40">8</text><text class="m" x="272.8" y="244" font-size="40">9</text></g></g><text class="m" x="248.8" y="162" font-size="10" letter-spacing="2" opacity="0.6">ON GITHUB</text></g>
+  <line class="ln draw" x1="228.8" y1="62" x2="228.8" y2="168" pathLength="1" opacity="0.25" style="animation-delay:0.4s"/>
+  <clipPath id="odo-2"><rect x="427.6" y="92" width="160.8" height="54"/></clipPath>
+  <g class="fade" style="animation-delay:0.36s"><text class="m" x="429.6" y="78" font-size="11" letter-spacing="2.5">DOWNLOADS</text><g clip-path="url(#odo-2)"><g class="anim odo odo6" style="animation-delay:0.54s"><text class="m" x="429.6" y="-204" font-size="40">0</text><text class="m" x="429.6" y="-148" font-size="40">1</text><text class="m" x="429.6" y="-92" font-size="40">2</text><text class="m" x="429.6" y="-36" font-size="40">3</text><text class="m" x="429.6" y="20" font-size="40">4</text><text class="m" x="429.6" y="76" font-size="40">5</text><text class="m" x="429.6" y="132" font-size="40">6</text><text class="m" x="429.6" y="188" font-size="40">7</text><text class="m" x="429.6" y="244" font-size="40">8</text><text class="m" x="429.6" y="300" font-size="40">9</text></g><g class="anim odo odo6" style="animation-delay:0.62s"><text class="m" x="453.6" y="-204" font-size="40">0</text><text class="m" x="453.6" y="-148" font-size="40">1</text><text class="m" x="453.6" y="-92" font-size="40">2</text><text class="m" x="453.6" y="-36" font-size="40">3</text><text class="m" x="453.6" y="20" font-size="40">4</text><text class="m" x="453.6" y="76" font-size="40">5</text><text class="m" x="453.6" y="132" font-size="40">6</text><text class="m" x="453.6" y="188" font-size="40">7</text><text class="m" x="453.6" y="244" font-size="40">8</text><text class="m" x="453.6" y="300" font-size="40">9</text></g></g><text class="m" x="429.6" y="162" font-size="10" letter-spacing="2" opacity="0.6">PACKAGES · 30 DAYS</text></g>
+  <line class="ln draw" x1="409.6" y1="62" x2="409.6" y2="168" pathLength="1" opacity="0.25" style="animation-delay:0.5s"/>
+  <clipPath id="odo-3"><rect x="608.4000000000001" y="92" width="160.8" height="54"/></clipPath>
+  <g class="fade" style="animation-delay:0.44s"><text class="m" x="610.4000000000001" y="78" font-size="11" letter-spacing="2.5">STARS</text><g clip-path="url(#odo-3)"><g class="anim odo odo1" style="animation-delay:0.66s"><text class="m" x="610.4000000000001" y="76" font-size="40">0</text><text class="m" x="610.4000000000001" y="132" font-size="40">1</text><text class="m" x="610.4000000000001" y="188" font-size="40">2</text><text class="m" x="610.4000000000001" y="244" font-size="40">3</text><text class="m" x="610.4000000000001" y="300" font-size="40">4</text><text class="m" x="610.4000000000001" y="356" font-size="40">5</text><text class="m" x="610.4000000000001" y="412" font-size="40">6</text><text class="m" x="610.4000000000001" y="468" font-size="40">7</text><text class="m" x="610.4000000000001" y="524" font-size="40">8</text><text class="m" x="610.4000000000001" y="580" font-size="40">9</text></g><g class="anim odo odo0" style="animation-delay:0.74s"><text class="m" x="634.4000000000001" y="132" font-size="40">0</text><text class="m" x="634.4000000000001" y="188" font-size="40">1</text><text class="m" x="634.4000000000001" y="244" font-size="40">2</text><text class="m" x="634.4000000000001" y="300" font-size="40">3</text><text class="m" x="634.4000000000001" y="356" font-size="40">4</text><text class="m" x="634.4000000000001" y="412" font-size="40">5</text><text class="m" x="634.4000000000001" y="468" font-size="40">6</text><text class="m" x="634.4000000000001" y="524" font-size="40">7</text><text class="m" x="634.4000000000001" y="580" font-size="40">8</text><text class="m" x="634.4000000000001" y="636" font-size="40">9</text></g></g><text class="m" x="610.4000000000001" y="162" font-size="10" letter-spacing="2" opacity="0.6">ACROSS MY REPOS</text></g>
+  <line class="ln draw" x1="590.4000000000001" y1="62" x2="590.4000000000001" y2="168" pathLength="1" opacity="0.25" style="animation-delay:0.6000000000000001s"/>
+  <clipPath id="odo-4"><rect x="789.2" y="92" width="160.8" height="54"/></clipPath>
+  <g class="fade" style="animation-delay:0.52s"><text class="m" x="791.2" y="78" font-size="11" letter-spacing="2.5">YEARS</text><g clip-path="url(#odo-4)"><g class="anim odo odo5" style="animation-delay:0.78s"><text class="m" x="791.2" y="-148" font-size="40">0</text><text class="m" x="791.2" y="-92" font-size="40">1</text><text class="m" x="791.2" y="-36" font-size="40">2</text><text class="m" x="791.2" y="20" font-size="40">3</text><text class="m" x="791.2" y="76" font-size="40">4</text><text class="m" x="791.2" y="132" font-size="40">5</text><text class="m" x="791.2" y="188" font-size="40">6</text><text class="m" x="791.2" y="244" font-size="40">7</text><text class="m" x="791.2" y="300" font-size="40">8</text><text class="m" x="791.2" y="356" font-size="40">9</text></g></g><text class="m" x="791.2" y="162" font-size="10" letter-spacing="2" opacity="0.6">SINCE 2021</text></g>
+  <line class="ln draw" x1="771.2" y1="62" x2="771.2" y2="168" pathLength="1" opacity="0.25" style="animation-delay:0.7s"/>
+</svg>

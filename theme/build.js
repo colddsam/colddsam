@@ -92,6 +92,7 @@ function svgDoc(card, mode) {
     `.ln{stroke:${ink};stroke-width:1;fill:none}`,
     `.ink{fill:${ink}}`,
     `.stroke{stroke:${ink};fill:none}`,
+    `.outline{stroke:${ink}}`,
     '.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.6,0,.2,1) forwards}',
     '@keyframes draw{to{stroke-dashoffset:0}}',
     '.rise{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}',
@@ -108,7 +109,14 @@ function svgDoc(card, mode) {
     '@keyframes eq{from{transform:scaleY(.2)}to{transform:scaleY(1)}}',
     '.spin{transform-box:fill-box;transform-origin:center;animation:spin 3.2s linear infinite}',
     '@keyframes spin{to{transform:rotate(360deg)}}',
-    '@media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin{animation:none}.draw{stroke-dashoffset:0}.rise,.fade{opacity:1}.grow{transform:none}.ring{opacity:0}}',
+    '.blink{animation:blink 1.1s steps(1) infinite}',
+    '@keyframes blink{50%{opacity:0}}',
+    '.caret{animation:caret 1.1s steps(1) infinite}',
+    '@keyframes caret{50%{fill-opacity:0}}',
+    '.nudge{animation:nudge 1.6s ease-in-out infinite}',
+    '@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}',
+    ...(card.css || []),
+    '@media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim{animation:none}.draw{stroke-dashoffset:0}.rise,.fade{opacity:1}.grow{transform:none}.ring{opacity:0}}',
   ].join('\n    ');
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${card.w} ${card.h}" width="${card.w}" height="${card.h}" fill="none" role="img" aria-label="${esc(card.label)}">
   <style>
@@ -146,11 +154,11 @@ function badge(label, url) {
   const ls = 2;
   const w = Math.round(width(label, size, ls) - ls + 22);
   const h = 28;
-  const name = emit(`badge-${slugify(label.replace('↗', ' ext')) || 'link'}`, {
+  const name = emit(`badge-${slugify(label.replace('↗', ' ext').replace('↓', ' more')) || 'link'}`, {
     w, h, label,
     body: `<rect class="stroke" x=".5" y=".5" width="${w - 1}" height="${h - 1}"/>${text(w / 2 + ls / 2, 18.5, label, { size, ls, anchor: 'middle' })}`,
   });
-  return `<a href="${esc(url)}">${pic(name, label)}</a>`;
+  return url ? `<a href="${esc(url)}">${pic(name, label)}</a>` : pic(name, label);
 }
 // Inline items share one line: a newline would become <br> wherever Markdown is rendered with hard breaks.
 const badgeRow = (links = []) => (links.length ? center(links.map((l) => badge(l.label, l.url)).join(' ')) : '');
@@ -173,7 +181,8 @@ function header(h) {
   checkFit('header focus', h.focus, 12.5, 1, R - focusX);
   parts.push(group('fade', 1.2, text(L, 274, 'focus  ▸', { size: 12.5, ls: 1 }) + text(focusX, 274, h.focus, { size: 12.5, ls: 1 })));
   checkFit('header status', h.status, 12.5, 1, R - L);
-  parts.push(group('fade', 1.4, text(L, 300, h.status, { size: 12.5, ls: 1 })));
+  // the cursor is a tspan so it follows the real text width, whatever font the viewer ends up with
+  parts.push(group('fade', 1.4, text(L, 300, h.status, { size: 12.5, ls: 1 }).replace('</text>', ' <tspan class="caret">█</tspan></text>')));
   parts.push(line(L, 342, R, 342, { draw: true, delay: 1.4 }));
   let x = L;
   const strip = [];
@@ -189,19 +198,59 @@ function header(h) {
   if (x > R - rightW - 24) warnings.push('header strip collides with stripRight — shorten one of them');
   strip.push(text(R, 374, h.stripRight, { size: 11.5, ls: 3, anchor: 'end' }));
   parts.push(group('fade', 1.7, strip.join('')));
-  return { w: W, h: 400, label: `${h.name} — ${h.tagline}`, body: parts.join('\n  ') };
+  if (h.globe) parts.push(globe(h.globe));
+  return { w: W, h: 400, label: `${h.name} — ${h.tagline}`, css: GLOBE_CSS, body: parts.join('\n  ') };
+}
+
+// Wireframe globe in the header: meridians sweep round (scaleX 1 → -1 → 1, staggered) over fixed parallels,
+// with a pulsing pin at g.lat / g.lon (the pin sits on the front face, offset east of the centre meridian).
+const GLOBE_CSS = [
+  '.mer{transform-box:fill-box;transform-origin:center;animation:mer 9s linear infinite}',
+  // scaleX follows cos(angle), so evenly staggered meridians stay evenly spaced like a real rotating sphere
+  `@keyframes mer{${Array.from({ length: 17 }, (_, k) => `${((k / 16) * 100).toFixed(2)}%{transform:scaleX(${Math.cos((2 * Math.PI * k) / 16).toFixed(3)})}`).join('')}}`,
+];
+function globe(g) {
+  const [cx, cy, r] = [872, 196, 74];
+  const rad = (d) => (d * Math.PI) / 180;
+  const soft = tokens.tones.softRule;
+  const parts = [`<circle class="stroke" cx="${cx}" cy="${cy}" r="${r}"/>`];
+  for (const lat of [-60, -30, 0, 30, 60]) {
+    const y = cy - r * Math.sin(rad(lat));
+    const half = r * Math.cos(rad(lat));
+    parts.push(line(cx - half, y, cx + half, y, { op: lat ? soft * 0.6 : soft }));
+  }
+  const n = 6;
+  for (let i = 0; i < n; i++) {
+    // the inline transform is the resting pose shown when motion is reduced; the animation overrides it otherwise
+    const rest = Math.cos((Math.PI * i) / n).toFixed(3);
+    parts.push(`<ellipse class="stroke mer anim" cx="${cx}" cy="${cy}" rx="${r}" ry="${r}" opacity="${soft}" style="transform:scaleX(${rest});animation-delay:-${((4.5 / n) * i).toFixed(2)}s"/>`);
+  }
+  const px = cx + r * Math.cos(rad(g.lat)) * Math.sin(rad(25));
+  const py = cy - r * Math.sin(rad(g.lat));
+  parts.push(`<circle class="stroke ring" cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="5"/><circle class="ink pulse" cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="3.5"/>`);
+  parts.push(line(px + 5, py - 5, R - 4, cy - r - 4, { op: soft }));
+  parts.push(text(R, cy - r - 12, g.label, { size: 10, ls: 2, anchor: 'end' }));
+  parts.push(text(R, cy + r + 22, `${g.lat.toFixed(2)}° N · ${g.lon.toFixed(2)}° E`, { size: 10, ls: 2, anchor: 'end', op: 0.6 }));
+  return group('fade', 1, parts.join(''));
 }
 
 function divider(num, title) {
   const n = pad2(num);
   const p = `~/${n}-${slugify(title)}`;
   const x1 = 128 + width(title, 14, 6) + 24;
-  const x2 = R - width(p, 11, 2) - 24;
+  const x2 = R - 14 - width(p, 11, 2) - 24;
   if (x2 - x1 < 40) warnings.push(`divider ${n}: title "${title}" is too long`);
+  // a node rides the leading edge of the rule as it draws, and comes to rest at its end
+  const run = (x2 - x1).toFixed(1);
   return {
     w: W, h: 92, label: `Section ${n} — ${title}`,
-    body: group('fade', 0.1, text(L, 68, n, { size: 52 }) + text(128, 58, title, { size: 14, ls: 6 }) + text(R, 58, p, { size: 11, ls: 2, anchor: 'end' }))
-      + line(x1, 53, x2, 53, { draw: true, delay: 0.2 }),
+    css: [
+      '.spark{animation:spark 1.4s cubic-bezier(.6,0,.2,1) .2s both}',
+      `@keyframes spark{from{transform:translateX(-${run}px)}to{transform:translateX(0)}}`,
+    ],
+    body: group('fade', 0.1, text(L, 68, n, { size: 52 }) + text(128, 58, title, { size: 14, ls: 6 }) + text(R - 14, 58, p, { size: 11, ls: 2, anchor: 'end' }) + `<rect class="ink blink" x="${R - 7}" y="48" width="7" height="12"/>`)
+      + line(x1, 53, x2, 53, { draw: true, delay: 0.2 })
+      + `<circle class="stroke" cx="${x1}" cy="53" r="3"/><rect class="ink spark anim" x="${x2 - 3}" y="50" width="6" height="6"/>`,
   };
 }
 
@@ -265,6 +314,171 @@ function listCard(kick, fig, items, alt) {
     }
   });
   return { w: W, h: Math.round(y + 4), label: alt, body: parts.join('\n  ') };
+}
+
+const monthYear = (iso) => `${MONTHS[+iso.slice(5, 7) - 1]} ${iso.slice(0, 4)}`;
+const GAP = 48; // gutter between the two columns of a grid card
+const COL = (R - L - GAP) / 2;
+const colX = (c) => L + c * (COL + GAP);
+
+// Two-column grid of labelled notes (CURRENTLY). item = { label, text, note?, live? } — live adds the pulse dot.
+function currentlyCard(s, fig) {
+  const parts = [kicker(s.kicker, s.updated ? `${fig} · UPDATED ${s.updated}` : fig)];
+  let y = 84;
+  for (let r = 0; r < s.items.length; r += 2) {
+    const row = s.items.slice(r, r + 2).map((it) => ({ ...it, lines: wrap(it.text, 15, 0, COL) }));
+    const n = Math.max(...row.map((it) => it.lines.length));
+    if (r) parts.push(line(L, y - 26, R, y - 26, { op: tokens.tones.softRule * 0.5 }));
+    row.forEach((it, c) => {
+      const x = colX(c);
+      let inner = text(x, y, pad2(r + c + 1), { size: 11, ls: 2.5, op: 0.6 });
+      const lx = x + 34;
+      if (it.live) inner += `<circle class="stroke ring" cx="${lx + 4}" cy="${y - 4}" r="4"/><circle class="ink pulse" cx="${lx + 4}" cy="${y - 4}" r="3"/>`;
+      inner += text(it.live ? lx + 16 : lx, y, it.label, { size: 11, ls: 3 });
+      it.lines.forEach((ln, j) => (inner += text(x, y + 30 + j * 22, ln, { size: 15 })));
+      if (it.note) inner += text(x, y + 30 + it.lines.length * 22 + 2, truncate(it.note.toUpperCase(), 10, 2, COL), { size: 10, ls: 2, op: 0.6 });
+      parts.push(group('rise', 0.2 + (r + c) * 0.08, inner));
+    });
+    const hasNote = row.some((it) => it.note);
+    if (row.length === 2) parts.push(line(L + COL + GAP / 2, y - 14, L + COL + GAP / 2, y + 16 + n * 22 + (hasNote ? 18 : 0), { op: tokens.tones.softRule * 0.5 }));
+    y += 30 + n * 22 + (hasNote ? 22 : 0) + 44;
+  }
+  return { w: W, h: Math.round(y - 44 + 6), label: s.alt, body: parts.join('\n  ') };
+}
+
+// Featured projects as a two-column grid. p = { name, note, tags, stars, forks, pushed, demo }.
+function projectsCard(s, fig, projects) {
+  const parts = [kicker(s.kicker, fig)];
+  let y = 70;
+  for (let r = 0; r < projects.length; r += 2) {
+    const row = projects.slice(r, r + 2).map((p) => {
+      const all = wrap(p.note, 14, 0, COL);
+      const lines = all.slice(0, 3);
+      if (all.length > 3) lines[2] = truncate(`${lines[2]}…`, 14, 0, COL);
+      return { ...p, lines };
+    });
+    const n = Math.max(...row.map((p) => p.lines.length));
+    if (r) parts.push(line(L, y - 22, R, y - 22, { op: tokens.tones.softRule * 0.5 }));
+    row.forEach((p, c) => {
+      const x = colX(c);
+      const right = x + COL;
+      let inner = text(x, y + 12, `Nº ${pad2(r + c + 1)}`, { size: 11, ls: 2.5 });
+      inner += text(right, y + 12, `★ ${p.stars}  ·  ${p.forks} FORKS`, { size: 11, ls: 2, anchor: 'end' });
+      inner += text(x, y + 48, truncate(p.name, 24, -0.5, COL), { size: 24, ls: -0.5 });
+      p.lines.forEach((ln, j) => (inner += text(x, y + 78 + j * 21, ln, { size: 14 })));
+      const ty = y + 78 + n * 21 + 10;
+      inner += text(x, ty, truncate(p.tags.join(' · ').toUpperCase(), 10, 2, COL), { size: 10, ls: 2, op: 0.6 });
+      inner += line(x, ty + 14, right, ty + 14, { op: tokens.tones.softRule * 0.5 });
+      inner += text(x, ty + 34, p.pushed ? `UPDATED ${monthYear(p.pushed)}` : '', { size: 10, ls: 2 });
+      inner += text(right, ty + 34, p.demo ? 'LIVE DEMO ↗' : 'SOURCE ↗', { size: 10, ls: 2, anchor: 'end' });
+      parts.push(group('rise', 0.2 + (r + c) * 0.1, inner));
+    });
+    if (row.length === 2) parts.push(line(L + COL + GAP / 2, y, L + COL + GAP / 2, y + 78 + n * 21 + 44, { op: tokens.tones.softRule * 0.5 }));
+    y += 78 + n * 21 + 44 + 48;
+  }
+  return { w: W, h: Math.round(y - 48 + 10), label: s.alt, body: parts.join('\n  ') };
+}
+
+// Published packages with live version and 30-day downloads. p = { registry, name, note, version, downloads }.
+function packagesCard(s, fig, pkgs) {
+  const total = pkgs.reduce((a, p) => a + (p.downloads || 0), 0);
+  const parts = [kicker(`${s.kicker} — ${total} DOWNLOADS / 30 DAYS`, fig)];
+  const max = Math.max(1, ...pkgs.map((p) => p.downloads || 0));
+  const tagW = 56;
+  const nx = 118 + tagW + 22;
+  const bw = 120;
+  const bx = R - bw;
+  let y = 82;
+  pkgs.forEach((p, i) => {
+    const tag = p.registry.toUpperCase();
+    let inner = text(L, y, `Nº ${pad2(i + 1)}`, { size: 11, ls: 2.5 });
+    inner += `<rect class="stroke" x="118.5" y="${y - 14.5}" width="${tagW}" height="20"/>` + text(118 + tagW / 2 + 1, y, tag, { size: 10, ls: 2, anchor: 'middle' });
+    inner += text(nx, y, p.name, { size: 16 });
+    inner += text(nx + width(p.name, 16) + 14, y, p.version ? `v${p.version}` : '', { size: 10, ls: 2, op: 0.6 });
+    inner += text(nx, y + 22, truncate(p.note, 12, 0, bx - nx - 32), { size: 12, op: 0.7 });
+    const fw = Math.max(2, Math.round(((p.downloads || 0) / max) * bw));
+    inner += text(R, y, p.downloads == null ? '—' : String(p.downloads), { size: 18, anchor: 'end' });
+    inner += `<rect class="ink" opacity="${tokens.tones.track}" x="${bx}" y="${y + 14}" width="${bw}" height="4"/>`
+      + `<rect class="ink grow" style="animation-delay:${0.4 + i * 0.1}s" x="${bx}" y="${y + 14}" width="${fw}" height="4"/>`;
+    parts.push(group('rise', 0.2 + i * 0.08, inner));
+    y += 42;
+    if (i < pkgs.length - 1) {
+      parts.push(line(L, y - 4, R, y - 4, { op: tokens.tones.softRule * 0.5 }));
+      y += 28;
+    }
+  });
+  return { w: W, h: Math.round(y - 12), label: `${s.alt} — ${total} downloads in the last 30 days`, body: parts.join('\n  ') };
+}
+
+// Endless keyword marquee under the header; edges fade out through a luminance mask.
+function tickerCard(t) {
+  const sep = '   /   ';
+  const seq = t.items.map((x) => x.toUpperCase()).join(sep) + sep;
+  const sw = width(seq, 13, 4);
+  const reps = Math.ceil((2 * W) / sw) + 1;
+  const h = 52;
+  return {
+    w: W, h, label: t.items.join(' · '),
+    css: [`.marquee{animation:marquee ${Math.round(sw / (t.speed || 45))}s linear infinite}`, `@keyframes marquee{to{transform:translateX(-${sw.toFixed(1)}px)}}`],
+    body: [
+      '<defs><linearGradient id="edge"><stop offset="0" stop-color="#000"/><stop offset=".08" stop-color="#fff"/><stop offset=".92" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient>'
+        + `<mask id="fade"><rect width="${W}" height="${h}" fill="url(#edge)"/></mask></defs>`,
+      line(0, 0.5, W, 0.5, { op: tokens.tones.softRule, draw: true }),
+      `<g mask="url(#fade)"><g class="marquee anim">${text(0, 31, seq.repeat(reps), { size: 13, ls: 4 })}</g></g>`,
+      line(0, h - 0.5, W, h - 0.5, { op: tokens.tones.softRule, draw: true, delay: 0.2 }),
+    ].join('\n  '),
+  };
+}
+
+// Big numbers that roll into place like an odometer. item = { label, value, caption }.
+function glanceCard(s, fig, items) {
+  const parts = [kicker(s.kicker, fig)];
+  const css = ['.odo{animation-duration:1.8s;animation-timing-function:cubic-bezier(.2,.7,.1,1);animation-fill-mode:both}'];
+  const LH = 56; // spacing of the stacked digits
+  const size = 40;
+  const base = 132;
+  const colW = (R - L) / items.length;
+  for (let d = 1; d <= 9; d++) css.push(`.odo${d}{animation-name:odo${d}}`, `@keyframes odo${d}{from{transform:translateY(${d * LH}px)}to{transform:translateY(0)}}`);
+  items.forEach((it, i) => {
+    const x = L + i * colW;
+    const pad = i ? 20 : 0;
+    let inner = text(x + pad, 78, truncate(it.label, 11, 2.5, colW - pad - 12), { size: 11, ls: 2.5 });
+    parts.push(`<clipPath id="odo-${i}"><rect x="${x + pad - 2}" y="${base - size}" width="${colW - pad}" height="${size + 14}"/></clipPath>`);
+    let digits = '';
+    [...String(it.value)].forEach((ch, k) => {
+      const cx = x + pad + k * size * tokens.charWidth;
+      if (!/\d/.test(ch)) return void (digits += text(cx, base, ch, { size }));
+      const dd = +ch;
+      const col = Array.from({ length: 10 }, (_, n) => text(cx, base + (n - dd) * LH, String(n), { size })).join('');
+      digits += `<g class="anim odo odo${dd}" style="animation-delay:${(0.3 + i * 0.12 + k * 0.08).toFixed(2)}s">${col}</g>`;
+    });
+    inner += `<g clip-path="url(#odo-${i})">${digits}</g>`;
+    if (it.caption) inner += text(x + pad, base + 30, truncate(it.caption, 10, 2, colW - pad - 12), { size: 10, ls: 2, op: 0.6 });
+    parts.push(group('fade', 0.2 + i * 0.08, inner));
+    if (i) parts.push(line(x, 62, x, base + 36, { op: tokens.tones.softRule * 0.5, draw: true, delay: 0.3 + i * 0.1 }));
+  });
+  return { w: W, h: base + 50, label: `${s.alt}: ${items.map((it) => `${it.value} ${it.label.toLowerCase()}`).join(', ')}`, css, body: parts.join('\n  ') };
+}
+
+// Closing call to action: headline, a line of copy, availability and the e-mail with a nudging arrow.
+function contactCard(s, fig) {
+  const parts = [kicker(s.kicker, fig)];
+  let y = 104;
+  wrap(s.headline, 44, -1.5, R - L).forEach((ln, i) => {
+    parts.push(group('rise', 0.2 + i * 0.1, text(L - 2, y, ln, { size: 44, ls: -1.5 })));
+    y += 52;
+  });
+  for (const ln of wrap(s.text, 16, 0, R - L)) {
+    parts.push(group('fade', 0.5, text(L, y, ln, { size: 16 })));
+    y += 26;
+  }
+  y += 22;
+  parts.push(line(L, y - 22, R, y - 22, { op: tokens.tones.softRule, draw: true, delay: 0.6 }));
+  y += 14;
+  parts.push(group('fade', 0.8, `<circle class="stroke ring" cx="${L + 5}" cy="${y - 4}" r="5"/><circle class="ink pulse" cx="${L + 5}" cy="${y - 4}" r="4"/>` + text(L + 24, y, s.status, { size: 11, ls: 3 })));
+  parts.push(group('fade', 0.9, text(R - 34, y + 1, s.email, { size: 18, anchor: 'end' })
+    + `<g class="nudge"><path class="ln" stroke-width="1.5" d="M${R - 24} ${y - 5} H${R - 2} M${R - 9} ${y - 12} L${R - 2} ${y - 5} L${R - 9} ${y + 2}"/></g>`));
+  return { w: W, h: y + 26, label: `${s.headline} ${s.text} ${s.email}`, body: parts.join('\n  ') };
 }
 
 function routeCard(s, fig) {
@@ -439,6 +653,27 @@ function nowPlayingCard(s, fig, t, cover) {
   return { w: W, h: 232, label, body: parts.join('\n  ') };
 }
 
+// Sign-off: the handle is traced in outline, then fills with ink.
+function signatureCard(sg) {
+  const size = 112;
+  const y = 128;
+  const dash = Math.round(width(sg.text, size, -4) * 3); // longer than any glyph outline
+  return {
+    w: W, h: 196, label: `${sg.text} — ${sg.caption}`,
+    css: [
+      `.sig{stroke-width:1.2;fill-opacity:0;stroke-dasharray:${dash};stroke-dashoffset:${dash};animation:sig 3.2s cubic-bezier(.5,0,.2,1) .3s forwards,sigfill 1.2s ease 2.8s forwards}`,
+      '@keyframes sig{to{stroke-dashoffset:0}}',
+      '@keyframes sigfill{to{fill-opacity:1}}',
+      '@media (prefers-reduced-motion:reduce){.sig{animation:none;stroke-dashoffset:0;fill-opacity:1}}',
+    ],
+    body: [
+      text(W / 2, y, sg.text, { size, ls: -4, anchor: 'middle', cls: 'outline sig' }),
+      line(L, y + 26, R, y + 26, { op: tokens.tones.softRule, draw: true, delay: 2.4 }),
+      group('fade', 3, text(W / 2, y + 52, sg.caption, { size: 10, ls: 4, anchor: 'middle' })),
+    ].join('\n  '),
+  };
+}
+
 function footer(f) {
   const right = f.right.replace('{year}', new Date().getFullYear());
   const leftEnd = 82 + Math.max(width(f.status, 12, 3), width(f.note, 11, 2));
@@ -543,8 +778,14 @@ async function get(url, json = false) {
   return json ? res.json() : res.text();
 }
 
+const fetched = {}; // one fetch per key per run, shared by every section that needs it
 async function live(key, fn) {
   if (OFFLINE) return cache[key];
+  if (!(key in fetched)) fetched[key] = await fetchLive(key, fn);
+  return fetched[key];
+}
+
+async function fetchLive(key, fn) {
   try {
     const value = await fn();
     if (value && (!Array.isArray(value) || value.length)) {
@@ -638,6 +879,46 @@ async function fetchTopRepos(user, exclude, limit) {
   return Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, limit).map(([name, commits]) => ({ name, commits }));
 }
 
+// Account-wide numbers for AT A GLANCE.
+async function fetchGlance(user) {
+  const u = await get(`https://api.github.com/users/${user}`, true);
+  const repos = await get(`https://api.github.com/users/${user}/repos?per_page=100&type=owner`, true);
+  const own = repos.filter((r) => !r.fork);
+  return {
+    created: u.created_at, followers: u.followers, repos: u.public_repos,
+    stars: own.reduce((a, r) => a + r.stargazers_count, 0), forks: own.reduce((a, r) => a + r.forks_count, 0),
+  };
+}
+
+// Live repo facts for the featured projects; text (name, note, tags) comes from profile.json when given.
+async function fetchProjects(user, items) {
+  return Promise.all(items.map(async (it) => {
+    const full = it.repo.includes('/') ? it.repo : `${user}/${it.repo}`;
+    const r = await get(`https://api.github.com/repos/${full}`, true);
+    return {
+      repo: full, stars: r.stargazers_count, forks: r.forks_count, pushed: r.pushed_at, language: r.language,
+      description: r.description || '', homepage: r.homepage || '',
+    };
+  }));
+}
+
+// Version + last-30-day downloads from PyPI (pypistats.org) or npm.
+async function fetchPackages(items) {
+  return Promise.all(items.map(async (it) => {
+    if (it.registry === 'pypi') {
+      const [info, stats] = await Promise.all([get(`https://pypi.org/pypi/${it.name}/json`, true), get(`https://pypistats.org/api/packages/${it.name.toLowerCase()}/recent`, true)]);
+      return { name: it.name, version: info.info.version, summary: info.info.summary || '', downloads: stats.data.last_month };
+    }
+    if (it.registry === 'npm') {
+      const [info, stats] = await Promise.all([get(`https://registry.npmjs.org/${it.name}/latest`, true), get(`https://api.npmjs.org/downloads/point/last-month/${it.name}`, true)]);
+      return { name: it.name, version: info.version, summary: info.description || '', downloads: stats.downloads };
+    }
+    throw new Error(`unknown registry "${it.registry}" for ${it.name}`);
+  }));
+}
+
+const PACKAGE_URL = { pypi: (n) => `https://pypi.org/project/${n}/`, npm: (n) => `https://www.npmjs.com/package/${n}` };
+
 const decode = (s) => s.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").trim();
 
 async function fetchPosts(feed, max) {
@@ -729,13 +1010,68 @@ async function renderSection(s, num) {
       const days = (await live('calendar', () => fetchCalendar(user))) || [];
       out.push(pic(emit('telemetry', telemetryCard(days, fig())), 'Contribution telemetry'));
       const cards = s.cards.map(monoAsset).filter(Boolean);
-      for (let i = 0; i < cards.length; i += 2) out.push(center(cards.slice(i, i + 2).join(' ')));
+      const rows = [];
+      for (let i = 0; i < cards.length; i += 2) rows.push(center(cards.slice(i, i + 2).join(' ')));
+      // a <details> fold is the one real click interaction GitHub allows in a README
+      out.push(s.collapse ? `<details>\n<summary>${badge(s.collapse)}</summary>\n\n${rows.join('\n\n')}\n\n</details>` : rows.join('\n\n'));
       const repos = (await live('topRepos', () => fetchTopRepos(user, s.excludeRepos || [], s.topRepos))) || [];
       out.push(pic(emit('top-repos', topReposCard(repos, fig(), user)), 'Top repositories by commits'));
       if (s.graph3d) {
         const g = monoAsset(s.graph3d);
         if (g) out.push(g);
       }
+      break;
+    }
+    case 'glance': {
+      const g = (await live('glance', () => fetchGlance(user))) || {};
+      const days = (await live('calendar', () => fetchCalendar(user))) || [];
+      const pkgSection = profile.sections.find((x) => x.type === 'packages');
+      const pkgs = (pkgSection && (await live('packages', () => fetchPackages(pkgSection.items)))) || [];
+      const since = g.created ? g.created.slice(0, 4) : '';
+      const stat = {
+        contributions: days.reduce((a, d) => a + d.count, 0),
+        repos: g.repos, stars: g.stars, forks: g.forks, followers: g.followers,
+        downloads: pkgs.reduce((a, p) => a + (p.downloads || 0), 0),
+        years: since ? new Date().getUTCFullYear() - +since : undefined,
+      };
+      const items = s.items.map((it) => ({ label: it.label, caption: (it.caption || '').replace('{since}', since), value: it.value ?? stat[it.stat] ?? '—' }));
+      out.push(pic(emit(name, glanceCard(s, fig(), items)), s.alt));
+      break;
+    }
+    case 'contact':
+      out.push(`<a href="mailto:${esc(s.email)}">${pic(emit(name, contactCard(s, fig())), s.alt)}</a>`);
+      break;
+    case 'currently':
+      out.push(pic(emit(name, currentlyCard(s, fig())), s.alt));
+      break;
+    case 'projects': {
+      const live_ = (await live('projects', () => fetchProjects(user, s.items))) || [];
+      const projects = s.items.map((it) => {
+        const r = live_.find((x) => x.repo.toLowerCase().endsWith(`/${it.repo.toLowerCase()}`)) || {};
+        return {
+          name: it.name || it.repo, note: it.note || r.description || '', tags: it.tags || (r.language ? [r.language] : []),
+          stars: r.stars ?? 0, forks: r.forks ?? 0, pushed: r.pushed, demo: it.demo ?? r.homepage,
+          url: `https://github.com/${r.repo || `${user}/${it.repo}`}`,
+        };
+      });
+      out.push(pic(emit(name, projectsCard(s, fig(), projects)), s.alt));
+      s.links = [
+        ...projects.flatMap((p) => [
+          { label: `${p.name.toUpperCase()} ↗`, url: p.url },
+          ...(p.demo ? [{ label: `${p.name.toUpperCase()} · LIVE ↗`, url: p.demo }] : []),
+        ]),
+        ...(s.links || []),
+      ];
+      break;
+    }
+    case 'packages': {
+      const live_ = (await live('packages', () => fetchPackages(s.items))) || [];
+      const pkgs = s.items.map((it) => {
+        const r = live_.find((x) => x.name.toLowerCase() === it.name.toLowerCase()) || {};
+        return { registry: it.registry, name: it.name, note: it.note || r.summary || '', version: r.version, downloads: r.downloads };
+      });
+      out.push(pic(emit(name, packagesCard(s, fig(), pkgs)), s.alt));
+      s.links = [...pkgs.map((p) => ({ label: `${p.name.toUpperCase()} ↗`, url: PACKAGE_URL[p.registry](p.name) })), ...(s.links || [])];
       break;
     }
     case 'route':
@@ -807,9 +1143,11 @@ async function main() {
       pic(emit('header', header(profile.header)), `${profile.header.name} — ${profile.header.tagline}`),
       profile.links.map((l) => badge(l.label, l.url)).join(' '),
       `<a href="${esc(profile.typing.link)}">${picture(typingSvg('light'), typingSvg('dark'), profile.typing.lines.join(' — '))}</a>`,
+      ...(profile.ticker ? [pic(emit('ticker', tickerCard(profile.ticker)), profile.ticker.items.join(' · '))] : []),
     ].join('\n\n')),
   ];
   for (const [i, s] of profile.sections.entries()) md.push(await renderSection(s, i + 1));
+  if (profile.signature) md.push(pic(emit('signature', signatureCard(profile.signature)), profile.signature.text));
   md.push(pic(emit('footer', footer(profile.footer)), profile.footer.status));
 
   fs.writeFileSync(OUTPUT, md.join('\n\n') + '\n');
