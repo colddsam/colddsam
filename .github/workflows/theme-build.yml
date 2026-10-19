@@ -33,6 +33,9 @@ jobs:
         run: node theme/build.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
       - name: Commit & push
         run: |
           git config user.name github-actions

@@ -144,9 +144,10 @@
       "type": "spotify",
       "title": "NOW PLAYING",
       "alt": "Currently listening on Spotify",
-      "$comment": "Widget login: https://spotify-github-profile.kittinanx.com/",
-      "uid": "4uyys269cpo9e8ddgcc3kcxov",
-      "params": "cover_image=false&theme=default&show_offline=true&interchange=true&profanity=true&bar_color_cover=false"
+      "$comment": "Rendered from the Spotify Web API by theme/build.js. Secrets SPOTIFY_CLIENT_ID / SPOTIFY_CLIENT_SECRET / SPOTIFY_REFRESH_TOKEN — run node theme/spotify-auth.js once to get the refresh token.",
+      "profile": "https://open.spotify.com/user/4uyys269cpo9e8ddgcc3kcxov",
+      "utcOffset": 5.5,
+      "tz": "IST"
     },
     {
       "type": "quote",

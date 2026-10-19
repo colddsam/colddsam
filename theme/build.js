@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Black & white profile README builder.
 //   theme/profile.json (content) + theme/tokens.json (design) -> theme/assets/{light,dark}/*.svg + the README file.
-// Usage: node theme/build.js [--offline]
+// Usage: node theme/build.js [--offline] [--only <section type>]
 // Live data (contributions, top repos, Medium posts, GitHub activity) is fetched when online and cached in
 // theme/data/cache.json, so an offline or failed fetch falls back to the last good copy.
 'use strict';
@@ -12,6 +12,8 @@ const path = require('path');
 const THEME = __dirname;
 const ROOT = path.resolve(THEME, '..');
 const OFFLINE = process.argv.includes('--offline');
+// --only <type> re-renders just the sections of that type in place (README untouched), e.g. --only spotify.
+const ONLY = process.argv.includes('--only') ? process.argv[process.argv.indexOf('--only') + 1] : null;
 const TOKEN = process.env.GITHUB_TOKEN || '';
 
 const readJSON = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -102,7 +104,11 @@ function svgDoc(card, mode) {
     '@keyframes ring{0%{transform:scale(.4);opacity:.8}80%,100%{transform:scale(2.6);opacity:0}}',
     '.grow{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation:grow 1.1s cubic-bezier(.2,.7,.2,1) forwards}',
     '@keyframes grow{to{transform:scaleX(1)}}',
-    '@media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow{animation:none}.draw{stroke-dashoffset:0}.rise,.fade{opacity:1}.grow{transform:none}.ring{opacity:0}}',
+    '.eq{transform-box:fill-box;transform-origin:bottom;animation:eq .9s ease-in-out infinite alternate}',
+    '@keyframes eq{from{transform:scaleY(.2)}to{transform:scaleY(1)}}',
+    '.spin{transform-box:fill-box;transform-origin:center;animation:spin 3.2s linear infinite}',
+    '@keyframes spin{to{transform:rotate(360deg)}}',
+    '@media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin{animation:none}.draw{stroke-dashoffset:0}.rise,.fade{opacity:1}.grow{transform:none}.ring{opacity:0}}',
   ].join('\n    ');
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${card.w} ${card.h}" width="${card.w}" height="${card.h}" fill="none" role="img" aria-label="${esc(card.label)}">
   <style>
@@ -378,17 +384,59 @@ function quoteCard(s, fig, quote, author) {
   return { w: W, h: y + 20, label: `“${quote}” — ${author}`, body: parts.join('\n  ') };
 }
 
-// Stand-in for the Spotify widget while its login is broken, so the section keeps the theme instead of a broken image.
-function nowPlayingCard(s, fig) {
-  return {
-    w: W, h: 130, label: s.alt,
-    body: [
-      kicker('NOW PLAYING — SPOTIFY', fig),
-      '<circle class="stroke ring" cx="60" cy="79" r="5"/><circle class="ink pulse" cx="60" cy="79" r="4"/>',
-      group('rise', 0.3, text(82, 84, 'Offline — nothing playing right now', { size: 16 })),
-      group('fade', 0.6, text(82, 106, 'LIVE TRACK RETURNS WHEN THE PLAYER RECONNECTS', { size: 10, ls: 2, op: 0.6 })),
-    ].join('\n  '),
-  };
+const clock = (ms) => `${Math.floor(ms / 60000)}:${pad2(Math.floor((ms % 60000) / 1000))}`;
+
+// Spotify track card: greyscale cover (or a vinyl disc when there is none), status, title, artist, album, progress.
+// t = { playing, title, artist, album, duration, progress?, playedAt? }, cover = data URI or null.
+function nowPlayingCard(s, fig, t, cover) {
+  const parts = [kicker('NOW PLAYING — SPOTIFY', fig)];
+  if (!t) {
+    parts.push('<circle class="stroke ring" cx="60" cy="79" r="5"/><circle class="ink pulse" cx="60" cy="79" r="4"/>');
+    parts.push(group('rise', 0.3, text(82, 84, 'Offline — nothing played yet', { size: 16 })));
+    parts.push(group('fade', 0.6, text(82, 106, 'THE NEXT TRACK SHOWS UP HERE AUTOMATICALLY', { size: 10, ls: 2, op: 0.6 })));
+    return { w: W, h: 130, label: s.alt, body: parts.join('\n  ') };
+  }
+  const A = 136; // cover size
+  const top = 64;
+  const x0 = L + A + 32;
+  const max = R - x0;
+  if (cover) {
+    parts.push(`<filter id="mono"><feColorMatrix type="saturate" values="0"/></filter>`);
+    parts.push(group('fade', 0.2, `<image href="${cover}" x="${L}" y="${top}" width="${A}" height="${A}" preserveAspectRatio="xMidYMid slice" filter="url(#mono)"/>`
+      + `<rect class="stroke" x="${L + 0.5}" y="${top + 0.5}" width="${A - 1}" height="${A - 1}"/>`));
+  } else {
+    const [cx, cy] = [L + A / 2, top + A / 2];
+    const grooves = [60, 50, 40].map((r) => `<circle class="stroke" cx="${cx}" cy="${cy}" r="${r}" opacity="${r === 60 ? 1 : tokens.tones.softRule * 0.6}"/>`).join('');
+    parts.push(group('fade', 0.2, `<g class="${t.playing ? 'spin' : ''}">${grooves}<circle class="ink" cx="${cx}" cy="${cy}" r="20"/>`
+      + `<path class="ln" d="M${cx + 26} ${cy - 30} A40 40 0 0 1 ${cx + 38} ${cy - 12}" stroke-width="2"/><circle class="stroke" cx="${cx}" cy="${cy}" r="3"/></g>`));
+  }
+
+  let status;
+  if (t.playing) {
+    const bars = [0, 0.3, 0.15, 0.45, 0.6].map((d, i) => `<rect class="ink eq" x="${x0 + i * 6}" y="68" width="3" height="14" style="animation-delay:-${d}s"/>`).join('');
+    status = bars + text(x0 + 40, 82, 'PLAYING NOW', { size: 11, ls: 3 });
+  } else if (t.playedAt) {
+    const d = new Date(Date.parse(t.playedAt) + (s.utcOffset || 0) * 3600000);
+    const when = `${pad2(d.getUTCDate())} ${MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()} · ${pad2(d.getUTCHours())}:${pad2(d.getUTCMinutes())}${s.tz ? ` ${s.tz}` : ''}`;
+    status = text(x0, 82, `LAST PLAYED · ${when}`, { size: 11, ls: 3 });
+  } else status = text(x0, 82, 'PAUSED', { size: 11, ls: 3 });
+  parts.push(group('fade', 0.3, status));
+  parts.push(group('rise', 0.4, text(x0, 122, truncate(t.title, 28, -0.5, max), { size: 28, ls: -0.5 })));
+  parts.push(group('rise', 0.5, text(x0, 150, truncate(t.artist, 15, 0, max), { size: 15 })));
+  parts.push(group('fade', 0.6, text(x0, 174, truncate(t.album.toUpperCase(), 11, 2.5, max), { size: 11, ls: 2.5, op: 0.6 })));
+
+  const barY = 190;
+  if (t.progress != null) {
+    const frac = Math.min(1, t.progress / Math.max(1, t.duration));
+    parts.push(`<rect class="ink" x="${x0}" y="${barY}" width="${max}" height="2" opacity="${tokens.tones.track}"/>`);
+    parts.push(`<rect class="ink grow" x="${x0}" y="${barY}" width="${(max * frac).toFixed(1)}" height="2" style="animation-delay:.6s"/>`);
+    parts.push(group('fade', 0.8, text(x0, barY + 20, clock(t.progress), { size: 10, ls: 2 }) + text(R, barY + 20, clock(t.duration), { size: 10, ls: 2, anchor: 'end' })));
+  } else {
+    parts.push(line(x0, barY + 1, R, barY + 1, { op: tokens.tones.softRule, draw: true, delay: 0.6 }));
+    parts.push(group('fade', 0.8, text(R, barY + 20, clock(t.duration), { size: 10, ls: 2, anchor: 'end' })));
+  }
+  const label = `${t.playing ? 'Now playing' : 'Last played'} on Spotify: ${t.title} — ${t.artist}`;
+  return { w: W, h: 232, label, body: parts.join('\n  ') };
 }
 
 function footer(f) {
@@ -510,16 +558,51 @@ async function live(key, fn) {
   return cache[key];
 }
 
-// The Spotify widget answers 200 with a plain-text error when its token is revoked, so check for an actual SVG.
-// Offline or on a network error, assume it is up rather than hide it over a transient failure.
-async function widgetUp(url) {
-  if (OFFLINE) return true;
+// Current (or else last) Spotify track via the Web API. Needs SPOTIFY_CLIENT_ID / _SECRET / _REFRESH_TOKEN;
+// get the refresh token once with `node theme/spotify-auth.js`.
+async function fetchSpotify() {
+  const { SPOTIFY_CLIENT_ID: id, SPOTIFY_CLIENT_SECRET: secret, SPOTIFY_REFRESH_TOKEN: refresh } = process.env;
+  if (!id || !secret || !refresh) throw new Error('SPOTIFY_CLIENT_ID / SPOTIFY_CLIENT_SECRET / SPOTIFY_REFRESH_TOKEN not set');
+  const res = await fetch('https://accounts.spotify.com/api/token', {
+    method: 'POST',
+    headers: { Authorization: `Basic ${Buffer.from(`${id}:${secret}`).toString('base64')}`, 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({ grant_type: 'refresh_token', refresh_token: refresh }),
+    signal: AbortSignal.timeout(20000),
+  });
+  if (!res.ok) throw new Error(`token refresh ${res.status} ${await res.text()}`);
+  const { access_token: token } = await res.json();
+  const api = async (p) => {
+    const r = await fetch(`https://api.spotify.com/v1/${p}`, { headers: { Authorization: `Bearer ${token}` }, signal: AbortSignal.timeout(20000) });
+    if (r.status === 204) return null;
+    if (!r.ok) throw new Error(`${r.status} ${r.statusText} — ${p}`);
+    return r.json();
+  };
+  const track = (it) => {
+    const ep = it.type === 'episode';
+    const images = (ep ? it.images : it.album.images) || [];
+    return {
+      title: it.name,
+      artist: ep ? it.show.name : it.artists.map((a) => a.name).join(', '),
+      album: ep ? 'Podcast' : it.album.name,
+      duration: it.duration_ms,
+      cover: (images.find((im) => im.width && im.width <= 320) || images[0])?.url || null,
+    };
+  };
+  const now = await api('me/player/currently-playing?additional_types=episode');
+  if (now?.item) return { playing: now.is_playing, progress: now.progress_ms, ...track(now.item) };
+  const last = (await api('me/player/recently-played?limit=1'))?.items?.[0];
+  return last ? { playing: false, playedAt: last.played_at, ...track(last.track) } : null;
+}
+
+async function coverData(url) {
+  if (OFFLINE || !url) return null;
   try {
     const res = await fetch(url, { signal: AbortSignal.timeout(20000) });
-    return res.ok && (res.headers.get('content-type') || '').includes('svg');
+    if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+    return `data:${res.headers.get('content-type') || 'image/jpeg'};base64,${Buffer.from(await res.arrayBuffer()).toString('base64')}`;
   } catch (e) {
-    warnings.push(`widget check failed: ${e.message}`);
-    return true;
+    warnings.push(`spotify cover: ${e.message} — drawing vinyl instead`);
+    return null;
   }
 }
 
@@ -660,14 +743,9 @@ async function renderSection(s, num) {
       s.links = [...s.items.filter((it) => it.link).map((it) => it.link), ...(s.links || [])];
       break;
     case 'spotify': {
-      const base = `https://spotify-github-profile.kittinanx.com/api/view?uid=${s.uid}&${s.params}`;
-      const url = (mode) => `${base}&background_color=${tokens.modes[mode].paper.slice(1)}&bar_color=${tokens.modes[mode].ink.slice(1)}&mode=${mode}`;
-      if (!(await widgetUp(url('light')))) {
-        warnings.push(`spotify: widget is not returning an image (re-login at https://spotify-github-profile.kittinanx.com/) — using offline card`);
-        out.push(`<a href="https://open.spotify.com/user/${s.uid}">${pic(emit(name, nowPlayingCard(s, fig())), s.alt)}</a>`);
-        break;
-      }
-      out.push(center(`<a href="https://spotify-github-profile.kittinanx.com/api/view?uid=${s.uid}&redirect=true">${picture(url('light'), url('dark'), s.alt)}</a>`));
+      const t = await live('spotify', fetchSpotify);
+      const cover = await coverData(t?.cover);
+      out.push(`<a href="${esc(s.profile)}">${pic(emit(name, nowPlayingCard(s, fig(), t, cover)), s.alt)}</a>`);
       break;
     }
     case 'quote': {
@@ -698,7 +776,23 @@ function typingSvg(mode) {
 
 // ─── main ────────────────────────────────────────────────────────────────────
 
+function saveCache() {
+  fs.mkdirSync(path.dirname(CACHE_FILE), { recursive: true });
+  // one record per line keeps the cache diff-friendly
+  const json = JSON.stringify(cache, null, 2).replace(/\{\n\s+("date": "[^"]+"),\n\s+("count": \d+)\n\s+\}/g, '{ $1, $2 }');
+  fs.writeFileSync(CACHE_FILE, json + '\n');
+}
+
 async function main() {
+  if (ONLY) {
+    for (const mode of MODES) fs.mkdirSync(path.join(ASSETS, mode), { recursive: true });
+    for (const [i, s] of profile.sections.entries()) if (s.type === ONLY) await renderSection(s, i + 1);
+    if (!emitted.size) throw new Error(`no section of type "${ONLY}"`);
+    saveCache();
+    console.log(`refreshed ${emitted.size} assets × ${MODES.length} modes (--only ${ONLY})`);
+    for (const w of warnings) console.warn(`warn: ${w}`);
+    return;
+  }
   fs.rmSync(ASSETS, { recursive: true, force: true });
   for (const mode of MODES) fs.mkdirSync(path.join(ASSETS, mode), { recursive: true });
 
@@ -719,10 +813,7 @@ async function main() {
   md.push(pic(emit('footer', footer(profile.footer)), profile.footer.status));
 
   fs.writeFileSync(OUTPUT, md.join('\n\n') + '\n');
-  fs.mkdirSync(path.dirname(CACHE_FILE), { recursive: true });
-  // one record per line keeps the cache diff-friendly
-  const json = JSON.stringify(cache, null, 2).replace(/\{\n\s+("date": "[^"]+"),\n\s+("count": \d+)\n\s+\}/g, '{ $1, $2 }');
-  fs.writeFileSync(CACHE_FILE, json + '\n');
+  saveCache();
 
   console.log(`wrote ${path.relative(ROOT, OUTPUT)} + ${emitted.size} assets × ${MODES.length} modes${OFFLINE ? ' (offline)' : ''}`);
   for (const w of warnings) console.warn(`warn: ${w}`);

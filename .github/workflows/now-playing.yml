@@ -1,0 +1,41 @@
+name: Now playing
+
+# Refreshes only the NOW PLAYING card (theme/assets/*/now-playing.svg) from the Spotify Web API.
+# Commits only when the card actually changed, i.e. while music is playing or after the track changes.
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: theme-build
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Render now-playing card
+        run: node theme/build.js --only spotify
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+      - name: Commit & push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add theme/assets theme/data/cache.json
+          git diff --cached --quiet && exit 0
+          git commit -m "theme: now playing"
+          git pull --rebase origin main
+          git push
