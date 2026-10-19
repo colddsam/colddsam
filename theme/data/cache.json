@@ -403,7 +403,7 @@
     { "date": "2026-10-16", "count": 0 },
     { "date": "2026-10-17", "count": 0 },
     { "date": "2026-10-18", "count": 0 },
-    { "date": "2026-10-19", "count": 2 }
+    { "date": "2026-10-19", "count": 1 }
   ],
   "topRepos": [
     {
@@ -429,11 +429,11 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-10-18T09:53:14.171Z",
-    "title": "Afsos",
-    "artist": "Anuv Jain, AP Dhillon",
-    "album": "Afsos",
-    "duration": 191752,
-    "cover": "https://i.scdn.co/image/ab67616d00001e028537cf974af2c408bdd8e1a6"
+    "progress": 9770,
+    "title": "Ishqa Ve",
+    "artist": "Zeeshan Ali, Yuvraj Tung, Sandeep Aulakh, Honey Dhillon",
+    "album": "Ishqa Ve",
+    "duration": 207102,
+    "cover": "https://i.scdn.co/image/ab67616d00001e020cfff15d92e2acb5a4b45ef5"
   }
 }

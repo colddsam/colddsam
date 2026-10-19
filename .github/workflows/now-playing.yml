@@ -25,7 +25,12 @@ jobs:
         with:
           node-version: 20
       - name: Render now-playing card
-        run: node theme/build.js --only spotify
+        run: |
+          if [ -z "$SPOTIFY_CLIENT_ID" ] || [ -z "$SPOTIFY_CLIENT_SECRET" ] || [ -z "$SPOTIFY_REFRESH_TOKEN" ]; then
+            echo "::error::Add SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET and SPOTIFY_REFRESH_TOKEN under Settings → Secrets and variables → Actions"
+            exit 1
+          fi
+          node theme/build.js --only spotify
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
