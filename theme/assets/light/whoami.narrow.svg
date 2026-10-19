@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 804" width="400" height="804" fill="none" role="img" aria-label="About Samrat Kumar Das">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 756" width="400" height="756" fill="none" role="img" aria-label="About Samrat Kumar Das">
   <style>
     .m{font-family:ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace}
     text{fill:#000000}
@@ -7,6 +7,7 @@
     .stroke{stroke:#000000;fill:none}
     .outline{stroke:#000000}
     text.paper{fill:#FFFFFF}
+    .pp{fill:#FFFFFF}
     .pop{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .5s cubic-bezier(.2,1.4,.4,1) forwards}
     @keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
     .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.6,0,.2,1) forwards}
@@ -37,22 +38,21 @@
   <g class="rise" style="animation-delay:0.1s"><text class="m" x="16" y="58" font-size="16">West Bengal.</text></g>
   <g class="rise" style="animation-delay:0.18s"><text class="m" x="16" y="90" font-size="15">I'm in the 4th year of my B.Tech in</text></g>
   <g class="rise" style="animation-delay:0.18s"><text class="m" x="16" y="116" font-size="15">Electronics and Communication</text></g>
-  <g class="rise" style="animation-delay:0.18s"><text class="m" x="16" y="142" font-size="15">Engineering, which I'm pursuing at</text></g>
-  <g class="rise" style="animation-delay:0.18s"><text class="m" x="16" y="168" font-size="15">Narula Institute of Technology.</text></g>
-  <g class="rise" style="animation-delay:0.26s"><text class="m" x="16" y="200" font-size="15">I believe nothing is impossible if you</text></g>
-  <g class="rise" style="animation-delay:0.26s"><text class="m" x="16" y="226" font-size="15">think it is possible.</text></g>
-  <g class="rise" style="animation-delay:0.34s"><text class="m" x="16" y="258" font-size="15">Currently I'm enhancing my skills in</text></g>
-  <g class="rise" style="animation-delay:0.34s"><text class="m" x="16" y="284" font-size="15">Machine Learning and Front-End</text></g>
-  <g class="rise" style="animation-delay:0.34s"><text class="m" x="16" y="310" font-size="15">Development, which I want to pursue</text></g>
-  <g class="rise" style="animation-delay:0.34s"><text class="m" x="16" y="336" font-size="15">further. I love to work as a team and</text></g>
-  <g class="rise" style="animation-delay:0.34s"><text class="m" x="16" y="362" font-size="15">collaborate on open source.</text></g>
-  <g class="rise" style="animation-delay:0.42000000000000004s"><text class="m" x="16" y="394" font-size="15">Now I'm looking for an internship to</text></g>
-  <g class="rise" style="animation-delay:0.42000000000000004s"><text class="m" x="16" y="420" font-size="15">apply and sharpen the skills I'm</text></g>
-  <g class="rise" style="animation-delay:0.42000000000000004s"><text class="m" x="16" y="446" font-size="15">learning from my college and from my</text></g>
-  <g class="rise" style="animation-delay:0.42000000000000004s"><text class="m" x="16" y="472" font-size="15">personal work.</text></g>
-  <line class="ln draw" x1="16" y1="500" x2="384" y2="500" pathLength="1" opacity="0.5" style="animation-delay:0.5s"/>
-  <g class="rise" style="animation-delay:0.5s"><text class="m" x="16" y="536" font-size="11" letter-spacing="1.25" opacity="0.7">BASED</text><text class="m" x="16" y="558" font-size="15">Kolkata, West Bengal, India</text></g>
-  <g class="rise" style="animation-delay:0.58s"><text class="m" x="16" y="596" font-size="11" letter-spacing="1.25" opacity="0.7">STUDY</text><text class="m" x="16" y="618" font-size="15">B.Tech ECE · Narula Institute of</text><text class="m" x="16" y="640" font-size="15">Technology · 4th year</text></g>
-  <g class="rise" style="animation-delay:0.6599999999999999s"><text class="m" x="16" y="678" font-size="11" letter-spacing="1.25" opacity="0.7">FOCUS</text><text class="m" x="16" y="700" font-size="15">Machine Learning · Front-End Development</text></g>
-  <g class="rise" style="animation-delay:0.7399999999999999s"><text class="m" x="16" y="738" font-size="11" letter-spacing="1.25" opacity="0.7">STATUS</text><text class="m" x="16" y="760" font-size="15">looking for an internship · team work ·</text><text class="m" x="16" y="782" font-size="15">open-source collaboration</text></g>
+  <g class="rise" style="animation-delay:0.18s"><text class="m" x="16" y="142" font-size="15">Engineering.</text></g>
+  <g class="rise" style="animation-delay:0.26s"><text class="m" x="16" y="174" font-size="15">I believe nothing is impossible if you</text></g>
+  <g class="rise" style="animation-delay:0.26s"><text class="m" x="16" y="200" font-size="15">think it is possible.</text></g>
+  <g class="rise" style="animation-delay:0.34s"><text class="m" x="16" y="232" font-size="15">Currently I'm enhancing my skills in</text></g>
+  <g class="rise" style="animation-delay:0.34s"><text class="m" x="16" y="258" font-size="15">Machine Learning and Front-End</text></g>
+  <g class="rise" style="animation-delay:0.34s"><text class="m" x="16" y="284" font-size="15">Development, which I want to pursue</text></g>
+  <g class="rise" style="animation-delay:0.34s"><text class="m" x="16" y="310" font-size="15">further. I love to work as a team and</text></g>
+  <g class="rise" style="animation-delay:0.34s"><text class="m" x="16" y="336" font-size="15">collaborate on open source.</text></g>
+  <g class="rise" style="animation-delay:0.42000000000000004s"><text class="m" x="16" y="368" font-size="15">Now I'm looking for an internship to</text></g>
+  <g class="rise" style="animation-delay:0.42000000000000004s"><text class="m" x="16" y="394" font-size="15">apply and sharpen the skills I'm</text></g>
+  <g class="rise" style="animation-delay:0.42000000000000004s"><text class="m" x="16" y="420" font-size="15">learning through my studies and personal</text></g>
+  <g class="rise" style="animation-delay:0.42000000000000004s"><text class="m" x="16" y="446" font-size="15">projects.</text></g>
+  <line class="ln draw" x1="16" y1="474" x2="384" y2="474" pathLength="1" opacity="0.5" style="animation-delay:0.5s"/>
+  <g class="rise" style="animation-delay:0.5s"><text class="m" x="16" y="510" font-size="11" letter-spacing="1.25" opacity="0.7">BASED</text><text class="m" x="16" y="532" font-size="15">Kolkata, West Bengal, India</text></g>
+  <g class="rise" style="animation-delay:0.58s"><text class="m" x="16" y="570" font-size="11" letter-spacing="1.25" opacity="0.7">STUDY</text><text class="m" x="16" y="592" font-size="15">B.Tech ECE · 4th year</text></g>
+  <g class="rise" style="animation-delay:0.6599999999999999s"><text class="m" x="16" y="630" font-size="11" letter-spacing="1.25" opacity="0.7">FOCUS</text><text class="m" x="16" y="652" font-size="15">Machine Learning · Front-End Development</text></g>
+  <g class="rise" style="animation-delay:0.7399999999999999s"><text class="m" x="16" y="690" font-size="11" letter-spacing="1.25" opacity="0.7">STATUS</text><text class="m" x="16" y="712" font-size="15">looking for an internship · team work ·</text><text class="m" x="16" y="734" font-size="15">open-source collaboration</text></g>
 </svg>

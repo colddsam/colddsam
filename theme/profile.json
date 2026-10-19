@@ -12,7 +12,7 @@
     "focus": "machine learning · front-end development · open source",
     "status": "a passionate ML engineer looking for an opportunity to grab an internship.",
     "strip": ["AI / ML", "FRONT END", "DATA STRUCTURES"],
-    "stripRight": "B.TECH ECE — NARULA INSTITUTE OF TECHNOLOGY",
+    "stripRight": "B.TECH ECE — 4TH YEAR",
     "globe": { "lat": 22.57, "lon": 88.36, "label": "BASED IN KOLKATA" }
   },
 
@@ -46,14 +46,14 @@
       "alt": "About Samrat Kumar Das",
       "bio": [
         "Hi, I'm Samrat Kumar Das from Kolkata, West Bengal.",
-        "I'm in the 4th year of my B.Tech in Electronics and Communication Engineering, which I'm pursuing at Narula Institute of Technology.",
+        "I'm in the 4th year of my B.Tech in Electronics and Communication Engineering.",
         "I believe nothing is impossible if you think it is possible.",
         "Currently I'm enhancing my skills in Machine Learning and Front-End Development, which I want to pursue further. I love to work as a team and collaborate on open source.",
-        "Now I'm looking for an internship to apply and sharpen the skills I'm learning from my college and from my personal work."
+        "Now I'm looking for an internship to apply and sharpen the skills I'm learning through my studies and personal projects."
       ],
       "rows": [
         ["BASED", "Kolkata, West Bengal, India"],
-        ["STUDY", "B.Tech ECE · Narula Institute of Technology · 4th year"],
+        ["STUDY", "B.Tech ECE · 4th year"],
         ["FOCUS", "Machine Learning · Front-End Development"],
         ["STATUS", "looking for an internship · team work · open-source collaboration"]
       ]
@@ -231,6 +231,27 @@
         ["Experience is the name everyone gives to their mistakes.", "Oscar Wilde"],
         ["Testing shows the presence, not the absence of bugs.", "Edsger W. Dijkstra"],
         ["Deleted code is debugged code.", "Jeff Sickel"]
+      ]
+    },
+    {
+      "type": "doodle",
+      "title": "DOODLES",
+      "alt": "Hand-drawn doodles",
+      "$comment": "Hand-drawn doodles that draw themselves, wobble and loop. art = bulb | laptop | network | rocket | coffee | git | package | trophy | bridge | cap | robot | envelope. A flow row joins its doodles with arrows.",
+      "kicker": "SKETCHBOOK — HAND-DRAWN, ON A LOOP",
+      "rows": [
+        { "flow": true, "items": [
+          { "art": "bulb", "label": "IDEA" }, { "art": "laptop", "label": "CODE" },
+          { "art": "network", "label": "TRAIN" }, { "art": "rocket", "label": "SHIP" }
+        ] },
+        { "items": [
+          { "art": "coffee", "label": "FUEL" }, { "art": "git", "label": "OPEN SOURCE" },
+          { "art": "package", "label": "PUBLISH" }, { "art": "trophy", "label": "HACKATHONS" }
+        ] },
+        { "items": [
+          { "art": "bridge", "label": "KOLKATA" }, { "art": "cap", "label": "B.TECH ECE" },
+          { "art": "robot", "label": "LLM AGENTS" }, { "art": "envelope", "label": "SAY HELLO" }
+        ] }
       ]
     },
     {

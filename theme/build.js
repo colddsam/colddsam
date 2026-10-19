@@ -26,19 +26,24 @@ const MODES = Object.keys(tokens.modes);
 const OUTPUT = path.join(ROOT, profile.output);
 
 const warnings = [];
-// Every card is drawn twice: the wide layout, and a narrow one that pic() swaps in on phones — a 1000-wide card
-// shrunk to a phone screen leaves its small text unreadable. W / L / R (card width, left and right margins) and
-// COL follow whichever layout is being drawn; NARROW also halves letter-spacing so labels fit the narrow card.
-const LAYOUTS = { wide: { W: 1000, L: 48, R: 952 }, narrow: { W: 400, L: 16, R: 384 } };
-const PHONE = '(max-width: 640px)';
+// Every card is drawn once per layout and pic() lets the browser pick by screen width — a 1000-wide card shrunk
+// to a phone or tablet leaves its small text unreadable. `media` is the viewport a layout serves (the README
+// column is roughly the viewport minus GitHub's sidebar and gutters); the first matching one wins, wide is the
+// fallback. W / L / R (card width, left and right margins) and COL follow whichever layout is being drawn.
+// NARROW is any stacked layout (medium or narrow); it also halves letter-spacing so labels fit.
+const LAYOUTS = {
+  wide: { W: 1000, L: 48, R: 952 },
+  narrow: { W: 400, L: 16, R: 384, media: '(max-width: 560px)' }, // phones
+  medium: { W: 640, L: 28, R: 612, media: '(max-width: 1279px)' }, // large phones in landscape, tablets, small laptops
+};
 let W, L, R, COL, NARROW;
 function layout(name) {
   ({ W, L, R } = LAYOUTS[name]);
-  NARROW = name === 'narrow';
+  NARROW = name !== 'wide';
   COL = NARROW ? R - L : (R - L - GAP) / 2;
 }
 const lsk = (ls) => (ls && NARROW ? ls / 2 : ls);
-const warn = (m) => warnings.push(NARROW ? `narrow ${m}` : m);
+const warn = (m) => warnings.push(NARROW ? `${W}px ${m}` : m);
 const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 
 // ─── text ────────────────────────────────────────────────────────────────────
@@ -104,6 +109,7 @@ function svgDoc(card, mode) {
     `.stroke{stroke:${ink};fill:none}`,
     `.outline{stroke:${ink}}`,
     `text.paper{fill:${paper}}`,
+    `.pp{fill:${paper}}`,
     '.pop{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .5s cubic-bezier(.2,1.4,.4,1) forwards}',
     '@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}',
     '.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.6,0,.2,1) forwards}',
@@ -143,7 +149,7 @@ function svgDoc(card, mode) {
 // ─── output ──────────────────────────────────────────────────────────────────
 
 const emitted = new Set();
-const narrowed = new Set(); // cards that also have a phone layout, written as <name>.narrow.svg
+const responsive = new Set(); // cards that also have the stacked layouts, written as <name>.<layout>.svg
 // card = a card object (drawn once, e.g. badges, which are small enough as they are),
 // or a function that draws the card for the current layout (drawn once per layout).
 function emit(name, card) {
@@ -155,7 +161,7 @@ function emit(name, card) {
     for (const mode of MODES) fs.writeFileSync(path.join(ASSETS, mode, `${file}.svg`), svgDoc(c, mode));
   }
   layout('wide');
-  if (layouts.length > 1) narrowed.add(name);
+  if (layouts.length > 1) responsive.add(name);
   emitted.add(name);
   return name;
 }
@@ -166,12 +172,17 @@ function emitRaw(name, mode, svg) {
 
 const rel = (p) => path.relative(path.dirname(OUTPUT), p).split(path.sep).join('/');
 const assetPath = (mode, name) => rel(path.join(ASSETS, mode, `${name}.svg`));
-// phone = { light, dark } sources for narrow screens; the first <source> whose media matches wins.
-const picture = (light, dark, alt, w, phone) =>
-  `<picture>${phone ? `<source media="${PHONE} and (prefers-color-scheme: dark)" srcset="${esc(phone.dark)}"/><source media="${PHONE}" srcset="${esc(phone.light)}"/>` : ''}`
+// sizes = [{ media, light, dark }] for smaller screens, narrowest first; the first <source> whose media matches wins.
+const picture = (light, dark, alt, w, sizes = []) =>
+  `<picture>${sizes.map((z) => `<source media="${z.media} and (prefers-color-scheme: dark)" srcset="${esc(z.dark)}"/><source media="${z.media}" srcset="${esc(z.light)}"/>`).join('')}`
   + `<source media="(prefers-color-scheme: dark)" srcset="${esc(dark)}"/><img src="${esc(light)}" alt="${esc(alt)}"${w ? ` width="${w}"` : ''}/></picture>`;
-const pic = (name, alt, w) => picture(assetPath('light', name), assetPath('dark', name), alt, w,
-  narrowed.has(name) ? { light: assetPath('light', `${name}.narrow`), dark: assetPath('dark', `${name}.narrow`) } : null);
+// A responsive card fills the README column whichever layout is showing (the wide one never exceeds it anyway).
+const pic = (name, alt, w) => {
+  if (!responsive.has(name)) return picture(assetPath('light', name), assetPath('dark', name), alt, w);
+  const sizes = Object.entries(LAYOUTS).filter(([, l]) => l.media)
+    .map(([k, l]) => ({ media: l.media, light: assetPath('light', `${name}.${k}`), dark: assetPath('dark', `${name}.${k}`) }));
+  return picture(assetPath('light', name), assetPath('dark', name), alt, w || '100%', sizes);
+};
 const center = (inner) => `<div align="center">\n\n${inner}\n\n</div>`;
 
 // ─── components ──────────────────────────────────────────────────────────────
@@ -616,7 +627,7 @@ function glanceCard(s, fig, items) {
   const LH = 56; // spacing of the stacked digits
   const size = 40;
   const base = 132;
-  const cols = NARROW ? 2 : items.length; // narrow: a two-column grid, ROW apart
+  const cols = NARROW ? (W >= 600 ? 3 : 2) : items.length; // stacked layouts: a grid, ROW apart
   const ROW = 116;
   const colW = (R - L) / cols;
   for (let d = 1; d <= 9; d++) css.push(`.odo${d}{animation-name:odo${d}}`, `@keyframes odo${d}{from{transform:translateY(${d * LH}px)}to{transform:translateY(0)}}`);
@@ -783,6 +794,238 @@ function topReposCard(repos, fig, user) {
   });
   const h = 80 + Math.max(1, repos.length) * step - (NARROW ? 18 : 14);
   return { w: W, h, label: 'Top repositories by commits', body: parts.join('\n  ') };
+}
+
+// Hand-drawn doodles that draw themselves stroke by stroke, hold, erase and redraw. Each one lives in a 140 × 140
+// box: `strokes` are drawn in order, `rings` are paper-filled circles drawn over them, and `extra` (rays, steam,
+// blinking bits) fades in and out with them. The art is drawn three times through slightly different displacement
+// filters and the copies flicker in turn, which gives the wobbly "line boil" of hand-drawn animation.
+// Pick and caption them in profile.json.
+const ring = (x, y, r) => `M${x + r} ${y} A${r} ${r} 0 1 1 ${x + r - 0.1} ${y - 1.2}`;
+const DOODLES = {
+  bulb: {
+    strokes: [
+      'M54 92 C40 82 30 66 34 48 C38 30 54 20 72 20 C92 21 106 36 105 55 C104 70 96 82 88 92',
+      'M56 100 C66 99 76 101 86 100', 'M58 108 C66 107 76 109 84 108', 'M64 116 C68 117 74 115 78 116',
+      'M62 92 L64 66 L70 74 L76 65 L79 92',
+    ],
+    extra: '<path class="stroke twinkle" d="M72 4 V11 M31 18 L36 24 M113 18 L108 24 M16 54 H23 M121 54 H128"/>',
+  },
+  laptop: {
+    strokes: [
+      'M30 34 C58 33 86 35 111 34 C112 54 110 76 111 96 C84 97 56 95 29 96 C30 76 28 54 30 34',
+      'M14 104 C52 103 90 105 126 104 L118 115 C86 116 54 114 22 115 Z',
+      'M56 54 L45 65 L56 77', 'M84 54 L95 65 L84 77', 'M76 50 L64 81',
+    ],
+    extra: '<rect class="ink blink" x="99" y="82" width="6" height="8"/>',
+  },
+  network: {
+    strokes: (() => {
+      const layers = [[32, [42, 70, 98]], [72, [30, 56, 84, 110]], [112, [56, 86]]];
+      const out = [];
+      for (let k = 0; k < 2; k++) {
+        const [xa, as] = layers[k];
+        const [xb, bs] = layers[k + 1];
+        for (const a of as) for (const b of bs) out.push(`M${xa + 7} ${a} L${xb - 7} ${b}`);
+      }
+      for (const [x, ys] of layers) for (const y of ys) out.push(ring(x, y, 7));
+      return out;
+    })(),
+    extra: '<circle class="ink pulse" cx="112" cy="56" r="3"/><circle class="ink pulse" cx="112" cy="86" r="3" style="animation-delay:-1.2s"/>',
+  },
+  rocket: {
+    strokes: [
+      'M70 12 C89 28 93 60 86 92 C76 93 64 91 54 92 C47 60 51 28 70 12',
+      ring(70, 52, 9),
+      'M54 76 L38 98 L55 95', 'M86 76 L102 98 L85 95',
+      'M24 40 H36 M18 56 H30 M110 46 H122',
+    ],
+    extra: '<path class="stroke flame" d="M60 100 C62 112 66 122 70 130 C74 122 78 112 80 100"/>',
+    cls: 'bob',
+  },
+  coffee: {
+    strokes: [
+      'M32 58 C33 82 37 104 46 116 C60 120 80 120 94 116 C103 104 107 82 108 58 C82 60 58 60 32 58',
+      'M108 68 C126 66 128 96 104 98',
+      'M18 124 C52 128 88 128 122 124',
+      'M50 84 C60 88 80 88 90 84',
+    ],
+    extra: '<path class="stroke steam" d="M54 46 C46 36 62 30 54 18"/><path class="stroke steam" style="animation-delay:-.7s" d="M72 44 C64 34 80 28 72 14"/><path class="stroke steam" style="animation-delay:-1.4s" d="M90 46 C82 36 98 30 90 18"/>',
+  },
+  git: {
+    strokes: [
+      'M40 16 C41 52 39 88 40 124',
+      'M40 38 C40 56 100 46 100 62 L100 86 C100 102 40 92 40 106',
+      'M18 30 H28 M18 116 H28',
+    ],
+    rings: [[40, 24], [40, 70], [100, 62], [100, 86], [40, 106]],
+    extra: '<circle class="ink pulse" cx="40" cy="106" r="3.5"/><path class="stroke twinkle" d="M118 30 V40 M113 35 H123"/>',
+  },
+  package: {
+    strokes: [
+      'M70 22 L114 42 L70 62 L26 42 Z',
+      'M26 42 C25 58 27 76 26 92 L70 114 L70 62',
+      'M114 42 C115 58 113 76 114 92 L70 114',
+      'M48 32 L92 52 L92 66',
+      'M36 74 L56 84 M36 84 L50 91',
+    ],
+    extra: '<path class="stroke float" d="M104 18 V4 M98 10 L104 4 L110 10"/>',
+  },
+  trophy: {
+    strokes: [
+      'M42 22 C60 21 80 23 98 22 C98 58 88 78 70 80 C52 78 42 58 42 22',
+      'M42 32 C24 32 24 56 46 58', 'M98 32 C116 32 116 56 94 58',
+      'M70 80 V98', 'M50 98 C64 97 76 99 90 98 L94 114 C78 115 62 113 46 114 Z',
+      'M70 34 L74 44 L84 44 L76 50 L79 60 L70 54 L61 60 L64 50 L56 44 L66 44 Z',
+    ],
+    extra: '<path class="stroke twinkle" d="M20 14 L26 20 M120 14 L114 20 M14 72 H22 M118 72 H126"/>',
+  },
+  bridge: { // Howrah Bridge, Kolkata
+    strokes: [
+      'M4 98 C48 97 92 99 136 98',
+      'M30 98 V30 M40 98 V30 M100 98 V30 M110 98 V30', 'M28 30 H42 M98 30 H112',
+      'M4 90 L35 30 Q70 74 105 30 L136 90',
+      'M40 90 L52 52 L62 74 L78 74 L88 52 L100 90',
+      'M4 90 L18 62 L30 90 M136 90 L122 62 L110 90',
+    ],
+    extra: '<path class="stroke wave" d="M2 114 q8 -5 16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0"/><path class="stroke wave" style="animation-delay:-1.3s" opacity=".5" d="M14 126 q8 -5 16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0"/>',
+  },
+  cap: {
+    strokes: [
+      'M70 28 L126 50 L70 72 L14 50 Z',
+      'M38 62 C37 70 39 78 38 86 C52 98 88 98 102 86 C101 78 103 70 102 62',
+      'M64 50 C66 48 74 48 76 50',
+    ],
+    extra: '<g class="swing"><path class="stroke" d="M70 50 C88 50 104 52 114 56 L114 84"/><path class="stroke" d="M109 84 L114 98 L119 84 Z"/></g>',
+  },
+  robot: {
+    strokes: [
+      'M36 40 C58 39 82 41 104 40 C105 58 103 78 104 96 C82 97 58 95 36 96 C35 78 37 58 36 40',
+      'M70 40 V26', ring(70, 20, 5),
+      ring(54, 62, 8), ring(86, 62, 8),
+      'M54 82 C62 86 78 86 86 82',
+      'M36 60 H28 V78 H36 M104 60 H112 V78 H104',
+      'M50 96 V112 M90 96 V112 M42 112 H58 M82 112 H98',
+    ],
+    extra: '<g class="look"><circle class="ink" cx="54" cy="62" r="3"/><circle class="ink" cx="86" cy="62" r="3"/></g><circle class="ink pulse" cx="70" cy="20" r="2.5"/>',
+  },
+  envelope: {
+    strokes: [
+      'M20 44 C54 43 86 45 120 44 C121 66 119 88 120 110 C86 111 54 109 20 110 C19 88 21 66 20 44',
+      'M20 44 L70 82 L120 44',
+      'M20 110 L58 74 M120 110 L82 74',
+    ],
+    extra: '<path class="stroke float" d="M70 30 C66 22 56 24 58 32 C60 37 70 42 70 42 C70 42 80 37 82 32 C84 24 74 22 70 30 Z"/>',
+  },
+};
+
+// A hand-drawn arrow from (x1, y1) to (x2, y2): a slightly bowed stroke with an open head.
+function doodleArrow(x1, y1, x2, y2, bow = 12) {
+  const [dx, dy] = [x2 - x1, y2 - y1];
+  const len = Math.hypot(dx, dy);
+  const [nx, ny] = [-dy / len, dx / len];
+  const c1 = [x1 + dx / 3 + nx * bow, y1 + dy / 3 + ny * bow];
+  const c2 = [x1 + (2 * dx) / 3 - nx * bow, y1 + (2 * dy) / 3 - ny * bow];
+  const a = Math.atan2(y2 - c2[1], x2 - c2[0]);
+  const head = [a + 2.6, a - 2.6].map((t) => `M${x2} ${y2} L${(x2 + 10 * Math.cos(t)).toFixed(1)} ${(y2 + 10 * Math.sin(t)).toFixed(1)}`).join(' ');
+  const f = (p) => p.map((v) => v.toFixed(1)).join(' ');
+  return [`M${x1} ${y1} C${f(c1)} ${f(c2)} ${x2} ${y2}`, head];
+}
+
+// s.rows = [{ flow?, items: [{ art, label }] }]. A row lays its items out `cols` to a line (4 wide, 2 stacked);
+// a flow row joins them with arrows and snakes back on each new line (1 2 / 4 3) so every arrow stays short.
+function doodleCard(s, fig) {
+  const parts = [kicker(s.kicker, fig)];
+  const z = W < 500 ? 0.78 : 1; // phones draw the doodles smaller so the arrows between them have room
+  const B = 140 * z; // doodle box
+  const cols = NARROW ? 2 : 4;
+  const pad = NARROW ? (R - L - 2 * B) / 4 : 18; // stacked: centre the pair, leaving room for the arrows
+  const step = (R - L - 2 * pad - B) / (cols - 1);
+  const LINE = B + 66; // box + caption + gap
+  const CYCLE = 14;
+  const draw = (d, delay) => `<path class="stroke dd" pathLength="1" d="${d}" style="animation-delay:${delay.toFixed(2)}s"/>`;
+  const art = [];
+  let top = 64;
+  let n = 0;
+  s.rows.forEach((row, r) => {
+    if (r) art.push(`<line class="ln" x1="${L}" y1="${top - 20}" x2="${R}" y2="${top - 20}" stroke-dasharray="2 7" opacity="${tokens.tones.softRule}"/>`);
+    const cells = row.items.map((_, k) => {
+      const line = Math.floor(k / cols);
+      const c = row.flow && line % 2 ? cols - 1 - (k % cols) : k % cols;
+      return [L + pad + c * step, top + line * LINE, c];
+    });
+    row.items.forEach((it, k) => {
+      const dd = DOODLES[it.art];
+      if (!dd) return void warn(`unknown doodle "${it.art}"`);
+      const [x, y, c] = cells[k];
+      const t0 = k * 1.4 + r * 0.5;
+      const per = dd.strokes.length > 8 ? 0.06 : 0.25;
+      let inner = dd.strokes.map((d, j) => draw(d, t0 + j * per)).join('');
+      (dd.rings || []).forEach(([cx, cy], j) => {
+        inner += `<circle class="stroke pp dd" pathLength="1" cx="${cx}" cy="${cy}" r="7" style="animation-delay:${(t0 + 0.5 + j * 0.15).toFixed(2)}s"/>`;
+      });
+      if (dd.extra) inner += `<g class="dx" style="animation-delay:${(t0 + 0.8).toFixed(2)}s">${dd.extra}</g>`;
+      art.push(`<g transform="translate(${x.toFixed(1)} ${y})${z === 1 ? '' : ` scale(${z})`}"><g class="${dd.cls || ''}">${inner}</g></g>`);
+      parts.push(group('fade', 0.4 + t0, text(x + B / 2, y + B + 32, `${pad2(++n)} · ${it.label || ''}`, { size: 11, ls: 3, anchor: 'middle' })));
+
+      const next = cells[k + 1];
+      if (row.flow && next) {
+        const [a, b] = [[x + B / 2, y + B / 2], [next[0] + B / 2, next[1] + B / 2]];
+        let arrow;
+        if (a[1] === b[1]) {
+          const sx = Math.sign(b[0] - a[0]);
+          arrow = doodleArrow(a[0] + sx * (B / 2 + 8), a[1], b[0] - sx * (B / 2 + 8), b[1], 8);
+        } else {
+          // the turn runs down just outside the doodles, clear of the captions
+          const ex = c === 0 ? x - 12 : x + B + 12;
+          arrow = doodleArrow(ex, a[1] + 24, ex, b[1] - 24, 6);
+        }
+        art.push(draw(arrow[0], t0 + 1.2) + draw(arrow[1], t0 + 1.5));
+      } else if (!row.flow && c < cols - 1) {
+        // sparkles in the gaps between doodles, alternating high and low
+        const gx = (x + B + (step - B) / 2).toFixed(1);
+        const gy = y + (k % 2 ? B - 20 : 24);
+        art.push(`<path class="stroke twinkle" d="M${gx} ${gy - 6} V${gy + 6} M${gx - 6} ${gy} H${+gx + 6}" style="animation-delay:-${((n % 4) * 0.6).toFixed(1)}s"/>`);
+      }
+    });
+    top += Math.ceil(row.items.length / cols) * LINE + 34;
+  });
+
+  const boil = [1, 2, 3].map((seed) => `<filter id="boil${seed}" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="${seed}"/><feDisplacementMap in="SourceGraphic" scale="2.6"/></filter>`).join('');
+  const body = art.join('');
+  parts.push(`<defs>${boil}</defs>`);
+  parts.push(`<g stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${[0, 1, 2].map((k) => `<g class="boil b${k}" filter="url(#boil${k + 1})">${body}</g>`).join('')}</g>`);
+  const labels = s.rows.flatMap((row) => row.items.map((it) => it.label));
+  return {
+    w: W, h: top - 42, label: `${s.alt}: ${labels.join(', ')}`,
+    css: [
+      `.dd{stroke-dasharray:1;stroke-dashoffset:1;animation:doodle ${CYCLE}s cubic-bezier(.5,0,.3,1) infinite both}`,
+      '@keyframes doodle{0%{stroke-dashoffset:1}8%{stroke-dashoffset:0}76%{stroke-dashoffset:0}84%,100%{stroke-dashoffset:1}}',
+      // a doodle's extras come and go with its strokes
+      `.dx{animation:dx ${CYCLE}s ease infinite both}`,
+      '@keyframes dx{0%{opacity:0}6%,74%{opacity:1}80%,100%{opacity:0}}',
+      '.boil{opacity:0;animation:boil .45s steps(1) infinite}.b1{animation-delay:-.15s}.b2{animation-delay:-.3s}',
+      '@keyframes boil{0%{opacity:1}33.4%,100%{opacity:0}}',
+      '.twinkle{transform-box:fill-box;transform-origin:center;animation:twinkle 2.2s ease-in-out infinite}',
+      '@keyframes twinkle{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.25;transform:scale(.6)}}',
+      '.bob{animation:bob 2.6s ease-in-out infinite}',
+      '@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}',
+      '.flame{transform-box:fill-box;transform-origin:top;animation:flame .18s steps(2) infinite alternate}',
+      '@keyframes flame{from{transform:scaleY(1)}to{transform:scaleY(.7)}}',
+      '.steam{animation:steam 2.1s ease-in infinite}',
+      '@keyframes steam{0%{opacity:0;transform:translateY(8px)}30%{opacity:1}100%{opacity:0;transform:translateY(-8px)}}',
+      '.float{animation:float 2.4s ease-in-out infinite}',
+      '@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}',
+      '.wave{animation:wave 2.6s ease-in-out infinite alternate}',
+      '@keyframes wave{from{transform:translateX(-4px)}to{transform:translateX(4px)}}',
+      '.swing{transform-origin:70px 50px;animation:swing 2.8s ease-in-out infinite}',
+      '@keyframes swing{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(5deg)}}',
+      '.look{animation:look 4s steps(1) infinite}',
+      '@keyframes look{0%,100%{transform:translateX(0)}30%{transform:translateX(-3px)}60%{transform:translateX(3px)}}',
+      '@media (prefers-reduced-motion:reduce){.dd{animation:none;stroke-dashoffset:0}.boil{animation:none}.b0{opacity:1}.twinkle,.bob,.flame,.dx,.steam,.float,.wave,.swing,.look{animation:none}}',
+    ],
+    body: parts.join('\n  '),
+  };
 }
 
 function quoteCard(s, fig, quote, author) {
@@ -1322,6 +1565,10 @@ async function renderSection(s, num) {
       out.push(`<a href="${esc(s.profile)}">${pic(emit(name, () => nowPlayingCard(s, f, t, cover)), s.alt)}</a>`);
       break;
     }
+    case 'doodle':
+      f = fig();
+      out.push(pic(emit(name, () => doodleCard(s, f)), s.alt));
+      break;
     case 'quote': {
       const day = Math.floor(Date.now() / 86400000);
       const i = day % s.quotes.length;
