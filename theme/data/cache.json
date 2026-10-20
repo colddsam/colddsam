@@ -428,13 +428,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-10-19T13:52:31.529Z",
-    "title": "Lale Laleshwari",
-    "artist": "Bhoomi",
-    "album": "Gaan Doriyay",
-    "duration": 271280,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02b242040fd853bcfcae396f21"
+    "playing": true,
+    "progress": 225015,
+    "title": "Khat",
+    "artist": "Navjot Ahuja",
+    "album": "Khat",
+    "duration": 296222,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02d421c37d9cf4bbee71844c24"
   },
   "projects": [
     {
