@@ -428,13 +428,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 225015,
-    "title": "Khat",
-    "artist": "Navjot Ahuja",
-    "album": "Khat",
-    "duration": 296222,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02d421c37d9cf4bbee71844c24"
+    "playing": false,
+    "playedAt": "2026-10-20T11:02:10.933Z",
+    "title": "Tere Naina",
+    "artist": "Shankar Mahadevan, Shreya Ghoshal",
+    "album": "Chandni Chowk To China",
+    "duration": 255721,
+    "cover": "https://i.scdn.co/image/ab67616d00001e022e33f85b9e16a0659f3a0539"
   },
   "projects": [
     {
