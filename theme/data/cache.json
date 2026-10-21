@@ -405,7 +405,7 @@
     { "date": "2026-10-18", "count": 0 },
     { "date": "2026-10-19", "count": 7 },
     { "date": "2026-10-20", "count": 0 },
-    { "date": "2026-10-21", "count": 1 }
+    { "date": "2026-10-21", "count": 2 }
   ],
   "topRepos": [
     {
@@ -431,12 +431,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-10-19T03:42:14.779Z",
-    "title": "Kemone Chinibo Tomare",
-    "artist": "Rishi Panda",
-    "album": "Kemone Chinibo Tomare",
-    "duration": 307346,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02fbbc94414ef08afccba72219"
+    "playedAt": "2026-10-20T15:17:30.491Z",
+    "title": "Jawl Phoring",
+    "artist": "Silajit Majumder, Anupam Roy",
+    "album": "Hemlock Society (Original Motion Picture Soundtrack)",
+    "duration": 207934,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02d68458849dbd4c749ed079a2"
   },
   "projects": [
     {
@@ -1388,7 +1388,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-10-21T05:20:32Z",
+      "pushed": "2026-10-21T05:29:48Z",
       "fork": false,
       "archived": false
     },
