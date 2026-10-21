@@ -55,13 +55,17 @@
       "type": "card",
       "title": "WHOAMI",
       "alt": "About Samrat Kumar Das",
+      "$comment": "lede is typed out letter by letter; bio paragraphs fade in under it; quote is the CREDO block. rows fill the ID card on the right (a STATUS row gets the live dot); idTitle / idCaption label the card.",
+      "kicker": "WHO AM I — $ whoami",
+      "lede": "Hi, I'm Samrat Kumar Das.",
       "bio": [
-        "Hi, I'm Samrat Kumar Das from Kolkata, West Bengal.",
-        "I'm in the 4th year of my B.Tech in Electronics and Communication Engineering.",
-        "I believe nothing is impossible if you think it is possible.",
+        "I'm from Kolkata, West Bengal, in the 4th year of my B.Tech in Electronics and Communication Engineering.",
         "Currently I'm enhancing my skills in Machine Learning and Front-End Development, which I want to pursue further. I love to work as a team and collaborate on open source.",
         "Now I'm looking for an internship to apply and sharpen the skills I'm learning through my studies and personal projects."
       ],
+      "quote": "I believe nothing is impossible if you think it is possible.",
+      "idTitle": "ID CARD — DEV",
+      "idCaption": "KOLKATA, IN · 22.57° N 88.36° E",
       "rows": [
         ["BASED", "Kolkata, West Bengal, India"],
         ["STUDY", "B.Tech ECE · 4th year"],

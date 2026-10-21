@@ -337,51 +337,121 @@ function divider(num, title) {
   };
 }
 
-// Label/value rows with an optional paragraph on top (WHOAMI, STACK, FACTS).
-function rowsCard(s) {
-  const parts = [];
-  let y = 32;
-  let d = 0.1;
-  (s.bio || []).forEach((para, i) => {
-    const size = i === 0 ? 16 : 15;
-    for (const ln of wrap(para, size, 0, R - L)) {
-      parts.push(group('rise', d, text(L, y, ln, { size })));
-      y += 26;
-    }
-    y += 6;
-    d += 0.08;
+// WHOAMI: a greeting that types itself out, the bio and a credo on the left, and an ID card on the right
+// (monogram, name, the label/value rows, a barcode) with a scan line sweeping over it. Stacked when NARROW.
+// s = { kicker?, lede?, bio: [...], quote?, rows: [[label, value]], idTitle?, idCaption? } — no lede: bio[0] is typed.
+function whoamiCard(s, fig) {
+  const parts = [kicker(s.kicker || 'WHO AM I', fig)];
+  const defs = [];
+  const pw = NARROW ? R - L : 300; // ID card width
+  const px = NARROW ? L : R - pw;
+  const tw = NARROW ? R - L : px - 56 - L; // text column width
+
+  // greeting, revealed a character at a time by a stepped clip, then a blinking cursor
+  const lede = s.lede || s.bio?.[0] || '';
+  const bio = s.lede ? s.bio || [] : (s.bio || []).slice(1);
+  const size = NARROW ? 24 : 30;
+  let y = NARROW ? 96 : 104;
+  let t = 0.3;
+  const ledeLines = wrap(lede, size, -0.5, tw);
+  ledeLines.forEach((ln, i) => {
+    const n = [...ln].length;
+    const lw = width(ln, size, -0.5);
+    const dur = Math.max(0.4, n * 0.045);
+    defs.push(`<clipPath id="type${i}"><rect class="type" x="${L - 2}" y="${y - size}" width="${(lw + 4).toFixed(1)}" height="${size + 12}" style="animation-duration:${dur.toFixed(2)}s;animation-delay:${t.toFixed(2)}s;animation-timing-function:steps(${n})"/></clipPath>`);
+    parts.push(`<g clip-path="url(#type${i})">${text(L, y, ln, { size, ls: -0.5 })}</g>`);
+    t += dur;
+    // the cursor trails an invisible copy of the line, so it lands at the real text width whatever the font
+    if (i === ledeLines.length - 1) parts.push(group('fade', t, text(L, y, ln, { size, ls: -0.5 }).replace(/>([^<]*)<\/text>$/, '><tspan fill-opacity="0">$1</tspan><tspan class="caret"> █</tspan></text>')));
+    y += size + 10;
   });
-  const rows = s.rows || [];
-  if (s.bio?.length && rows.length) {
-    parts.push(line(L, y - 4, R, y - 4, { op: tokens.tones.softRule, draw: true, delay: d }));
-    y += 32;
+  parts.push(`<rect class="ink grow" style="animation-delay:${t.toFixed(2)}s" x="${L}" y="${y - 6}" width="56" height="3"/>`);
+  y += 34;
+
+  let d = Math.min(t, 1.2);
+  for (const para of bio) {
+    for (const ln of wrap(para, 15, 0, tw)) {
+      parts.push(group('rise', d, text(L, y, ln, { size: 15 })));
+      y += 24;
+    }
+    y += 10;
+    d += 0.12;
   }
-  if (rows.length && NARROW) {
-    // label above its value
-    for (const [k, v] of rows) {
-      const lines = wrap(v, 15, 0, R - L);
-      let inner = text(L, y, k, { size: 11, ls: 2.5, op: 0.7 });
-      lines.forEach((ln, j) => (inner += text(L, y + 22 + j * 22, ln, { size: 15 })));
-      parts.push(group('rise', d, inner));
-      y += 22 + lines.length * 22 + 16;
-      d += 0.08;
-    }
-    y -= 38;
-  } else if (rows.length) {
-    const labelW = Math.max(...rows.map(([k]) => width(k, 11, 2.5)));
-    const vx = Math.max(154, Math.round(L + labelW + 34));
-    if (s.rule) parts.push(line(vx - 16, y - 24, vx - 16, y + rows.length * 34 - 22, { op: tokens.tones.softRule * 0.8 }));
-    for (const [k, v] of rows) {
-      const lines = wrap(v, 15, 0, R - vx);
-      let inner = text(L, y, k, { size: 11, ls: 2.5 });
-      lines.forEach((ln, j) => (inner += text(vx, y + j * 22, ln, { size: 15 })));
-      parts.push(group('rise', d, inner));
-      y += 34 + (lines.length - 1) * 22;
-      d += 0.08;
-    }
-    y -= 34;
-  } else y -= 26;
-  return { w: W, h: Math.round(y + 22), label: s.alt, body: parts.join('\n  ') };
+  if (s.quote) {
+    const lines = wrap(s.quote, 16, 0, tw - 22);
+    y += 8;
+    const top = y - 18;
+    let inner = text(L + 22, y, 'CREDO', { size: 10, ls: 2.5, op: 0.6 });
+    lines.forEach((ln, j) => (inner += text(L + 22, y + 26 + j * 24, ln, { size: 16 })));
+    y += 26 + (lines.length - 1) * 24 + 10;
+    parts.push(`<rect class="ink growy" style="animation-delay:${d.toFixed(2)}s" x="${L}" y="${top}" width="3" height="${y - top}"/>`);
+    parts.push(group('fade', d + 0.2, inner));
+    y += 10;
+  }
+  const leftEnd = y;
+
+  // ID card
+  const py = NARROW ? leftEnd + 18 : 72;
+  const name = s.name || profile.header.name;
+  const initials = name.split(/\s+/).map((w) => w[0]).join('').slice(0, 3).toUpperCase();
+  const card = [];
+  card.push(`<rect class="ink" x="${px}" y="${py}" width="${pw}" height="30"/>`
+    + text(px + 16, py + 19.5, s.idTitle || 'ID CARD', { size: 10, ls: 3, cls: 'paper' })
+    + text(px + pw - 16, py + 19.5, 'Nº 001', { size: 10, ls: 3, anchor: 'end', cls: 'paper' }));
+  const cx = px + 54;
+  const cy = py + 88;
+  const nx = cx + 54;
+  card.push(group('rise', 0.4,
+    `<circle class="stroke spin" cx="${cx}" cy="${cy}" r="42" stroke-dasharray="3 7" opacity="${tokens.tones.softRule}"/>`
+    + `<circle class="stroke" cx="${cx}" cy="${cy}" r="34"/>`
+    + text(cx, cy + 8, initials, { size: 22, ls: 1, anchor: 'middle' })
+    + text(nx, cy - 4, truncate(name, 16, 0, px + pw - 16 - nx), { size: 16 })
+    + text(nx, cy + 18, `@${profile.user}`, { size: 11, ls: 1.5, op: 0.6 })));
+  let y2 = cy + 62;
+  card.push(line(px + 16, y2 - 14, px + pw - 16, y2 - 14, { op: tokens.tones.softRule * 0.6, draw: true, delay: 0.6 }));
+  const rows = s.rows || [];
+  rows.forEach(([k, v], i) => {
+    const lines = wrap(v, 13.5, 0, pw - 40);
+    let inner = text(px + 20, y2 + 8, k, { size: 10, ls: 2.5, op: 0.6 });
+    // the STATUS row gets the live dot
+    if (/STATUS/i.test(k)) inner += `<circle class="stroke ring" cx="${px + pw - 24}" cy="${y2 + 4}" r="4"/><circle class="ink pulse" cx="${px + pw - 24}" cy="${y2 + 4}" r="3"/>`;
+    lines.forEach((ln, j) => (inner += text(px + 20, y2 + 28 + j * 20, ln, { size: 13.5 })));
+    card.push(group('rise', 0.7 + i * 0.1, inner));
+    y2 += 28 + lines.length * 20 + 6;
+    if (i < rows.length - 1) card.push(line(px + 20, y2 - 4, px + pw - 20, y2 - 4, { op: tokens.tones.softRule * 0.35 }));
+    y2 += 10;
+  });
+  // barcode: bar widths come from the username, so it stays the same between builds
+  const seed = [...(profile.user + name)].map((c) => c.charCodeAt(0));
+  const bars = [];
+  for (let x = px + 20, i = 0; x < px + pw - 22; i++) {
+    const bw = 1 + (seed[i % seed.length] % 3);
+    if (i % 2 === 0) bars.push(`<rect class="ink" x="${x}" y="${y2}" width="${bw}" height="26"/>`);
+    x += bw + 1 + (seed[(i * 7) % seed.length] % 2);
+  }
+  card.push(`<g class="grow" style="animation-delay:${(0.8 + rows.length * 0.1).toFixed(2)}s">${bars.join('')}</g>`);
+  y2 += 46;
+  card.push(group('fade', 1.2, text(px + 20, y2, truncate(s.idCaption || profile.header.location, 9, 2, pw - 40), { size: 9, ls: 2, op: 0.6 })));
+  y2 += 20;
+  const ph = y2 - py;
+  card.push(`<rect class="ln draw" pathLength="1" x="${px + 0.5}" y="${py + 0.5}" width="${pw - 1}" height="${ph - 1}"/>`);
+  card.push(`<rect class="ink scan" x="${px + 1}" y="${py + 31}" width="${pw - 2}" height="2" opacity="${tokens.tones.track}"/>`);
+  parts.push(card.join(''));
+
+  const h = Math.round(NARROW ? y2 + 12 : Math.max(leftEnd, y2) + 16);
+  return {
+    w: W, h, label: s.alt,
+    css: [
+      '.type{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation:type 1s linear forwards}',
+      '@keyframes type{to{transform:scaleX(1)}}',
+      '.growy{transform-box:fill-box;transform-origin:top;transform:scaleY(0);animation:growy 1s cubic-bezier(.2,.7,.2,1) forwards}',
+      '@keyframes growy{to{transform:scaleY(1)}}',
+      '.scan{animation:scan 4.5s ease-in-out 1.5s infinite alternate}',
+      `@keyframes scan{from{transform:translateY(0)}to{transform:translateY(${ph - 34}px)}}`,
+      '@media (prefers-reduced-motion:reduce){.type,.growy{animation:none;transform:none}.scan{animation:none;opacity:0}}',
+    ],
+    body: `<defs>${defs.join('')}</defs>\n  ${parts.join('\n  ')}`,
+  };
 }
 
 // Numbered list with a right-hand meta column (WRITING, ACTIVITY).
@@ -1612,7 +1682,8 @@ async function renderSection(s, num) {
 
   switch (s.type) {
     case 'card':
-      out.push(pic(emit(name, () => rowsCard(s)), s.alt));
+      f = fig();
+      out.push(pic(emit(name, () => whoamiCard(s, f)), s.alt));
       break;
     case 'writing': {
       const posts = (await live('posts', () => fetchPosts(s.feed, s.max))) || [];
