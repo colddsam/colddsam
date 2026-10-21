@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 92" width="400" height="92" fill="none" role="img" aria-label="Section 07 — FACTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 92" width="400" height="92" fill="none" role="img" aria-label="Section 07 — STACK">
   <style>
     .m{font-family:ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace}
     text{fill:#000000}
@@ -36,5 +36,5 @@
     @keyframes spark{from{transform:translateX(-209.0px)}to{transform:translateX(0)}}
     @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim,.pop{animation:none}.draw{stroke-dashoffset:0}.rise,.fade,.pop{opacity:1}.grow{transform:none}.ring{opacity:0}}
   </style>
-  <g class="fade" style="animation-delay:0.1s"><text class="m" x="16" y="68" font-size="38">07</text><text class="m" x="70" y="58" font-size="14" letter-spacing="3">FACTS</text><rect class="ink blink" x="377" y="48" width="7" height="12"/></g><line class="ln draw" x1="151" y1="53" x2="360" y2="53" pathLength="1" opacity="1" style="animation-delay:0.2s"/><circle class="stroke" cx="151" cy="53" r="3"/><rect class="ink spark anim" x="357" y="50" width="6" height="6"/>
+  <g class="fade" style="animation-delay:0.1s"><text class="m" x="16" y="68" font-size="38">07</text><text class="m" x="70" y="58" font-size="14" letter-spacing="3">STACK</text><rect class="ink blink" x="377" y="48" width="7" height="12"/></g><line class="ln draw" x1="151" y1="53" x2="360" y2="53" pathLength="1" opacity="1" style="animation-delay:0.2s"/><circle class="stroke" cx="151" cy="53" r="3"/><rect class="ink spark anim" x="357" y="50" width="6" height="6"/>
 </svg>

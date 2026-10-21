@@ -1,8 +1,19 @@
 {
-  "$comment": "ALL README CONTENT LIVES HERE. Edit this file, then run: node theme/build.js  (add --offline to skip network fetches). Colours, fonts and greyscale rules live in theme/tokens.json.",
+  "$comment": "ALL README CONTENT LIVES HERE. Edit this file, then run: node theme/build.js  (add --offline to skip network fetches). Colours, fonts and greyscale rules live in theme/tokens.json. Any section can take \"hidden\": true to switch it off; a { \"type\": \"markdown\", \"title\": ..., \"text\": [lines] } or { ..., \"file\": \"theme/notes.md\" } section adds hand-written Markdown.",
 
   "output": "README.md",
   "user": "colddsam",
+
+  "discover": {
+    "$comment": "Auto-discovery for sections with \"auto\": true and the LATEST REPOS list. Every owned public repo is fetched on each build; forks and archived repos are skipped unless included below. Control it from GitHub without touching this file: add the topic in hideTopic to a repo to keep it off the README, or featureTopic to push it into SELECTED WORK. Repos created within newDays are always featured and marked NEW. Packages are found from a repo homepage linking to PyPI / npm, npm's maintainer search (npmUser), and PyPI / npm packages named after a repo that link back to it; package repos go to PUBLISHED instead of SELECTED WORK.",
+    "newDays": 30,
+    "npmUser": "colddsam",
+    "featureTopic": "featured",
+    "hideTopic": "hide-from-readme",
+    "includeForks": false,
+    "includeArchived": false,
+    "exclude": []
+  },
 
   "header": {
     "name": "Samrat Kumar Das",
@@ -90,12 +101,13 @@
       "type": "projects",
       "title": "SELECTED WORK",
       "alt": "Featured projects",
-      "$comment": "repo = repository name (or owner/name). Stars, forks and last update are fetched live; name/note/tags override the repo's own text; demo defaults to the repo's website field.",
+      "$comment": "auto = fill up to max cards from your GitHub: new repos first (marked NEW), then the items below in order, then repos pinned on your profile or tagged with discover.featureTopic, then the rest ranked by stars, forks, live site, description and recent pushes. Package repos are left to PUBLISHED. items are optional: repo = repository name (or owner/name); name/note/tags/demo override the repo's own text, and listing a repo here keeps it featured. Stars, forks and last update are always live.",
       "kicker": "SELECTED WORK — LIVE FROM GITHUB",
+      "auto": true,
+      "max": 6,
       "items": [
         { "repo": "coldscout", "name": "Cold Scout", "note": "Autonomous B2B lead generation: finds businesses on Google Places, qualifies them with Llama 3 and runs personalised email campaigns.", "tags": ["FastAPI", "React 19", "PostgreSQL", "Redis", "Razorpay"] },
         { "repo": "Truth-Guardian", "name": "Truth Guardian", "note": "AI fake-news detection for text, images and social posts with explainable results, a web app and a Chrome extension.", "tags": ["Gemini", "FastAPI", "Next.js", "Streamlit"] },
-        { "repo": "ModeYOLO", "name": "ModeYOLO", "demo": "", "note": "Python package for colour-space transforms and building modified datasets for deep-learning training.", "tags": ["Python", "OpenCV", "PyPI"] },
         { "repo": "sketchbook-portfolio", "name": "Sketchbook", "note": "Part digital sketchbook, part professional portfolio — hand-drawn feel with smooth motion.", "tags": ["Next.js", "Framer Motion", "TypeScript"] }
       ]
     },
@@ -103,13 +115,22 @@
       "type": "packages",
       "title": "PUBLISHED",
       "alt": "Published open-source packages",
-      "$comment": "registry = pypi | npm. Version and last-30-day downloads are fetched live; note overrides the registry summary.",
+      "$comment": "auto = every package discovered from your GitHub (see discover) is listed, most downloaded first. items are optional: registry = pypi | npm; note overrides the registry summary, and a package listed here is shown even if discovery can't find it. Version and last-30-day downloads are fetched live.",
       "kicker": "PACKAGES",
+      "auto": true,
       "items": [
         { "registry": "pypi", "name": "modeyolo", "note": "Colour-space transforms and dataset modification for deep learning." },
         { "registry": "pypi", "name": "localstore", "note": "Local product database with CSV → JSON and an instant local API." },
         { "registry": "npm", "name": "trending-products", "note": "Fetch trending Amazon products and related Google Trends queries." }
       ]
+    },
+    {
+      "type": "repos",
+      "title": "LATEST REPOS",
+      "alt": "Newest repositories on GitHub",
+      "$comment": "Your newest repositories, straight from GitHub (same filters as discover). New ones are marked NEW, package repos PACKAGE.",
+      "kicker": "FRESH FROM GITHUB",
+      "max": 6
     },
     {
       "type": "stack",

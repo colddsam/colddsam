@@ -57,7 +57,7 @@
     @media (prefers-reduced-motion:reduce){.dd{animation:none;stroke-dashoffset:0}.boil{animation:none}.b0{opacity:1}.twinkle,.bob,.flame,.dx,.steam,.float,.wave,.swing,.look{animation:none}}
     @media (prefers-reduced-motion:reduce){.draw,.rise,.fade,.pulse,.ring,.grow,.eq,.spin,.blink,.caret,.nudge,.anim,.pop{animation:none}.draw{stroke-dashoffset:0}.rise,.fade,.pop{opacity:1}.grow{transform:none}.ring{opacity:0}}
   </style>
-  <g class="fade" style="animation-delay:0.1s"><text class="m" x="28" y="28" font-size="11" letter-spacing="1.75">SKETCHBOOK — HAND-DRAWN, ON A LOOP</text><text class="m" x="612" y="28" font-size="11" letter-spacing="1.75" text-anchor="end">FIG. 14.1</text></g><line class="ln draw" x1="28" y1="40" x2="612" y2="40" pathLength="1" opacity="1" style="animation-delay:0.1s"/>
+  <g class="fade" style="animation-delay:0.1s"><text class="m" x="28" y="28" font-size="11" letter-spacing="1.75">SKETCHBOOK — HAND-DRAWN, ON A LOOP</text><text class="m" x="612" y="28" font-size="11" letter-spacing="1.75" text-anchor="end">FIG. 15.1</text></g><line class="ln draw" x1="28" y1="40" x2="612" y2="40" pathLength="1" opacity="1" style="animation-delay:0.1s"/>
   <g class="fade" style="animation-delay:0.4s"><text class="m" x="174" y="236" font-size="11" letter-spacing="1.5" text-anchor="middle">01 · IDEA</text></g>
   <g class="fade" style="animation-delay:1.7999999999999998s"><text class="m" x="466" y="236" font-size="11" letter-spacing="1.5" text-anchor="middle">02 · CODE</text></g>
   <g class="fade" style="animation-delay:3.1999999999999997s"><text class="m" x="466" y="442" font-size="11" letter-spacing="1.5" text-anchor="middle">03 · TRAIN</text></g>

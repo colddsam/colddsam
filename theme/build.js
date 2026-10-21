@@ -4,6 +4,8 @@
 // Usage: node theme/build.js [--offline] [--only <section type>]
 // Live data (contributions, top repos, Medium posts, GitHub activity) is fetched when online and cached in
 // theme/data/cache.json, so an offline or failed fetch falls back to the last good copy.
+// Sections with "auto": true (projects, packages) and the repos section discover the account's repositories and
+// published packages themselves, so a new repo or package shows up without editing anything (see "discover").
 'use strict';
 
 const fs = require('fs');
@@ -441,7 +443,7 @@ function currentlyCard(s, fig) {
   return { w: W, h: Math.round(y - 44 + 6), label: s.alt, body: parts.join('\n  ') };
 }
 
-// Featured projects as a two-column grid. p = { name, note, tags, stars, forks, pushed, demo }.
+// Featured projects as a two-column grid. p = { name, note, tags, stars, forks, pushed, demo, fresh } — fresh marks it NEW.
 function projectsCard(s, fig, projects) {
   const parts = [kicker(s.kicker, fig)];
   let y = 70;
@@ -459,6 +461,10 @@ function projectsCard(s, fig, projects) {
       const x = colX(c);
       const right = x + COL;
       let inner = text(x, y + 12, `Nº ${pad2(r + c + 1)}`, { size: 11, ls: 2.5 });
+      if (p.fresh) {
+        const nx = x + width(`Nº ${pad2(r + c + 1)}`, 11, 2.5) + 10;
+        inner += `<rect class="ink pulse" x="${nx}" y="${y - 1}" width="40" height="17"/>` + text(nx + 21, y + 11.5, 'NEW', { size: 10, ls: 2, anchor: 'middle', cls: 'paper' });
+      }
       inner += text(right, y + 12, `★ ${p.stars}  ·  ${p.forks} FORKS`, { size: 11, ls: 2, anchor: 'end' });
       inner += text(x, y + 48, truncate(p.name, 24, -0.5, COL), { size: 24, ls: -0.5 });
       p.lines.forEach((ln, j) => (inner += text(x, y + 78 + j * 21, ln, { size: 14 })));
@@ -1235,9 +1241,14 @@ async function get(url, json = false) {
     if (TOKEN) headers.Authorization = `Bearer ${TOKEN}`;
   }
   const res = await fetch(url, { headers, signal: AbortSignal.timeout(20000) });
-  if (!res.ok) throw new Error(`${res.status} ${res.statusText} — ${url}`);
+  if (!res.ok) throw Object.assign(new Error(`${res.status} ${res.statusText} — ${url}`), { status: res.status });
   return json ? res.json() : res.text();
 }
+// like get(), but a 404 is an answer (null) rather than a failure
+const getOrNull = (url) => get(url, true).catch((e) => {
+  if (e.status === 404) return null;
+  throw e;
+});
 
 const fetched = {}; // one fetch per key per run, shared by every section that needs it
 async function live(key, fn) {
@@ -1380,6 +1391,159 @@ async function fetchPackages(items) {
 
 const PACKAGE_URL = { pypi: (n) => `https://pypi.org/project/${n}/`, npm: (n) => `https://www.npmjs.com/package/${n}` };
 
+// ─── discovery: every repo and package on the account, so new ones reach the README on their own ─────────────
+
+const lc = (s) => String(s || '').toLowerCase();
+const fullName = (repo) => (repo.includes('/') ? repo : `${profile.user}/${repo}`);
+const discover = profile.discover || {};
+
+// All repositories the user owns, newest first.
+async function fetchRepos(user) {
+  const repos = [];
+  for (let page = 1; page <= 10; page++) {
+    const j = await get(`https://api.github.com/users/${user}/repos?per_page=100&type=owner&sort=created&page=${page}`, true);
+    repos.push(...j);
+    if (j.length < 100) break;
+  }
+  return repos.map((r) => ({
+    full: r.full_name, name: r.name, description: r.description || '', homepage: r.homepage || '', language: r.language || '',
+    topics: r.topics || [], stars: r.stargazers_count, forks: r.forks_count, created: r.created_at, pushed: r.pushed_at,
+    fork: r.fork, archived: r.archived,
+  }));
+}
+
+// Repos pinned on the GitHub profile (GraphQL only, so it needs a token; GITHUB_TOKEN in Actions is enough).
+async function fetchPinned(user) {
+  const res = await fetch('https://api.github.com/graphql', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${TOKEN}`, 'User-Agent': `${user}-readme-theme`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      query: 'query($u:String!){user(login:$u){pinnedItems(first:6,types:REPOSITORY){nodes{... on Repository{nameWithOwner}}}}}',
+      variables: { u: user },
+    }),
+    signal: AbortSignal.timeout(20000),
+  });
+  if (!res.ok) throw new Error(`${res.status} ${res.statusText} — graphql`);
+  const j = await res.json();
+  if (j.errors) throw new Error(`graphql: ${j.errors[0].message}`);
+  return j.data.user.pinnedItems.nodes.map((n) => n.nameWithOwner);
+}
+
+// Owned repos the README may show: forks, archived, excluded and hideTopic-tagged repos are left out.
+async function ownRepos() {
+  const all = (await live('repos', () => fetchRepos(profile.user))) || [];
+  const exclude = new Set((discover.exclude || []).map((r) => lc(fullName(r))));
+  const hide = discover.hideTopic || 'hide-from-readme';
+  return all.filter((r) => (discover.includeForks || !r.fork) && (discover.includeArchived || !r.archived)
+    && !exclude.has(lc(r.full)) && !r.topics.includes(hide));
+}
+
+const DAY = 86400000;
+const isNew = (r) => Date.now() - Date.parse(r.created) < (discover.newDays ?? 30) * DAY;
+const repoUrl = (full) => `https://github.com/${full}`;
+// "owner/name" of a github.com URL (git+https://github.com/a/b.git, https://github.com/a/b#readme, …)
+const githubRepoOf = (url) => /github\.com[/:]([^/\s]+\/[^/\s#?]+?)(?:\.git)?(?:[/#?]|$)/i.exec(url || '')?.[1] || null;
+const REGISTRY_LINK = [['pypi', /pypi\.org\/project\/([^/?#]+)/i], ['npm', /npmjs\.com\/package\/((?:@[^/]+\/)?[^/?#]+)/i]];
+
+// Packages published from the user's repos, found three ways: a repo homepage that links to PyPI / npm, npm's
+// maintainer search, and a PyPI / npm package named after a repo whose metadata links back to that repo.
+async function discoverPackages(repos) {
+  const found = new Map();
+  const add = (registry, name, repo) => {
+    const k = `${registry}:${lc(name)}`;
+    if (!found.has(k)) found.set(k, { registry, name, repo });
+    else if (repo && !found.get(k).repo) found.get(k).repo = repo;
+  };
+  for (const r of repos) for (const [registry, re] of REGISTRY_LINK) {
+    const m = re.exec(r.homepage);
+    if (m) add(registry, decodeURIComponent(m[1]), r.full);
+  }
+  if (discover.npmUser) {
+    const j = await get(`https://registry.npmjs.org/-/v1/search?text=maintainer:${encodeURIComponent(discover.npmUser)}&size=250`, true);
+    for (const o of j.objects || []) add('npm', o.package.name, githubRepoOf(o.package.links?.repository));
+  }
+  const claimed = new Set([...found.values()].map((p) => lc(p.repo)));
+  const linksBack = (urls, r) => urls.some((u) => lc(githubRepoOf(u)) === lc(r.full));
+  await Promise.all(repos.filter((r) => !claimed.has(lc(r.full))).map(async (r) => {
+    const name = lc(r.name);
+    if (r.language === 'Python' || r.language === 'Jupyter Notebook') {
+      const info = (await getOrNull(`https://pypi.org/pypi/${encodeURIComponent(name)}/json`))?.info;
+      if (info && linksBack([info.home_page, ...Object.values(info.project_urls || {})], r)) add('pypi', info.name, r.full);
+    } else if (r.language === 'JavaScript' || r.language === 'TypeScript') {
+      const pkg = await getOrNull(`https://registry.npmjs.org/${encodeURIComponent(name)}/latest`);
+      if (pkg && linksBack([pkg.repository?.url ?? pkg.repository, pkg.homepage, pkg.bugs?.url], r)) add('npm', pkg.name, r.full);
+    }
+  }));
+  return [...found.values()];
+}
+
+// The packages section's list: its items (hand-written notes, or packages discovery cannot see) plus,
+// with auto on, every discovered package.
+async function packageList(s) {
+  const items = (s.items || []).map((it) => ({ ...it }));
+  if (s.auto) {
+    const found = (await live('packageList', async () => discoverPackages(await ownRepos()))) || [];
+    for (const p of found) {
+      const it = items.find((m) => m.registry === p.registry && lc(m.name) === lc(p.name));
+      if (it) it.repo = it.repo || p.repo;
+      else items.push(p);
+    }
+  }
+  return items;
+}
+
+// Ranks a repo for SELECTED WORK when nothing else decides: stars and forks first, then a live site, a written
+// description, topics and recent pushes.
+function repoScore(r) {
+  const age = (Date.now() - Date.parse(r.pushed)) / DAY;
+  return r.stars * 5 + r.forks * 3 + (r.homepage ? 3 : 0) + (r.description ? 2 : 0) + Math.min(r.topics.length, 5) * 0.5
+    + (age < 90 ? 4 : age < 365 ? 2 : 0);
+}
+
+// SELECTED WORK picks, in order: brand-new repos, the section's items, repos pinned on GitHub or tagged with
+// featureTopic, then the best-scoring rest — package repos are left to PUBLISHED. Without auto: just the items.
+async function projectList(s) {
+  const user = profile.user;
+  const items = s.items || [];
+  const itemFor = (full) => items.find((it) => lc(fullName(it.repo)) === lc(full)) || {};
+  let picks = items.map((it) => fullName(it.repo));
+  let repos = [];
+  if (s.auto) {
+    repos = await ownRepos();
+    const pkgSection = profile.sections.find((x) => x.type === 'packages');
+    const pkgRepos = new Set((pkgSection ? await packageList(pkgSection) : []).map((p) => lc(p.repo)).filter(Boolean));
+    const pinned = (TOKEN ? await live('pinned', () => fetchPinned(user)) : cache.pinned) || [];
+    const pool = repos.filter((r) => !pkgRepos.has(lc(r.full)) && lc(r.full) !== lc(`${user}/${user}`));
+    const inPool = (full) => pool.some((r) => lc(r.full) === lc(full));
+    const feature = discover.featureTopic || 'featured';
+    picks = [
+      ...pool.filter(isNew).map((r) => r.full),
+      ...picks,
+      ...pinned.filter(inPool),
+      ...pool.filter((r) => r.topics.includes(feature)).map((r) => r.full),
+      ...[...pool].sort((a, b) => repoScore(b) - repoScore(a)).map((r) => r.full),
+    ];
+    picks = picks.filter((full, i) => picks.findIndex((x) => lc(x) === lc(full)) === i).slice(0, s.max || 6);
+  }
+  // items for repos outside the owned list (another owner's repo, or no repo data yet) are looked up one by one
+  const missing = picks.filter((full) => !repos.some((r) => lc(r.full) === lc(full)));
+  const looked = missing.length ? (await live('projects', () => fetchProjects(user, missing.map((repo) => ({ repo }))))) || [] : [];
+  return picks.map((full) => {
+    const it = itemFor(full);
+    const r = repos.find((x) => lc(x.full) === lc(full));
+    const l = looked.find((x) => lc(x.repo) === lc(full)) || {};
+    const topics = r ? r.topics.filter((t) => lc(t) !== lc(r.language)).slice(0, 3) : [];
+    const language = r ? r.language : l.language;
+    return {
+      name: it.name || (r ? r.name.replace(/[-_]+/g, ' ') : full.split('/')[1]),
+      note: it.note || (r ? r.description : l.description) || '',
+      tags: it.tags || [language, ...topics].filter(Boolean),
+      stars: (r ? r.stars : l.stars) ?? 0, forks: (r ? r.forks : l.forks) ?? 0, pushed: r ? r.pushed : l.pushed,
+      demo: it.demo ?? (r ? r.homepage : l.homepage), url: repoUrl(full), fresh: !!r && isNew(r),
+    };
+  });
+}
+
 const decode = (s) => s.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").trim();
 
 async function fetchPosts(feed, max) {
@@ -1492,7 +1656,8 @@ async function renderSection(s, num) {
       const g = (await live('glance', () => fetchGlance(user))) || {};
       const days = (await live('calendar', () => fetchCalendar(user))) || [];
       const pkgSection = profile.sections.find((x) => x.type === 'packages');
-      const pkgs = (pkgSection && (await live('packages', () => fetchPackages(pkgSection.items)))) || [];
+      const pkgList = pkgSection ? await packageList(pkgSection) : [];
+      const pkgs = (pkgList.length && (await live('packages', () => fetchPackages(pkgList)))) || [];
       const since = g.created ? g.created.slice(0, 4) : '';
       const stat = {
         contributions: days.reduce((a, d) => a + d.count, 0),
@@ -1522,15 +1687,7 @@ async function renderSection(s, num) {
       out.push(pic(emit(name, () => currentlyCard(s, f)), s.alt));
       break;
     case 'projects': {
-      const live_ = (await live('projects', () => fetchProjects(user, s.items))) || [];
-      const projects = s.items.map((it) => {
-        const r = live_.find((x) => x.repo.toLowerCase().endsWith(`/${it.repo.toLowerCase()}`)) || {};
-        return {
-          name: it.name || it.repo, note: it.note || r.description || '', tags: it.tags || (r.language ? [r.language] : []),
-          stars: r.stars ?? 0, forks: r.forks ?? 0, pushed: r.pushed, demo: it.demo ?? r.homepage,
-          url: `https://github.com/${r.repo || `${user}/${it.repo}`}`,
-        };
-      });
+      const projects = await projectList(s);
       f = fig();
       out.push(pic(emit(name, () => projectsCard(s, f, projects)), s.alt));
       s.links = [
@@ -1543,16 +1700,35 @@ async function renderSection(s, num) {
       break;
     }
     case 'packages': {
-      const live_ = (await live('packages', () => fetchPackages(s.items))) || [];
-      const pkgs = s.items.map((it) => {
-        const r = live_.find((x) => x.name.toLowerCase() === it.name.toLowerCase()) || {};
+      const list = await packageList(s);
+      const live_ = (list.length && (await live('packages', () => fetchPackages(list)))) || [];
+      const pkgs = list.map((it) => {
+        const r = live_.find((x) => lc(x.name) === lc(it.name)) || {};
         return { registry: it.registry, name: it.name, note: it.note || r.summary || '', version: r.version, downloads: r.downloads };
       });
+      if (s.auto) pkgs.sort((a, b) => (b.downloads || 0) - (a.downloads || 0));
       f = fig();
       out.push(pic(emit(name, () => packagesCard(s, f, pkgs)), s.alt));
       s.links = [...pkgs.map((p) => ({ label: `${p.name.toUpperCase()} ↗`, url: PACKAGE_URL[p.registry](p.name) })), ...(s.links || [])];
       break;
     }
+    case 'repos': {
+      // newest repos on the account, packages marked as such
+      const pkgSection = profile.sections.find((x) => x.type === 'packages');
+      const pkgRepos = new Set((pkgSection ? await packageList(pkgSection) : []).map((p) => lc(p.repo)).filter(Boolean));
+      const repos = (await ownRepos()).filter((r) => lc(r.full) !== lc(`${user}/${user}`))
+        .sort((a, b) => b.created.localeCompare(a.created)).slice(0, s.max || 6);
+      const meta = (r) => [isNew(r) && 'NEW', pkgRepos.has(lc(r.full)) && 'PACKAGE', monthYear(r.created)].filter(Boolean).join(' · ');
+      const title = (r) => (r.description ? `${r.name} — ${r.description.length > 90 ? `${r.description.slice(0, 89).trim()}…` : r.description}` : r.name);
+      f = fig();
+      out.push(pic(emit(name, () => listCard(s.kicker, f, repos.map((r) => ({ title: title(r), meta: meta(r) })), s.alt)), s.alt));
+      s.links = [...repos.map((r) => ({ label: `${r.name.toUpperCase()} ↗`, url: repoUrl(r.full) })), ...(s.links || [])];
+      break;
+    }
+    case 'markdown':
+      // hand-written Markdown / HTML, inline (text: a string or a list of lines) or from a file next to the README
+      out.push(s.file ? fs.readFileSync(path.join(ROOT, s.file), 'utf8').trim() : [].concat(s.text || []).join('\n'));
+      break;
     case 'route':
       f = fig();
       out.push(pic(emit(name, () => routeCard(s, f)), s.alt));
@@ -1604,10 +1780,13 @@ function saveCache() {
   fs.writeFileSync(CACHE_FILE, json + '\n');
 }
 
+// "hidden": true keeps a section in profile.json without rendering it
+const sections = profile.sections.filter((s) => !s.hidden);
+
 async function main() {
   if (ONLY) {
     for (const mode of MODES) fs.mkdirSync(path.join(ASSETS, mode), { recursive: true });
-    for (const [i, s] of profile.sections.entries()) if (s.type === ONLY) await renderSection(s, i + 1);
+    for (const [i, s] of sections.entries()) if (s.type === ONLY) await renderSection(s, i + 1);
     if (!emitted.size) throw new Error(`no section of type "${ONLY}"`);
     saveCache();
     console.log(`refreshed ${emitted.size} assets × ${MODES.length} modes (--only ${ONLY})`);
@@ -1631,7 +1810,7 @@ async function main() {
       ...(profile.ticker ? [pic(emit('ticker', () => tickerCard(profile.ticker)), profile.ticker.items.join(' · '))] : []),
     ].join('\n\n')),
   ];
-  for (const [i, s] of profile.sections.entries()) md.push(await renderSection(s, i + 1));
+  for (const [i, s] of sections.entries()) md.push(await renderSection(s, i + 1));
   if (profile.signature) md.push(pic(emit('signature', () => signatureCard(profile.signature)), profile.signature.text));
   md.push(pic(emit('footer', () => footer(profile.footer)), profile.footer.status));
 

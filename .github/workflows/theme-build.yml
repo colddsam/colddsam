@@ -1,17 +1,28 @@
 name: Theme build
 
 # Regenerates the black & white README cards (theme/build.js) from theme/profile.json,
-# live GitHub/Medium data, and the summary-card + 3D-graph SVGs the other workflows produce.
+# live GitHub/Medium/PyPI/npm data, and the summary-card + 3D-graph SVGs the other workflows produce.
+# New repos and packages are discovered on every run, so the README keeps itself up to date.
+# Manual update: Actions → "Theme build" → Run workflow (optionally just one section),
+# or locally: node theme/build.js
 on:
   schedule:
     - cron: "30 19 * * *" # daily, after the 18:00 UTC card workflows
+    - cron: "0 */6 * * *" # every 6 hours, so new repos and packages show up the same day
   workflow_run:
     workflows: ["GitHub-Profile-3D-Contrib", "GitHub-Profile-Summary-Cards"]
     types: [completed]
   push:
     branches: [main]
-    paths: ["theme/profile.json", "theme/tokens.json", "theme/build.js"]
+    paths: ["theme/profile.json", "theme/tokens.json", "theme/build.js", "theme/*.md"]
+  repository_dispatch:
+    types: [refresh-readme] # trigger from anywhere: gh api repos/colddsam/colddsam/dispatches -f event_type=refresh-readme
   workflow_dispatch:
+    inputs:
+      only:
+        description: "Redraw just one section type's cards in place (e.g. spotify, activity) — leave empty for a full rebuild, which new repos need for their links"
+        required: false
+        default: ""
 
 concurrency:
   group: theme-build
@@ -30,8 +41,9 @@ jobs:
         with:
           node-version: 20
       - name: Build theme
-        run: node theme/build.js
+        run: node theme/build.js ${ONLY:+--only "$ONLY"}
         env:
+          ONLY: ${{ github.event.inputs.only }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
