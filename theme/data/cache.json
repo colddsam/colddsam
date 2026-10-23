@@ -432,13 +432,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-10-23T04:32:33.755Z",
-    "title": "Yeh Fitoor Mera",
-    "artist": "Amit Trivedi, Arijit Singh",
-    "album": "Fitoor (Original Motion Picture Soundtrack)",
-    "duration": 283070,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02b99c0e6b9bf5ba4da74e816d"
+    "playing": true,
+    "progress": 14391,
+    "title": "Post-Holiday Lazy Days",
+    "artist": "Oldies Playing",
+    "album": "\"Winter Afternoons & Cozy Vibes\" {PLAYLIST}",
+    "duration": 219424,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02bb672cff48a7867fe1d09a05"
   },
   "projects": [
     {
@@ -1390,7 +1390,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-10-22T22:38:54Z",
+      "pushed": "2026-10-23T06:24:37Z",
       "fork": false,
       "archived": false
     },
