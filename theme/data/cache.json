@@ -432,13 +432,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 14391,
-    "title": "Post-Holiday Lazy Days",
-    "artist": "Oldies Playing",
-    "album": "\"Winter Afternoons & Cozy Vibes\" {PLAYLIST}",
-    "duration": 219424,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02bb672cff48a7867fe1d09a05"
+    "playing": false,
+    "playedAt": "2026-10-23T10:31:45.386Z",
+    "title": "Dooron Dooron - Unplugged",
+    "artist": "Paresh Pahuja, Shiv Tandan",
+    "album": "Dooron Dooron - Unplugged",
+    "duration": 332495,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02ca38512149238c1b4c11b4ae"
   },
   "projects": [
     {
