@@ -434,12 +434,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-10-23T15:21:17.376Z",
-    "title": "Post-Holiday Lazy Days",
-    "artist": "Oldies Playing",
-    "album": "\"Winter Afternoons & Cozy Vibes\" {PLAYLIST}",
-    "duration": 219424,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02bb672cff48a7867fe1d09a05"
+    "progress": 2257,
+    "title": "Mitwa",
+    "artist": "Shankar-Ehsaan-Loy, Shankar Mahadevan, Caralisa Monteiro, Shafqat Amanat Ali",
+    "album": "Kabhi Alvida Naa Kehna (Original Motion Picture Soundtrack)",
+    "duration": 382973,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02afbf50bfb7b032b69deabade"
   },
   "projects": [
     {
@@ -1391,7 +1391,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-10-24T04:07:23Z",
+      "pushed": "2026-10-24T12:10:06Z",
       "fork": false,
       "archived": false
     },
