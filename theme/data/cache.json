@@ -434,12 +434,12 @@
   ],
   "spotify": {
     "playing": false,
-    "progress": 2257,
-    "title": "Mitwa",
-    "artist": "Shankar-Ehsaan-Loy, Shankar Mahadevan, Caralisa Monteiro, Shafqat Amanat Ali",
-    "album": "Kabhi Alvida Naa Kehna (Original Motion Picture Soundtrack)",
-    "duration": 382973,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02afbf50bfb7b032b69deabade"
+    "playedAt": "2026-10-24T15:54:33.582Z",
+    "title": "Chahun Main Ya Naa (From \"Aashiqui 2\")",
+    "artist": "Palak Muchhal, Arijit Singh",
+    "album": "Best Of Palak Muchhal",
+    "duration": 304899,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02808542d48ec7021a0577f4f5"
   },
   "projects": [
     {
