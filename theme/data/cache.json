@@ -428,12 +428,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-10-24T23:40:15.134Z",
-    "title": "Aarzu (with Asim Azhar)",
-    "artist": "Asim Azhar, Noor, Khan, Madhurxo",
-    "album": "Aarzu (with Asim Azhar)",
-    "duration": 185142,
-    "cover": "https://i.scdn.co/image/ab67616d00001e0223163367c297997eaa635b66"
+    "progress": 151563,
+    "title": "Behaya (From \"Ekannoborti\")",
+    "artist": "Lagnajita Chakraborty",
+    "album": "Behaya (From \"Ekannoborti\")",
+    "duration": 210500,
+    "cover": "https://i.scdn.co/image/ab67616d00001e029d1c42d114f172494f2ce076"
   },
   "projects": [
     {
@@ -1385,7 +1385,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-10-24T21:47:00Z",
+      "pushed": "2026-10-25T09:19:13Z",
       "fork": false,
       "archived": false
     },
