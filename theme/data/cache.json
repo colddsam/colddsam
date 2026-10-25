@@ -428,12 +428,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-10-25T10:38:05.985Z",
-    "title": "Nithur Monohor",
-    "artist": "Ishaan",
-    "album": "Nithur Monohor",
-    "duration": 280645,
-    "cover": "https://i.scdn.co/image/ab67616d00001e0250674b7463a5f94bb2bac236"
+    "playedAt": "2026-10-25T18:33:09.113Z",
+    "title": "Tu Hi Haqeeqat",
+    "artist": "Pritam, Javed Ali, Irshan Ashraf, Shadab, Sayeed Quadri",
+    "album": "Tum Mile (Original Motion Picture Soundtrack)",
+    "duration": 302026,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02bcb8ec035de7b2dda0f74660"
   },
   "projects": [
     {
@@ -1385,7 +1385,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-10-25T13:51:55Z",
+      "pushed": "2026-10-25T20:16:36Z",
       "fork": false,
       "archived": false
     },
