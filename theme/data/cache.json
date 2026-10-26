@@ -428,13 +428,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 241326,
-    "title": "Ve Kamleya (From \"Rocky Aur Rani Kii Prem Kahaani\")",
-    "artist": "Pritam, Arijit Singh, Shreya Ghoshal, Shadab Faridi, Altamash Faridi, Amitabh Bhattacharya",
-    "album": "Rocky Aur Rani Kii Prem Kahaani",
-    "duration": 246988,
-    "cover": "https://i.scdn.co/image/ab67616d00001e023186471e5280d90457a7edd0"
+    "playing": false,
+    "playedAt": "2026-10-26T10:39:24.792Z",
+    "title": "Tum Ho",
+    "artist": "Mohit Chauhan, Suzanne D'Mello",
+    "album": "Rockstar",
+    "duration": 316500,
+    "cover": "https://i.scdn.co/image/ab67616d00001e0254e544672baa16145d67612b"
   },
   "projects": [
     {
@@ -1386,7 +1386,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-10-25T21:59:39Z",
+      "pushed": "2026-10-26T07:39:23Z",
       "fork": false,
       "archived": false
     },
