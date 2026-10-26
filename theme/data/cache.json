@@ -428,13 +428,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-10-25T18:33:09.113Z",
-    "title": "Tu Hi Haqeeqat",
-    "artist": "Pritam, Javed Ali, Irshan Ashraf, Shadab, Sayeed Quadri",
-    "album": "Tum Mile (Original Motion Picture Soundtrack)",
-    "duration": 302026,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02bcb8ec035de7b2dda0f74660"
+    "playing": true,
+    "progress": 241326,
+    "title": "Ve Kamleya (From \"Rocky Aur Rani Kii Prem Kahaani\")",
+    "artist": "Pritam, Arijit Singh, Shreya Ghoshal, Shadab Faridi, Altamash Faridi, Amitabh Bhattacharya",
+    "album": "Rocky Aur Rani Kii Prem Kahaani",
+    "duration": 246988,
+    "cover": "https://i.scdn.co/image/ab67616d00001e023186471e5280d90457a7edd0"
   },
   "projects": [
     {
