@@ -412,12 +412,12 @@
       "commits": 276
     },
     {
-      "name": "colddsam/coldscout",
-      "commits": 174
+      "name": "colddsam/POTD-solution-for-LeetCode",
+      "commits": 181
     },
     {
-      "name": "colddsam/POTD-solution-for-LeetCode",
-      "commits": 103
+      "name": "colddsam/coldscout",
+      "commits": 174
     },
     {
       "name": "colddsam/nextjsportfolio",
@@ -492,7 +492,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 37
+      "downloads": 11
     }
   ],
   "glance": {
@@ -1387,7 +1387,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-10-27T10:52:36Z",
+      "pushed": "2026-10-27T16:20:20Z",
       "fork": false,
       "archived": false
     },

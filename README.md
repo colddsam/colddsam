@@ -50,7 +50,7 @@
 
 <div align="center">
 
-<a href="https://www.npmjs.com/package/trending-products"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-trending-products-ext.svg"/><img src="theme/assets/light/badge-trending-products-ext.svg" alt="TRENDING-PRODUCTS ↗"/></picture></a> <a href="https://pypi.org/project/modeyolo/"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-modeyolo-ext.svg"/><img src="theme/assets/light/badge-modeyolo-ext.svg" alt="MODEYOLO ↗"/></picture></a> <a href="https://pypi.org/project/localstore/"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-localstore-ext.svg"/><img src="theme/assets/light/badge-localstore-ext.svg" alt="LOCALSTORE ↗"/></picture></a>
+<a href="https://pypi.org/project/modeyolo/"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-modeyolo-ext.svg"/><img src="theme/assets/light/badge-modeyolo-ext.svg" alt="MODEYOLO ↗"/></picture></a> <a href="https://pypi.org/project/localstore/"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-localstore-ext.svg"/><img src="theme/assets/light/badge-localstore-ext.svg" alt="LOCALSTORE ↗"/></picture></a> <a href="https://www.npmjs.com/package/trending-products"><picture><source media="(prefers-color-scheme: dark)" srcset="theme/assets/dark/badge-trending-products-ext.svg"/><img src="theme/assets/light/badge-trending-products-ext.svg" alt="TRENDING-PRODUCTS ↗"/></picture></a>
 
 </div>
 
