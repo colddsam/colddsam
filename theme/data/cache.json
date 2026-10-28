@@ -431,12 +431,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-10-28T17:39:27.299Z",
-    "title": "The Breakup Song",
-    "artist": "Pritam, Arijit Singh, Badshah, Jonita Gandhi, Nakash Aziz",
-    "album": "Ae Dil Hai Mushkil (Original Motion Picture Soundtrack) [Deluxe Edition]",
-    "duration": 252631,
-    "cover": "https://i.scdn.co/image/ab67616d00001e0258397d59e15b5149adf86033"
+    "playedAt": "2026-10-28T21:07:04.472Z",
+    "title": "Ishq Bulaava",
+    "artist": "Vishal-Shekhar, Sanam Puri, Shipra Goyal",
+    "album": "Hasee Toh Phasee (Original Motion Picture Soundtrack)",
+    "duration": 303640,
+    "cover": "https://i.scdn.co/image/ab67616d00001e022025db071cd9dd7e8023e01e"
   },
   "projects": [
     {
@@ -493,7 +493,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 11
+      "downloads": 12
     }
   ],
   "glance": {
@@ -1388,7 +1388,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-10-28T05:04:29Z",
+      "pushed": "2026-10-28T22:05:15Z",
       "fork": false,
       "archived": false
     },
