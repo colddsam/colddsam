@@ -431,12 +431,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-10-27T20:51:31.808Z",
-    "title": "Jiyein Kyun",
-    "artist": "Pritam, Papon",
-    "album": "Dum Maaro Dum",
-    "duration": 264962,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02e39388ba8eadf58476135087"
+    "progress": 178581,
+    "title": "Deewaana Deewaana",
+    "artist": "A.R. Rahman, Irshad Kamil",
+    "album": "Tere Ishk Mein",
+    "duration": 337233,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02ba52c35bca6b280c7a9233ce"
   },
   "projects": [
     {
