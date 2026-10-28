@@ -431,12 +431,12 @@
   ],
   "spotify": {
     "playing": false,
-    "progress": 178581,
-    "title": "Deewaana Deewaana",
-    "artist": "A.R. Rahman, Irshad Kamil",
-    "album": "Tere Ishk Mein",
-    "duration": 337233,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02ba52c35bca6b280c7a9233ce"
+    "playedAt": "2026-10-28T17:39:27.299Z",
+    "title": "The Breakup Song",
+    "artist": "Pritam, Arijit Singh, Badshah, Jonita Gandhi, Nakash Aziz",
+    "album": "Ae Dil Hai Mushkil (Original Motion Picture Soundtrack) [Deluxe Edition]",
+    "duration": 252631,
+    "cover": "https://i.scdn.co/image/ab67616d00001e0258397d59e15b5149adf86033"
   },
   "projects": [
     {
