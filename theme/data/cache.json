@@ -432,12 +432,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-10-29T07:43:50Z",
-    "title": "Tu Hi Haqeeqat",
-    "artist": "Pritam, Javed Ali, Irshan Ashraf, Shadab, Sayeed Quadri",
-    "album": "Tum Mile (Original Motion Picture Soundtrack)",
-    "duration": 302026,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02bcb8ec035de7b2dda0f74660"
+    "playedAt": "2026-10-29T07:48:00.150Z",
+    "title": "Gale Lag Ja Na Ja - From \"De Dana Dan\"",
+    "artist": "Javed Ali, Banjyotsna",
+    "album": "Versatile Bollywood Actor - Akshay Kumar",
+    "duration": 252200,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02c5a145533cd2840c2e7c14e3"
   },
   "projects": [
     {
@@ -1389,7 +1389,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-10-28T23:26:04Z",
+      "pushed": "2026-10-29T09:42:56Z",
       "fork": false,
       "archived": false
     },
