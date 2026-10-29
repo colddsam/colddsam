@@ -405,7 +405,8 @@
     { "date": "2026-10-25", "count": 0 },
     { "date": "2026-10-26", "count": 0 },
     { "date": "2026-10-27", "count": 0 },
-    { "date": "2026-10-28", "count": 0 }
+    { "date": "2026-10-28", "count": 0 },
+    { "date": "2026-10-29", "count": 0 }
   ],
   "topRepos": [
     {
@@ -430,13 +431,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-10-28T21:07:04.472Z",
-    "title": "Ishq Bulaava",
-    "artist": "Vishal-Shekhar, Sanam Puri, Shipra Goyal",
-    "album": "Hasee Toh Phasee (Original Motion Picture Soundtrack)",
-    "duration": 303640,
-    "cover": "https://i.scdn.co/image/ab67616d00001e022025db071cd9dd7e8023e01e"
+    "playing": true,
+    "progress": 236172,
+    "title": "Ishq Hai",
+    "artist": "Anurag Saikia, Raj Shekhar, Romy, Amarabha Banerjee, Varun Jain, Madhubanti Bagchi, Mismatched - Cast",
+    "album": "Mismatched: Season 3 (Soundtrack from the Netflix Series)",
+    "duration": 312857,
+    "cover": "https://i.scdn.co/image/ab67616d00001e0279f4a87c23143f0abb14c279"
   },
   "projects": [
     {
@@ -1388,7 +1389,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-10-28T22:25:03Z",
+      "pushed": "2026-10-28T23:26:04Z",
       "fork": false,
       "archived": false
     },
