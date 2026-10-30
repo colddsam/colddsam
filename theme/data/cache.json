@@ -406,7 +406,8 @@
     { "date": "2026-10-26", "count": 0 },
     { "date": "2026-10-27", "count": 0 },
     { "date": "2026-10-28", "count": 0 },
-    { "date": "2026-10-29", "count": 0 }
+    { "date": "2026-10-29", "count": 0 },
+    { "date": "2026-10-30", "count": 0 }
   ],
   "topRepos": [
     {
@@ -431,13 +432,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-10-29T07:48:00.150Z",
-    "title": "Gale Lag Ja Na Ja - From \"De Dana Dan\"",
-    "artist": "Javed Ali, Banjyotsna",
-    "album": "Versatile Bollywood Actor - Akshay Kumar",
-    "duration": 252200,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02c5a145533cd2840c2e7c14e3"
+    "playing": true,
+    "progress": 58542,
+    "title": "Maine Khud Ko",
+    "artist": "Mustafa Zahid",
+    "album": "Ragini Mms 2",
+    "duration": 329072,
+    "cover": "https://i.scdn.co/image/ab67616d00001e0287b32c2a464cd54ec95d301e"
   },
   "projects": [
     {
@@ -1389,7 +1390,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-10-29T22:37:53Z",
+      "pushed": "2026-10-29T23:30:56Z",
       "fork": false,
       "archived": false
     },
