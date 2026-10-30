@@ -432,13 +432,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 58542,
-    "title": "Maine Khud Ko",
-    "artist": "Mustafa Zahid",
-    "album": "Ragini Mms 2",
-    "duration": 329072,
-    "cover": "https://i.scdn.co/image/ab67616d00001e0287b32c2a464cd54ec95d301e"
+    "playing": false,
+    "playedAt": "2026-10-30T06:21:59.538Z",
+    "title": "Tum Se Hi",
+    "artist": "Pritam, Mohit Chauhan, Irshad Kamil",
+    "album": "Jab We Met",
+    "duration": 321225,
+    "cover": "https://i.scdn.co/image/ab67616d00001e0252fe6875028c892308ffc2f7"
   },
   "projects": [
     {
