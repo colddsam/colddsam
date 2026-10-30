@@ -495,7 +495,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 8
+      "downloads": 10
     }
   ],
   "glance": {
@@ -1390,7 +1390,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-10-30T08:25:29Z",
+      "pushed": "2026-10-30T21:51:58Z",
       "fork": false,
       "archived": false
     },
