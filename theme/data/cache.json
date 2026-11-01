@@ -38,13 +38,6 @@
     }
   ],
   "calendar": [
-    { "date": "2025-10-26", "count": 0 },
-    { "date": "2025-10-27", "count": 0 },
-    { "date": "2025-10-28", "count": 0 },
-    { "date": "2025-10-29", "count": 0 },
-    { "date": "2025-10-30", "count": 0 },
-    { "date": "2025-10-31", "count": 0 },
-    { "date": "2025-11-01", "count": 0 },
     { "date": "2025-11-02", "count": 0 },
     { "date": "2025-11-03", "count": 0 },
     { "date": "2025-11-04", "count": 0 },
@@ -408,7 +401,8 @@
     { "date": "2026-10-28", "count": 0 },
     { "date": "2026-10-29", "count": 0 },
     { "date": "2026-10-30", "count": 0 },
-    { "date": "2026-10-31", "count": 0 }
+    { "date": "2026-10-31", "count": 0 },
+    { "date": "2026-11-01", "count": 0 }
   ],
   "topRepos": [
     {
@@ -434,12 +428,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-10-31T18:26:15.119Z",
-    "title": "Ishq Di Baajiyaan",
-    "artist": "Shankar-Ehsaan-Loy, Diljit Dosanjh",
-    "album": "Soorma (Original Motion Picture Soundtrack [Deluxe Edition])",
-    "duration": 287134,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02769fdad411a4492e2f63f76e"
+    "playedAt": "2026-11-01T04:18:29.336Z",
+    "title": "Har Kisi Ko",
+    "artist": "Nikhil D'Souza, Chirantan Bhatt, Kalyanji-Anandji, Manoj Yadav",
+    "album": "Boss",
+    "duration": 304025,
+    "cover": "https://i.scdn.co/image/ab67616d00001e0215bdb7a86250e53e8a80163d"
   },
   "projects": [
     {
@@ -1391,7 +1385,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-10-31T21:15:55Z",
+      "pushed": "2026-10-31T22:43:11Z",
       "fork": false,
       "archived": false
     },
