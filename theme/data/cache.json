@@ -428,13 +428,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 229591,
-    "title": "Vaaroon Forever - From “Mirzapur The Movie”",
-    "artist": "Anand Bhaskar, Romy, Shreya Ghoshal, Ginny Diwan",
-    "album": "Mirzapur The Movie (Original Motion Picture Soundtrack)",
-    "duration": 252400,
-    "cover": "https://i.scdn.co/image/ab67616d00001e022f047c3f92ed7759f7b73bfa"
+    "playing": false,
+    "playedAt": "2026-11-02T06:21:23.117Z",
+    "title": "Bin Tere",
+    "artist": "Vishal-Shekhar, Shafqat Amanat Ali, Sunidhi Chauhan",
+    "album": "I Hate Luv Storys (Original Motion Picture Soundtrack)",
+    "duration": 330360,
+    "cover": "https://i.scdn.co/image/ab67616d00001e021992dd7b33baf5887ea4a1ec"
   },
   "projects": [
     {
