@@ -429,12 +429,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-11-02T06:21:23.117Z",
-    "title": "Bin Tere",
-    "artist": "Vishal-Shekhar, Shafqat Amanat Ali, Sunidhi Chauhan",
-    "album": "I Hate Luv Storys (Original Motion Picture Soundtrack)",
-    "duration": 330360,
-    "cover": "https://i.scdn.co/image/ab67616d00001e021992dd7b33baf5887ea4a1ec"
+    "playedAt": "2026-11-02T13:00:39.081Z",
+    "title": "Jeno Tomari Kache",
+    "artist": "Ash King",
+    "album": "Shudhu Tomari Jonyo (Original Motion Picture Soundtrack)",
+    "duration": 276923,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02025fff059257a31785c288dd"
   },
   "projects": [
     {
@@ -491,7 +491,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 10
+      "downloads": 12
     }
   ],
   "glance": {
@@ -1386,7 +1386,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-01T22:58:35Z",
+      "pushed": "2026-11-02T09:12:52Z",
       "fork": false,
       "archived": false
     },
