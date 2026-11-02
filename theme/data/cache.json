@@ -402,7 +402,8 @@
     { "date": "2026-10-29", "count": 0 },
     { "date": "2026-10-30", "count": 0 },
     { "date": "2026-10-31", "count": 0 },
-    { "date": "2026-11-01", "count": 0 }
+    { "date": "2026-11-01", "count": 0 },
+    { "date": "2026-11-02", "count": 0 }
   ],
   "topRepos": [
     {
@@ -427,13 +428,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-11-01T12:06:00.321Z",
-    "title": "Humsafar (From \"Badrinath Ki Dulhania\")",
-    "artist": "Akhil Sachdeva, Mansheel Gujral",
-    "album": "Best Of Akhil Sachdeva",
-    "duration": 268463,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02dc9563139ebc2a5597254664"
+    "playing": true,
+    "progress": 229591,
+    "title": "Vaaroon Forever - From “Mirzapur The Movie”",
+    "artist": "Anand Bhaskar, Romy, Shreya Ghoshal, Ginny Diwan",
+    "album": "Mirzapur The Movie (Original Motion Picture Soundtrack)",
+    "duration": 252400,
+    "cover": "https://i.scdn.co/image/ab67616d00001e022f047c3f92ed7759f7b73bfa"
   },
   "projects": [
     {
@@ -1385,7 +1386,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-01T21:54:00Z",
+      "pushed": "2026-11-01T22:58:35Z",
       "fork": false,
       "archived": false
     },
