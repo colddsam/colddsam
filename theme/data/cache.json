@@ -430,12 +430,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-11-03T09:25:19.290Z",
-    "title": "Tomar Pichu Charbo Na",
-    "artist": "Nahid Hasan",
-    "album": "Tomar Pichu Charbo Na",
-    "duration": 299240,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02ce0bb2156ee856448689eb3f"
+    "playedAt": "2026-11-03T12:49:51.726Z",
+    "title": "Mystery of Love",
+    "artist": "Sufjan Stevens",
+    "album": "Mystery of Love",
+    "duration": 248960,
+    "cover": "https://i.scdn.co/image/ab67616d00001e023fc1588803d1887f11d660cc"
   },
   "projects": [
     {
@@ -492,7 +492,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 14
+      "downloads": 15
     }
   ],
   "glance": {
@@ -1387,7 +1387,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-03T00:48:30Z",
+      "pushed": "2026-11-03T09:56:14Z",
       "fork": false,
       "archived": false
     },
