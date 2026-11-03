@@ -403,7 +403,8 @@
     { "date": "2026-10-30", "count": 0 },
     { "date": "2026-10-31", "count": 0 },
     { "date": "2026-11-01", "count": 0 },
-    { "date": "2026-11-02", "count": 0 }
+    { "date": "2026-11-02", "count": 0 },
+    { "date": "2026-11-03", "count": 0 }
   ],
   "topRepos": [
     {
@@ -429,12 +430,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-11-02T15:07:07.953Z",
-    "title": "Aashona",
-    "artist": "Arijit Singh, Arindom, Prashmita Paul, Prasen",
-    "album": "Borbaad (Original Motion Picture Soundtrack)",
-    "duration": 243500,
-    "cover": "https://i.scdn.co/image/ab67616d00001e028764d542765eafc98c8125b5"
+    "playedAt": "2026-11-02T21:53:13.861Z",
+    "title": "Aami",
+    "artist": "Rishav Chakraborty",
+    "album": "Aami",
+    "duration": 182981,
+    "cover": "https://i.scdn.co/image/ab67616d00001e0237d493fe646dc4ca71eee628"
   },
   "projects": [
     {
@@ -491,7 +492,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 12
+      "downloads": 14
     }
   ],
   "glance": {
@@ -1386,7 +1387,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-02T09:12:52Z",
+      "pushed": "2026-11-03T00:20:06Z",
       "fork": false,
       "archived": false
     },
