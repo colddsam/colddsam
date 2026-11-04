@@ -413,12 +413,12 @@
       "commits": 276
     },
     {
-      "name": "colddsam/POTD-solution-for-LeetCode",
-      "commits": 181
+      "name": "colddsam/coldscout",
+      "commits": 191
     },
     {
-      "name": "colddsam/coldscout",
-      "commits": 174
+      "name": "colddsam/POTD-solution-for-LeetCode",
+      "commits": 181
     },
     {
       "name": "colddsam/nextjsportfolio",
@@ -430,13 +430,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-11-04T08:24:07.476Z",
-    "title": "Salvatore",
-    "artist": "Lana Del Rey",
-    "album": "Honeymoon",
-    "duration": 281093,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02a3b3f48ca81acacb3ad4ec8a"
+    "playing": true,
+    "progress": 4881,
+    "title": "Save Your Tears",
+    "artist": "The Weeknd",
+    "album": "After Hours",
+    "duration": 215626,
+    "cover": "https://i.scdn.co/image/ab67616d00001e028863bc11d2aa12b54f5aeb36"
   },
   "projects": [
     {
@@ -493,7 +493,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 15
+      "downloads": 19
     }
   ],
   "glance": {
@@ -1388,7 +1388,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-04T00:08:21Z",
+      "pushed": "2026-11-04T11:28:03Z",
       "fork": false,
       "archived": false
     },
