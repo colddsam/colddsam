@@ -430,13 +430,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 4881,
-    "title": "Save Your Tears",
-    "artist": "The Weeknd",
-    "album": "After Hours",
-    "duration": 215626,
-    "cover": "https://i.scdn.co/image/ab67616d00001e028863bc11d2aa12b54f5aeb36"
+    "playing": false,
+    "playedAt": "2026-11-04T17:33:22.307Z",
+    "title": "Tu Mil Jaaye (From \"KING\")",
+    "artist": "Sachin-Jigar, Ed Sheeran, Arijit Singh, Kumaar, Madhubanti Bagchi",
+    "album": "Tu Mil Jaaye (From \"KING\")",
+    "duration": 315000,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02990efdecfa312b16d78d96f1"
   },
   "projects": [
     {
