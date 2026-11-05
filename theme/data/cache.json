@@ -432,12 +432,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-11-05T06:59:58.905Z",
-    "title": "Baarishein",
-    "artist": "Anuv Jain",
-    "album": "Baarishein",
-    "duration": 207312,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02d8ca783fa570b57e082f4374"
+    "playedAt": "2026-11-05T12:07:27.620Z",
+    "title": "Thinking of You",
+    "artist": "AP Dhillon",
+    "album": "Thinking of You",
+    "duration": 180217,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02c034e7aee0628ead7e9a39d8"
   },
   "projects": [
     {
@@ -1389,7 +1389,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-05T00:29:32Z",
+      "pushed": "2026-11-05T07:14:47Z",
       "fork": false,
       "archived": false
     },
