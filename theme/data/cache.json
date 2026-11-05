@@ -431,13 +431,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 28649,
-    "title": "Ishq Sufiyana (Male)",
-    "artist": "Vishal-Shekhar, Kamal Khan",
-    "album": "The Dirty Picture",
-    "duration": 325257,
-    "cover": "https://i.scdn.co/image/ab67616d00001e0254ab341c139cfe4dc15d2d39"
+    "playing": false,
+    "playedAt": "2026-11-05T06:59:58.905Z",
+    "title": "Baarishein",
+    "artist": "Anuv Jain",
+    "album": "Baarishein",
+    "duration": 207312,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02d8ca783fa570b57e082f4374"
   },
   "projects": [
     {
