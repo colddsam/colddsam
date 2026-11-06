@@ -432,13 +432,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 183902,
-    "title": "Dil Na Jaaneya - Unplugged",
-    "artist": "Arijit Singh, Rochak Kohli",
-    "album": "Long Drive (Bollywood Mix)",
-    "duration": 183902,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02fd2824249c4df9c5f8aa543c"
+    "playing": false,
+    "playedAt": "2026-11-06T13:33:19.302Z",
+    "title": "Tere Bin",
+    "artist": "Rabbi Shergill",
+    "album": "Rabbi",
+    "duration": 322701,
+    "cover": "https://i.scdn.co/image/ab67616d00001e0206ec4b60c218202a8afcf112"
   },
   "projects": [
     {
@@ -495,7 +495,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 19
+      "downloads": 20
     }
   ],
   "glance": {
@@ -1390,7 +1390,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-06T00:30:04Z",
+      "pushed": "2026-11-06T09:44:19Z",
       "fork": false,
       "archived": false
     },
