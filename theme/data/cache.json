@@ -432,13 +432,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-11-05T12:07:27.620Z",
-    "title": "Thinking of You",
-    "artist": "AP Dhillon",
-    "album": "Thinking of You",
-    "duration": 180217,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02c034e7aee0628ead7e9a39d8"
+    "playing": true,
+    "progress": 183902,
+    "title": "Dil Na Jaaneya - Unplugged",
+    "artist": "Arijit Singh, Rochak Kohli",
+    "album": "Long Drive (Bollywood Mix)",
+    "duration": 183902,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02fd2824249c4df9c5f8aa543c"
   },
   "projects": [
     {
