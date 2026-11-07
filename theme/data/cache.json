@@ -434,12 +434,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-11-07T06:23:08.766Z",
-    "title": "Maula",
-    "artist": "Anuv Jain",
-    "album": "Maula",
-    "duration": 238000,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02707817f01762adbee6fef97b"
+    "playedAt": "2026-11-07T09:33:32.864Z",
+    "title": "Summer High",
+    "artist": "AP Dhillon",
+    "album": "Summer High",
+    "duration": 177391,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02b0543bafc8adee31880acfb9"
   },
   "projects": [
     {
@@ -1391,7 +1391,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-06T23:47:25Z",
+      "pushed": "2026-11-07T09:07:58Z",
       "fork": false,
       "archived": false
     },
