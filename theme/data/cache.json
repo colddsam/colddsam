@@ -483,13 +483,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 205791,
-    "title": "Chashni",
-    "artist": "Vishal-Shekhar, Abhijeet Srivastava",
-    "album": "Bharat",
-    "duration": 265995,
-    "cover": "https://i.scdn.co/image/ab67616d00001e023f80a707311a44608bb0a8e9"
+    "playing": false,
+    "playedAt": "2026-11-08T21:39:49.027Z",
+    "title": "Kakene No",
+    "artist": "Rito Riba",
+    "album": "Kakene No",
+    "duration": 225824,
+    "cover": "https://i.scdn.co/image/ab67616d00001e021a3287982a6d811b291811e0"
   },
   "projects": [
     {
@@ -1455,7 +1455,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-08T21:33:45Z",
+      "pushed": "2026-11-08T21:41:47Z",
       "fork": false,
       "archived": false
     },
