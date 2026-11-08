@@ -427,13 +427,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-11-07T09:33:32.864Z",
-    "title": "Summer High",
-    "artist": "AP Dhillon",
-    "album": "Summer High",
-    "duration": 177391,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02b0543bafc8adee31880acfb9"
+    "playing": true,
+    "progress": 176800,
+    "title": "Haareya (From \"Meri Pyaari Bindu \")",
+    "artist": "Sachin-Jigar, Arijit Singh, Priya Saraiya",
+    "album": "YRF Top 10 - Midnight Hour",
+    "duration": 214735,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02f2607ce870ebc75e030e0224"
   },
   "projects": [
     {
