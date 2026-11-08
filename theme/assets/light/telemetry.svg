@@ -42,19 +42,19 @@
   <line class="ln" x1="48" y1="290" x2="952" y2="290" opacity="0.5"/>
   <line class="ln" x1="48" y1="150" x2="952" y2="150" opacity="0.2"/>
   <text class="m" x="952" y="142" font-size="10" letter-spacing="2" text-anchor="end">PEAK 50 / WEEK</text>
-  <g class="fade" style="animation-delay:0.9s"><path class="ink" opacity="0.12" d="M48.0 290.0 L65.4 290.0 L82.8 290.0 L100.2 290.0 L117.5 290.0 L134.9 290.0 L152.3 290.0 L169.7 290.0 L187.1 290.0 L204.5 231.2 L221.8 278.8 L239.2 290.0 L256.6 290.0 L274.0 234.0 L291.4 214.4 L308.8 264.8 L326.2 250.8 L343.5 262.0 L360.9 290.0 L378.3 281.6 L395.7 248.0 L413.1 228.4 L430.5 231.2 L447.8 278.8 L465.2 281.6 L482.6 239.6 L500.0 150.0 L517.4 273.2 L534.8 290.0 L552.2 284.4 L569.5 278.8 L586.9 287.2 L604.3 287.2 L621.7 290.0 L639.1 290.0 L656.5 290.0 L673.8 290.0 L691.2 290.0 L708.6 290.0 L726.0 290.0 L743.4 287.2 L760.8 290.0 L778.2 290.0 L795.5 290.0 L812.9 290.0 L830.3 290.0 L847.7 290.0 L865.1 290.0 L882.5 290.0 L899.8 290.0 L917.2 264.8 L934.6 290.0 L952.0 290.0 L952 290 L48 290 Z"/></g>
-  <path class="ln draw" pathLength="1" stroke-width="1.5" stroke-linejoin="round" style="animation-delay:.4s;stroke-width:1.5" d="M48.0 290.0 L65.4 290.0 L82.8 290.0 L100.2 290.0 L117.5 290.0 L134.9 290.0 L152.3 290.0 L169.7 290.0 L187.1 290.0 L204.5 231.2 L221.8 278.8 L239.2 290.0 L256.6 290.0 L274.0 234.0 L291.4 214.4 L308.8 264.8 L326.2 250.8 L343.5 262.0 L360.9 290.0 L378.3 281.6 L395.7 248.0 L413.1 228.4 L430.5 231.2 L447.8 278.8 L465.2 281.6 L482.6 239.6 L500.0 150.0 L517.4 273.2 L534.8 290.0 L552.2 284.4 L569.5 278.8 L586.9 287.2 L604.3 287.2 L621.7 290.0 L639.1 290.0 L656.5 290.0 L673.8 290.0 L691.2 290.0 L708.6 290.0 L726.0 290.0 L743.4 287.2 L760.8 290.0 L778.2 290.0 L795.5 290.0 L812.9 290.0 L830.3 290.0 L847.7 290.0 L865.1 290.0 L882.5 290.0 L899.8 290.0 L917.2 264.8 L934.6 290.0 L952.0 290.0"/>
-  <g class="fade" style="animation-delay:1.6s"><circle class="stroke ring" cx="500.0" cy="150.0" r="4"/><circle class="ink" cx="500.0" cy="150.0" r="3"/></g>
+  <g class="fade" style="animation-delay:0.9s"><path class="ink" opacity="0.12" d="M48.0 290.0 L65.4 290.0 L82.8 290.0 L100.2 290.0 L117.5 290.0 L134.9 290.0 L152.3 290.0 L169.7 290.0 L187.1 231.2 L204.5 278.8 L221.8 290.0 L239.2 290.0 L256.6 234.0 L274.0 214.4 L291.4 264.8 L308.8 250.8 L326.2 262.0 L343.5 290.0 L360.9 281.6 L378.3 248.0 L395.7 228.4 L413.1 231.2 L430.5 278.8 L447.8 281.6 L465.2 239.6 L482.6 150.0 L500.0 273.2 L517.4 290.0 L534.8 284.4 L552.2 278.8 L569.5 287.2 L586.9 287.2 L604.3 290.0 L621.7 290.0 L639.1 290.0 L656.5 290.0 L673.8 290.0 L691.2 290.0 L708.6 290.0 L726.0 287.2 L743.4 290.0 L760.8 290.0 L778.2 290.0 L795.5 290.0 L812.9 290.0 L830.3 290.0 L847.7 290.0 L865.1 290.0 L882.5 290.0 L899.8 264.8 L917.2 290.0 L934.6 290.0 L952.0 290.0 L952 290 L48 290 Z"/></g>
+  <path class="ln draw" pathLength="1" stroke-width="1.5" stroke-linejoin="round" style="animation-delay:.4s;stroke-width:1.5" d="M48.0 290.0 L65.4 290.0 L82.8 290.0 L100.2 290.0 L117.5 290.0 L134.9 290.0 L152.3 290.0 L169.7 290.0 L187.1 231.2 L204.5 278.8 L221.8 290.0 L239.2 290.0 L256.6 234.0 L274.0 214.4 L291.4 264.8 L308.8 250.8 L326.2 262.0 L343.5 290.0 L360.9 281.6 L378.3 248.0 L395.7 228.4 L413.1 231.2 L430.5 278.8 L447.8 281.6 L465.2 239.6 L482.6 150.0 L500.0 273.2 L517.4 290.0 L534.8 284.4 L552.2 278.8 L569.5 287.2 L586.9 287.2 L604.3 290.0 L621.7 290.0 L639.1 290.0 L656.5 290.0 L673.8 290.0 L691.2 290.0 L708.6 290.0 L726.0 287.2 L743.4 290.0 L760.8 290.0 L778.2 290.0 L795.5 290.0 L812.9 290.0 L830.3 290.0 L847.7 290.0 L865.1 290.0 L882.5 290.0 L899.8 264.8 L917.2 290.0 L934.6 290.0 L952.0 290.0"/>
+  <g class="fade" style="animation-delay:1.6s"><circle class="stroke ring" cx="482.6" cy="150.0" r="4"/><circle class="ink" cx="482.6" cy="150.0" r="3"/></g>
   <text class="m" x="48" y="312" font-size="10" letter-spacing="2" text-anchor="start">NOV</text>
-  <text class="m" x="117.53846153846153" y="312" font-size="10" letter-spacing="2" text-anchor="middle">DEC</text>
-  <text class="m" x="187.07692307692307" y="312" font-size="10" letter-spacing="2" text-anchor="middle">JAN</text>
-  <text class="m" x="274" y="312" font-size="10" letter-spacing="2" text-anchor="middle">FEB</text>
-  <text class="m" x="343.5384615384615" y="312" font-size="10" letter-spacing="2" text-anchor="middle">MAR</text>
-  <text class="m" x="413.07692307692304" y="312" font-size="10" letter-spacing="2" text-anchor="middle">APR</text>
-  <text class="m" x="482.6153846153846" y="312" font-size="10" letter-spacing="2" text-anchor="middle">MAY</text>
-  <text class="m" x="569.5384615384615" y="312" font-size="10" letter-spacing="2" text-anchor="middle">JUN</text>
-  <text class="m" x="639.076923076923" y="312" font-size="10" letter-spacing="2" text-anchor="middle">JUL</text>
-  <text class="m" x="708.6153846153845" y="312" font-size="10" letter-spacing="2" text-anchor="middle">AUG</text>
-  <text class="m" x="795.5384615384614" y="312" font-size="10" letter-spacing="2" text-anchor="middle">SEP</text>
-  <text class="m" x="865.076923076923" y="312" font-size="10" letter-spacing="2" text-anchor="middle">OCT</text>
+  <text class="m" x="100.15384615384615" y="312" font-size="10" letter-spacing="2" text-anchor="middle">DEC</text>
+  <text class="m" x="169.69230769230768" y="312" font-size="10" letter-spacing="2" text-anchor="middle">JAN</text>
+  <text class="m" x="256.6153846153846" y="312" font-size="10" letter-spacing="2" text-anchor="middle">FEB</text>
+  <text class="m" x="326.15384615384613" y="312" font-size="10" letter-spacing="2" text-anchor="middle">MAR</text>
+  <text class="m" x="395.6923076923077" y="312" font-size="10" letter-spacing="2" text-anchor="middle">APR</text>
+  <text class="m" x="465.23076923076917" y="312" font-size="10" letter-spacing="2" text-anchor="middle">MAY</text>
+  <text class="m" x="552.1538461538462" y="312" font-size="10" letter-spacing="2" text-anchor="middle">JUN</text>
+  <text class="m" x="621.6923076923076" y="312" font-size="10" letter-spacing="2" text-anchor="middle">JUL</text>
+  <text class="m" x="691.2307692307692" y="312" font-size="10" letter-spacing="2" text-anchor="middle">AUG</text>
+  <text class="m" x="778.1538461538461" y="312" font-size="10" letter-spacing="2" text-anchor="middle">SEP</text>
+  <text class="m" x="847.6923076923076" y="312" font-size="10" letter-spacing="2" text-anchor="middle">OCT</text>
 </svg>
