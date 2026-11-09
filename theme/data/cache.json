@@ -1,6 +1,13 @@
 {
   "activity": [
     {
+      "id": "26620160707",
+      "repo": "colddsam/do-whatever-you-like",
+      "kind": "PUSH",
+      "text": "Pushed to colddsam/do-whatever-you-like",
+      "url": "https://github.com/colddsam/do-whatever-you-like/commits"
+    },
+    {
       "id": "26573877396",
       "repo": "colddsam/do-whatever-you-like",
       "kind": "CREATE",
@@ -61,13 +68,6 @@
       "kind": "PULL REQUEST",
       "text": "Opened PR #2 in Sahelisen-git/Healthcare-System",
       "url": "https://github.com/Sahelisen-git/Healthcare-System/pull/2",
-      "repo": "Sahelisen-git/Healthcare-System"
-    },
-    {
-      "id": "seed-pr-1",
-      "kind": "PULL REQUEST",
-      "text": "Opened PR #1 in Sahelisen-git/Healthcare-System",
-      "url": "https://github.com/Sahelisen-git/Healthcare-System/pull/1",
       "repo": "Sahelisen-git/Healthcare-System"
     }
   ],
@@ -485,12 +485,12 @@
   ],
   "spotify": {
     "playing": true,
-    "progress": 94014,
-    "title": "Alfaaz",
-    "artist": "Hamza Malik, Zain Zohaib",
-    "album": "Alfaaz",
-    "duration": 184373,
-    "cover": "https://i.scdn.co/image/ab67616d00001e026e9e64025043feb3999aa13b"
+    "progress": 256843,
+    "title": "Bin Tere",
+    "artist": "Vishal-Shekhar, Shafqat Amanat Ali, Sunidhi Chauhan",
+    "album": "I Hate Luv Storys (Original Motion Picture Soundtrack)",
+    "duration": 330360,
+    "cover": "https://i.scdn.co/image/ab67616d00001e021992dd7b33baf5887ea4a1ec"
   },
   "projects": [
     {
@@ -1456,7 +1456,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-08T23:02:19Z",
+      "pushed": "2026-11-09T09:32:22Z",
       "fork": false,
       "archived": false
     },
