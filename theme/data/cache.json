@@ -484,13 +484,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-11-08T21:50:05.635Z",
-    "title": "Kakene No",
-    "artist": "Rito Riba",
-    "album": "Kakene No",
-    "duration": 225824,
-    "cover": "https://i.scdn.co/image/ab67616d00001e021a3287982a6d811b291811e0"
+    "playing": true,
+    "progress": 94014,
+    "title": "Alfaaz",
+    "artist": "Hamza Malik, Zain Zohaib",
+    "album": "Alfaaz",
+    "duration": 184373,
+    "cover": "https://i.scdn.co/image/ab67616d00001e026e9e64025043feb3999aa13b"
   },
   "projects": [
     {
