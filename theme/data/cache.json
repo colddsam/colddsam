@@ -484,13 +484,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 256843,
-    "title": "Bin Tere",
-    "artist": "Vishal-Shekhar, Shafqat Amanat Ali, Sunidhi Chauhan",
-    "album": "I Hate Luv Storys (Original Motion Picture Soundtrack)",
-    "duration": 330360,
-    "cover": "https://i.scdn.co/image/ab67616d00001e021992dd7b33baf5887ea4a1ec"
+    "playing": false,
+    "playedAt": "2026-11-09T18:53:04.709Z",
+    "title": "Ayanam - Mi Amore",
+    "artist": "Rito Riba, Hansika Pareek, Saaheal",
+    "album": "Ayanam (Mi Amore)",
+    "duration": 207500,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02ed890755f917922dbc1b0612"
   },
   "projects": [
     {
