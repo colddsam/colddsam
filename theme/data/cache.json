@@ -460,7 +460,7 @@
     { "date": "2026-11-07", "count": 0 },
     { "date": "2026-11-08", "count": 10 },
     { "date": "2026-11-09", "count": 1 },
-    { "date": "2026-11-10", "count": 7 }
+    { "date": "2026-11-10", "count": 10 }
   ],
   "topRepos": [
     {
@@ -562,14 +562,20 @@
     {
       "full": "colddsam/do-whatever-you-like",
       "name": "do-whatever-you-like",
-      "description": "",
+      "description": "Full-stack media, document & utility toolkit built with Next.js 16 and FastAPI — download YouTube/Instagram/Facebook media, extract MP3 audio from video, merge/split/compress PDFs, and generate custom QR codes with zero permanent file storage.",
       "homepage": "https://do-whatever-you-like.colddsam.com",
       "language": "TypeScript",
-      "topics": [],
+      "topics": [
+        "all-in-one",
+        "fastapi",
+        "nextjs",
+        "python",
+        "utility"
+      ],
       "stars": 0,
       "forks": 1,
       "created": "2026-11-08T11:26:47Z",
-      "pushed": "2026-11-10T11:01:55Z",
+      "pushed": "2026-11-10T19:31:15Z",
       "fork": false,
       "archived": false
     },
@@ -1457,7 +1463,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-10T11:37:51Z",
+      "pushed": "2026-11-10T22:43:32Z",
       "fork": false,
       "archived": false
     },
