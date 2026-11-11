@@ -487,12 +487,12 @@
   ],
   "spotify": {
     "playing": false,
-    "progress": 181574,
-    "title": "Nazm Nazm",
-    "artist": "Arko",
-    "album": "Arko Top Hits",
-    "duration": 226940,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02f3e0e15bd1f4b3d025b0e5c9"
+    "playedAt": "2026-11-11T16:07:44.455Z",
+    "title": "Kaafi Hai Na (From \"Musafir Cafe\")",
+    "artist": "Garvit - Priyansh, Priyansh Srivastava, Jonita Gandhi, Garvit Soni, Aniket Shukla",
+    "album": "Kaafi Hai Na (From \"Musafir Cafe\")",
+    "duration": 195050,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02808e7cc7276952cab80b52d4"
   },
   "projects": [
     {
