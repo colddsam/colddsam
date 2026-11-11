@@ -1,6 +1,34 @@
 {
   "activity": [
     {
+      "id": "19773954008",
+      "repo": "colddsam/do-whatever-you-like",
+      "kind": "PULL REQUEST",
+      "text": "Merged PR #6 in colddsam/do-whatever-you-like",
+      "url": "https://github.com/colddsam/do-whatever-you-like/pull/6"
+    },
+    {
+      "id": "19772293669",
+      "repo": "colddsam/do-whatever-you-like",
+      "kind": "PULL REQUEST",
+      "text": "Opened PR #6 in colddsam/do-whatever-you-like",
+      "url": "https://github.com/colddsam/do-whatever-you-like/pull/6"
+    },
+    {
+      "id": "19757060688",
+      "repo": "colddsam/do-whatever-you-like",
+      "kind": "PULL REQUEST",
+      "text": "Merged PR #5 in colddsam/do-whatever-you-like",
+      "url": "https://github.com/colddsam/do-whatever-you-like/pull/5"
+    },
+    {
+      "id": "19757036955",
+      "repo": "colddsam/do-whatever-you-like",
+      "kind": "PULL REQUEST",
+      "text": "Opened PR #5 in colddsam/do-whatever-you-like",
+      "url": "https://github.com/colddsam/do-whatever-you-like/pull/5"
+    },
+    {
       "id": "26801150393",
       "repo": "colddsam/do-whatever-you-like",
       "kind": "PUSH",
@@ -41,34 +69,6 @@
       "kind": "PULL REQUEST",
       "text": "Opened PR #4 in colddsam/do-whatever-you-like",
       "url": "https://github.com/colddsam/do-whatever-you-like/pull/4"
-    },
-    {
-      "id": "26712401227",
-      "repo": "colddsam/do-whatever-you-like",
-      "kind": "PUSH",
-      "text": "Pushed to colddsam/do-whatever-you-like",
-      "url": "https://github.com/colddsam/do-whatever-you-like/commits"
-    },
-    {
-      "id": "26708619905",
-      "repo": "colddsam/do-whatever-you-like",
-      "kind": "PUSH",
-      "text": "Pushed to colddsam/do-whatever-you-like",
-      "url": "https://github.com/colddsam/do-whatever-you-like/commits"
-    },
-    {
-      "id": "26707525194",
-      "repo": "colddsam/do-whatever-you-like",
-      "kind": "PUSH",
-      "text": "Pushed to colddsam/do-whatever-you-like",
-      "url": "https://github.com/colddsam/do-whatever-you-like/commits"
-    },
-    {
-      "id": "26691567153",
-      "repo": "colddsam/do-whatever-you-like",
-      "kind": "PUSH",
-      "text": "Pushed to colddsam/do-whatever-you-like",
-      "url": "https://github.com/colddsam/do-whatever-you-like/commits"
     }
   ],
   "posts": [
@@ -461,7 +461,7 @@
     { "date": "2026-11-08", "count": 10 },
     { "date": "2026-11-09", "count": 1 },
     { "date": "2026-11-10", "count": 10 },
-    { "date": "2026-11-11", "count": 1 }
+    { "date": "2026-11-11", "count": 7 }
   ],
   "topRepos": [
     {
@@ -486,13 +486,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-11-11T07:00:04.921Z",
-    "title": "Ajj Din Chadheya",
-    "artist": "Pritam, Rahat Fateh Ali Khan",
-    "album": "Love Aaj Kal (Original Motion Picture Soundtrack)",
-    "duration": 315013,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02379298ceb1e3c8e52048eeba"
+    "playing": true,
+    "progress": 7589,
+    "title": "Tere Bin (From \"Simmba\")",
+    "artist": "Rahat Fateh Ali Khan, Asees Kaur, Tanishk Bagchi",
+    "album": "Tere Bin (From \"Simmba\")",
+    "duration": 230948,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02a44243531404997d687bb415"
   },
   "projects": [
     {
@@ -549,7 +549,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 24
+      "downloads": 29
     }
   ],
   "glance": {
@@ -576,7 +576,7 @@
       "stars": 0,
       "forks": 1,
       "created": "2026-11-08T11:26:47Z",
-      "pushed": "2026-11-10T19:31:15Z",
+      "pushed": "2026-11-11T11:17:53Z",
       "fork": false,
       "archived": false
     },
@@ -1464,7 +1464,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-11T00:12:10Z",
+      "pushed": "2026-11-11T07:38:35Z",
       "fork": false,
       "archived": false
     },
