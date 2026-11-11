@@ -486,13 +486,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 7589,
-    "title": "Tere Bin (From \"Simmba\")",
-    "artist": "Rahat Fateh Ali Khan, Asees Kaur, Tanishk Bagchi",
-    "album": "Tere Bin (From \"Simmba\")",
-    "duration": 230948,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02a44243531404997d687bb415"
+    "playing": false,
+    "progress": 181574,
+    "title": "Nazm Nazm",
+    "artist": "Arko",
+    "album": "Arko Top Hits",
+    "duration": 226940,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02f3e0e15bd1f4b3d025b0e5c9"
   },
   "projects": [
     {
