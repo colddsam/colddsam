@@ -486,13 +486,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 66603,
-    "title": "Alfaaz - Acoustic",
-    "artist": "Hamza Malik, Zain Zohaib, Atif Khan",
-    "album": "Alfaaz - Acoustic",
-    "duration": 235521,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02c9656c4c0638022af5e38b47"
+    "playing": false,
+    "playedAt": "2026-11-11T07:00:04.921Z",
+    "title": "Ajj Din Chadheya",
+    "artist": "Pritam, Rahat Fateh Ali Khan",
+    "album": "Love Aaj Kal (Original Motion Picture Soundtrack)",
+    "duration": 315013,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02379298ceb1e3c8e52048eeba"
   },
   "projects": [
     {
