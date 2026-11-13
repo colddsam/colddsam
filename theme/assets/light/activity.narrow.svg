@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 750" width="400" height="750" fill="none" role="img" aria-label="Recent GitHub activity">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 684" width="400" height="684" fill="none" role="img" aria-label="Recent GitHub activity">
   <style>
     .m{font-family:ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace}
     text{fill:#000000}
@@ -49,9 +49,9 @@
   <line class="ln" x1="16" y1="426" x2="384" y2="426" opacity="0.25"/>
   <g class="rise" style="animation-delay:0.6799999999999999s"><text class="m" x="16" y="450" font-size="11" letter-spacing="1.25">Nº 07</text><text class="m" x="16" y="472" font-size="15">Pushed to colddsam/do-whatever-you-like</text><text class="m" x="384" y="450" font-size="11" letter-spacing="1" text-anchor="end">PUSH</text></g>
   <line class="ln" x1="16" y1="488" x2="384" y2="488" opacity="0.25"/>
-  <g class="rise" style="animation-delay:0.76s"><text class="m" x="16" y="512" font-size="11" letter-spacing="1.25">Nº 08</text><text class="m" x="16" y="534" font-size="15">Merged PR #6 in</text><text class="m" x="16" y="556" font-size="15">colddsam/do-whatever-you-like</text><text class="m" x="384" y="512" font-size="11" letter-spacing="1" text-anchor="end">PULL REQUEST</text></g>
-  <line class="ln" x1="16" y1="572" x2="384" y2="572" opacity="0.25"/>
-  <g class="rise" style="animation-delay:0.8400000000000001s"><text class="m" x="16" y="596" font-size="11" letter-spacing="1.25">Nº 09</text><text class="m" x="16" y="618" font-size="15">Opened PR #6 in</text><text class="m" x="16" y="640" font-size="15">colddsam/do-whatever-you-like</text><text class="m" x="384" y="596" font-size="11" letter-spacing="1" text-anchor="end">PULL REQUEST</text></g>
-  <line class="ln" x1="16" y1="656" x2="384" y2="656" opacity="0.25"/>
-  <g class="rise" style="animation-delay:0.9199999999999999s"><text class="m" x="16" y="680" font-size="11" letter-spacing="1.25">Nº 10</text><text class="m" x="16" y="702" font-size="15">Merged PR #5 in</text><text class="m" x="16" y="724" font-size="15">colddsam/do-whatever-you-like</text><text class="m" x="384" y="680" font-size="11" letter-spacing="1" text-anchor="end">PULL REQUEST</text></g>
+  <g class="rise" style="animation-delay:0.76s"><text class="m" x="16" y="512" font-size="11" letter-spacing="1.25">Nº 08</text><text class="m" x="16" y="534" font-size="15">Pushed to colddsam/do-whatever-you-like</text><text class="m" x="384" y="512" font-size="11" letter-spacing="1" text-anchor="end">PUSH</text></g>
+  <line class="ln" x1="16" y1="550" x2="384" y2="550" opacity="0.25"/>
+  <g class="rise" style="animation-delay:0.8400000000000001s"><text class="m" x="16" y="574" font-size="11" letter-spacing="1.25">Nº 09</text><text class="m" x="16" y="596" font-size="15">Pushed to colddsam/do-whatever-you-like</text><text class="m" x="384" y="574" font-size="11" letter-spacing="1" text-anchor="end">PUSH</text></g>
+  <line class="ln" x1="16" y1="612" x2="384" y2="612" opacity="0.25"/>
+  <g class="rise" style="animation-delay:0.9199999999999999s"><text class="m" x="16" y="636" font-size="11" letter-spacing="1.25">Nº 10</text><text class="m" x="16" y="658" font-size="15">Pushed to colddsam/do-whatever-you-like</text><text class="m" x="384" y="636" font-size="11" letter-spacing="1" text-anchor="end">PUSH</text></g>
 </svg>

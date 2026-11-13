@@ -1,6 +1,34 @@
 {
   "activity": [
     {
+      "id": "27036770294",
+      "repo": "colddsam/do-whatever-you-like",
+      "kind": "PUSH",
+      "text": "Pushed to colddsam/do-whatever-you-like",
+      "url": "https://github.com/colddsam/do-whatever-you-like/commits"
+    },
+    {
+      "id": "27032811347",
+      "repo": "colddsam/do-whatever-you-like",
+      "kind": "PUSH",
+      "text": "Pushed to colddsam/do-whatever-you-like",
+      "url": "https://github.com/colddsam/do-whatever-you-like/commits"
+    },
+    {
+      "id": "27023958326",
+      "repo": "colddsam/do-whatever-you-like",
+      "kind": "PUSH",
+      "text": "Pushed to colddsam/do-whatever-you-like",
+      "url": "https://github.com/colddsam/do-whatever-you-like/commits"
+    },
+    {
+      "id": "27022285356",
+      "repo": "colddsam/do-whatever-you-like",
+      "kind": "PUSH",
+      "text": "Pushed to colddsam/do-whatever-you-like",
+      "url": "https://github.com/colddsam/do-whatever-you-like/commits"
+    },
+    {
       "id": "26976670595",
       "repo": "colddsam/do-whatever-you-like",
       "kind": "PUSH",
@@ -41,34 +69,6 @@
       "kind": "PUSH",
       "text": "Pushed to colddsam/do-whatever-you-like",
       "url": "https://github.com/colddsam/do-whatever-you-like/commits"
-    },
-    {
-      "id": "26852964827",
-      "repo": "colddsam/do-whatever-you-like",
-      "kind": "PUSH",
-      "text": "Pushed to colddsam/do-whatever-you-like",
-      "url": "https://github.com/colddsam/do-whatever-you-like/commits"
-    },
-    {
-      "id": "19773954008",
-      "repo": "colddsam/do-whatever-you-like",
-      "kind": "PULL REQUEST",
-      "text": "Merged PR #6 in colddsam/do-whatever-you-like",
-      "url": "https://github.com/colddsam/do-whatever-you-like/pull/6"
-    },
-    {
-      "id": "19772293669",
-      "repo": "colddsam/do-whatever-you-like",
-      "kind": "PULL REQUEST",
-      "text": "Opened PR #6 in colddsam/do-whatever-you-like",
-      "url": "https://github.com/colddsam/do-whatever-you-like/pull/6"
-    },
-    {
-      "id": "19757060688",
-      "repo": "colddsam/do-whatever-you-like",
-      "kind": "PULL REQUEST",
-      "text": "Merged PR #5 in colddsam/do-whatever-you-like",
-      "url": "https://github.com/colddsam/do-whatever-you-like/pull/5"
     }
   ],
   "posts": [
@@ -463,7 +463,7 @@
     { "date": "2026-11-10", "count": 10 },
     { "date": "2026-11-11", "count": 10 },
     { "date": "2026-11-12", "count": 1 },
-    { "date": "2026-11-13", "count": 0 }
+    { "date": "2026-11-13", "count": 2 }
   ],
   "topRepos": [
     {
@@ -472,7 +472,7 @@
     },
     {
       "name": "colddsam/POTD-solution-for-LeetCode",
-      "commits": 178
+      "commits": 176
     },
     {
       "name": "colddsam/coldscout",
@@ -483,18 +483,18 @@
       "commits": 46
     },
     {
-      "name": "colddsam/portfolio",
-      "commits": 25
+      "name": "colddsam/do-whatever-you-like",
+      "commits": 27
     }
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-11-13T05:30:37.019Z",
-    "title": "Tere Dil Mein",
-    "artist": "Rajat Nagpal, Rito Riba, Rana Sotal",
-    "album": "Tere Dil Mein",
-    "duration": 197291,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02a4dbb9e401dddcbe266777b7"
+    "playedAt": "2026-11-13T05:33:51.981Z",
+    "title": "Sleepless",
+    "artist": "Rito Riba, Simyo, tav",
+    "album": "Sleepless",
+    "duration": 196800,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02c2f4096a5ec6917fbc452282"
   },
   "projects": [
     {
@@ -551,7 +551,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 30
+      "downloads": 28
     }
   ],
   "glance": {
@@ -578,7 +578,7 @@
       "stars": 0,
       "forks": 1,
       "created": "2026-11-08T11:26:47Z",
-      "pushed": "2026-11-11T18:47:20Z",
+      "pushed": "2026-11-13T10:21:08Z",
       "fork": false,
       "archived": false
     },
@@ -1466,7 +1466,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-13T00:39:18Z",
+      "pushed": "2026-11-13T08:39:07Z",
       "fork": false,
       "archived": false
     },
