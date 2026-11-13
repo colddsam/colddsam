@@ -488,13 +488,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 194595,
-    "title": "Bulleya",
-    "artist": "Vishal-Shekhar, Papon, Irshad Kamil",
-    "album": "Sultan",
-    "duration": 357067,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02b2abfd2439b6c23c3664df87"
+    "playing": false,
+    "playedAt": "2026-11-13T05:30:37.019Z",
+    "title": "Tere Dil Mein",
+    "artist": "Rajat Nagpal, Rito Riba, Rana Sotal",
+    "album": "Tere Dil Mein",
+    "duration": 197291,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02a4dbb9e401dddcbe266777b7"
   },
   "projects": [
     {
