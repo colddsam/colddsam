@@ -488,13 +488,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-11-12T15:55:34.452Z",
-    "title": "Dilruba Dilnasheen",
-    "artist": "Rito Riba, Siddhant Kaushal",
-    "album": "Dilfek",
-    "duration": 173138,
-    "cover": "https://i.scdn.co/image/ab67616d00001e0285a09efa7b28fd0715932d1d"
+    "playing": true,
+    "progress": 194595,
+    "title": "Bulleya",
+    "artist": "Vishal-Shekhar, Papon, Irshad Kamil",
+    "album": "Sultan",
+    "duration": 357067,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02b2abfd2439b6c23c3664df87"
   },
   "projects": [
     {
@@ -539,13 +539,13 @@
       "name": "modeyolo",
       "version": "0.2.5",
       "summary": "ModeYOLO is a versatile Python package designed for efficient color space transformations and simplified dataset modification for deep learning applications. Seamlessly integrating into your workflow, this package empowers users to effortlessly perform diverse color operations and streamline the creation of modified datasets, enhancing the flexibility and convenience of machine learning model training processes.",
-      "downloads": 36
+      "downloads": 21
     },
     {
       "name": "localstore",
       "version": "0.2.1",
       "summary": "LocalStore is a Python library that provides various operations on a local database of products, which can be used to store and manage information about items in a local store inventory and it also give mobility to create an local API for the database. Besides this it can convert CSV file to json.",
-      "downloads": 12
+      "downloads": 27
     },
     {
       "name": "trending-products",
@@ -559,7 +559,7 @@
     "followers": 5,
     "repos": 58,
     "stars": 10,
-    "forks": 13
+    "forks": 12
   },
   "repos": [
     {
@@ -666,7 +666,7 @@
         "truth-score"
       ],
       "stars": 2,
-      "forks": 2,
+      "forks": 1,
       "created": "2025-05-15T03:54:38Z",
       "pushed": "2026-05-06T04:44:37Z",
       "fork": false,
@@ -1466,7 +1466,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-12T23:25:13Z",
+      "pushed": "2026-11-13T00:39:18Z",
       "fork": false,
       "archived": false
     },
