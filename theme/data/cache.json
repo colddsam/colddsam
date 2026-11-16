@@ -485,12 +485,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-11-16T07:31:24.507Z",
-    "title": "Mere Wala Sardar",
-    "artist": "Jugraj Sandhu",
-    "album": "Mere Wala Sardar",
-    "duration": 316000,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02934c2ec7989b571182d5c7d6"
+    "playedAt": "2026-11-16T14:18:33.584Z",
+    "title": "Dekha Hazaro Dafaa",
+    "artist": "Arijit Singh, Palak Muchhal, Manoj Muntashir",
+    "album": "Rustom (Original Motion Picture Soundtrack)",
+    "duration": 207751,
+    "cover": "https://i.scdn.co/image/ab67616d00001e023a2753349e18d67b45e5b24d"
   },
   "projects": [
     {
@@ -547,7 +547,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 30
+      "downloads": 29
     }
   ],
   "glance": {
@@ -1462,7 +1462,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-15T23:28:49Z",
+      "pushed": "2026-11-16T07:49:14Z",
       "fork": false,
       "archived": false
     },
