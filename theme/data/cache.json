@@ -485,13 +485,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-11-17T15:28:21.451Z",
-    "title": "Samjhawan",
-    "artist": "Jawad Ahmad, Shaarib Toshi, Arijit Singh, Shreya Ghoshal",
-    "album": "Samjhawan",
-    "duration": 269184,
-    "cover": "https://i.scdn.co/image/ab67616d00001e028a7ae7092464f6685355dc3c"
+    "playing": true,
+    "progress": 15970,
+    "title": "rockstar (feat. 21 Savage)",
+    "artist": "Post Malone, 21 Savage",
+    "album": "beerbongs & bentleys",
+    "duration": 218146,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02b1c4b76e23414c9f20242268"
   },
   "projects": [
     {
