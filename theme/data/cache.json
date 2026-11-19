@@ -1,6 +1,13 @@
 {
   "activity": [
     {
+      "id": "27629269507",
+      "repo": "colddsam/do-whatever-you-like",
+      "kind": "PUSH",
+      "text": "Pushed to colddsam/do-whatever-you-like",
+      "url": "https://github.com/colddsam/do-whatever-you-like/commits"
+    },
+    {
       "id": "27542488410",
       "repo": "colddsam/do-whatever-you-like",
       "kind": "PUSH",
@@ -62,13 +69,6 @@
       "kind": "PULL REQUEST",
       "text": "Opened PR #8 in colddsam/do-whatever-you-like",
       "url": "https://github.com/colddsam/do-whatever-you-like/pull/8"
-    },
-    {
-      "id": "27378719991",
-      "repo": "colddsam/do-whatever-you-like",
-      "kind": "PUSH",
-      "text": "Pushed to colddsam/do-whatever-you-like",
-      "url": "https://github.com/colddsam/do-whatever-you-like/commits"
     }
   ],
   "posts": [
@@ -462,38 +462,38 @@
     { "date": "2026-11-16", "count": 1 },
     { "date": "2026-11-17", "count": 8 },
     { "date": "2026-11-18", "count": 2 },
-    { "date": "2026-11-19", "count": 0 }
+    { "date": "2026-11-19", "count": 2 }
   ],
   "topRepos": [
     {
-      "name": "colddsam/POTD-solution-for-GFG",
-      "commits": 276
-    },
-    {
       "name": "colddsam/coldscout",
-      "commits": 174
-    },
-    {
-      "name": "colddsam/POTD-solution-for-LeetCode",
-      "commits": 146
+      "commits": 167
     },
     {
       "name": "colddsam/do-whatever-you-like",
-      "commits": 57
+      "commits": 60
     },
     {
-      "name": "colddsam/nextjsportfolio",
-      "commits": 46
+      "name": "colddsam/portfolio",
+      "commits": 25
+    },
+    {
+      "name": "colddsam/ecommerce-automation",
+      "commits": 23
+    },
+    {
+      "name": "colddsam/Blog-Automation",
+      "commits": 18
     }
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-11-19T16:56:13.510Z",
-    "title": "Wake Me Up",
-    "artist": "Avicii",
-    "album": "True",
-    "duration": 247426,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02e14f11f796cef9f9a82691a7"
+    "progress": 264852,
+    "title": "Thinking out Loud",
+    "artist": "Ed Sheeran",
+    "album": "x (Deluxe Edition)",
+    "duration": 281560,
+    "cover": "https://i.scdn.co/image/ab67616d00001e0213b3e37318a0c247b550bccd"
   },
   "projects": [
     {
@@ -577,7 +577,7 @@
       "stars": 1,
       "forks": 1,
       "created": "2026-11-08T11:26:47Z",
-      "pushed": "2026-11-17T19:29:45Z",
+      "pushed": "2026-11-19T18:39:09Z",
       "fork": false,
       "archived": false
     },
@@ -1465,7 +1465,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-19T01:22:31Z",
+      "pushed": "2026-11-19T18:33:41Z",
       "fork": false,
       "archived": false
     },
