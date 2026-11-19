@@ -487,13 +487,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 179758,
-    "title": "Let Her Go",
-    "artist": "Passenger",
-    "album": "All the Little Lights (Deluxe)",
-    "duration": 252733,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02eb0b18cce8b7f5c9fc1579e7"
+    "playing": false,
+    "playedAt": "2026-11-19T08:02:37.474Z",
+    "title": "As It Was",
+    "artist": "Harry Styles",
+    "album": "Harry's House",
+    "duration": 167303,
+    "cover": "https://i.scdn.co/image/ab67616d00001e0282ce362511fb3d9dda6578ee"
   },
   "projects": [
     {
