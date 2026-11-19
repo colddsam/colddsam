@@ -487,13 +487,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-11-18T17:02:09.509Z",
-    "title": "Better Now",
-    "artist": "Post Malone",
-    "album": "beerbongs & bentleys",
-    "duration": 231266,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02b1c4b76e23414c9f20242268"
+    "playing": true,
+    "progress": 179758,
+    "title": "Let Her Go",
+    "artist": "Passenger",
+    "album": "All the Little Lights (Deluxe)",
+    "duration": 252733,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02eb0b18cce8b7f5c9fc1579e7"
   },
   "projects": [
     {
@@ -1465,7 +1465,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-19T00:06:24Z",
+      "pushed": "2026-11-19T01:22:31Z",
       "fork": false,
       "archived": false
     },
