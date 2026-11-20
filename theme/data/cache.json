@@ -462,38 +462,39 @@
     { "date": "2026-11-16", "count": 1 },
     { "date": "2026-11-17", "count": 8 },
     { "date": "2026-11-18", "count": 2 },
-    { "date": "2026-11-19", "count": 2 }
+    { "date": "2026-11-19", "count": 2 },
+    { "date": "2026-11-20", "count": 1 }
   ],
   "topRepos": [
     {
+      "name": "colddsam/POTD-solution-for-GFG",
+      "commits": 276
+    },
+    {
       "name": "colddsam/coldscout",
-      "commits": 167
+      "commits": 174
+    },
+    {
+      "name": "colddsam/POTD-solution-for-LeetCode",
+      "commits": 143
     },
     {
       "name": "colddsam/do-whatever-you-like",
       "commits": 60
     },
     {
-      "name": "colddsam/portfolio",
-      "commits": 25
-    },
-    {
-      "name": "colddsam/ecommerce-automation",
-      "commits": 23
-    },
-    {
-      "name": "colddsam/Blog-Automation",
-      "commits": 18
+      "name": "colddsam/nextjsportfolio",
+      "commits": 46
     }
   ],
   "spotify": {
     "playing": false,
-    "progress": 264852,
-    "title": "Thinking out Loud",
-    "artist": "Ed Sheeran",
-    "album": "x (Deluxe Edition)",
-    "duration": 281560,
-    "cover": "https://i.scdn.co/image/ab67616d00001e0213b3e37318a0c247b550bccd"
+    "playedAt": "2026-11-19T20:02:58.923Z",
+    "title": "Best Day Of My Life",
+    "artist": "American Authors",
+    "album": "Oh, What A Life",
+    "duration": 194240,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02cc761ba55b0e7abad4539abe"
   },
   "projects": [
     {
@@ -538,7 +539,7 @@
       "name": "modeyolo",
       "version": "0.2.5",
       "summary": "ModeYOLO is a versatile Python package designed for efficient color space transformations and simplified dataset modification for deep learning applications. Seamlessly integrating into your workflow, this package empowers users to effortlessly perform diverse color operations and streamline the creation of modified datasets, enhancing the flexibility and convenience of machine learning model training processes.",
-      "downloads": 22
+      "downloads": 21
     },
     {
       "name": "localstore",
@@ -1465,7 +1466,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-19T18:33:41Z",
+      "pushed": "2026-11-20T00:09:38Z",
       "fork": false,
       "archived": false
     },
