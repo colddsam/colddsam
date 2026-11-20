@@ -488,13 +488,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-11-19T20:02:58.923Z",
-    "title": "Best Day Of My Life",
-    "artist": "American Authors",
-    "album": "Oh, What A Life",
-    "duration": 194240,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02cc761ba55b0e7abad4539abe"
+    "playing": true,
+    "progress": 145755,
+    "title": "In Your Eyes",
+    "artist": "The Weeknd",
+    "album": "After Hours",
+    "duration": 237520,
+    "cover": "https://i.scdn.co/image/ab67616d00001e028863bc11d2aa12b54f5aeb36"
   },
   "projects": [
     {
