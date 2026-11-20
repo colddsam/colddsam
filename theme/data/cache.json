@@ -463,7 +463,7 @@
     { "date": "2026-11-17", "count": 8 },
     { "date": "2026-11-18", "count": 2 },
     { "date": "2026-11-19", "count": 2 },
-    { "date": "2026-11-20", "count": 1 }
+    { "date": "2026-11-20", "count": 3 }
   ],
   "topRepos": [
     {
@@ -476,11 +476,11 @@
     },
     {
       "name": "colddsam/POTD-solution-for-LeetCode",
-      "commits": 143
+      "commits": 141
     },
     {
       "name": "colddsam/do-whatever-you-like",
-      "commits": 60
+      "commits": 62
     },
     {
       "name": "colddsam/nextjsportfolio",
@@ -488,13 +488,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 145755,
-    "title": "In Your Eyes",
-    "artist": "The Weeknd",
-    "album": "After Hours",
-    "duration": 237520,
-    "cover": "https://i.scdn.co/image/ab67616d00001e028863bc11d2aa12b54f5aeb36"
+    "playing": false,
+    "playedAt": "2026-11-20T14:26:24.991Z",
+    "title": "Arz Kiya Hai | Coke Studio Bharat",
+    "artist": "Anuv Jain",
+    "album": "Arz Kiya Hai | Coke Studio Bharat",
+    "duration": 294500,
+    "cover": "https://i.scdn.co/image/ab67616d00001e0225fa2d19b2363a9520a34409"
   },
   "projects": [
     {
@@ -551,7 +551,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 29
+      "downloads": 33
     }
   ],
   "glance": {
@@ -578,7 +578,7 @@
       "stars": 1,
       "forks": 1,
       "created": "2026-11-08T11:26:47Z",
-      "pushed": "2026-11-19T18:39:09Z",
+      "pushed": "2026-11-20T08:03:55Z",
       "fork": false,
       "archived": false
     },
@@ -1466,7 +1466,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-20T01:24:40Z",
+      "pushed": "2026-11-20T09:02:14Z",
       "fork": false,
       "archived": false
     },
