@@ -1,6 +1,13 @@
 {
   "activity": [
     {
+      "id": "27786514799",
+      "repo": "colddsam/do-whatever-you-like",
+      "kind": "PUSH",
+      "text": "Pushed to colddsam/do-whatever-you-like",
+      "url": "https://github.com/colddsam/do-whatever-you-like/commits"
+    },
+    {
       "id": "27629269507",
       "repo": "colddsam/do-whatever-you-like",
       "kind": "PUSH",
@@ -61,13 +68,6 @@
       "repo": "colddsam/do-whatever-you-like",
       "kind": "PULL REQUEST",
       "text": "Merged PR #8 in colddsam/do-whatever-you-like",
-      "url": "https://github.com/colddsam/do-whatever-you-like/pull/8"
-    },
-    {
-      "id": "20376664848",
-      "repo": "colddsam/do-whatever-you-like",
-      "kind": "PULL REQUEST",
-      "text": "Opened PR #8 in colddsam/do-whatever-you-like",
       "url": "https://github.com/colddsam/do-whatever-you-like/pull/8"
     }
   ],
@@ -546,7 +546,7 @@
       "name": "localstore",
       "version": "0.2.1",
       "summary": "LocalStore is a Python library that provides various operations on a local database of products, which can be used to store and manage information about items in a local store inventory and it also give mobility to create an local API for the database. Besides this it can convert CSV file to json.",
-      "downloads": 24
+      "downloads": 23
     },
     {
       "name": "trending-products",
@@ -1467,7 +1467,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-20T23:52:12Z",
+      "pushed": "2026-11-21T00:55:05Z",
       "fork": false,
       "archived": false
     },
