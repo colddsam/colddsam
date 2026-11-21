@@ -1,6 +1,13 @@
 {
   "activity": [
     {
+      "id": "27803638723",
+      "repo": "colddsam/do-whatever-you-like",
+      "kind": "PUSH",
+      "text": "Pushed to colddsam/do-whatever-you-like",
+      "url": "https://github.com/colddsam/do-whatever-you-like/commits"
+    },
+    {
       "id": "27786514799",
       "repo": "colddsam/do-whatever-you-like",
       "kind": "PUSH",
@@ -62,13 +69,6 @@
       "kind": "PULL REQUEST",
       "text": "Opened PR #9 in colddsam/do-whatever-you-like",
       "url": "https://github.com/colddsam/do-whatever-you-like/pull/9"
-    },
-    {
-      "id": "20376686398",
-      "repo": "colddsam/do-whatever-you-like",
-      "kind": "PULL REQUEST",
-      "text": "Merged PR #8 in colddsam/do-whatever-you-like",
-      "url": "https://github.com/colddsam/do-whatever-you-like/pull/8"
     }
   ],
   "posts": [
@@ -490,12 +490,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-11-20T17:06:55.566Z",
-    "title": "Bulleya",
-    "artist": "Vishal-Shekhar, Papon, Irshad Kamil",
-    "album": "Sultan",
-    "duration": 357067,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02b2abfd2439b6c23c3664df87"
+    "playedAt": "2026-11-21T13:32:11.424Z",
+    "title": "Bairan",
+    "artist": "Banjaare",
+    "album": "Bairan",
+    "duration": 150857,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02cdce9a38222807fa703b4396"
   },
   "projects": [
     {
@@ -552,7 +552,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 33
+      "downloads": 37
     }
   ],
   "glance": {
@@ -1467,7 +1467,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-21T00:55:05Z",
+      "pushed": "2026-11-21T06:37:20Z",
       "fork": false,
       "archived": false
     },
