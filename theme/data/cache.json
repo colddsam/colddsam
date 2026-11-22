@@ -483,13 +483,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-11-21T17:01:10.703Z",
-    "title": "Afsos",
-    "artist": "Anuv Jain, AP Dhillon",
-    "album": "Afsos",
-    "duration": 191752,
-    "cover": "https://i.scdn.co/image/ab67616d00001e028537cf974af2c408bdd8e1a6"
+    "playing": true,
+    "progress": 164915,
+    "title": "Dil Diyan Gallan",
+    "artist": "Atif Aslam",
+    "album": "YRF Top 10 - Falling in Love",
+    "duration": 260536,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02f7991610fad937fd9f29f55d"
   },
   "projects": [
     {
