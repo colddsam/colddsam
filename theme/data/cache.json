@@ -483,13 +483,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 164915,
-    "title": "Dil Diyan Gallan",
-    "artist": "Atif Aslam",
-    "album": "YRF Top 10 - Falling in Love",
-    "duration": 260536,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02f7991610fad937fd9f29f55d"
+    "playing": false,
+    "playedAt": "2026-11-22T13:46:17.233Z",
+    "title": "For A Reason",
+    "artist": "Karan Aujla, Ikky",
+    "album": "P-POP CULTURE",
+    "duration": 180000,
+    "cover": "https://i.scdn.co/image/ab67616d00001e0289e8f71cb6f3b6cc60944858"
   },
   "projects": [
     {
@@ -546,7 +546,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 37
+      "downloads": 34
     }
   ],
   "glance": {
@@ -1461,7 +1461,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-21T23:53:04Z",
+      "pushed": "2026-11-22T08:44:45Z",
       "fork": false,
       "archived": false
     },
