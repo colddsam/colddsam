@@ -94,13 +94,6 @@
     }
   ],
   "calendar": [
-    { "date": "2025-11-16", "count": 0 },
-    { "date": "2025-11-17", "count": 0 },
-    { "date": "2025-11-18", "count": 0 },
-    { "date": "2025-11-19", "count": 0 },
-    { "date": "2025-11-20", "count": 0 },
-    { "date": "2025-11-21", "count": 0 },
-    { "date": "2025-11-22", "count": 0 },
     { "date": "2025-11-23", "count": 0 },
     { "date": "2025-11-24", "count": 0 },
     { "date": "2025-11-25", "count": 0 },
@@ -464,7 +457,8 @@
     { "date": "2026-11-18", "count": 2 },
     { "date": "2026-11-19", "count": 2 },
     { "date": "2026-11-20", "count": 3 },
-    { "date": "2026-11-21", "count": 2 }
+    { "date": "2026-11-21", "count": 2 },
+    { "date": "2026-11-22", "count": 1 }
   ],
   "topRepos": [
     {
@@ -540,13 +534,13 @@
       "name": "modeyolo",
       "version": "0.2.5",
       "summary": "ModeYOLO is a versatile Python package designed for efficient color space transformations and simplified dataset modification for deep learning applications. Seamlessly integrating into your workflow, this package empowers users to effortlessly perform diverse color operations and streamline the creation of modified datasets, enhancing the flexibility and convenience of machine learning model training processes.",
-      "downloads": 18
+      "downloads": 16
     },
     {
       "name": "localstore",
       "version": "0.2.1",
       "summary": "LocalStore is a Python library that provides various operations on a local database of products, which can be used to store and manage information about items in a local store inventory and it also give mobility to create an local API for the database. Besides this it can convert CSV file to json.",
-      "downloads": 23
+      "downloads": 21
     },
     {
       "name": "trending-products",
@@ -1467,7 +1461,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-21T22:47:50Z",
+      "pushed": "2026-11-21T23:53:04Z",
       "fork": false,
       "archived": false
     },
