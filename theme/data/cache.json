@@ -459,7 +459,7 @@
     { "date": "2026-11-20", "count": 3 },
     { "date": "2026-11-21", "count": 2 },
     { "date": "2026-11-22", "count": 2 },
-    { "date": "2026-11-23", "count": 1 }
+    { "date": "2026-11-23", "count": 2 }
   ],
   "topRepos": [
     {
@@ -472,11 +472,11 @@
     },
     {
       "name": "colddsam/POTD-solution-for-LeetCode",
-      "commits": 136
+      "commits": 135
     },
     {
       "name": "colddsam/do-whatever-you-like",
-      "commits": 67
+      "commits": 68
     },
     {
       "name": "colddsam/nextjsportfolio",
@@ -485,12 +485,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-11-23T11:58:29.436Z",
-    "title": "Dil Meri Na Sune",
-    "artist": "Atif Aslam, Himesh Reshammiya, Manoj Muntashir",
-    "album": "Genius (Original Motion Picture Soundtrack)",
-    "duration": 236000,
-    "cover": "https://i.scdn.co/image/ab67616d00001e0245d903382cac1d491ceb2f44"
+    "playedAt": "2026-11-23T16:06:50.221Z",
+    "title": "Halka Halka",
+    "artist": "Rahat Fateh Ali Khan, Rashmi Virag, Abhijit Vaghani",
+    "album": "Halka Halka",
+    "duration": 273214,
+    "cover": "https://i.scdn.co/image/ab67616d00001e023918ad81151f35c169c07ef9"
   },
   "projects": [
     {
@@ -574,7 +574,7 @@
       "stars": 1,
       "forks": 1,
       "created": "2026-11-08T11:26:47Z",
-      "pushed": "2026-11-23T04:31:41Z",
+      "pushed": "2026-11-23T14:05:27Z",
       "fork": false,
       "archived": false
     },
@@ -1462,7 +1462,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-23T00:25:41Z",
+      "pushed": "2026-11-23T14:17:45Z",
       "fork": false,
       "archived": false
     },
