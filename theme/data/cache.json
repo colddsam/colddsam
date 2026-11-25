@@ -487,12 +487,12 @@
   ],
   "spotify": {
     "playing": false,
-    "playedAt": "2026-11-24T09:44:09.562Z",
-    "title": "Dhoonde Akhiyaan - From \"Jabariya Jodi\"",
-    "artist": "Yasser Desai, Altamash Faridi, Rashmi Virag",
-    "album": "Artist Spotlight - Yasser Desai",
-    "duration": 275399,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02cdd7bfed4d9de3821d31497a"
+    "playedAt": "2026-11-25T16:06:57.548Z",
+    "title": "Fakira",
+    "artist": "Vishal-Shekhar, Sanam Puri, Neeti Mohan",
+    "album": "Student of the Year 2 (Original Motion Picture Soundtrack)",
+    "duration": 288019,
+    "cover": "https://i.scdn.co/image/ab67616d00001e021500ba98cfa8ee9dd2d4c7de"
   },
   "projects": [
     {
@@ -549,7 +549,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 37
+      "downloads": 39
     }
   ],
   "glance": {
@@ -1464,7 +1464,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-25T01:56:32Z",
+      "pushed": "2026-11-25T07:56:30Z",
       "fork": false,
       "archived": false
     },
