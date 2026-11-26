@@ -487,13 +487,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 264778,
-    "title": "Mere Naam Tu (From \"Zero\")",
-    "artist": "Abhay Jodhpurkar, Ajay-Atul",
-    "album": "Mere Naam Tu (From \"Zero\")",
-    "duration": 338593,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02166b3c71f1338a5b72966ad8"
+    "playing": false,
+    "playedAt": "2026-11-26T11:33:49.887Z",
+    "title": "Mere Bina",
+    "artist": "Pritam, Nikhil D'Souza",
+    "album": "Crook (Original Motion Picture Soundtrack)",
+    "duration": 289560,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02c32737e2c7f606beecbf1bae"
   },
   "projects": [
     {
@@ -550,7 +550,7 @@
       "name": "trending-products",
       "version": "1.0.3",
       "summary": "A Node.js module to fetch trending products from Amazon and related queries using Google Trends.",
-      "downloads": 39
+      "downloads": 43
     }
   ],
   "glance": {
@@ -1465,7 +1465,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-26T01:36:20Z",
+      "pushed": "2026-11-26T08:48:11Z",
       "fork": false,
       "archived": false
     },
