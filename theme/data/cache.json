@@ -487,13 +487,13 @@
     }
   ],
   "spotify": {
-    "playing": false,
-    "playedAt": "2026-11-25T17:59:46.893Z",
-    "title": "Andaaz e Karam",
-    "artist": "Madhur Sharma, Moin, ER",
-    "album": "Andaaz e Karam",
-    "duration": 437679,
-    "cover": "https://i.scdn.co/image/ab67616d00001e029e012a63ed996813dff3435e"
+    "playing": true,
+    "progress": 264778,
+    "title": "Mere Naam Tu (From \"Zero\")",
+    "artist": "Abhay Jodhpurkar, Ajay-Atul",
+    "album": "Mere Naam Tu (From \"Zero\")",
+    "duration": 338593,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02166b3c71f1338a5b72966ad8"
   },
   "projects": [
     {
