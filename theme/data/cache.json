@@ -488,13 +488,13 @@
     }
   ],
   "spotify": {
-    "playing": true,
-    "progress": 133265,
-    "title": "Ye Tune Kya Kiya",
-    "artist": "Pritam, Javed Bashir, Rajat Arora",
-    "album": "Once Upon Ay Time In Mumbai Dobaara !",
-    "duration": 314239,
-    "cover": "https://i.scdn.co/image/ab67616d00001e02fe77bd21eb38ff74b5f21524"
+    "playing": false,
+    "playedAt": "2026-11-27T15:07:49.411Z",
+    "title": "Tere Liye",
+    "artist": "Karneast",
+    "album": "Tere Liye",
+    "duration": 213333,
+    "cover": "https://i.scdn.co/image/ab67616d00001e02c978b4bdf1c0a0b447a8c8ff"
   },
   "projects": [
     {
@@ -1466,7 +1466,7 @@
       "stars": 2,
       "forks": 0,
       "created": "2023-01-17T05:58:58Z",
-      "pushed": "2026-11-27T01:30:44Z",
+      "pushed": "2026-11-27T11:17:36Z",
       "fork": false,
       "archived": false
     },
